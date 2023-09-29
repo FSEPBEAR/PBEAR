@@ -15,7 +15,7 @@ Also, there are details of FSs:
 * synth/: the details of PBE-based FS refinement.
 * target.c: the abstracted program.
 * cbmc_result.txt: the result of CBMC with target.c.
-* result.txt: the overall result of each property falsification.
+* result.txt: the overall result of each property falsification. We have used different terminology than what was used in the paper. For example, we used 'FS' as 'stub' and 'symbolic alarm filtering' as 'true alarm filtering,' etc. 
 
 ### CPAchecker:
 * predicateAnalysis.txt: the results of CPAchecker using the predicate abstraction option.
