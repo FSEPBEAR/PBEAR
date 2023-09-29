@@ -1,0 +1,9 @@
+(define-fun isButtonPressed ( (__iv__input_0_ Int) (__iv__input_1_ Int) (__iv__input_2_ Int) (__iv__input_3_ Int) (__iv__input_4_ Int) (__iv__input_5_ Int) (__iv__input_6_ Int) (__iv__input_7_ Int) (__iv__input_8_ Int) (__iv__input_9_ Int) (__iv__input_10_ Int) (__iv__input_11_ Int)) Int (ite (= 3 __iv__input_2_) __iv__input_0_ (ite (= -1 __iv__input_10_) 0 (ite (>= __iv__input_5_ 2) 0 (ite (>= __iv__input_0_ 2) __iv__input_5_ (ite (= 0 __iv__input_11_) __iv__input_7_ (ite (< __iv__input_9_ __iv__input_5_) 0 (ite (>= __iv__input_4_ 2) 0 (ite (< __iv__input_6_ __iv__input_8_) __iv__input_9_ (ite (>= -1 __iv__input_6_) 0 (ite (= 4 __iv__input_9_) 0 __iv__input_9_)))))))))))
+****************** statistics *******************
+size : 51
+time : 0.23 sec
+max_component_size : 1
+# components : 38
+time for composition : 0.23 sec
+time for component generation : 0.00 sec
+**************************************************

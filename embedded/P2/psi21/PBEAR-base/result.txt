@@ -1,0 +1,1581 @@
+--src data/elev/src/p4/elev.c --wd results/elevator/p4/no_alarm --unwind 1000 --object-bits 14 --no-alarm-filtering --synth-dir results/elevator/synth --synth-timeout 600 --synth-max-size 512 --synth-max-height 15 
+code parsing time: 0.811 sec
+
+select target function calls:
+floorIsOrdered(previousMainFloor, motorDirection) (call id 20) influences 13 external nodes
+internal node ratio: 19.18% (136 of 709)
+
+isButtonPressed() (call id 11) influences 7 external nodes
+internal node ratio: 2.96% (21 of 709)
+
+elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28) influences 5 external nodes
+internal node ratio: 0.85% (6 of 709)
+
+floorIsOrdered(previousMainFloor, motorDirection) (call id 14) influences 13 external nodes
+internal node ratio: 12.69% (90 of 709)
+
+find the best target combination:
+predict complexity: (unwind 1000)
+criterion unwind: 8
+floorIsOrdered(previousMainFloor, motorDirection): original cmplx: 157, stub cmplx: 3
+isButtonPressed(): original cmplx: 136, stub cmplx: 3
+elev_get_button_signal((elev_button_type_t)(button), floorNum): original cmplx: 1, stub cmplx: 0
+total cmplx: 8198
+
+Aug 01, 2023 1:08:53 PM iv_checker.select.TargetFunctionSelector printRank
+INFO: 
+1. floorIsOrdered(previousMainFloor, motorDirection); isButtonPressed(); elev_get_button_signal((elev_button_type_t)(button), floorNum); floorIsOrdered(previousMainFloor, motorDirection);  fitness: 5.959
+2. floorIsOrdered(previousMainFloor, motorDirection); elev_get_button_signal((elev_button_type_t)(button), floorNum); floorIsOrdered(previousMainFloor, motorDirection);  fitness: 5.367
+3. floorIsOrdered(previousMainFloor, motorDirection); isButtonPressed(); floorIsOrdered(previousMainFloor, motorDirection);  fitness: 4.803
+4. isButtonPressed(); elev_get_button_signal((elev_button_type_t)(button), floorNum);  fitness: 4.592
+5. floorIsOrdered(previousMainFloor, motorDirection); floorIsOrdered(previousMainFloor, motorDirection);  fitness: 4.107
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 1.478 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 1.478 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 143.00 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 20, timeout: 86400 sec)
+cbmc running time: 3.563 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 5.041 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 252.51 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 30, timeout: 86400 sec)
+cbmc running time: 6.998 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 12.039 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 379.80 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 40, timeout: 86400 sec)
+cbmc running time: 10.011 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 22.05 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 568.76 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 50, timeout: 86400 sec)
+cbmc running time: 12.319 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 34.369 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 652.68 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 60, timeout: 86400 sec)
+cbmc running time: 14.025 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 48.394 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 776.87 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 70, timeout: 86400 sec)
+cbmc running time: 21.708 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 70.102 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 930.79 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 80, timeout: 86400 sec)
+cbmc running time: 19.324 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 89.426 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 1054.11 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 90, timeout: 86400 sec)
+cbmc running time: 22.875 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 112.301 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 1197.94 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 100, timeout: 86400 sec)
+cbmc running time: 32.068 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 144.369 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 1436.53 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 110, timeout: 86400 sec)
+cbmc running time: 30.047 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 174.416 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 1474.87 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 120, timeout: 86400 sec)
+cbmc running time: 31.417 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 205.833 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 1620.97 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 130, timeout: 86400 sec)
+cbmc running time: 34.299 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 240.132 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 1882.53 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 140, timeout: 86400 sec)
+cbmc running time: 38.938 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 279.07 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 1882.53 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 150, timeout: 86400 sec)
+cbmc running time: 38.585 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 317.655 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 2028.06 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 160, timeout: 86400 sec)
+cbmc running time: 43.755 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 361.41 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 2155.87 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 170, timeout: 86400 sec)
+cbmc running time: 46.562 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 407.972 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 2282.28 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 180, timeout: 86400 sec)
+cbmc running time: 48.916 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 456.888 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 2625.43 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 190, timeout: 86400 sec)
+cbmc running time: 50.954 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 507.842 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 2625.43 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 200, timeout: 86400 sec)
+cbmc running time: 51.049 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 558.891 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 2685.65 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 210, timeout: 86400 sec)
+cbmc running time: 60.02 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 618.911 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 2930.36 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 220, timeout: 86400 sec)
+cbmc running time: 61.537 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 680.448 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 3192.65 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 230, timeout: 86400 sec)
+cbmc running time: 79.605 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 760.053 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 3257.05 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 240, timeout: 86400 sec)
+cbmc running time: 72.693 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 832.746 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 3454.36 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 250, timeout: 86400 sec)
+cbmc running time: 80.774 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 913.52 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 3610.69 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 260, timeout: 86400 sec)
+cbmc running time: 106.867 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 1020.387 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 3697.12 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 270, timeout: 86400 sec)
+cbmc running time: 78.667 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 1099.054 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 3779.05 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 280, timeout: 86400 sec)
+cbmc running time: 96.391 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 1195.445 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 4112.61 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 290, timeout: 86400 sec)
+cbmc running time: 100.611 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 1296.056 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 4112.61 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 300, timeout: 86400 sec)
+cbmc running time: 85.644 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 1381.7 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 4245.71 MB
+
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 20)
+call isButtonPressed() (call id 11)
+call elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 28)
+call floorIsOrdered(previousMainFloor, motorDirection) (call id 14)
+Iteration 0:
+signed int __iv__floorIsOrdered_stub(signed int floorNum, signed int motorDir) {
+	signed int __iv__return_expr_floorIsOrdered;
+	if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+	__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+	return __iv__return_expr_floorIsOrdered;
+}
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+signed int __iv__isButtonPressed_stub() {
+	signed int __iv__return_expr_isButtonPressed;
+	if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+	__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+	return __iv__return_expr_isButtonPressed;
+}
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+signed int __iv__elev_get_button_signal_stub(elev_button_type_t button, signed int floor) {
+	signed int __iv__return_expr_elev_get_button_signal;
+	signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+	__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+	__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+	return __iv__return_expr_elev_get_button_signal;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+run cbmc: (unwind: 310, timeout: 86400 sec)
+cbmc running time: 212.853 sec
+
+verification results: 
+property 'assert((state != 2));' is TRUE alarm.
+
+total CBMC running time: 1594.553 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 4530.32 MB

@@ -1,0 +1,41 @@
+(set-logic LIA)
+
+(synth-fun isButtonPressed ( (__iv__input_0_ Int) (__iv__input_1_ Int) (__iv__input_2_ Int) (__iv__input_3_ Int) (__iv__input_4_ Int) (__iv__input_5_ Int) (__iv__input_6_ Int) (__iv__input_7_ Int) (__iv__input_8_ Int) (__iv__input_9_ Int) (__iv__input_10_ Int) (__iv__input_11_ Int)) Int
+((Start Int (ntInt))
+(ntInt Int (
+	0 1 2 3 4 -1 5 
+	__iv__input_0_ __iv__input_1_ __iv__input_2_ __iv__input_3_ __iv__input_4_ __iv__input_5_ __iv__input_6_ __iv__input_7_ __iv__input_8_ __iv__input_9_ __iv__input_10_ __iv__input_11_ 
+	(* ntInt ntInt)
+	(ite ntBool ntInt ntInt)
+	(+ ntInt ntInt)
+	(- ntInt ntInt)
+))
+(ntBool Bool (
+	(not ntBool)
+	(or ntBool ntBool)
+	(and ntBool ntBool)
+	(< ntInt ntInt)
+	(= ntInt ntInt)
+	(>= ntInt ntInt)
+))
+))
+
+(constraint (=(isButtonPressed 0 0 1 0 1 0 0 0 0 1 0 1) 1))
+(constraint (=(isButtonPressed 1 0 1 0 1 1 1 1 1 1 1 1) 1))
+(constraint (=(isButtonPressed 1 0 1 1 1 1 1 1 1 1 1 1) 1))
+(constraint (=(isButtonPressed 1 1 1 1 1 1 1 1 1 1 1 1) 1))
+(constraint (=(isButtonPressed -7 84 -59 39 -30 -2 -47 78 82 1 -56 -8) 1))
+(constraint (=(isButtonPressed -2 -2 15 -2 11 -8 11 1 0 -20 16 0) 1))
+(constraint (=(isButtonPressed 18 53 -22 32 -43 1 -49 95 82 50 -40 4) 1))
+(constraint (=(isButtonPressed -16 29 74 18 13 -16 17 15 -20 -34 -10 -37) 0))
+(constraint (=(isButtonPressed -2 -7 20 13 -2 -2 -7 -1 -2 1 0 34) 1))
+(constraint (=(isButtonPressed 18 -15 18 34 -23 48 17 0 23 50 20 26) 0))
+(constraint (=(isButtonPressed 10 42 -27 8 -95 -14 -4 -21 -44 -13 -1 10) 0))
+(constraint (=(isButtonPressed -17 -77 -44 -15 20 -38 -40 44 -22 -7 -32 -23) 0))
+(constraint (=(isButtonPressed -2 -2 15 9 0 -30 49 -31 -36 4 21 -35) 0))
+(constraint (=(isButtonPressed -47 -28 135 -21 -3 -49 -11 53 -26 -20 -36 -39) 0))
+(constraint (=(isButtonPressed -2 -2 5 -2 -29 0 7 -4 0 0 -2 -6) 0))
+(constraint (=(isButtonPressed 16 -17 25 -2 -2 1 0 15 0 0 0 0) 1))
+(constraint (=(isButtonPressed 1 -22 3 0 34 0 -7 -18 -28 -20 0 26) 1))
+(constraint (=(isButtonPressed -10 0 -11 -5 0 -20 0 28 0 0 0 -15) 0))
+(check-synth)
