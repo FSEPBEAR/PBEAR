@@ -1,0 +1,1930 @@
+Parsing results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c
+Converting
+Type-checking target
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c line 832 function __utac__exception__cf_handler_reset: replacing function pointer by 0 possible targets
+Generic Property Instrumentation
+Running with 8 object bits, 56 offset bits (default)
+Starting Bounded Model Checking
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+Runtime Symex: 4.64414s
+size of program expression: 91323 steps
+simple slicing removed 228 assignments
+Generated 192 VCC(s), 192 remaining after simplification
+Runtime Postprocess Equation: 0.0209498s
+Passing problem to propositional reduction
+converting SSA
+Runtime Convert SSA: 0.722108s
+Running propositional reduction
+Post-processing
+Runtime Post-process: 2.7414e-05s
+Solving with MiniSAT 2.2.1 with simplifier
+631933 variables, 973436 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 55.1439s
+Runtime decision procedure: 55.8699s
+Building error trace
+** Results:
+results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac__get_this_arg
+[__utac__get_this_arg.assertion.1] line 1009 assertion (i > 0): SUCCESS
+[__utac__get_this_arg.assertion.2] line 1016 assertion (i <= __cil_tmp6): SUCCESS
+results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac__get_this_argtype
+[__utac__get_this_argtype.assertion.1] line 978 assertion (i > 0): SUCCESS
+[__utac__get_this_argtype.assertion.2] line 985 assertion (i <= __cil_tmp6): SUCCESS
+results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function reach_error
+[reach_error.assertion.1] line 1127 assertion FALSE: FAILURE
+Trace for reach_error.assertion.1:
+State 125 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function main line 288 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 126 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function main line 289 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 129 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_helpers line 960 thread 0
+----------------------------------------------------
+  __GUIDSL_ROOT_PRODUCTION=1 (00000000 00000000 00000000 00000001)
+State 136 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 312 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 137 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 313 thread 0
+----------------------------------------------------
+  choice=0 (00000000 00000000 00000000 00000000)
+State 138 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 314 thread 0
+----------------------------------------------------
+  choice=8192 (00000000 00000000 00100000 00000000)
+__iv__test_case:8192
+State 140 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 316 thread 0
+----------------------------------------------------
+  retValue_acc=8192 (00000000 00000000 00100000 00000000)
+State 143 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_features line 2619 thread 0
+----------------------------------------------------
+  __SELECTED_FEATURE_Base=8192 (00000000 00000000 00100000 00000000)
+State 146 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 312 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 147 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 313 thread 0
+----------------------------------------------------
+  choice=0 (00000000 00000000 00000000 00000000)
+State 148 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 314 thread 0
+----------------------------------------------------
+  choice=8388608 (00000000 10000000 00000000 00000000)
+__iv__test_case:8388608
+State 150 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 316 thread 0
+----------------------------------------------------
+  retValue_acc=8388608 (00000000 10000000 00000000 00000000)
+State 153 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_features line 2620 thread 0
+----------------------------------------------------
+  __SELECTED_FEATURE_Keys=8388608 (00000000 10000000 00000000 00000000)
+State 156 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 312 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 157 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 313 thread 0
+----------------------------------------------------
+  choice=0 (00000000 00000000 00000000 00000000)
+State 158 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 314 thread 0
+----------------------------------------------------
+  choice=262144 (00000000 00000100 00000000 00000000)
+__iv__test_case:262144
+State 160 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 316 thread 0
+----------------------------------------------------
+  retValue_acc=262144 (00000000 00000100 00000000 00000000)
+State 163 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_features line 2621 thread 0
+----------------------------------------------------
+  __SELECTED_FEATURE_Encrypt=262144 (00000000 00000100 00000000 00000000)
+State 166 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 312 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 167 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 313 thread 0
+----------------------------------------------------
+  choice=0 (00000000 00000000 00000000 00000000)
+State 168 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 314 thread 0
+----------------------------------------------------
+  choice=128 (00000000 00000000 00000000 10000000)
+__iv__test_case:128
+State 170 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 316 thread 0
+----------------------------------------------------
+  retValue_acc=128 (00000000 00000000 00000000 10000000)
+State 173 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_features line 2622 thread 0
+----------------------------------------------------
+  __SELECTED_FEATURE_AutoResponder=128 (00000000 00000000 00000000 10000000)
+State 176 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 312 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 177 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 313 thread 0
+----------------------------------------------------
+  choice=0 (00000000 00000000 00000000 00000000)
+State 178 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 314 thread 0
+----------------------------------------------------
+  choice=4 (00000000 00000000 00000000 00000100)
+__iv__test_case:4
+State 180 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 316 thread 0
+----------------------------------------------------
+  retValue_acc=4 (00000000 00000000 00000000 00000100)
+State 183 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_features line 2623 thread 0
+----------------------------------------------------
+  __SELECTED_FEATURE_AddressBook=4 (00000000 00000000 00000000 00000100)
+State 186 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 312 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 187 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 313 thread 0
+----------------------------------------------------
+  choice=0 (00000000 00000000 00000000 00000000)
+State 188 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 314 thread 0
+----------------------------------------------------
+  choice=32 (00000000 00000000 00000000 00100000)
+__iv__test_case:32
+State 190 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 316 thread 0
+----------------------------------------------------
+  retValue_acc=32 (00000000 00000000 00000000 00100000)
+State 193 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_features line 2624 thread 0
+----------------------------------------------------
+  __SELECTED_FEATURE_Sign=32 (00000000 00000000 00000000 00100000)
+State 196 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 312 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 197 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 313 thread 0
+----------------------------------------------------
+  choice=0 (00000000 00000000 00000000 00000000)
+State 198 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 314 thread 0
+----------------------------------------------------
+  choice=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 200 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 316 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 203 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_features line 2625 thread 0
+----------------------------------------------------
+  __SELECTED_FEATURE_Forward=0 (00000000 00000000 00000000 00000000)
+State 204 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_features line 2626 thread 0
+----------------------------------------------------
+  __SELECTED_FEATURE_Verify=1 (00000000 00000000 00000000 00000001)
+State 207 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 312 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 208 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 313 thread 0
+----------------------------------------------------
+  choice=0 (00000000 00000000 00000000 00000000)
+State 209 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 314 thread 0
+----------------------------------------------------
+  choice=1048576 (00000000 00010000 00000000 00000000)
+__iv__test_case:1048576
+State 211 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_one line 316 thread 0
+----------------------------------------------------
+  retValue_acc=1048576 (00000000 00010000 00000000 00000000)
+State 214 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function select_features line 2627 thread 0
+----------------------------------------------------
+  __SELECTED_FEATURE_Decrypt=1048576 (00000000 00010000 00000000 00000000)
+State 219 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function valid_product line 853 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 220 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function valid_product line 854 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 234 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function valid_product line 886 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 242 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function valid_product line 915 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 245 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function main line 292 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 249 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup line 1758 thread 0
+----------------------------------------------------
+  __cil_tmp1=((char *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 250 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup line 1759 thread 0
+----------------------------------------------------
+  __cil_tmp2=((char *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 251 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup line 1760 thread 0
+----------------------------------------------------
+  __cil_tmp3=((char *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 252 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup line 1761 thread 0
+----------------------------------------------------
+  bob=1 (00000000 00000000 00000000 00000001)
+State 255 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup line 1762 thread 0
+----------------------------------------------------
+  bob___0=1 (00000000 00000000 00000000 00000001)
+State 259 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup_bob line 2485 thread 0
+----------------------------------------------------
+  bob___0=1 (00000000 00000000 00000000 00000001)
+State 262 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup_bob__role__Keys line 846 thread 0
+----------------------------------------------------
+  bob___0=1 (00000000 00000000 00000000 00000001)
+State 265 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup_bob__before__Keys line 2577 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 266 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup_bob__before__Keys line 2577 thread 0
+----------------------------------------------------
+  value=1 (00000000 00000000 00000000 00000001)
+State 268 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setClientId line 2173 thread 0
+----------------------------------------------------
+  __ste_client_idCounter0=1 (00000000 00000000 00000000 00000001)
+State 276 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup_bob__role__Keys line 847 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 277 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup_bob__role__Keys line 847 thread 0
+----------------------------------------------------
+  value=123 (00000000 00000000 00000000 01111011)
+State 279 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setClientPrivateKey line 746 thread 0
+----------------------------------------------------
+  __ste_client_privateKey0=123 (00000000 00000000 00000000 01111011)
+State 288 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup line 1763 thread 0
+----------------------------------------------------
+  __cil_tmp1="bob: %d\n" (00000010 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 289 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup line 1764 thread 0
+----------------------------------------------------
+  rjh=2 (00000000 00000000 00000000 00000010)
+State 292 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup line 1765 thread 0
+----------------------------------------------------
+  rjh___0=2 (00000000 00000000 00000000 00000010)
+State 296 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup_rjh line 2321 thread 0
+----------------------------------------------------
+  rjh___0=2 (00000000 00000000 00000000 00000010)
+State 299 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup_rjh__role__Keys line 450 thread 0
+----------------------------------------------------
+  rjh___0=2 (00000000 00000000 00000000 00000010)
+State 302 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup_rjh__before__Keys line 457 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 303 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup_rjh__before__Keys line 457 thread 0
+----------------------------------------------------
+  value=2 (00000000 00000000 00000000 00000010)
+State 306 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setClientId line 2177 thread 0
+----------------------------------------------------
+  __ste_client_idCounter1=2 (00000000 00000000 00000000 00000010)
+State 314 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup_rjh__role__Keys line 451 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 315 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup_rjh__role__Keys line 451 thread 0
+----------------------------------------------------
+  value=456 (00000000 00000000 00000001 11001000)
+State 318 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setClientPrivateKey line 750 thread 0
+----------------------------------------------------
+  __ste_client_privateKey1=456 (00000000 00000000 00000001 11001000)
+State 327 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup line 1766 thread 0
+----------------------------------------------------
+  __cil_tmp2="rjh: %d\n" (00000011 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 328 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup line 1767 thread 0
+----------------------------------------------------
+  chuck=3 (00000000 00000000 00000000 00000011)
+State 331 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup line 1768 thread 0
+----------------------------------------------------
+  chuck___0=3 (00000000 00000000 00000000 00000011)
+State 335 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup_chuck line 2521 thread 0
+----------------------------------------------------
+  chuck___0=3 (00000000 00000000 00000000 00000011)
+State 338 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup_chuck__role__Keys line 437 thread 0
+----------------------------------------------------
+  chuck___0=3 (00000000 00000000 00000000 00000011)
+State 341 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup_chuck__before__Keys line 444 thread 0
+----------------------------------------------------
+  handle=3 (00000000 00000000 00000000 00000011)
+State 342 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup_chuck__before__Keys line 444 thread 0
+----------------------------------------------------
+  value=3 (00000000 00000000 00000000 00000011)
+State 346 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setClientId line 2181 thread 0
+----------------------------------------------------
+  __ste_client_idCounter2=3 (00000000 00000000 00000000 00000011)
+State 353 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup_chuck__role__Keys line 438 thread 0
+----------------------------------------------------
+  handle=3 (00000000 00000000 00000000 00000011)
+State 354 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup_chuck__role__Keys line 438 thread 0
+----------------------------------------------------
+  value=789 (00000000 00000000 00000011 00010101)
+State 358 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setClientPrivateKey line 754 thread 0
+----------------------------------------------------
+  __ste_client_privateKey2=789 (00000000 00000000 00000011 00010101)
+State 366 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setup line 1769 thread 0
+----------------------------------------------------
+  __cil_tmp3="chuck: %d\n" (00000100 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 370 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1525 thread 0
+----------------------------------------------------
+  op1=0 (00000000 00000000 00000000 00000000)
+State 371 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1526 thread 0
+----------------------------------------------------
+  op2=0 (00000000 00000000 00000000 00000000)
+State 372 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1527 thread 0
+----------------------------------------------------
+  op3=0 (00000000 00000000 00000000 00000000)
+State 373 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1528 thread 0
+----------------------------------------------------
+  op4=0 (00000000 00000000 00000000 00000000)
+State 374 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1529 thread 0
+----------------------------------------------------
+  op5=0 (00000000 00000000 00000000 00000000)
+State 375 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1530 thread 0
+----------------------------------------------------
+  op6=0 (00000000 00000000 00000000 00000000)
+State 376 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1531 thread 0
+----------------------------------------------------
+  op7=0 (00000000 00000000 00000000 00000000)
+State 377 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1532 thread 0
+----------------------------------------------------
+  op8=0 (00000000 00000000 00000000 00000000)
+State 378 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1533 thread 0
+----------------------------------------------------
+  op9=0 (00000000 00000000 00000000 00000000)
+State 379 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1534 thread 0
+----------------------------------------------------
+  op10=0 (00000000 00000000 00000000 00000000)
+State 380 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1535 thread 0
+----------------------------------------------------
+  op11=0 (00000000 00000000 00000000 00000000)
+State 381 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1536 thread 0
+----------------------------------------------------
+  splverifierCounter=0 (00000000 00000000 00000000 00000000)
+State 382 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1537 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 383 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1538 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 384 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1539 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 385 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1540 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 386 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1541 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+State 387 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1542 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+State 388 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1543 thread 0
+----------------------------------------------------
+  tmp___5=0 (00000000 00000000 00000000 00000000)
+State 389 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1544 thread 0
+----------------------------------------------------
+  tmp___6=0 (00000000 00000000 00000000 00000000)
+State 390 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1545 thread 0
+----------------------------------------------------
+  tmp___7=0 (00000000 00000000 00000000 00000000)
+State 391 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1546 thread 0
+----------------------------------------------------
+  tmp___8=0 (00000000 00000000 00000000 00000000)
+State 392 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1547 thread 0
+----------------------------------------------------
+  tmp___9=0 (00000000 00000000 00000000 00000000)
+State 393 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1548 thread 0
+----------------------------------------------------
+  op1=0 (00000000 00000000 00000000 00000000)
+State 394 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1549 thread 0
+----------------------------------------------------
+  op2=0 (00000000 00000000 00000000 00000000)
+State 395 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1550 thread 0
+----------------------------------------------------
+  op3=0 (00000000 00000000 00000000 00000000)
+State 396 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1551 thread 0
+----------------------------------------------------
+  op4=0 (00000000 00000000 00000000 00000000)
+State 397 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1552 thread 0
+----------------------------------------------------
+  op5=0 (00000000 00000000 00000000 00000000)
+State 398 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1553 thread 0
+----------------------------------------------------
+  op6=0 (00000000 00000000 00000000 00000000)
+State 399 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1554 thread 0
+----------------------------------------------------
+  op7=0 (00000000 00000000 00000000 00000000)
+State 400 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1555 thread 0
+----------------------------------------------------
+  op8=0 (00000000 00000000 00000000 00000000)
+State 401 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1556 thread 0
+----------------------------------------------------
+  op9=0 (00000000 00000000 00000000 00000000)
+State 402 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1557 thread 0
+----------------------------------------------------
+  op10=0 (00000000 00000000 00000000 00000000)
+State 403 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1558 thread 0
+----------------------------------------------------
+  op11=0 (00000000 00000000 00000000 00000000)
+State 404 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1559 thread 0
+----------------------------------------------------
+  splverifierCounter=0 (00000000 00000000 00000000 00000000)
+State 407 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1563 thread 0
+----------------------------------------------------
+  splverifierCounter=1 (00000000 00000000 00000000 00000001)
+State 409 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1565 thread 0
+----------------------------------------------------
+  tmp___9=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 414 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1579 thread 0
+----------------------------------------------------
+  tmp___8=2048 (00000000 00000000 00001000 00000000)
+__iv__test_case:2048
+State 422 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function rjhSetAutoRespond line 1192 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 423 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function rjhSetAutoRespond line 1192 thread 0
+----------------------------------------------------
+  value=1 (00000000 00000000 00000000 00000001)
+State 426 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setClientAutoResponse line 785 thread 0
+----------------------------------------------------
+  __ste_client_autoResponse1=1 (00000000 00000000 00000000 00000001)
+State 432 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1585 thread 0
+----------------------------------------------------
+  op2=1 (00000000 00000000 00000000 00000001)
+State 438 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1563 thread 0
+----------------------------------------------------
+  splverifierCounter=2 (00000000 00000000 00000000 00000010)
+State 440 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1565 thread 0
+----------------------------------------------------
+  tmp___9=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 446 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1593 thread 0
+----------------------------------------------------
+  tmp___7=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 451 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1607 thread 0
+----------------------------------------------------
+  tmp___6=67108864 (00000100 00000000 00000000 00000000)
+__iv__test_case:67108864
+State 459 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function rjhKeyAdd line 1131 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 460 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function createClientKeyringEntry line 714 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 461 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function createClientKeyringEntry line 715 thread 0
+----------------------------------------------------
+  size=0 (00000000 00000000 00000000 00000000)
+State 462 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function createClientKeyringEntry line 716 thread 0
+----------------------------------------------------
+  __cil_tmp5=0 (00000000 00000000 00000000 00000000)
+State 465 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function createClientKeyringEntry line 717 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 466 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getClientKeyringSize line 728 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 469 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getClientKeyringSize line 734 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 473 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function createClientKeyringEntry line 717 thread 0
+----------------------------------------------------
+  size=0 (00000000 00000000 00000000 00000000)
+State 475 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function createClientKeyringEntry line 719 thread 0
+----------------------------------------------------
+  __cil_tmp5=1 (00000000 00000000 00000000 00000001)
+State 478 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function createClientKeyringEntry line 720 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 479 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function createClientKeyringEntry line 720 thread 0
+----------------------------------------------------
+  value=1 (00000000 00000000 00000000 00000001)
+State 482 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setClientKeyringSize line 2335 thread 0
+----------------------------------------------------
+  __ste_ClientKeyring_size1=1 (00000000 00000000 00000000 00000001)
+State 486 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function createClientKeyringEntry line 721 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 492 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function rjhKeyAdd line 1132 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 493 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function rjhKeyAdd line 1132 thread 0
+----------------------------------------------------
+  index=0 (00000000 00000000 00000000 00000000)
+State 494 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function rjhKeyAdd line 1132 thread 0
+----------------------------------------------------
+  value=1 (00000000 00000000 00000000 00000001)
+State 498 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setClientKeyringUser line 1499 thread 0
+----------------------------------------------------
+  __ste_Client_Keyring1_User0=1 (00000000 00000000 00000000 00000001)
+State 505 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function rjhKeyAdd line 1133 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 506 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function rjhKeyAdd line 1133 thread 0
+----------------------------------------------------
+  index=0 (00000000 00000000 00000000 00000000)
+State 507 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function rjhKeyAdd line 1133 thread 0
+----------------------------------------------------
+  value=123 (00000000 00000000 00000000 01111011)
+State 511 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setClientKeyringPublicKey line 2095 thread 0
+----------------------------------------------------
+  __ste_Client_Keyring1_PublicKey0=123 (00000000 00000000 00000000 01111011)
+State 518 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1613 thread 0
+----------------------------------------------------
+  op4=1 (00000000 00000000 00000000 00000001)
+State 524 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1563 thread 0
+----------------------------------------------------
+  splverifierCounter=3 (00000000 00000000 00000000 00000011)
+State 526 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1565 thread 0
+----------------------------------------------------
+  tmp___9=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 532 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1593 thread 0
+----------------------------------------------------
+  tmp___7=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 538 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1621 thread 0
+----------------------------------------------------
+  tmp___5=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 543 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1635 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 548 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1649 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 553 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1663 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 558 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1677 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 563 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1691 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 568 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function test line 1705 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 574 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function bobToRjh line 421 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 575 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function bobToRjh line 422 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 576 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function bobToRjh line 423 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 579 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function bobToRjh line 424 thread 0
+----------------------------------------------------
+  s="Please enter a subject and a message body.\n" (00000111 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+Assumption:
+  file <builtin-library-puts> line 16 function puts
+  ret >= 0
+State 595 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function bobToRjh line 425 thread 0
+----------------------------------------------------
+  sender=1 (00000000 00000000 00000000 00000001)
+State 596 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function bobToRjh line 425 thread 0
+----------------------------------------------------
+  receiver=2 (00000000 00000000 00000000 00000010)
+State 597 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function sendEmail line 1108 thread 0
+----------------------------------------------------
+  email=0 (00000000 00000000 00000000 00000000)
+State 600 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function sendEmail line 1109 thread 0
+----------------------------------------------------
+  from=0 (00000000 00000000 00000000 00000000)
+State 601 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function sendEmail line 1109 thread 0
+----------------------------------------------------
+  to=2 (00000000 00000000 00000000 00000010)
+State 602 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function createEmail line 320 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 603 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function createEmail line 321 thread 0
+----------------------------------------------------
+  msg=0 (00000000 00000000 00000000 00000000)
+State 604 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function createEmail line 322 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 607 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function createEmail line 323 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 608 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function createEmail line 323 thread 0
+----------------------------------------------------
+  value=0 (00000000 00000000 00000000 00000000)
+State 610 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setEmailFrom line 2444 thread 0
+----------------------------------------------------
+  __ste_email_from0=0 (00000000 00000000 00000000 00000000)
+State 616 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function createEmail line 324 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 617 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function createEmail line 324 thread 0
+----------------------------------------------------
+  value=2 (00000000 00000000 00000000 00000010)
+State 619 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setEmailTo line 1420 thread 0
+----------------------------------------------------
+  __ste_email_to0=2 (00000000 00000000 00000000 00000010)
+State 623 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function createEmail line 325 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 626 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function sendEmail line 1109 thread 0
+----------------------------------------------------
+  email=1 (00000000 00000000 00000000 00000001)
+State 629 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function sendEmail line 1110 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 630 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function sendEmail line 1110 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 634 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing line 2605 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 635 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing line 2605 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 638 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Sign line 595 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 639 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Sign line 595 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 640 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function sign line 300 thread 0
+----------------------------------------------------
+  privkey=0 (00000000 00000000 00000000 00000000)
+State 643 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function sign line 301 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 644 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getClientPrivateKey line 763 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 646 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getClientPrivateKey line 765 thread 0
+----------------------------------------------------
+  retValue_acc=123 (00000000 00000000 00000000 01111011)
+State 650 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function sign line 301 thread 0
+----------------------------------------------------
+  privkey=123 (00000000 00000000 00000000 01111011)
+State 654 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function sign line 305 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 655 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function sign line 305 thread 0
+----------------------------------------------------
+  value=1 (00000000 00000000 00000000 00000001)
+State 657 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setEmailIsSigned line 2282 thread 0
+----------------------------------------------------
+  __ste_email_isSigned0=1 (00000000 00000000 00000000 00000001)
+State 663 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function sign line 306 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 664 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function sign line 306 thread 0
+----------------------------------------------------
+  value=123 (00000000 00000000 00000000 01111011)
+State 666 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setEmailSignKey line 2584 thread 0
+----------------------------------------------------
+  __ste_email_signKey0=123 (00000000 00000000 00000000 01111011)
+State 673 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Sign line 596 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 674 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Sign line 596 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 678 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__Sign line 1319 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 679 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__Sign line 1319 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 680 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__AddressBook line 602 thread 0
+----------------------------------------------------
+  size=0 (00000000 00000000 00000000 00000000)
+State 681 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__AddressBook line 603 thread 0
+----------------------------------------------------
+  receiver=2 (00000000 00000000 00000000 00000010)
+State 682 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__AddressBook line 604 thread 0
+----------------------------------------------------
+  second=0 (00000000 00000000 00000000 00000000)
+State 683 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__AddressBook line 605 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 686 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__AddressBook line 606 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 687 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getClientAddressBookSize line 1930 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 689 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getClientAddressBookSize line 1932 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 693 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__AddressBook line 606 thread 0
+----------------------------------------------------
+  size=0 (00000000 00000000 00000000 00000000)
+State 697 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__AddressBook line 620 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 698 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__AddressBook line 620 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 702 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__AddressBook line 628 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 703 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__AddressBook line 628 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 704 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 637 thread 0
+----------------------------------------------------
+  receiver=0 (00000000 00000000 00000000 00000000)
+State 705 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 638 thread 0
+----------------------------------------------------
+  pubkey=0 (00000000 00000000 00000000 00000000)
+State 708 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 639 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 709 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailTo line 2139 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 711 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailTo line 2141 thread 0
+----------------------------------------------------
+  retValue_acc=2 (00000000 00000000 00000000 00000010)
+State 715 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 639 thread 0
+----------------------------------------------------
+  receiver=2 (00000000 00000000 00000000 00000010)
+State 718 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 640 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 719 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 640 thread 0
+----------------------------------------------------
+  userid=2 (00000000 00000000 00000000 00000010)
+State 720 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function findPublicKey line 1775 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 724 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function findPublicKey line 1785 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 728 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 640 thread 0
+----------------------------------------------------
+  pubkey=0 (00000000 00000000 00000000 00000000)
+State 732 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 645 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 733 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 645 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 734 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__Encrypt line 651 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 737 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__Encrypt line 652 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 738 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getClientId line 1816 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 740 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getClientId line 1818 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 744 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__Encrypt line 652 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 747 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__Encrypt line 653 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 748 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__Encrypt line 653 thread 0
+----------------------------------------------------
+  value=1 (00000000 00000000 00000000 00000001)
+State 750 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setEmailFrom line 2444 thread 0
+----------------------------------------------------
+  __ste_email_from0=1 (00000000 00000000 00000000 00000001)
+State 756 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__Encrypt line 654 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 757 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__Encrypt line 654 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 758 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function mail line 1749 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 761 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function mail line 1750 thread 0
+----------------------------------------------------
+  s="mail sent" (00001010 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 778 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function mail line 1751 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 779 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailTo line 2139 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 781 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailTo line 2141 thread 0
+----------------------------------------------------
+  retValue_acc=2 (00000000 00000000 00000000 00000010)
+State 785 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function mail line 1751 thread 0
+----------------------------------------------------
+  tmp=2 (00000000 00000000 00000000 00000010)
+State 788 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function mail line 1752 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 789 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function mail line 1752 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 793 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming line 1988 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 794 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming line 1988 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 795 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 533 thread 0
+----------------------------------------------------
+  privkey=0 (00000000 00000000 00000000 00000000)
+State 796 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 534 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 797 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 535 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 798 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 536 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 801 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 537 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 802 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getClientPrivateKey line 763 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 805 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getClientPrivateKey line 769 thread 0
+----------------------------------------------------
+  retValue_acc=456 (00000000 00000000 00000001 11001000)
+State 809 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 537 thread 0
+----------------------------------------------------
+  privkey=456 (00000000 00000000 00000001 11001000)
+State 813 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 539 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 814 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isEncrypted line 2494 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 816 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isEncrypted line 2496 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 820 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 539 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 824 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 549 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 825 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 549 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 829 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__before__Decrypt line 556 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 830 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__before__Decrypt line 556 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 833 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Verify line 565 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 834 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Verify line 565 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 835 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 463 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 836 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 464 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 837 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 465 thread 0
+----------------------------------------------------
+  pubkey=0 (00000000 00000000 00000000 00000000)
+State 838 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 466 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 839 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 467 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+State 840 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 468 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+State 843 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 469 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 844 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable line 334 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 848 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable line 336 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 849 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable__role__Encrypt line 343 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 850 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable__role__Encrypt line 344 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 853 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable__role__Encrypt line 345 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 854 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isEncrypted line 2494 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 856 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isEncrypted line 2496 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 860 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable__role__Encrypt line 345 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 864 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable__role__Encrypt line 350 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 865 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable__before__Encrypt line 354 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 866 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable__before__Encrypt line 355 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 869 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable__role__Encrypt line 350 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 872 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable line 336 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 876 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 469 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 880 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 471 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 881 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isSigned line 2564 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 883 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isSigned line 2566 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 887 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 471 thread 0
+----------------------------------------------------
+  tmp___0=1 (00000000 00000000 00000000 00000001)
+State 892 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 479 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 893 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailFrom line 660 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 895 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailFrom line 662 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 899 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 479 thread 0
+----------------------------------------------------
+  tmp___1=1 (00000000 00000000 00000000 00000001)
+State 902 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 480 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 903 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 480 thread 0
+----------------------------------------------------
+  userid=1 (00000000 00000000 00000000 00000001)
+State 904 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function findPublicKey line 1775 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 908 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function findPublicKey line 1790 thread 0
+----------------------------------------------------
+  retValue_acc=123 (00000000 00000000 00000000 01111011)
+State 912 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 480 thread 0
+----------------------------------------------------
+  pubkey=123 (00000000 00000000 00000000 01111011)
+State 916 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 482 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 917 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailSignKey line 1252 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 919 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailSignKey line 1254 thread 0
+----------------------------------------------------
+  retValue_acc=123 (00000000 00000000 00000000 01111011)
+State 923 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 482 thread 0
+----------------------------------------------------
+  tmp___3=123 (00000000 00000000 00000000 01111011)
+State 926 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 483 thread 0
+----------------------------------------------------
+  publicKey=123 (00000000 00000000 00000000 01111011)
+State 927 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 483 thread 0
+----------------------------------------------------
+  privateKey=123 (00000000 00000000 00000000 01111011)
+__iv__stub_call:isKeyPairValid
+__iv__stub_input:publicKey=123
+__iv__stub_input:privateKey=123
+State 931 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __iv__isKeyPairValid_stub line 2644 thread 0
+----------------------------------------------------
+  __iv__return_expr_isKeyPairValid=0 (00000000 00000000 00000000 00000000)
+State 933 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __iv__isKeyPairValid_stub line 2645 thread 0
+----------------------------------------------------
+  __iv__return_expr_isKeyPairValid=1 (00000000 00000000 00000000 00000001)
+Assumption:
+  file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c line 2646 function __iv__isKeyPairValid_stub
+  __iv__return_expr_isKeyPairValid == 0 || __iv__return_expr_isKeyPairValid == 1
+__iv__stub_output:__iv__return_expr_isKeyPairValid=1
+State 939 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 483 thread 0
+----------------------------------------------------
+  tmp___4=1 (00000000 00000000 00000000 00000001)
+State 943 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 485 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 944 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 485 thread 0
+----------------------------------------------------
+  value=1 (00000000 00000000 00000000 00000001)
+State 946 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setEmailIsSignatureVerified line 2308 thread 0
+----------------------------------------------------
+  __ste_email_isSignatureVerified0=1 (00000000 00000000 00000000 00000001)
+State 953 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Verify line 566 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 954 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Verify line 566 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 958 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__before__Verify line 2388 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 959 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__before__Verify line 2388 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 963 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__before__Forward line 2375 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 964 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__before__Forward line 2375 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 965 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__AutoResponder line 584 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 968 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__AutoResponder line 585 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 969 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__AutoResponder line 585 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 972 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__before__AutoResponder line 2166 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 973 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__before__AutoResponder line 2166 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 974 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function deliver line 1839 thread 0
+----------------------------------------------------
+  __utac__ad__arg1=0 (00000000 00000000 00000000 00000000)
+State 975 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function deliver line 1840 thread 0
+----------------------------------------------------
+  __utac__ad__arg2=0 (00000000 00000000 00000000 00000000)
+State 976 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function deliver line 1841 thread 0
+----------------------------------------------------
+  __utac__ad__arg1=2 (00000000 00000000 00000000 00000010)
+State 977 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function deliver line 1842 thread 0
+----------------------------------------------------
+  __utac__ad__arg2=1 (00000000 00000000 00000000 00000001)
+State 980 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function deliver line 1843 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 981 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function deliver line 1843 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 982 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2407 thread 0
+----------------------------------------------------
+  pubkey=0 (00000000 00000000 00000000 00000000)
+State 983 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2408 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 984 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2409 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 987 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2410 thread 0
+----------------------------------------------------
+  s="before deliver\n" (00001100 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+Assumption:
+  file <builtin-library-puts> line 16 function puts
+  ret >= 0
+State 1003 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2411 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1004 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isVerified line 2394 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1006 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isVerified line 2396 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 1010 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2411 thread 0
+----------------------------------------------------
+  tmp___1=1 (00000000 00000000 00000000 00000001)
+State 1014 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2413 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1015 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailFrom line 660 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1017 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailFrom line 662 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 1021 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2413 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 1024 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2414 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 1025 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2414 thread 0
+----------------------------------------------------
+  userid=1 (00000000 00000000 00000000 00000001)
+State 1026 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function findPublicKey line 1775 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1030 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function findPublicKey line 1790 thread 0
+----------------------------------------------------
+  retValue_acc=123 (00000000 00000000 00000000 01111011)
+State 1034 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2414 thread 0
+----------------------------------------------------
+  pubkey=123 (00000000 00000000 00000000 01111011)
+State 1039 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function deliver line 1844 thread 0
+----------------------------------------------------
+  s="mail delivered\n" (00001101 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1059 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__AutoResponder line 586 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 1060 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getClientAutoResponse line 1854 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1063 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getClientAutoResponse line 1860 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 1067 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__AutoResponder line 586 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 1071 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__AutoResponder line 588 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 1072 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__AutoResponder line 588 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1073 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function autoRespond line 493 thread 0
+----------------------------------------------------
+  sender=0 (00000000 00000000 00000000 00000000)
+State 1076 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function autoRespond line 494 thread 0
+----------------------------------------------------
+  s="sending autoresponse\n" (00001110 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1093 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function autoRespond line 495 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1094 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailFrom line 660 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1096 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailFrom line 662 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 1100 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function autoRespond line 495 thread 0
+----------------------------------------------------
+  sender=1 (00000000 00000000 00000000 00000001)
+State 1103 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function autoRespond line 496 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1104 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function autoRespond line 496 thread 0
+----------------------------------------------------
+  value=1 (00000000 00000000 00000000 00000001)
+State 1106 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setEmailTo line 1420 thread 0
+----------------------------------------------------
+  __ste_email_to0=1 (00000000 00000000 00000000 00000001)
+State 1112 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function autoRespond line 497 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 1113 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function autoRespond line 497 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1114 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function queue line 2596 thread 0
+----------------------------------------------------
+  queue_empty=0 (00000000 00000000 00000000 00000000)
+State 1115 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function queue line 2597 thread 0
+----------------------------------------------------
+  queued_message=1 (00000000 00000000 00000000 00000001)
+State 1116 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function queue line 2598 thread 0
+----------------------------------------------------
+  queued_client=2 (00000000 00000000 00000000 00000010)
+State 1153 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function is_queue_empty line 528 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1154 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function is_queue_empty line 529 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1157 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function bobToRjh line 426 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 1161 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function get_queued_email line 518 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1162 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function get_queued_email line 519 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 1165 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function bobToRjh line 428 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 1168 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function get_queued_client line 523 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1169 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function get_queued_client line 524 thread 0
+----------------------------------------------------
+  retValue_acc=2 (00000000 00000000 00000000 00000010)
+State 1172 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function bobToRjh line 429 thread 0
+----------------------------------------------------
+  tmp___0=2 (00000000 00000000 00000000 00000010)
+State 1175 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function bobToRjh line 430 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 1176 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function bobToRjh line 430 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1180 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing line 2605 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 1181 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing line 2605 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1184 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Sign line 595 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 1185 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Sign line 595 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1186 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function sign line 300 thread 0
+----------------------------------------------------
+  privkey=0 (00000000 00000000 00000000 00000000)
+State 1189 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function sign line 301 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 1190 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getClientPrivateKey line 763 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1193 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getClientPrivateKey line 769 thread 0
+----------------------------------------------------
+  retValue_acc=456 (00000000 00000000 00000001 11001000)
+State 1197 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function sign line 301 thread 0
+----------------------------------------------------
+  privkey=456 (00000000 00000000 00000001 11001000)
+State 1201 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function sign line 305 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1202 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function sign line 305 thread 0
+----------------------------------------------------
+  value=1 (00000000 00000000 00000000 00000001)
+State 1204 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setEmailIsSigned line 2282 thread 0
+----------------------------------------------------
+  __ste_email_isSigned0=1 (00000000 00000000 00000000 00000001)
+State 1210 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function sign line 306 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1211 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function sign line 306 thread 0
+----------------------------------------------------
+  value=456 (00000000 00000000 00000001 11001000)
+State 1213 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setEmailSignKey line 2584 thread 0
+----------------------------------------------------
+  __ste_email_signKey0=456 (00000000 00000000 00000001 11001000)
+State 1220 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Sign line 596 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 1221 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Sign line 596 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1225 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__Sign line 1319 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 1226 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__Sign line 1319 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1227 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__AddressBook line 602 thread 0
+----------------------------------------------------
+  size=0 (00000000 00000000 00000000 00000000)
+State 1228 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__AddressBook line 603 thread 0
+----------------------------------------------------
+  receiver=0 (00000000 00000000 00000000 00000000)
+State 1229 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__AddressBook line 604 thread 0
+----------------------------------------------------
+  second=0 (00000000 00000000 00000000 00000000)
+State 1230 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__AddressBook line 605 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 1233 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__AddressBook line 606 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 1234 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getClientAddressBookSize line 1930 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1237 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getClientAddressBookSize line 1936 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1241 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__AddressBook line 606 thread 0
+----------------------------------------------------
+  size=0 (00000000 00000000 00000000 00000000)
+State 1245 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__AddressBook line 620 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 1246 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__AddressBook line 620 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1250 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__AddressBook line 628 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 1251 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__AddressBook line 628 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1252 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 637 thread 0
+----------------------------------------------------
+  receiver=0 (00000000 00000000 00000000 00000000)
+State 1253 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 638 thread 0
+----------------------------------------------------
+  pubkey=0 (00000000 00000000 00000000 00000000)
+State 1256 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 639 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1257 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailTo line 2139 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1259 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailTo line 2141 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 1263 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 639 thread 0
+----------------------------------------------------
+  receiver=1 (00000000 00000000 00000000 00000001)
+State 1266 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 640 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 1267 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 640 thread 0
+----------------------------------------------------
+  userid=1 (00000000 00000000 00000000 00000001)
+State 1268 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function findPublicKey line 1775 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1272 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function findPublicKey line 1790 thread 0
+----------------------------------------------------
+  retValue_acc=123 (00000000 00000000 00000000 01111011)
+State 1276 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 640 thread 0
+----------------------------------------------------
+  pubkey=123 (00000000 00000000 00000000 01111011)
+State 1280 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 642 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1281 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 642 thread 0
+----------------------------------------------------
+  value=123 (00000000 00000000 00000000 01111011)
+State 1283 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setEmailEncryptionKey line 2544 thread 0
+----------------------------------------------------
+  __ste_email_encryptionKey0=123 (00000000 00000000 00000000 01111011)
+State 1289 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 643 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1290 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 643 thread 0
+----------------------------------------------------
+  value=1 (00000000 00000000 00000000 00000001)
+State 1292 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setEmailIsEncrypted line 2508 thread 0
+----------------------------------------------------
+  __ste_email_isEncrypted0=1 (00000000 00000000 00000000 00000001)
+State 1298 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 645 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 1299 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__role__Encrypt line 645 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1300 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__Encrypt line 651 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1303 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__Encrypt line 652 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 1304 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getClientId line 1816 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1307 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getClientId line 1822 thread 0
+----------------------------------------------------
+  retValue_acc=2 (00000000 00000000 00000000 00000010)
+State 1311 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__Encrypt line 652 thread 0
+----------------------------------------------------
+  tmp=2 (00000000 00000000 00000000 00000010)
+State 1314 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__Encrypt line 653 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1315 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__Encrypt line 653 thread 0
+----------------------------------------------------
+  value=2 (00000000 00000000 00000000 00000010)
+State 1317 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setEmailFrom line 2444 thread 0
+----------------------------------------------------
+  __ste_email_from0=2 (00000000 00000000 00000000 00000010)
+State 1323 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__Encrypt line 654 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 1324 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function outgoing__before__Encrypt line 654 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1325 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function mail line 1749 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1328 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function mail line 1750 thread 0
+----------------------------------------------------
+  s="mail sent" (00001010 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+Assumption:
+  file <builtin-library-puts> line 16 function puts
+  ret >= 0
+State 1344 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function mail line 1751 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1345 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailTo line 2139 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1347 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailTo line 2141 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 1351 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function mail line 1751 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 1354 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function mail line 1752 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 1355 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function mail line 1752 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1359 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming line 1988 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 1360 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming line 1988 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1361 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 533 thread 0
+----------------------------------------------------
+  privkey=0 (00000000 00000000 00000000 00000000)
+State 1362 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 534 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 1363 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 535 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 1364 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 536 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 1367 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 537 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1368 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getClientPrivateKey line 763 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1370 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getClientPrivateKey line 765 thread 0
+----------------------------------------------------
+  retValue_acc=123 (00000000 00000000 00000000 01111011)
+State 1374 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 537 thread 0
+----------------------------------------------------
+  privkey=123 (00000000 00000000 00000000 01111011)
+State 1378 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 539 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1379 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isEncrypted line 2494 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1381 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isEncrypted line 2496 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 1385 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 539 thread 0
+----------------------------------------------------
+  tmp___0=1 (00000000 00000000 00000000 00000001)
+State 1389 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 541 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1390 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailEncryptionKey line 2530 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1392 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailEncryptionKey line 2532 thread 0
+----------------------------------------------------
+  retValue_acc=123 (00000000 00000000 00000000 01111011)
+State 1396 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 541 thread 0
+----------------------------------------------------
+  tmp___1=123 (00000000 00000000 00000000 01111011)
+State 1399 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 542 thread 0
+----------------------------------------------------
+  publicKey=123 (00000000 00000000 00000000 01111011)
+State 1400 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 542 thread 0
+----------------------------------------------------
+  privateKey=123 (00000000 00000000 00000000 01111011)
+State 1401 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isKeyPairValid line 503 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1402 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isKeyPairValid line 504 thread 0
+----------------------------------------------------
+  __cil_tmp4=((char *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1403 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isKeyPairValid line 505 thread 0
+----------------------------------------------------
+  __cil_tmp4="keypair valid %d %d" (00001011 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1406 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isKeyPairValid line 514 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 1409 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 542 thread 0
+----------------------------------------------------
+  tmp___2=1 (00000000 00000000 00000000 00000001)
+State 1413 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 544 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1414 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 544 thread 0
+----------------------------------------------------
+  value=0 (00000000 00000000 00000000 00000000)
+State 1416 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setEmailIsEncrypted line 2508 thread 0
+----------------------------------------------------
+  __ste_email_isEncrypted0=0 (00000000 00000000 00000000 00000000)
+State 1422 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 545 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1423 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 545 thread 0
+----------------------------------------------------
+  value=0 (00000000 00000000 00000000 00000000)
+State 1425 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function setEmailEncryptionKey line 2544 thread 0
+----------------------------------------------------
+  __ste_email_encryptionKey0=0 (00000000 00000000 00000000 00000000)
+State 1431 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 549 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 1432 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Decrypt line 549 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1436 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__before__Decrypt line 556 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 1437 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__before__Decrypt line 556 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1440 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Verify line 565 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 1441 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Verify line 565 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1442 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 463 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1443 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 464 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 1444 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 465 thread 0
+----------------------------------------------------
+  pubkey=0 (00000000 00000000 00000000 00000000)
+State 1445 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 466 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 1446 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 467 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+State 1447 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 468 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+State 1450 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 469 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1451 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable line 334 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1455 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable line 336 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1456 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable__role__Encrypt line 343 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1457 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable__role__Encrypt line 344 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1460 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable__role__Encrypt line 345 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1461 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isEncrypted line 2494 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1463 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isEncrypted line 2496 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1467 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable__role__Encrypt line 345 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1471 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable__role__Encrypt line 350 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1472 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable__before__Encrypt line 354 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1473 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable__before__Encrypt line 355 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 1476 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable__role__Encrypt line 350 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 1479 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isReadable line 336 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 1483 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 469 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 1487 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 471 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1488 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isSigned line 2564 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1490 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isSigned line 2566 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 1494 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 471 thread 0
+----------------------------------------------------
+  tmp___0=1 (00000000 00000000 00000000 00000001)
+State 1499 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 479 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1500 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailFrom line 660 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1502 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailFrom line 662 thread 0
+----------------------------------------------------
+  retValue_acc=2 (00000000 00000000 00000000 00000010)
+State 1506 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 479 thread 0
+----------------------------------------------------
+  tmp___1=2 (00000000 00000000 00000000 00000010)
+State 1509 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 480 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1510 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 480 thread 0
+----------------------------------------------------
+  userid=2 (00000000 00000000 00000000 00000010)
+State 1511 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function findPublicKey line 1775 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1515 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function findPublicKey line 1785 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1519 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function verify line 480 thread 0
+----------------------------------------------------
+  pubkey=0 (00000000 00000000 00000000 00000000)
+State 1524 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Verify line 566 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 1525 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__Verify line 566 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1529 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__before__Verify line 2388 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 1530 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__before__Verify line 2388 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1534 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__before__Forward line 2375 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 1535 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__before__Forward line 2375 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1536 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__AutoResponder line 584 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1539 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__AutoResponder line 585 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 1540 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__role__AutoResponder line 585 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1543 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__before__AutoResponder line 2166 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 1544 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function incoming__before__AutoResponder line 2166 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1545 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function deliver line 1839 thread 0
+----------------------------------------------------
+  __utac__ad__arg1=0 (00000000 00000000 00000000 00000000)
+State 1546 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function deliver line 1840 thread 0
+----------------------------------------------------
+  __utac__ad__arg2=0 (00000000 00000000 00000000 00000000)
+State 1547 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function deliver line 1841 thread 0
+----------------------------------------------------
+  __utac__ad__arg1=1 (00000000 00000000 00000000 00000001)
+State 1548 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function deliver line 1842 thread 0
+----------------------------------------------------
+  __utac__ad__arg2=1 (00000000 00000000 00000000 00000001)
+State 1551 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function deliver line 1843 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 1552 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function deliver line 1843 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1553 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2407 thread 0
+----------------------------------------------------
+  pubkey=0 (00000000 00000000 00000000 00000000)
+State 1554 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2408 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1555 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2409 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 1558 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2410 thread 0
+----------------------------------------------------
+  s="before deliver\n" (00001100 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1575 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2411 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1576 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isVerified line 2394 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1578 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function isVerified line 2396 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 1582 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2411 thread 0
+----------------------------------------------------
+  tmp___1=1 (00000000 00000000 00000000 00000001)
+State 1586 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2413 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1587 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailFrom line 660 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1589 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function getEmailFrom line 662 thread 0
+----------------------------------------------------
+  retValue_acc=2 (00000000 00000000 00000000 00000010)
+State 1593 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2413 thread 0
+----------------------------------------------------
+  tmp=2 (00000000 00000000 00000000 00000010)
+State 1596 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2414 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1597 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2414 thread 0
+----------------------------------------------------
+  userid=2 (00000000 00000000 00000000 00000010)
+State 1598 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function findPublicKey line 1775 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1602 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function findPublicKey line 1785 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1606 file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function __utac_acc__VerifyForward_spec__1 line 2414 thread 0
+----------------------------------------------------
+  pubkey=0 (00000000 00000000 00000000 00000000)
+violated property: Node_50_1211
+Violated property:
+  file results/product-lines/email_spec27_productSimulator.cil.c/acc/target.c function reach_error line 1127 thread 0
+  assertion FALSE
+  0 != 0
+** 1 of 5 failed (2 iterations)
+VERIFICATION FAILED

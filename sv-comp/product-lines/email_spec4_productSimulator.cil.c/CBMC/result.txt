@@ -1,0 +1,28 @@
+--src data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c --wd results/product-lines/email_spec4_productSimulator.cil.c/origin --unwind 1000 --run-original --sv-comp-mode 
+code parsing time: 1.296 sec
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 6.143 sec
+
+the property is not violated.
+peak memory usage: 199.87 MB
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 6.097 sec
+
+the property is not violated.
+peak memory usage: 211.29 MB
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 6.228 sec
+
+the property is not violated.
+peak memory usage: 231.02 MB
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 7.634 sec
+
+the property is TRUE alarm.
+peak memory usage: 366.00 MB
+
+total CBMC running time: 26.102 sec

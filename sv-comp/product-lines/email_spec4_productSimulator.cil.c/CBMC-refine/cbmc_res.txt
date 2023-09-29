@@ -1,0 +1,1442 @@
+Parsing data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c
+Converting
+Type-checking email_spec4_productSimulator.cil
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c line 3234 function __utac__exception__cf_handler_reset: replacing function pointer by 0 possible targets
+Generic Property Instrumentation
+Running with 11 object bits, 53 offset bits (user-specified)
+Starting Bounded Model Checking
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+Runtime Symex: 5.29594s
+size of program expression: 108461 steps
+simple slicing removed 9467 assignments
+Generated 16 VCC(s), 16 remaining after simplification
+Runtime Postprocess Equation: 0.0245973s
+Passing problem to refinement loop with MiniSAT 2.2.1 with simplifier
+converting SSA
+Runtime Convert SSA: 0.694487s
+Running refinement loop with MiniSAT 2.2.1 with simplifier
+BV-Refinement: post-processing
+BV-Refinement: iteration 1
+784326 variables, 702980 clauses
+SAT checker: instance is SATISFIABLE
+BV-Refinement: got SAT, and it simulates => SAT
+Total iterations: 1
+Runtime Solver: 0.777515s
+Runtime decision procedure: 1.47529s
+Building error trace
+** Results:
+data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function __utac__get_this_arg
+[__utac__get_this_arg.assertion.2] line 3378 assertion i > 0 && i <= this->argsCount: SUCCESS
+[__utac__get_this_arg.assertion.1] line 3385 assertion i > 0 && i <= this->argsCount: SUCCESS
+data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function __utac__get_this_argtype
+[__utac__get_this_argtype.assertion.2] line 3424 assertion i > 0 && i <= this->argsCount: SUCCESS
+[__utac__get_this_argtype.assertion.1] line 3431 assertion i > 0 && i <= this->argsCount: SUCCESS
+data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function reach_error
+[reach_error.assertion.1] line 11 assertion 0: FAILURE
+Trace for reach_error.assertion.1:
+State 125 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function main line 2711 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 126 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function main line 2712 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 129 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_helpers line 2055 thread 0
+----------------------------------------------------
+  __GUIDSL_ROOT_PRODUCTION=1 (00000000 00000000 00000000 00000001)
+State 135 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2024 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 136 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2025 thread 0
+----------------------------------------------------
+  choice=0 (00000000 00000000 00000000 00000000)
+State 139 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2025 thread 0
+----------------------------------------------------
+  choice=128 (00000000 00000000 00000000 10000000)
+State 140 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2028 thread 0
+----------------------------------------------------
+  retValue_acc=128 (00000000 00000000 00000000 10000000)
+State 144 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_features line 2038 thread 0
+----------------------------------------------------
+  __SELECTED_FEATURE_Base=128 (00000000 00000000 00000000 10000000)
+State 147 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2024 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 148 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2025 thread 0
+----------------------------------------------------
+  choice=0 (00000000 00000000 00000000 00000000)
+State 151 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2025 thread 0
+----------------------------------------------------
+  choice=-2147483648 (10000000 00000000 00000000 00000000)
+State 152 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2028 thread 0
+----------------------------------------------------
+  retValue_acc=-2147483648 (10000000 00000000 00000000 00000000)
+State 156 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_features line 2039 thread 0
+----------------------------------------------------
+  __SELECTED_FEATURE_Keys=-2147483648 (10000000 00000000 00000000 00000000)
+State 159 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2024 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 160 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2025 thread 0
+----------------------------------------------------
+  choice=0 (00000000 00000000 00000000 00000000)
+State 163 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2025 thread 0
+----------------------------------------------------
+  choice=0 (00000000 00000000 00000000 00000000)
+State 164 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2028 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 168 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_features line 2040 thread 0
+----------------------------------------------------
+  __SELECTED_FEATURE_Encrypt=0 (00000000 00000000 00000000 00000000)
+State 171 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2024 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 172 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2025 thread 0
+----------------------------------------------------
+  choice=0 (00000000 00000000 00000000 00000000)
+State 175 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2025 thread 0
+----------------------------------------------------
+  choice=0 (00000000 00000000 00000000 00000000)
+State 176 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2028 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 180 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_features line 2041 thread 0
+----------------------------------------------------
+  __SELECTED_FEATURE_AutoResponder=0 (00000000 00000000 00000000 00000000)
+State 183 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2024 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 184 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2025 thread 0
+----------------------------------------------------
+  choice=0 (00000000 00000000 00000000 00000000)
+State 187 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2025 thread 0
+----------------------------------------------------
+  choice=0 (00000000 00000000 00000000 00000000)
+State 188 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2028 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 192 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_features line 2042 thread 0
+----------------------------------------------------
+  __SELECTED_FEATURE_AddressBook=0 (00000000 00000000 00000000 00000000)
+State 193 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_features line 2043 thread 0
+----------------------------------------------------
+  __SELECTED_FEATURE_Sign=1 (00000000 00000000 00000000 00000001)
+State 196 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2024 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 197 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2025 thread 0
+----------------------------------------------------
+  choice=0 (00000000 00000000 00000000 00000000)
+State 200 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2025 thread 0
+----------------------------------------------------
+  choice=-2147483648 (10000000 00000000 00000000 00000000)
+State 201 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2028 thread 0
+----------------------------------------------------
+  retValue_acc=-2147483648 (10000000 00000000 00000000 00000000)
+State 205 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_features line 2044 thread 0
+----------------------------------------------------
+  __SELECTED_FEATURE_Forward=-2147483648 (10000000 00000000 00000000 00000000)
+State 208 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2024 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 209 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2025 thread 0
+----------------------------------------------------
+  choice=0 (00000000 00000000 00000000 00000000)
+State 212 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2025 thread 0
+----------------------------------------------------
+  choice=2 (00000000 00000000 00000000 00000010)
+State 213 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2028 thread 0
+----------------------------------------------------
+  retValue_acc=2 (00000000 00000000 00000000 00000010)
+State 217 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_features line 2045 thread 0
+----------------------------------------------------
+  __SELECTED_FEATURE_Verify=2 (00000000 00000000 00000000 00000010)
+State 220 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2024 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 221 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2025 thread 0
+----------------------------------------------------
+  choice=0 (00000000 00000000 00000000 00000000)
+State 224 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2025 thread 0
+----------------------------------------------------
+  choice=0 (00000000 00000000 00000000 00000000)
+State 225 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_one line 2028 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 229 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function select_features line 2046 thread 0
+----------------------------------------------------
+  __SELECTED_FEATURE_Decrypt=0 (00000000 00000000 00000000 00000000)
+State 233 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function valid_product line 2060 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 234 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function valid_product line 2061 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 248 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function valid_product line 2095 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 256 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function valid_product line 2123 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 260 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function main line 2718 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 264 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup line 2688 thread 0
+----------------------------------------------------
+  __cil_tmp1=((char *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 265 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup line 2689 thread 0
+----------------------------------------------------
+  __cil_tmp2=((char *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 266 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup line 2690 thread 0
+----------------------------------------------------
+  __cil_tmp3=((char *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 267 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup line 2694 thread 0
+----------------------------------------------------
+  bob=1 (00000000 00000000 00000000 00000001)
+State 270 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup line 2695 thread 0
+----------------------------------------------------
+  bob___0=1 (00000000 00000000 00000000 00000001)
+State 274 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup_bob line 2566 thread 0
+----------------------------------------------------
+  bob___0=1 (00000000 00000000 00000000 00000001)
+State 277 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup_bob__role__Keys line 2554 thread 0
+----------------------------------------------------
+  bob___0=1 (00000000 00000000 00000000 00000001)
+State 280 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup_bob__before__Keys line 2544 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 281 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup_bob__before__Keys line 2544 thread 0
+----------------------------------------------------
+  value=1 (00000000 00000000 00000000 00000001)
+State 283 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setClientId line 2003 thread 0
+----------------------------------------------------
+  __ste_client_idCounter0=1 (00000000 00000000 00000000 00000001)
+State 289 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup_bob__role__Keys line 2555 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 290 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup_bob__role__Keys line 2555 thread 0
+----------------------------------------------------
+  value=123 (00000000 00000000 00000000 01111011)
+State 292 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setClientPrivateKey line 1568 thread 0
+----------------------------------------------------
+  __ste_client_privateKey0=123 (00000000 00000000 00000000 01111011)
+State 298 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup line 2696 thread 0
+----------------------------------------------------
+  __cil_tmp1="bob: %d\n" (00000000 01000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 301 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup line 2697 thread 0
+----------------------------------------------------
+  format="bob: %d\n" (00000000 01000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 309 file <builtin-library-printf> function printf line 19 thread 0
+----------------------------------------------------
+  va_args[0l]=(const void *)&va_arg!0 (00000000 01100000 00000000 00000000 00000000 00000000 00000000 00000000)
+bob: 1
+State 315 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup line 2698 thread 0
+----------------------------------------------------
+  rjh=2 (00000000 00000000 00000000 00000010)
+State 318 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup line 2699 thread 0
+----------------------------------------------------
+  rjh___0=2 (00000000 00000000 00000000 00000010)
+State 322 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup_rjh line 2604 thread 0
+----------------------------------------------------
+  rjh___0=2 (00000000 00000000 00000000 00000010)
+State 325 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup_rjh__role__Keys line 2592 thread 0
+----------------------------------------------------
+  rjh___0=2 (00000000 00000000 00000000 00000010)
+State 328 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup_rjh__before__Keys line 2582 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 329 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup_rjh__before__Keys line 2582 thread 0
+----------------------------------------------------
+  value=2 (00000000 00000000 00000000 00000010)
+State 332 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setClientId line 2006 thread 0
+----------------------------------------------------
+  __ste_client_idCounter1=2 (00000000 00000000 00000000 00000010)
+State 338 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup_rjh__role__Keys line 2593 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 339 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup_rjh__role__Keys line 2593 thread 0
+----------------------------------------------------
+  value=456 (00000000 00000000 00000001 11001000)
+State 342 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setClientPrivateKey line 1571 thread 0
+----------------------------------------------------
+  __ste_client_privateKey1=456 (00000000 00000000 00000001 11001000)
+State 348 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup line 2700 thread 0
+----------------------------------------------------
+  __cil_tmp2="rjh: %d\n" (00000000 10100000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 351 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup line 2701 thread 0
+----------------------------------------------------
+  format="rjh: %d\n" (00000000 10100000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 359 file <builtin-library-printf> function printf line 19 thread 0
+----------------------------------------------------
+  va_args$0[0l]=(const void *)&va_arg$0!0 (00000000 11000000 00000000 00000000 00000000 00000000 00000000 00000000)
+rjh: 2
+State 365 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup line 2702 thread 0
+----------------------------------------------------
+  chuck=3 (00000000 00000000 00000000 00000011)
+State 368 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup line 2703 thread 0
+----------------------------------------------------
+  chuck___0=3 (00000000 00000000 00000000 00000011)
+State 372 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup_chuck line 2642 thread 0
+----------------------------------------------------
+  chuck___0=3 (00000000 00000000 00000000 00000011)
+State 375 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup_chuck__role__Keys line 2630 thread 0
+----------------------------------------------------
+  chuck___0=3 (00000000 00000000 00000000 00000011)
+State 378 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup_chuck__before__Keys line 2620 thread 0
+----------------------------------------------------
+  handle=3 (00000000 00000000 00000000 00000011)
+State 379 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup_chuck__before__Keys line 2620 thread 0
+----------------------------------------------------
+  value=3 (00000000 00000000 00000000 00000011)
+State 383 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setClientId line 2009 thread 0
+----------------------------------------------------
+  __ste_client_idCounter2=3 (00000000 00000000 00000000 00000011)
+State 388 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup_chuck__role__Keys line 2631 thread 0
+----------------------------------------------------
+  handle=3 (00000000 00000000 00000000 00000011)
+State 389 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup_chuck__role__Keys line 2631 thread 0
+----------------------------------------------------
+  value=789 (00000000 00000000 00000011 00010101)
+State 393 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setClientPrivateKey line 1574 thread 0
+----------------------------------------------------
+  __ste_client_privateKey2=789 (00000000 00000000 00000011 00010101)
+State 398 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup line 2704 thread 0
+----------------------------------------------------
+  __cil_tmp3="chuck: %d\n" (00000001 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 401 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setup line 2705 thread 0
+----------------------------------------------------
+  format="chuck: %d\n" (00000001 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 409 file <builtin-library-printf> function printf line 19 thread 0
+----------------------------------------------------
+  va_args$1[0l]=(const void *)&va_arg$1!0 (00000001 00100000 00000000 00000000 00000000 00000000 00000000 00000000)
+chuck: 3
+State 418 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 71 thread 0
+----------------------------------------------------
+  op1=0 (00000000 00000000 00000000 00000000)
+State 419 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 72 thread 0
+----------------------------------------------------
+  op2=0 (00000000 00000000 00000000 00000000)
+State 420 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 73 thread 0
+----------------------------------------------------
+  op3=0 (00000000 00000000 00000000 00000000)
+State 421 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 74 thread 0
+----------------------------------------------------
+  op4=0 (00000000 00000000 00000000 00000000)
+State 422 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 75 thread 0
+----------------------------------------------------
+  op5=0 (00000000 00000000 00000000 00000000)
+State 423 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 76 thread 0
+----------------------------------------------------
+  op6=0 (00000000 00000000 00000000 00000000)
+State 424 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 77 thread 0
+----------------------------------------------------
+  op7=0 (00000000 00000000 00000000 00000000)
+State 425 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 78 thread 0
+----------------------------------------------------
+  op8=0 (00000000 00000000 00000000 00000000)
+State 426 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 79 thread 0
+----------------------------------------------------
+  op9=0 (00000000 00000000 00000000 00000000)
+State 427 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 80 thread 0
+----------------------------------------------------
+  op10=0 (00000000 00000000 00000000 00000000)
+State 428 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 81 thread 0
+----------------------------------------------------
+  op11=0 (00000000 00000000 00000000 00000000)
+State 429 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 82 thread 0
+----------------------------------------------------
+  splverifierCounter=0 (00000000 00000000 00000000 00000000)
+State 430 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 83 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 431 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 84 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 432 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 85 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 433 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 86 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 434 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 87 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+State 435 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 88 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+State 436 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 89 thread 0
+----------------------------------------------------
+  tmp___5=0 (00000000 00000000 00000000 00000000)
+State 437 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 90 thread 0
+----------------------------------------------------
+  tmp___6=0 (00000000 00000000 00000000 00000000)
+State 438 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 91 thread 0
+----------------------------------------------------
+  tmp___7=0 (00000000 00000000 00000000 00000000)
+State 439 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 92 thread 0
+----------------------------------------------------
+  tmp___8=0 (00000000 00000000 00000000 00000000)
+State 440 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 93 thread 0
+----------------------------------------------------
+  tmp___9=0 (00000000 00000000 00000000 00000000)
+State 441 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 96 thread 0
+----------------------------------------------------
+  op1=0 (00000000 00000000 00000000 00000000)
+State 442 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 97 thread 0
+----------------------------------------------------
+  op2=0 (00000000 00000000 00000000 00000000)
+State 443 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 98 thread 0
+----------------------------------------------------
+  op3=0 (00000000 00000000 00000000 00000000)
+State 444 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 99 thread 0
+----------------------------------------------------
+  op4=0 (00000000 00000000 00000000 00000000)
+State 445 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 100 thread 0
+----------------------------------------------------
+  op5=0 (00000000 00000000 00000000 00000000)
+State 446 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 101 thread 0
+----------------------------------------------------
+  op6=0 (00000000 00000000 00000000 00000000)
+State 447 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 102 thread 0
+----------------------------------------------------
+  op7=0 (00000000 00000000 00000000 00000000)
+State 448 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 103 thread 0
+----------------------------------------------------
+  op8=0 (00000000 00000000 00000000 00000000)
+State 449 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 104 thread 0
+----------------------------------------------------
+  op9=0 (00000000 00000000 00000000 00000000)
+State 450 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 105 thread 0
+----------------------------------------------------
+  op10=0 (00000000 00000000 00000000 00000000)
+State 451 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 106 thread 0
+----------------------------------------------------
+  op11=0 (00000000 00000000 00000000 00000000)
+State 452 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 107 thread 0
+----------------------------------------------------
+  splverifierCounter=0 (00000000 00000000 00000000 00000000)
+State 455 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 116 thread 0
+----------------------------------------------------
+  splverifierCounter=1 (00000000 00000000 00000000 00000001)
+State 457 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 119 thread 0
+----------------------------------------------------
+  tmp___9=0 (00000000 00000000 00000000 00000000)
+State 461 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 137 thread 0
+----------------------------------------------------
+  tmp___8=0 (00000000 00000000 00000000 00000000)
+State 465 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 155 thread 0
+----------------------------------------------------
+  tmp___7=4194304 (00000000 01000000 00000000 00000000)
+State 472 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function rjhDeletePrivateKey line 2818 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 473 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function rjhDeletePrivateKey line 2818 thread 0
+----------------------------------------------------
+  value=0 (00000000 00000000 00000000 00000000)
+State 476 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setClientPrivateKey line 1571 thread 0
+----------------------------------------------------
+  __ste_client_privateKey1=0 (00000000 00000000 00000000 00000000)
+State 480 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 165 thread 0
+----------------------------------------------------
+  op3=1 (00000000 00000000 00000000 00000001)
+State 486 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 116 thread 0
+----------------------------------------------------
+  splverifierCounter=2 (00000000 00000000 00000000 00000010)
+State 488 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 119 thread 0
+----------------------------------------------------
+  tmp___9=0 (00000000 00000000 00000000 00000000)
+State 492 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 137 thread 0
+----------------------------------------------------
+  tmp___8=0 (00000000 00000000 00000000 00000000)
+State 497 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 173 thread 0
+----------------------------------------------------
+  tmp___6=0 (00000000 00000000 00000000 00000000)
+State 501 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 191 thread 0
+----------------------------------------------------
+  tmp___5=0 (00000000 00000000 00000000 00000000)
+State 505 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 209 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+State 509 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 227 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+State 513 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 245 thread 0
+----------------------------------------------------
+  tmp___2=268435456 (00010000 00000000 00000000 00000000)
+State 516 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 255 thread 0
+----------------------------------------------------
+  op8=1 (00000000 00000000 00000000 00000001)
+State 522 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 116 thread 0
+----------------------------------------------------
+  splverifierCounter=3 (00000000 00000000 00000000 00000011)
+State 524 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 119 thread 0
+----------------------------------------------------
+  tmp___9=0 (00000000 00000000 00000000 00000000)
+State 528 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 137 thread 0
+----------------------------------------------------
+  tmp___8=0 (00000000 00000000 00000000 00000000)
+State 533 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 173 thread 0
+----------------------------------------------------
+  tmp___6=0 (00000000 00000000 00000000 00000000)
+State 537 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 191 thread 0
+----------------------------------------------------
+  tmp___5=4096 (00000000 00000000 00010000 00000000)
+State 544 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function chuckKeyAddRjh line 2806 thread 0
+----------------------------------------------------
+  handle=3 (00000000 00000000 00000000 00000011)
+State 545 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function createClientKeyringEntry line 1631 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 546 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function createClientKeyringEntry line 1632 thread 0
+----------------------------------------------------
+  size=0 (00000000 00000000 00000000 00000000)
+State 547 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function createClientKeyringEntry line 1633 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 548 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function createClientKeyringEntry line 1634 thread 0
+----------------------------------------------------
+  __cil_tmp5=0 (00000000 00000000 00000000 00000000)
+State 551 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function createClientKeyringEntry line 1638 thread 0
+----------------------------------------------------
+  handle=3 (00000000 00000000 00000000 00000011)
+State 552 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getClientKeyringSize line 1587 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 556 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getClientKeyringSize line 1599 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 560 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function createClientKeyringEntry line 1638 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 561 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function createClientKeyringEntry line 1639 thread 0
+----------------------------------------------------
+  size=0 (00000000 00000000 00000000 00000000)
+State 563 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function createClientKeyringEntry line 1643 thread 0
+----------------------------------------------------
+  __cil_tmp5=1 (00000000 00000000 00000000 00000001)
+State 566 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function createClientKeyringEntry line 1644 thread 0
+----------------------------------------------------
+  handle=3 (00000000 00000000 00000000 00000011)
+State 567 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function createClientKeyringEntry line 1644 thread 0
+----------------------------------------------------
+  value=1 (00000000 00000000 00000000 00000001)
+State 571 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setClientKeyringSize line 1621 thread 0
+----------------------------------------------------
+  __ste_ClientKeyring_size2=1 (00000000 00000000 00000000 00000001)
+State 573 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function createClientKeyringEntry line 1645 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 579 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function chuckKeyAddRjh line 2807 thread 0
+----------------------------------------------------
+  handle=3 (00000000 00000000 00000000 00000011)
+State 580 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function chuckKeyAddRjh line 2807 thread 0
+----------------------------------------------------
+  index=0 (00000000 00000000 00000000 00000000)
+State 581 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function chuckKeyAddRjh line 2807 thread 0
+----------------------------------------------------
+  value=2 (00000000 00000000 00000000 00000010)
+State 586 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setClientKeyringUser line 1746 thread 0
+----------------------------------------------------
+  __ste_Client_Keyring2_User0=2 (00000000 00000000 00000000 00000010)
+State 591 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function chuckKeyAddRjh line 2808 thread 0
+----------------------------------------------------
+  handle=3 (00000000 00000000 00000000 00000011)
+State 592 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function chuckKeyAddRjh line 2808 thread 0
+----------------------------------------------------
+  index=0 (00000000 00000000 00000000 00000000)
+State 593 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function chuckKeyAddRjh line 2808 thread 0
+----------------------------------------------------
+  value=456 (00000000 00000000 00000001 11001000)
+State 598 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setClientKeyringPublicKey line 1907 thread 0
+----------------------------------------------------
+  __ste_Client_Keyring2_PublicKey0=456 (00000000 00000000 00000001 11001000)
+State 602 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 201 thread 0
+----------------------------------------------------
+  op5=1 (00000000 00000000 00000000 00000001)
+State 608 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 116 thread 0
+----------------------------------------------------
+  splverifierCounter=4 (00000000 00000000 00000000 00000100)
+State 610 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 119 thread 0
+----------------------------------------------------
+  tmp___9=0 (00000000 00000000 00000000 00000000)
+State 614 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 137 thread 0
+----------------------------------------------------
+  tmp___8=0 (00000000 00000000 00000000 00000000)
+State 619 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 173 thread 0
+----------------------------------------------------
+  tmp___6=0 (00000000 00000000 00000000 00000000)
+State 624 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 209 thread 0
+----------------------------------------------------
+  tmp___4=8192 (00000000 00000000 00100000 00000000)
+State 631 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function rjhEnableForwarding line 2871 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 632 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function rjhEnableForwarding line 2871 thread 0
+----------------------------------------------------
+  value=3 (00000000 00000000 00000000 00000011)
+State 635 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setClientForwardReceiver line 1959 thread 0
+----------------------------------------------------
+  __ste_client_forwardReceiver1=3 (00000000 00000000 00000000 00000011)
+State 639 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function test line 219 thread 0
+----------------------------------------------------
+  op6=1 (00000000 00000000 00000000 00000001)
+State 647 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function bobToRjh line 2654 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 648 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function bobToRjh line 2655 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 649 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function bobToRjh line 2656 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 652 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function bobToRjh line 2660 thread 0
+----------------------------------------------------
+  s="Please enter a subject and a message body.\n" (00000011 10100000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 669 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function bobToRjh line 2661 thread 0
+----------------------------------------------------
+  sender=1 (00000000 00000000 00000000 00000001)
+State 670 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function bobToRjh line 2661 thread 0
+----------------------------------------------------
+  receiver=2 (00000000 00000000 00000000 00000010)
+State 671 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sendEmail line 751 thread 0
+----------------------------------------------------
+  email=0 (00000000 00000000 00000000 00000000)
+State 672 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sendEmail line 752 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 675 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sendEmail line 756 thread 0
+----------------------------------------------------
+  from=0 (00000000 00000000 00000000 00000000)
+State 676 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sendEmail line 756 thread 0
+----------------------------------------------------
+  to=2 (00000000 00000000 00000000 00000010)
+State 677 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function createEmail line 3066 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 678 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function createEmail line 3067 thread 0
+----------------------------------------------------
+  msg=0 (00000000 00000000 00000000 00000000)
+State 679 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function createEmail line 3071 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 682 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function createEmail line 3072 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 683 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function createEmail line 3072 thread 0
+----------------------------------------------------
+  value=0 (00000000 00000000 00000000 00000000)
+State 685 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setEmailFrom line 2216 thread 0
+----------------------------------------------------
+  __ste_email_from0=0 (00000000 00000000 00000000 00000000)
+State 690 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function createEmail line 3073 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 691 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function createEmail line 3073 thread 0
+----------------------------------------------------
+  value=2 (00000000 00000000 00000000 00000010)
+State 693 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setEmailTo line 2253 thread 0
+----------------------------------------------------
+  __ste_email_to0=2 (00000000 00000000 00000000 00000010)
+State 696 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function createEmail line 3074 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 700 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sendEmail line 756 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 701 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sendEmail line 757 thread 0
+----------------------------------------------------
+  email=1 (00000000 00000000 00000000 00000001)
+State 704 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sendEmail line 758 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 705 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sendEmail line 758 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 709 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing line 545 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 710 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing line 545 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 713 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__role__Sign line 533 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 714 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__role__Sign line 533 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 715 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sign line 858 thread 0
+----------------------------------------------------
+  privkey=0 (00000000 00000000 00000000 00000000)
+State 716 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sign line 859 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 719 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sign line 863 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 720 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getClientPrivateKey line 1540 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 722 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getClientPrivateKey line 1544 thread 0
+----------------------------------------------------
+  retValue_acc=123 (00000000 00000000 00000000 01111011)
+State 726 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sign line 863 thread 0
+----------------------------------------------------
+  tmp=123 (00000000 00000000 00000000 01111011)
+State 727 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sign line 864 thread 0
+----------------------------------------------------
+  privkey=123 (00000000 00000000 00000000 01111011)
+State 731 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sign line 872 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 732 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sign line 872 thread 0
+----------------------------------------------------
+  value=1 (00000000 00000000 00000000 00000001)
+State 734 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setEmailIsSigned line 2442 thread 0
+----------------------------------------------------
+  __ste_email_isSigned0=1 (00000000 00000000 00000000 00000001)
+State 739 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sign line 873 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 740 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sign line 873 thread 0
+----------------------------------------------------
+  value=123 (00000000 00000000 00000000 01111011)
+State 742 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setEmailSignKey line 2479 thread 0
+----------------------------------------------------
+  __ste_email_signKey0=123 (00000000 00000000 00000000 01111011)
+State 748 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__role__Sign line 534 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 749 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__role__Sign line 534 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 753 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__Sign line 522 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 754 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__Sign line 522 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 758 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__AddressBook line 468 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 759 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__AddressBook line 468 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 760 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__Encrypt line 419 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 763 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__Encrypt line 423 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 764 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getClientId line 1975 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 766 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getClientId line 1979 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 770 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__Encrypt line 423 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 773 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__Encrypt line 424 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 774 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__Encrypt line 424 thread 0
+----------------------------------------------------
+  value=1 (00000000 00000000 00000000 00000001)
+State 776 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setEmailFrom line 2216 thread 0
+----------------------------------------------------
+  __ste_email_from0=1 (00000000 00000000 00000000 00000001)
+State 781 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__Encrypt line 425 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 782 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__Encrypt line 425 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 783 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function mail line 402 thread 0
+----------------------------------------------------
+  __utac__ad__arg1=0 (00000000 00000000 00000000 00000000)
+State 784 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function mail line 403 thread 0
+----------------------------------------------------
+  __utac__ad__arg2=0 (00000000 00000000 00000000 00000000)
+State 785 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function mail line 404 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 786 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function mail line 408 thread 0
+----------------------------------------------------
+  __utac__ad__arg1=1 (00000000 00000000 00000000 00000001)
+State 787 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function mail line 409 thread 0
+----------------------------------------------------
+  __utac__ad__arg2=1 (00000000 00000000 00000000 00000001)
+State 790 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function mail line 410 thread 0
+----------------------------------------------------
+  client=1 (00000000 00000000 00000000 00000001)
+State 791 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function mail line 410 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 792 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function __utac_acc__SignForward_spec__1 line 3448 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 793 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function __utac_acc__SignForward_spec__1 line 3449 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 796 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function __utac_acc__SignForward_spec__1 line 3453 thread 0
+----------------------------------------------------
+  s="before mail\n" (00000100 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 813 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function __utac_acc__SignForward_spec__1 line 3454 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 814 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function isSigned line 2419 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 816 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function isSigned line 2423 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 820 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function __utac_acc__SignForward_spec__1 line 3454 thread 0
+----------------------------------------------------
+  tmp___0=1 (00000000 00000000 00000000 00000001)
+State 824 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function __utac_acc__SignForward_spec__1 line 3458 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 825 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getClientPrivateKey line 1540 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 827 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getClientPrivateKey line 1544 thread 0
+----------------------------------------------------
+  retValue_acc=123 (00000000 00000000 00000000 01111011)
+State 831 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function __utac_acc__SignForward_spec__1 line 3458 thread 0
+----------------------------------------------------
+  tmp=123 (00000000 00000000 00000000 01111011)
+State 836 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function mail line 411 thread 0
+----------------------------------------------------
+  s="mail sent" (00000100 00100000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 853 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function mail line 412 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 854 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getEmailTo line 2230 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 856 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getEmailTo line 2234 thread 0
+----------------------------------------------------
+  retValue_acc=2 (00000000 00000000 00000000 00000010)
+State 860 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function mail line 412 thread 0
+----------------------------------------------------
+  tmp=2 (00000000 00000000 00000000 00000010)
+State 863 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function mail line 413 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 864 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function mail line 413 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 868 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming line 729 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 869 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming line 729 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 873 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__before__Decrypt line 666 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 874 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__before__Decrypt line 666 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 877 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__role__Verify line 654 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 878 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__role__Verify line 654 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 879 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function verify line 891 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 880 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function verify line 892 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 881 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function verify line 893 thread 0
+----------------------------------------------------
+  pubkey=0 (00000000 00000000 00000000 00000000)
+State 882 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function verify line 894 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 883 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function verify line 895 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 884 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function verify line 896 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+State 885 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function verify line 897 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+State 888 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function verify line 901 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 889 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function isReadable line 3039 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 893 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function isReadable line 3049 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 894 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function isReadable__before__Encrypt line 3010 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 895 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function isReadable__before__Encrypt line 3013 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 899 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function isReadable line 3049 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 903 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function verify line 901 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 907 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function verify line 905 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 908 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function isSigned line 2419 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 910 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function isSigned line 2423 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 914 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function verify line 905 thread 0
+----------------------------------------------------
+  tmp___0=1 (00000000 00000000 00000000 00000001)
+State 919 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function verify line 916 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 920 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getEmailFrom line 2193 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 922 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getEmailFrom line 2197 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 926 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function verify line 916 thread 0
+----------------------------------------------------
+  tmp___1=1 (00000000 00000000 00000000 00000001)
+State 929 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function verify line 917 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 930 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function verify line 917 thread 0
+----------------------------------------------------
+  userid=1 (00000000 00000000 00000000 00000001)
+State 931 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function findPublicKey line 1826 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 936 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function findPublicKey line 1852 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 940 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function verify line 917 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 941 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function verify line 918 thread 0
+----------------------------------------------------
+  pubkey=0 (00000000 00000000 00000000 00000000)
+State 946 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__role__Verify line 655 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 947 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__role__Verify line 655 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 951 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__before__Verify line 638 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 952 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__before__Verify line 638 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 953 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__role__Forward line 612 thread 0
+----------------------------------------------------
+  fwreceiver=0 (00000000 00000000 00000000 00000000)
+State 954 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__role__Forward line 613 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 957 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__role__Forward line 617 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 958 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__role__Forward line 617 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 962 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__before__Forward line 605 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 963 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__before__Forward line 605 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 966 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__before__AutoResponder line 571 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 967 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__before__AutoResponder line 571 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 970 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function deliver line 561 thread 0
+----------------------------------------------------
+  s="mail delivered\n" (00000101 00100000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 990 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__role__Forward line 618 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 991 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getClientForwardReceiver line 1928 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 994 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getClientForwardReceiver line 1936 thread 0
+----------------------------------------------------
+  retValue_acc=3 (00000000 00000000 00000000 00000011)
+State 998 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__role__Forward line 618 thread 0
+----------------------------------------------------
+  tmp=3 (00000000 00000000 00000000 00000011)
+State 999 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__role__Forward line 619 thread 0
+----------------------------------------------------
+  fwreceiver=3 (00000000 00000000 00000000 00000011)
+State 1003 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__role__Forward line 623 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1004 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__role__Forward line 623 thread 0
+----------------------------------------------------
+  value=3 (00000000 00000000 00000000 00000011)
+State 1006 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setEmailTo line 2253 thread 0
+----------------------------------------------------
+  __ste_email_to0=3 (00000000 00000000 00000000 00000011)
+State 1011 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__role__Forward line 624 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 1012 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function incoming__role__Forward line 624 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1015 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function forward line 883 thread 0
+----------------------------------------------------
+  s="Forwarding message.\n" (00000101 01100000 00000000 00000000 00000000 00000000 00000000 00000000)
+Assumption:
+  file <builtin-library-puts> line 16 function puts
+  ret >= 0
+State 1031 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function forward line 884 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1035 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail line 2998 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1036 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__role__Verify line 2979 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1037 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__role__Verify line 2980 thread 0
+----------------------------------------------------
+  __cil_tmp3=((char *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1040 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__role__Verify line 2984 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1044 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Verify line 2967 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1045 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__role__Sign line 2943 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1046 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__role__Sign line 2944 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 1047 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__role__Sign line 2945 thread 0
+----------------------------------------------------
+  __cil_tmp4=((char *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1048 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__role__Sign line 2946 thread 0
+----------------------------------------------------
+  __cil_tmp5=((char *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1051 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__role__Sign line 2950 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1055 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Sign line 2936 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1056 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2879 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1057 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2880 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 1058 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2881 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 1059 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2882 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 1060 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2883 thread 0
+----------------------------------------------------
+  __cil_tmp6=((char *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1061 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2884 thread 0
+----------------------------------------------------
+  __cil_tmp7=((char *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1062 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2885 thread 0
+----------------------------------------------------
+  __cil_tmp8=((char *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1063 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2886 thread 0
+----------------------------------------------------
+  __cil_tmp9=((char *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1066 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2890 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1067 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getEmailId line 2156 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1069 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getEmailId line 2160 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1073 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2890 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1074 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2891 thread 0
+----------------------------------------------------
+  __cil_tmp6="ID:\n  %i\n" (00000101 10000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1077 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2892 thread 0
+----------------------------------------------------
+  format="ID:\n  %i\n" (00000101 10000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1085 file <builtin-library-printf> function printf line 19 thread 0
+----------------------------------------------------
+  va_args$460[0l]=(const void *)&va_arg$481!0 (01111001 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+ID:
+  %i
+State 1093 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2893 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1094 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getEmailFrom line 2193 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1096 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getEmailFrom line 2197 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 1100 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2893 thread 0
+----------------------------------------------------
+  tmp___0=1 (00000000 00000000 00000000 00000001)
+State 1101 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2894 thread 0
+----------------------------------------------------
+  __cil_tmp7="FROM:\n  %i\n" (00000101 11100000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1104 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2895 thread 0
+----------------------------------------------------
+  format="FROM:\n  %i\n" (00000101 11100000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1112 file <builtin-library-printf> function printf line 19 thread 0
+----------------------------------------------------
+  va_args$461[0l]=(const void *)&va_arg$482!0 (01111001 01000000 00000000 00000000 00000000 00000000 00000000 00000000)
+FROM:
+  %i
+State 1120 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2896 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1121 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getEmailTo line 2230 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1123 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getEmailTo line 2234 thread 0
+----------------------------------------------------
+  retValue_acc=3 (00000000 00000000 00000000 00000011)
+State 1127 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2896 thread 0
+----------------------------------------------------
+  tmp___1=3 (00000000 00000000 00000000 00000011)
+State 1128 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2897 thread 0
+----------------------------------------------------
+  __cil_tmp8="TO:\n  %i\n" (00000110 01000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1131 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2898 thread 0
+----------------------------------------------------
+  format="TO:\n  %i\n" (00000110 01000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1139 file <builtin-library-printf> function printf line 19 thread 0
+----------------------------------------------------
+  va_args$462[0l]=(const void *)&va_arg$483!0 (01111001 10000000 00000000 00000000 00000000 00000000 00000000 00000000)
+TO:
+  %i
+State 1147 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2899 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1148 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function isReadable line 3039 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1152 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function isReadable line 3049 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1153 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function isReadable__before__Encrypt line 3010 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1154 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function isReadable__before__Encrypt line 3013 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 1158 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function isReadable line 3049 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 1162 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2899 thread 0
+----------------------------------------------------
+  tmp___2=1 (00000000 00000000 00000000 00000001)
+State 1163 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2900 thread 0
+----------------------------------------------------
+  __cil_tmp9="IS_READABLE\n  %i\n" (00000110 10100000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1166 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__before__Encrypt line 2901 thread 0
+----------------------------------------------------
+  format="IS_READABLE\n  %i\n" (00000110 10100000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1174 file <builtin-library-printf> function printf line 19 thread 0
+----------------------------------------------------
+  va_args$463[0l]=(const void *)&va_arg$484!0 (01111001 11000000 00000000 00000000 00000000 00000000 00000000 00000000)
+IS_READABLE
+  %i
+State 1184 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__role__Sign line 2951 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1185 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function isSigned line 2419 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1187 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function isSigned line 2423 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 1191 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__role__Sign line 2951 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 1192 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__role__Sign line 2952 thread 0
+----------------------------------------------------
+  __cil_tmp4="SIGNED\n  %i\n" (00001000 11000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1195 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__role__Sign line 2953 thread 0
+----------------------------------------------------
+  format="SIGNED\n  %i\n" (00001000 11000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1203 file <builtin-library-printf> function printf line 19 thread 0
+----------------------------------------------------
+  va_args$464[0l]=(const void *)&va_arg$485!0 (01111010 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+SIGNED
+  %i
+State 1211 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__role__Sign line 2954 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1212 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getEmailSignKey line 2456 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1214 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getEmailSignKey line 2460 thread 0
+----------------------------------------------------
+  retValue_acc=123 (00000000 00000000 00000000 01111011)
+State 1218 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__role__Sign line 2954 thread 0
+----------------------------------------------------
+  tmp___0=123 (00000000 00000000 00000000 01111011)
+State 1219 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__role__Sign line 2955 thread 0
+----------------------------------------------------
+  __cil_tmp5="SIGNATURE\n  %i\n" (00001001 00100000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1222 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__role__Sign line 2956 thread 0
+----------------------------------------------------
+  format="SIGNATURE\n  %i\n" (00001001 00100000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1230 file <builtin-library-printf> function printf line 19 thread 0
+----------------------------------------------------
+  va_args$465[0l]=(const void *)&va_arg$486!0 (01111010 01000000 00000000 00000000 00000000 00000000 00000000 00000000)
+SIGNATURE
+  %i
+State 1241 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__role__Verify line 2985 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1242 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function isVerified line 2493 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1244 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function isVerified line 2497 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1248 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__role__Verify line 2985 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1249 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__role__Verify line 2986 thread 0
+----------------------------------------------------
+  __cil_tmp3="SIGNATURE VERIFIED\n  %d\n" (00001001 10000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1252 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function printMail__role__Verify line 2987 thread 0
+----------------------------------------------------
+  format="SIGNATURE VERIFIED\n  %d\n" (00001001 10000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1260 file <builtin-library-printf> function printf line 19 thread 0
+----------------------------------------------------
+  va_args$466[0l]=(const void *)&va_arg$487!0 (01111010 10000000 00000000 00000000 00000000 00000000 00000000 00000000)
+SIGNATURE VERIFIED
+  0
+State 1271 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function forward line 885 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 1272 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function forward line 885 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1273 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function queue line 767 thread 0
+----------------------------------------------------
+  queue_empty=0 (00000000 00000000 00000000 00000000)
+State 1274 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function queue line 768 thread 0
+----------------------------------------------------
+  queued_message=1 (00000000 00000000 00000000 00000001)
+State 1275 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function queue line 769 thread 0
+----------------------------------------------------
+  queued_client=2 (00000000 00000000 00000000 00000010)
+State 1295 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function is_queue_empty line 774 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1296 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function is_queue_empty line 777 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1300 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function bobToRjh line 2662 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 1304 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function get_queued_email line 792 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1305 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function get_queued_email line 795 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 1309 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function bobToRjh line 2668 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 1312 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function get_queued_client line 783 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1313 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function get_queued_client line 786 thread 0
+----------------------------------------------------
+  retValue_acc=2 (00000000 00000000 00000000 00000010)
+State 1317 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function bobToRjh line 2669 thread 0
+----------------------------------------------------
+  tmp___0=2 (00000000 00000000 00000000 00000010)
+State 1320 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function bobToRjh line 2670 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 1321 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function bobToRjh line 2670 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1325 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing line 545 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 1326 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing line 545 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1329 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__role__Sign line 533 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 1330 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__role__Sign line 533 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1331 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sign line 858 thread 0
+----------------------------------------------------
+  privkey=0 (00000000 00000000 00000000 00000000)
+State 1332 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sign line 859 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1335 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sign line 863 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 1336 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getClientPrivateKey line 1540 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1339 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getClientPrivateKey line 1548 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1343 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sign line 863 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1344 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function sign line 864 thread 0
+----------------------------------------------------
+  privkey=0 (00000000 00000000 00000000 00000000)
+State 1350 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__role__Sign line 534 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 1351 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__role__Sign line 534 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1355 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__Sign line 522 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 1356 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__Sign line 522 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1360 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__AddressBook line 468 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 1361 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__AddressBook line 468 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1362 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__Encrypt line 419 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1365 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__Encrypt line 423 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 1366 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getClientId line 1975 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1369 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getClientId line 1983 thread 0
+----------------------------------------------------
+  retValue_acc=2 (00000000 00000000 00000000 00000010)
+State 1373 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__Encrypt line 423 thread 0
+----------------------------------------------------
+  tmp=2 (00000000 00000000 00000000 00000010)
+State 1376 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__Encrypt line 424 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1377 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__Encrypt line 424 thread 0
+----------------------------------------------------
+  value=2 (00000000 00000000 00000000 00000010)
+State 1379 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function setEmailFrom line 2216 thread 0
+----------------------------------------------------
+  __ste_email_from0=2 (00000000 00000000 00000000 00000010)
+State 1384 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__Encrypt line 425 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 1385 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function outgoing__before__Encrypt line 425 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1386 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function mail line 402 thread 0
+----------------------------------------------------
+  __utac__ad__arg1=0 (00000000 00000000 00000000 00000000)
+State 1387 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function mail line 403 thread 0
+----------------------------------------------------
+  __utac__ad__arg2=0 (00000000 00000000 00000000 00000000)
+State 1388 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function mail line 404 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1389 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function mail line 408 thread 0
+----------------------------------------------------
+  __utac__ad__arg1=2 (00000000 00000000 00000000 00000010)
+State 1390 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function mail line 409 thread 0
+----------------------------------------------------
+  __utac__ad__arg2=1 (00000000 00000000 00000000 00000001)
+State 1393 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function mail line 410 thread 0
+----------------------------------------------------
+  client=2 (00000000 00000000 00000000 00000010)
+State 1394 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function mail line 410 thread 0
+----------------------------------------------------
+  msg=1 (00000000 00000000 00000000 00000001)
+State 1395 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function __utac_acc__SignForward_spec__1 line 3448 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1396 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function __utac_acc__SignForward_spec__1 line 3449 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 1399 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function __utac_acc__SignForward_spec__1 line 3453 thread 0
+----------------------------------------------------
+  s="before mail\n" (00000100 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 1416 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function __utac_acc__SignForward_spec__1 line 3454 thread 0
+----------------------------------------------------
+  handle=1 (00000000 00000000 00000000 00000001)
+State 1417 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function isSigned line 2419 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1419 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function isSigned line 2423 thread 0
+----------------------------------------------------
+  retValue_acc=1 (00000000 00000000 00000000 00000001)
+State 1423 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function __utac_acc__SignForward_spec__1 line 3454 thread 0
+----------------------------------------------------
+  tmp___0=1 (00000000 00000000 00000000 00000001)
+State 1427 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function __utac_acc__SignForward_spec__1 line 3458 thread 0
+----------------------------------------------------
+  handle=2 (00000000 00000000 00000000 00000010)
+State 1428 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getClientPrivateKey line 1540 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1431 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function getClientPrivateKey line 1548 thread 0
+----------------------------------------------------
+  retValue_acc=0 (00000000 00000000 00000000 00000000)
+State 1435 file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function __utac_acc__SignForward_spec__1 line 3458 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+Violated property:
+  file data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c function reach_error line 11 thread 0
+  assertion 0
+  FALSE
+** 1 of 5 failed (2 iterations)
+VERIFICATION FAILED

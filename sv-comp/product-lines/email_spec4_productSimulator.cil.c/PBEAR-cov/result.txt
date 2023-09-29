@@ -1,0 +1,264 @@
+--src data/sv-benchmarks/c/product-lines/email_spec4_productSimulator.cil.c --wd results/product-lines/email_spec4_productSimulator.cil.c/acc --unwind 1000 --synth-dir results/product-lines/acc/synth --synth-only-acc --synth-timeout 600 --synth-max-size 512 --synth-max-height 15 --sv-comp-mode 
+code parsing time: 1.318 sec
+
+select target function calls:
+isReadable(msg) (call id 129) influences 8 external nodes
+internal node ratio: 0.31% (8 of 2621)
+
+isSigned(msg) (call id 130) is deterministic.
+isSigned(msg) (call id 130) influences 2 external nodes
+internal node ratio: 0.15% (4 of 2621)
+
+valid_product() (call id 2) influences 58 external nodes
+internal node ratio: 0.34% (9 of 2621)
+
+getEmailFrom(msg) (call id 131) is deterministic.
+getEmailFrom(msg) (call id 131) is independent call
+internal node ratio: 0.15% (4 of 2621)
+
+findPublicKey(client, tmp___1) (call id 132) influences 24 external nodes
+internal node ratio: 3.36% (88 of 2621)
+
+getEmailSignKey(msg) (call id 133) is deterministic.
+getEmailSignKey(msg) (call id 133) is independent call
+internal node ratio: 0.15% (4 of 2621)
+
+getClientPrivateKey(client) (call id 5) is deterministic.
+getClientPrivateKey(client) (call id 5) influences 3 external nodes
+internal node ratio: 0.23% (6 of 2621)
+
+isKeyPairValid(tmp___3, pubkey) (call id 134) influences 24 external nodes
+internal node ratio: 5.04% (132 of 2621)
+
+getClientAddressBookSize(client) (call id 136) is deterministic.
+getClientAddressBookSize(client) (call id 136) is independent call
+internal node ratio: 0.23% (6 of 2621)
+
+isSigned(msg) (call id 9) is deterministic.
+isSigned(msg) (call id 9) influences 2 external nodes
+internal node ratio: 0.15% (4 of 2621)
+
+getClientPrivateKey(client) (call id 10) is deterministic.
+getClientPrivateKey(client) (call id 10) influences 1 external nodes
+internal node ratio: 0.23% (6 of 2621)
+
+getEmailTo(msg) (call id 139) is deterministic.
+getEmailTo(msg) (call id 139) is independent call
+internal node ratio: 0.15% (4 of 2621)
+
+getClientAddressBookAddress(client, 1) (call id 141) is deterministic.
+getClientAddressBookAddress(client, 1) (call id 141) is independent call
+internal node ratio: 2.25% (59 of 2621)
+
+getClientAddressBookAddress(client, 0) (call id 144) is deterministic.
+getClientAddressBookAddress(client, 0) (call id 144) is independent call
+internal node ratio: 2.25% (59 of 2621)
+
+isVerified(msg) (call id 28) is deterministic.
+isVerified(msg) (call id 28) is independent call
+internal node ratio: 0.15% (4 of 2621)
+
+isSigned(msg) (call id 31) is deterministic.
+isSigned(msg) (call id 31) influences 4 external nodes
+internal node ratio: 0.15% (4 of 2621)
+
+getEmailSignKey(msg) (call id 33) is deterministic.
+getEmailSignKey(msg) (call id 33) influences 2 external nodes
+internal node ratio: 0.15% (4 of 2621)
+
+getEmailId(msg) (call id 35) is deterministic.
+getEmailId(msg) (call id 35) is independent call
+internal node ratio: 0.00% (0 of 2621)
+
+getEmailFrom(msg) (call id 37) is deterministic.
+getEmailFrom(msg) (call id 37) influences 2 external nodes
+internal node ratio: 0.15% (4 of 2621)
+
+getEmailTo(msg) (call id 39) is deterministic.
+getEmailTo(msg) (call id 39) is independent call
+internal node ratio: 0.15% (4 of 2621)
+
+setup_bob(bob) (call id 167) influences 70 external nodes
+internal node ratio: 0.19% (5 of 2621)
+
+isReadable(msg) (call id 41) influences 2 external nodes
+internal node ratio: 0.31% (8 of 2621)
+
+setup_rjh(rjh) (call id 169) influences 87 external nodes
+internal node ratio: 0.19% (5 of 2621)
+
+setup_chuck(chuck) (call id 171) influences 65 external nodes
+internal node ratio: 0.19% (5 of 2621)
+
+getClientKeyringUser(bob, 0) (call id 47) is deterministic.
+getClientKeyringUser(bob, 0) (call id 47) influences 78 external nodes
+internal node ratio: 0.61% (16 of 2621)
+
+getClientKeyringPublicKey(bob, 0) (call id 49) is deterministic.
+getClientKeyringPublicKey(bob, 0) (call id 49) influences 78 external nodes
+internal node ratio: 0.61% (16 of 2621)
+
+getEmailTo(msg) (call id 53) is deterministic.
+getEmailTo(msg) (call id 53) is independent call
+internal node ratio: 0.15% (4 of 2621)
+
+findPublicKey(client, receiver) (call id 54) is deterministic.
+findPublicKey(client, receiver) (call id 54) influences 16 external nodes
+internal node ratio: 1.64% (43 of 2621)
+
+getClientId(client) (call id 58) is deterministic.
+getClientId(client) (call id 58) is independent call
+internal node ratio: 0.65% (17 of 2621)
+
+getClientForwardReceiver(client) (call id 188) is deterministic.
+getClientForwardReceiver(client) (call id 188) is independent call
+internal node ratio: 0.65% (17 of 2621)
+
+forward(client, msg) (call id 190) influences 13 external nodes
+internal node ratio: 0.23% (6 of 2621)
+
+getClientKeyringSize(handle) (call id 191) is deterministic.
+getClientKeyringSize(handle) (call id 191) is independent call
+internal node ratio: 0.65% (17 of 2621)
+
+setup_rjh__before__Keys(rjh___0) (call id 199) is deterministic.
+setup_rjh__before__Keys(rjh___0) (call id 199) is independent call
+internal node ratio: 0.00% (0 of 2621)
+
+getClientAutoResponse(client) (call id 202) is deterministic.
+getClientAutoResponse(client) (call id 202) is independent call
+internal node ratio: 0.23% (6 of 2621)
+
+getEmailTo(msg) (call id 86) is deterministic.
+getEmailTo(msg) (call id 86) is independent call
+internal node ratio: 0.46% (12 of 2621)
+
+setup_rjh__role__Keys(rjh___0) (call id 216) is deterministic.
+setup_rjh__role__Keys(rjh___0) (call id 216) is independent call
+internal node ratio: 0.00% (0 of 2621)
+
+setup_rjh__before__Keys(rjh___0) (call id 217) is deterministic.
+setup_rjh__before__Keys(rjh___0) (call id 217) is independent call
+internal node ratio: 0.00% (0 of 2621)
+
+setup_chuck__role__Keys(chuck___0) (call id 218) is deterministic.
+setup_chuck__role__Keys(chuck___0) (call id 218) is independent call
+internal node ratio: 0.00% (0 of 2621)
+
+setup_chuck__before__Keys(chuck___0) (call id 219) is deterministic.
+setup_chuck__before__Keys(chuck___0) (call id 219) is independent call
+internal node ratio: 0.00% (0 of 2621)
+
+createEmail(0, receiver) (call id 92) is deterministic.
+createEmail(0, receiver) (call id 92) is independent call
+internal node ratio: 0.00% (0 of 2621)
+
+setup_bob__role__Keys(bob___0) (call id 222) is deterministic.
+setup_bob__role__Keys(bob___0) (call id 222) is independent call
+internal node ratio: 0.00% (0 of 2621)
+
+getEmailFrom(msg) (call id 95) is deterministic.
+getEmailFrom(msg) (call id 95) influences 2 external nodes
+internal node ratio: 0.15% (4 of 2621)
+
+setup_bob__before__Keys(bob___0) (call id 223) is deterministic.
+setup_bob__before__Keys(bob___0) (call id 223) is independent call
+internal node ratio: 0.00% (0 of 2621)
+
+isEncrypted(msg) (call id 102) is deterministic.
+isEncrypted(msg) (call id 102) influences 4 external nodes
+internal node ratio: 0.15% (4 of 2621)
+
+setup_bob__before__Keys(bob___0) (call id 230) is deterministic.
+setup_bob__before__Keys(bob___0) (call id 230) is independent call
+internal node ratio: 0.00% (0 of 2621)
+
+getEmailEncryptionKey(msg) (call id 104) is deterministic.
+getEmailEncryptionKey(msg) (call id 104) is independent call
+internal node ratio: 0.15% (4 of 2621)
+
+setup_chuck__before__Keys(chuck___0) (call id 234) is deterministic.
+setup_chuck__before__Keys(chuck___0) (call id 234) is independent call
+internal node ratio: 0.00% (0 of 2621)
+
+isEncrypted(msg) (call id 111) is deterministic.
+isEncrypted(msg) (call id 111) is independent call
+internal node ratio: 0.15% (4 of 2621)
+
+isReadable__role__Encrypt(msg) (call id 113) is deterministic.
+isReadable__role__Encrypt(msg) (call id 113) is independent call
+internal node ratio: 0.15% (4 of 2621)
+
+getClientPrivateKey(client) (call id 121) is deterministic.
+getClientPrivateKey(client) (call id 121) influences 4 external nodes
+internal node ratio: 0.23% (6 of 2621)
+
+isEncrypted(msg) (call id 122) is deterministic.
+isEncrypted(msg) (call id 122) influences 4 external nodes
+internal node ratio: 0.15% (4 of 2621)
+
+getEmailEncryptionKey(msg) (call id 123) is deterministic.
+getEmailEncryptionKey(msg) (call id 123) is independent call
+internal node ratio: 0.15% (4 of 2621)
+
+isKeyPairValid(tmp___1, privkey) (call id 124) is deterministic.
+isKeyPairValid(tmp___1, privkey) (call id 124) influences 8 external nodes
+internal node ratio: 1.76% (46 of 2621)
+
+find the best target combination:
+predict complexity: (unwind 1000)
+criterion unwind: 2
+isKeyPairValid(tmp___3, pubkey): original cmplx: 2, stub cmplx: 1
+forward(client, msg): original cmplx: 113, stub cmplx: 0
+valid_product(): original cmplx: 13, stub cmplx: 9
+findPublicKey(client, tmp___1): original cmplx: 9, stub cmplx: 0
+isReadable(msg): original cmplx: 4, stub cmplx: 3
+total cmplx: 21391
+
+Sep 22, 2023 3:19:41 PM iv_checker.select.TargetFunctionSelector printRank
+INFO: 
+1. isKeyPairValid(tmp___3, pubkey); forward(client, msg);  fitness: 2.923
+2. valid_product(); isKeyPairValid(tmp___3, pubkey); forward(client, msg);  fitness: 2.921
+3. forward(client, msg);  fitness: 2.915
+4. valid_product(); forward(client, msg);  fitness: 2.911
+5. findPublicKey(client, tmp___1); isKeyPairValid(tmp___3, pubkey); forward(client, msg);  fitness: 2.749
+
+call isKeyPairValid(tmp___3, pubkey) (call id 134)
+call forward(client, msg) (call id 190)
+Iteration 0:
+signed int __iv__isKeyPairValid_stub(signed int publicKey, signed int privateKey) {
+	signed int __iv__return_expr_isKeyPairValid;
+	if(publicKey==privateKey) __iv__return_expr_isKeyPairValid = 1; else __iv__return_expr_isKeyPairValid = 0; 
+	__CPROVER_assume(__iv__return_expr_isKeyPairValid == 0 || __iv__return_expr_isKeyPairValid == 1);
+	return __iv__return_expr_isKeyPairValid;
+}
+complexity: 1
+accuracy: 99.98%
+coverage: 100.00%
+# constraints: 3
+
+void __iv__forward_stub(signed int client, signed int msg) {
+	queue_empty = 0;
+	__CPROVER_assume(queue_empty == 0);
+	queued_client = client;
+	queued_message = msg;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 3
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 3.82 sec
+
+verification results: 
+property 'assert((i > 0));' is not violated.
+property 'assert((i <= __cil_tmp6));' is not violated.
+property 'assert(FALSE);' is TRUE alarm.
+property 'assert((i <= __cil_tmp6));' is not violated.
+property 'assert((i > 0));' is not violated.
+
+total CBMC running time: 3.82 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 186.50 MB
