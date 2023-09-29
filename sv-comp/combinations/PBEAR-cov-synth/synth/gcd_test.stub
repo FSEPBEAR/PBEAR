@@ -1,0 +1,24 @@
+outputs: __iv__return_expr_gcd_test 
+logs: 
+{"Func":"gcd_test","Input":[{"Var":"a","Val":-116},{"Var":"b","Val":-67}],"Output":[{"Var":"__iv__return_expr_gcd_test","Val":1}],"InitOutput":[],}
+{"Func":"gcd_test","Input":[{"Var":"a","Val":87},{"Var":"b","Val":123}],"Output":[{"Var":"__iv__return_expr_gcd_test","Val":3}],"InitOutput":[],}
+{"Func":"gcd_test","Input":[{"Var":"a","Val":-102},{"Var":"b","Val":32}],"Output":[{"Var":"__iv__return_expr_gcd_test","Val":2}],"InitOutput":[],}
+{"Func":"gcd_test","Input":[{"Var":"a","Val":52},{"Var":"b","Val":-63}],"Output":[{"Var":"__iv__return_expr_gcd_test","Val":1}],"InitOutput":[],}
+{"Func":"gcd_test","Input":[{"Var":"a","Val":74},{"Var":"b","Val":-18}],"Output":[{"Var":"__iv__return_expr_gcd_test","Val":2}],"InitOutput":[],}
+{"Func":"gcd_test","Input":[{"Var":"a","Val":41},{"Var":"b","Val":66}],"Output":[{"Var":"__iv__return_expr_gcd_test","Val":1}],"InitOutput":[],}
+{"Func":"gcd_test","Input":[{"Var":"a","Val":67},{"Var":"b","Val":95}],"Output":[{"Var":"__iv__return_expr_gcd_test","Val":1}],"InitOutput":[],}
+logs end
+SyGuS code:
+__iv__return_expr_gcd_test:+ 1 % - * __iv__input_0_ __iv__input_0_ ) 1 ) + 2 % __iv__input_1_ 2 ) ) ) )
+SyGuS end
+assumes:
+__iv__return_expr_gcd_test:__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127)
+assumes end:
+signed char __iv__return_expr_gcd_test;
+__iv__return_expr_gcd_test = (1+(((a*a)-1)%(2+(b%2))));
+__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+return __iv__return_expr_gcd_test;
+complexity: 0
+accuracy: 73.53%
+coverage: 4.30%
+max_comp_size: 5

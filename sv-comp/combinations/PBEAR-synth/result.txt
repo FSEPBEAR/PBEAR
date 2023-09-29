@@ -1,0 +1,31 @@
+--src data/sv-benchmarks/c/combinations/gcd_1+newton_1_6.i --wd results/combinations/ --unwind 1000 --synth-mode --synth-timeout 300 --synth-max-size 256 --synth-max-height 10 
+code parsing time: 0.501 sec
+
+select target function calls:
+gcd_test(x, y) (call id 12) influences 2 external nodes
+internal node ratio: 2.15% (2 of 93)
+
+predict complexity: (unwind 1000)
+criterion unwind: 1
+gcd_test(x, y): original cmplx: 3
+total cmplx: 8
+
+loading I/O examples:
+each logs of functions:
+gcd_test: 7114, output range: 93
+
+total number of I/O examples: 7114
+loading time: 0.15 sec
+
+synthesize stub:
+function gcd_test: 
+signed char __iv__return_expr_gcd_test;
+if((-1)>=(b%a)) __iv__return_expr_gcd_test = (0-(b%a)); else if((-1)>=a) __iv__return_expr_gcd_test = (0-a); else __iv__return_expr_gcd_test = (a-(b%a)); 
+__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+return __iv__return_expr_gcd_test;
+complexity: 2
+accuracy: 11.25%
+coverage: 92.47%
+# constraints: 5
+
+synthesizing time: 3600.018 sec

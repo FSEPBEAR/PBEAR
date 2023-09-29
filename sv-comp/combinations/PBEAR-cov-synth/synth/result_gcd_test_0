@@ -1,0 +1,9 @@
+(define-fun gcd_test ( (__iv__input_0_ Int) (__iv__input_1_ Int)) Int (+ 1 (ite (= 3 (% __iv__input_0_ (* 3 3))) 3 (ite (>= 0 (% 2 __iv__input_0_)) 0 (- 1 (% __iv__input_0_ 2))))))
+****************** statistics *******************
+size : 23
+time : 148.22 sec
+max_component_size : 5
+# components : 2010
+time for composition : 146.43 sec
+time for component generation : 1.79 sec
+**************************************************

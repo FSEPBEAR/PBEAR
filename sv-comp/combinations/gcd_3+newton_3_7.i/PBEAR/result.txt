@@ -1,0 +1,40 @@
+--src data/sv-benchmarks/c/combinations/gcd_3+newton_3_7.i --wd results/combinations/gcd_3+newton_3_7.i/ --unwind 1000 --synth-dir results/combinations/synth --synth-timeout 300 --synth-max-size 512 --synth-max-height 15 --sv-comp-mode 
+code parsing time: 0.527 sec
+
+select target function calls:
+gcd_test(x, y) (call id 16) influences 3 external nodes
+internal node ratio: 1.87% (2 of 107)
+
+find the best target combination:
+predict complexity: (unwind 1000)
+criterion unwind: 1
+gcd_test(x, y): original cmplx: 3, stub cmplx: 2
+total cmplx: 8
+
+Jul 18, 2023 6:08:09 PM iv_checker.select.TargetFunctionSelector printRank
+INFO: 
+1. gcd_test(x, y);  fitness: 4.000
+
+call gcd_test(x, y) (call id 16)
+Iteration 0:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%a)) __iv__return_expr_gcd_test = (0-(b%a)); else if((-1)>=a) __iv__return_expr_gcd_test = (0-a); else __iv__return_expr_gcd_test = (a-(b%a)); 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 2
+accuracy: 11.25%
+coverage: 92.47%
+# constraints: 5
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 126.59 sec
+
+verification results: 
+property 'assert(FALSE);' is TRUE alarm.
+
+total CBMC running time: 126.59 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec
+peak memory usage: 223.47 MB
