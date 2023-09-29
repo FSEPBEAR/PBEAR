@@ -1,0 +1,10 @@
+--src data/sv-benchmarks/c/seq-mthreaded/pals_floodmax.5.4.ufo.BOUNDED-10.pals.c --wd results/seq-mthreaded/pals_floodmax.5.4.ufo.BOUNDED-10.pals.c/refine --unwind 1000 --refine --run-original --sv-comp-mode 
+code parsing time: 2.586 sec
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.97 sec
+
+the property is TRUE alarm.
+peak memory usage: 71.14 MB
+
+total CBMC running time: 0.97 sec
