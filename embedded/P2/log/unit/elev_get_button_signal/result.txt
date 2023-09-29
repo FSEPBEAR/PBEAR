@@ -1,0 +1,120 @@
+-------------------------
+input:
+button=0
+floor=0
+path:
+__iv__nondet_input_elev_get_button_signal_1=0
+Node_5_283:1
+output:
+__iv__return_expr_elev_get_button_signal=0
+Iteration 1 (0s, 0.000s): covered 14 branches [3 reach funs, 34 reach branches].(14, 0)
+-------------------------
+input:
+button=0
+floor=0
+path:
+__iv__nondet_input_elev_get_button_signal_1=1
+Node_5_283:0
+output:
+__iv__return_expr_elev_get_button_signal=1
+Iteration 2 (0s, 0.020s): covered 15 branches [3 reach funs, 34 reach branches].(15, 14)
+-------------------------
+input:
+button=0
+floor=0
+path:
+__iv__nondet_input_elev_get_button_signal_1=4
+Iteration 3 (0s, 0.033s): covered 16 branches [3 reach funs, 34 reach branches].(16, 15)
+-------------------------
+input:
+button=0
+floor=0
+path:
+__iv__nondet_input_elev_get_button_signal_1=-1
+Iteration 4 (0s, 0.042s): covered 17 branches [3 reach funs, 34 reach branches].(17, 16)
+-------------------------
+input:
+button=-1
+floor=0
+path:
+Iteration 5 (0s, 0.091s): covered 20 branches [3 reach funs, 34 reach branches].(20, 17)
+-------------------------
+input:
+button=2
+floor=0
+path:
+__iv__nondet_input_elev_get_button_signal_1=0
+Node_5_283:1
+output:
+__iv__return_expr_elev_get_button_signal=0
+Iteration 6 (0s, 0.098s): covered 21 branches [3 reach funs, 34 reach branches].(21, 20)
+-------------------------
+input:
+button=2
+floor=0
+path:
+__iv__nondet_input_elev_get_button_signal_1=1
+Node_5_283:0
+output:
+__iv__return_expr_elev_get_button_signal=1
+Iteration 7 (0s, 0.105s): covered 21 branches [3 reach funs, 34 reach branches].(21, 21)
+-------------------------
+input:
+button=2
+floor=0
+path:
+__iv__nondet_input_elev_get_button_signal_1=4
+Iteration 8 (0s, 0.112s): covered 21 branches [3 reach funs, 34 reach branches].(21, 21)
+-------------------------
+input:
+button=2
+floor=0
+path:
+__iv__nondet_input_elev_get_button_signal_1=-1
+Iteration 9 (0s, 0.119s): covered 21 branches [3 reach funs, 34 reach branches].(21, 21)
+-------------------------
+input:
+button=1
+floor=0
+path:
+__iv__nondet_input_elev_get_button_signal_1=0
+Node_5_283:1
+output:
+__iv__return_expr_elev_get_button_signal=0
+Iteration 10 (0s, 0.167s): covered 22 branches [3 reach funs, 34 reach branches].(22, 21)
+-------------------------
+input:
+button=1
+floor=0
+path:
+__iv__nondet_input_elev_get_button_signal_1=1
+Node_5_283:0
+output:
+__iv__return_expr_elev_get_button_signal=1
+Iteration 11 (0s, 0.173s): covered 22 branches [3 reach funs, 34 reach branches].(22, 22)
+-------------------------
+input:
+button=1
+floor=0
+path:
+__iv__nondet_input_elev_get_button_signal_1=4
+Iteration 12 (0s, 0.182s): covered 22 branches [3 reach funs, 34 reach branches].(22, 22)
+-------------------------
+input:
+button=1
+floor=0
+path:
+__iv__nondet_input_elev_get_button_signal_1=-1
+Iteration 13 (0s, 0.190s): covered 22 branches [3 reach funs, 34 reach branches].(22, 22)
+-------------------------
+input:
+button=0
+floor=8
+path:
+Iteration 14 (0s, 0.234s): covered 23 branches [3 reach funs, 34 reach branches].(23, 22)
+-------------------------
+input:
+button=0
+floor=-1
+path:
+Iteration 15 (0s, 0.241s): covered 24 branches [3 reach funs, 34 reach branches].(24, 23)

@@ -1,0 +1,19 @@
+Parsing results/elevator/p2/filter/target.c
+Converting
+Type-checking target
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Running with 14 object bits, 50 offset bits (user-specified)
+Starting Bounded Model Checking
+Runtime Symex: 0.257772s
+size of program expression: 8565 steps
+simple slicing removed 0 assignments
+Generated 0 VCC(s), 0 remaining after simplification
+Runtime Postprocess Equation: 0.00131579s
+** Results:
+results/elevator/p2/filter/target.c function check_property_6_605
+[check_property_6_605.assertion.1] line 96936 assertion 0: SUCCESS
+** 0 of 1 failed (1 iterations)
+VERIFICATION SUCCESSFUL
