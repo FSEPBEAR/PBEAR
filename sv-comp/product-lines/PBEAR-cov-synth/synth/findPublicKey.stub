@@ -1,0 +1,17 @@
+outputs: __iv__return_expr_findPublicKey 
+logs: 
+{"Func":"findPublicKey","Input":[{"Var":"__ste_Client_Keyring1_User1","Val":0},{"Var":"__ste_Client_Keyring2_PublicKey0","Val":0},{"Var":"__ste_Client_Keyring2_PublicKey1","Val":-42},{"Var":"handle","Val":31},{"Var":"__ste_Client_Keyring2_User0","Val":0},{"Var":"userid","Val":0},{"Var":"__ste_Client_Keyring2_User1","Val":0},{"Var":"__ste_Client_Keyring0_PublicKey0","Val":0},{"Var":"__ste_Client_Keyring0_PublicKey1","Val":15},{"Var":"__ste_Client_Keyring0_User0","Val":-5},{"Var":"__ste_Client_Keyring0_User1","Val":0},{"Var":"__ste_Client_Keyring1_PublicKey0","Val":-3},{"Var":"__ste_Client_Keyring1_PublicKey1","Val":-5},{"Var":"__ste_Client_Keyring1_User0","Val":0}],"Output":[{"Var":"__iv__return_expr_findPublicKey","Val":0}],"InitOutput":[],}
+logs end
+SyGuS code:
+__iv__return_expr_findPublicKey:0
+SyGuS end
+assumes:
+__iv__return_expr_findPublicKey:1
+assumes end:
+signed int __iv__return_expr_findPublicKey;
+__iv__return_expr_findPublicKey = 0;
+return __iv__return_expr_findPublicKey;
+complexity: 0
+accuracy: 75.41%
+coverage: 0.88%
+max_comp_size: 1

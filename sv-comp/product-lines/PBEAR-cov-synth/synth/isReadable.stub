@@ -1,0 +1,26 @@
+outputs: __iv__return_expr_isReadable 
+logs: 
+{"Func":"isReadable","Input":[{"Var":"msg","Val":2},{"Var":"__SELECTED_FEATURE_Encrypt","Val":20},{"Var":"__ste_email_isEncrypted0","Val":-12},{"Var":"__ste_email_isEncrypted1","Val":-24}],"Output":[{"Var":"__iv__return_expr_isReadable","Val":0}],"InitOutput":[],}
+{"Func":"isReadable","Input":[{"Var":"msg","Val":-49},{"Var":"__SELECTED_FEATURE_Encrypt","Val":-29},{"Var":"__ste_email_isEncrypted0","Val":-55},{"Var":"__ste_email_isEncrypted1","Val":3}],"Output":[{"Var":"__iv__return_expr_isReadable","Val":1}],"InitOutput":[],}
+{"Func":"isReadable","Input":[{"Var":"msg","Val":1},{"Var":"__SELECTED_FEATURE_Encrypt","Val":-15},{"Var":"__ste_email_isEncrypted0","Val":0},{"Var":"__ste_email_isEncrypted1","Val":-6}],"Output":[{"Var":"__iv__return_expr_isReadable","Val":1}],"InitOutput":[],}
+{"Func":"isReadable","Input":[{"Var":"msg","Val":23},{"Var":"__SELECTED_FEATURE_Encrypt","Val":39},{"Var":"__ste_email_isEncrypted0","Val":17},{"Var":"__ste_email_isEncrypted1","Val":67}],"Output":[{"Var":"__iv__return_expr_isReadable","Val":1}],"InitOutput":[],}
+{"Func":"isReadable","Input":[{"Var":"msg","Val":1},{"Var":"__SELECTED_FEATURE_Encrypt","Val":-16},{"Var":"__ste_email_isEncrypted0","Val":100},{"Var":"__ste_email_isEncrypted1","Val":25}],"Output":[{"Var":"__iv__return_expr_isReadable","Val":0}],"InitOutput":[],}
+{"Func":"isReadable","Input":[{"Var":"msg","Val":-39},{"Var":"__SELECTED_FEATURE_Encrypt","Val":-41},{"Var":"__ste_email_isEncrypted0","Val":48},{"Var":"__ste_email_isEncrypted1","Val":-74}],"Output":[{"Var":"__iv__return_expr_isReadable","Val":1}],"InitOutput":[],}
+{"Func":"isReadable","Input":[{"Var":"msg","Val":-13},{"Var":"__SELECTED_FEATURE_Encrypt","Val":21},{"Var":"__ste_email_isEncrypted0","Val":8},{"Var":"__ste_email_isEncrypted1","Val":34}],"Output":[{"Var":"__iv__return_expr_isReadable","Val":1}],"InitOutput":[],}
+{"Func":"isReadable","Input":[{"Var":"msg","Val":1},{"Var":"__SELECTED_FEATURE_Encrypt","Val":13},{"Var":"__ste_email_isEncrypted0","Val":-15},{"Var":"__ste_email_isEncrypted1","Val":29}],"Output":[{"Var":"__iv__return_expr_isReadable","Val":0}],"InitOutput":[],}
+{"Func":"isReadable","Input":[{"Var":"msg","Val":1},{"Var":"__SELECTED_FEATURE_Encrypt","Val":-22},{"Var":"__ste_email_isEncrypted0","Val":-53},{"Var":"__ste_email_isEncrypted1","Val":-4}],"Output":[{"Var":"__iv__return_expr_isReadable","Val":0}],"InitOutput":[],}
+logs end
+SyGuS code:
+__iv__return_expr_isReadable:ite = 2 __iv__input_3_ ) 0 ite = 0 __iv__input_1_ ) 1 ite = 1 __iv__input_3_ ) 0 1 ) ) )
+SyGuS end
+assumes:
+__iv__return_expr_isReadable:__iv__return_expr_isReadable == 0 || __iv__return_expr_isReadable == 1
+assumes end:
+signed int __iv__return_expr_isReadable;
+if(2==msg) __iv__return_expr_isReadable = 0; else if(0==__ste_email_isEncrypted0) __iv__return_expr_isReadable = 1; else if(1==msg) __iv__return_expr_isReadable = 0; else __iv__return_expr_isReadable = 1; 
+__CPROVER_assume(__iv__return_expr_isReadable == 0 || __iv__return_expr_isReadable == 1);
+return __iv__return_expr_isReadable;
+complexity: 3
+accuracy: 98.20%
+coverage: 100.00%
+max_comp_size: 1

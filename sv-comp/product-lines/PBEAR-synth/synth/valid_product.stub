@@ -1,0 +1,24 @@
+outputs: __iv__return_expr_valid_product 
+logs: 
+{"Func":"valid_product","Input":[{"Var":"__SELECTED_FEATURE_Base","Val":5},{"Var":"__SELECTED_FEATURE_Decrypt","Val":39},{"Var":"__SELECTED_FEATURE_Encrypt","Val":-56},{"Var":"__SELECTED_FEATURE_Keys","Val":-49},{"Var":"__SELECTED_FEATURE_Sign","Val":-47},{"Var":"__SELECTED_FEATURE_Verify","Val":23}],"Output":[{"Var":"__iv__return_expr_valid_product","Val":1}],"InitOutput":[],}
+{"Func":"valid_product","Input":[{"Var":"__SELECTED_FEATURE_Base","Val":-18},{"Var":"__SELECTED_FEATURE_Decrypt","Val":0},{"Var":"__SELECTED_FEATURE_Encrypt","Val":-29},{"Var":"__SELECTED_FEATURE_Keys","Val":0},{"Var":"__SELECTED_FEATURE_Sign","Val":-1},{"Var":"__SELECTED_FEATURE_Verify","Val":-25}],"Output":[{"Var":"__iv__return_expr_valid_product","Val":0}],"InitOutput":[],}
+{"Func":"valid_product","Input":[{"Var":"__SELECTED_FEATURE_Base","Val":-1},{"Var":"__SELECTED_FEATURE_Decrypt","Val":5},{"Var":"__SELECTED_FEATURE_Encrypt","Val":0},{"Var":"__SELECTED_FEATURE_Keys","Val":0},{"Var":"__SELECTED_FEATURE_Sign","Val":-11},{"Var":"__SELECTED_FEATURE_Verify","Val":2}],"Output":[{"Var":"__iv__return_expr_valid_product","Val":0}],"InitOutput":[],}
+{"Func":"valid_product","Input":[{"Var":"__SELECTED_FEATURE_Base","Val":0},{"Var":"__SELECTED_FEATURE_Decrypt","Val":-1},{"Var":"__SELECTED_FEATURE_Encrypt","Val":29},{"Var":"__SELECTED_FEATURE_Keys","Val":-8},{"Var":"__SELECTED_FEATURE_Sign","Val":-32},{"Var":"__SELECTED_FEATURE_Verify","Val":12}],"Output":[{"Var":"__iv__return_expr_valid_product","Val":0}],"InitOutput":[],}
+{"Func":"valid_product","Input":[{"Var":"__SELECTED_FEATURE_Base","Val":-31},{"Var":"__SELECTED_FEATURE_Decrypt","Val":-16},{"Var":"__SELECTED_FEATURE_Encrypt","Val":11},{"Var":"__SELECTED_FEATURE_Keys","Val":-56},{"Var":"__SELECTED_FEATURE_Sign","Val":0},{"Var":"__SELECTED_FEATURE_Verify","Val":0}],"Output":[{"Var":"__iv__return_expr_valid_product","Val":1}],"InitOutput":[],}
+{"Func":"valid_product","Input":[{"Var":"__SELECTED_FEATURE_Base","Val":53},{"Var":"__SELECTED_FEATURE_Decrypt","Val":-3},{"Var":"__SELECTED_FEATURE_Encrypt","Val":17},{"Var":"__SELECTED_FEATURE_Keys","Val":12},{"Var":"__SELECTED_FEATURE_Sign","Val":-29},{"Var":"__SELECTED_FEATURE_Verify","Val":-40}],"Output":[{"Var":"__iv__return_expr_valid_product","Val":1}],"InitOutput":[],}
+{"Func":"valid_product","Input":[{"Var":"__SELECTED_FEATURE_Base","Val":-2},{"Var":"__SELECTED_FEATURE_Decrypt","Val":42},{"Var":"__SELECTED_FEATURE_Encrypt","Val":27},{"Var":"__SELECTED_FEATURE_Keys","Val":16},{"Var":"__SELECTED_FEATURE_Sign","Val":9},{"Var":"__SELECTED_FEATURE_Verify","Val":11}],"Output":[{"Var":"__iv__return_expr_valid_product","Val":1}],"InitOutput":[],}
+logs end
+SyGuS code:
+__iv__return_expr_valid_product:ite = 0 __iv__input_0_ ) 0 ite = 0 __iv__input_3_ ) __iv__input_3_ 1 ) )
+SyGuS end
+assumes:
+__iv__return_expr_valid_product:__iv__return_expr_valid_product == 0 || __iv__return_expr_valid_product == 1
+assumes end:
+signed int __iv__return_expr_valid_product;
+if(0==__SELECTED_FEATURE_Base) __iv__return_expr_valid_product = 0; else if(0==__SELECTED_FEATURE_Keys) __iv__return_expr_valid_product = __SELECTED_FEATURE_Keys; else __iv__return_expr_valid_product = 1; 
+__CPROVER_assume(__iv__return_expr_valid_product == 0 || __iv__return_expr_valid_product == 1);
+return __iv__return_expr_valid_product;
+complexity: 2
+accuracy: 80.42%
+coverage: 100.00%
+max_comp_size: 1

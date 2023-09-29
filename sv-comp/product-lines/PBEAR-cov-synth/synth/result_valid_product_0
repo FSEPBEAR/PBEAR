@@ -1,0 +1,9 @@
+(define-fun valid_product ( (__iv__input_0_ Int) (__iv__input_1_ Int) (__iv__input_2_ Int) (__iv__input_3_ Int) (__iv__input_4_ Int) (__iv__input_5_ Int)) Int (ite (= 5 __iv__input_0_) 1 (ite (= -1 __iv__input_3_) 0 (ite (= __iv__input_5_ __iv__input_4_) __iv__input_2_ (ite (= 1 __iv__input_5_) __iv__input_2_ (ite (= -1 __iv__input_4_) __iv__input_2_ (ite (>= __iv__input_3_ 0) (ite (= -1 __iv__input_0_) __iv__input_4_ (ite (>= __iv__input_2_ 1) 1 (ite (>= 1 __iv__input_1_) (ite (>= __iv__input_3_ 1) (ite (< __iv__input_1_ -1) __iv__input_2_ 1) __iv__input_3_) 1))) 1)))))))
+****************** statistics *******************
+size : 56
+time : 0.05 sec
+max_component_size : 1
+# components : 24
+time for composition : 0.05 sec
+time for component generation : 0.00 sec
+**************************************************

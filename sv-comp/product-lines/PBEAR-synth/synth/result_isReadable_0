@@ -1,0 +1,9 @@
+(define-fun isReadable ( (__iv__input_0_ Int) (__iv__input_1_ Int) (__iv__input_2_ Int) (__iv__input_3_ Int)) Int (ite (>= __iv__input_2_ __iv__input_3_) 0 1))
+****************** statistics *******************
+size : 6
+time : 0.01 sec
+max_component_size : 1
+# components : 20
+time for composition : 0.01 sec
+time for component generation : 0.00 sec
+**************************************************

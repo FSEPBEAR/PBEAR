@@ -1,0 +1,40 @@
+(set-logic LIA)
+
+(synth-fun valid_product ( (__iv__input_0_ Int) (__iv__input_1_ Int) (__iv__input_2_ Int) (__iv__input_3_ Int) (__iv__input_4_ Int) (__iv__input_5_ Int)) Int
+((Start Int (ntInt))
+(ntInt Int (
+	0 1 2 3 -1 5 
+	__iv__input_0_ __iv__input_1_ __iv__input_2_ __iv__input_3_ __iv__input_4_ __iv__input_5_ 
+	(* ntInt ntInt)
+	(ite ntBool ntInt ntInt)
+	(+ ntInt ntInt)
+	(- ntInt ntInt)
+))
+(ntBool Bool (
+	(not ntBool)
+	(or ntBool ntBool)
+	(and ntBool ntBool)
+	(< ntInt ntInt)
+	(= ntInt ntInt)
+	(>= ntInt ntInt)
+))
+))
+
+(constraint (=(valid_product 22 22 -10 -26 -110 -42) 1))
+(constraint (=(valid_product 11 0 -18 -1 -1 7) 0))
+(constraint (=(valid_product 69 -1 -22 0 -5 -7) 0))
+(constraint (=(valid_product 6 0 -2 0 41 31) 0))
+(constraint (=(valid_product 18 -32 67 67 43 53) 1))
+(constraint (=(valid_product -13 -1 -7 85 24 47) 1))
+(constraint (=(valid_product -4 17 -47 22 45 33) 1))
+(constraint (=(valid_product 5 23 32 -6 -1 13) 1))
+(constraint (=(valid_product 6 23 0 -19 -1 -13) 0))
+(constraint (=(valid_product 8 26 -54 -21 13 -21) 1))
+(constraint (=(valid_product -1 27 16 0 0 52) 0))
+(constraint (=(valid_product -42 1 0 0 13 -16) 0))
+(constraint (=(valid_product 28 -12 0 49 -35 30) 0))
+(constraint (=(valid_product -16 -7 0 68 69 1) 0))
+(constraint (=(valid_product -14 -9 0 -23 -1 -1) 0))
+(constraint (=(valid_product 16 0 0 0 24 0) 0))
+(constraint (=(valid_product 0 0 0 0 -36 30) 0))
+(check-synth)

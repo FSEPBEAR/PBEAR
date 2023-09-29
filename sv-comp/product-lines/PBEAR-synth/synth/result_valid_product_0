@@ -1,0 +1,9 @@
+(define-fun valid_product ( (__iv__input_0_ Int) (__iv__input_1_ Int) (__iv__input_2_ Int) (__iv__input_3_ Int) (__iv__input_4_ Int) (__iv__input_5_ Int)) Int (ite (>= -1 __iv__input_1_) 1 0))
+****************** statistics *******************
+size : 6
+time : 0.01 sec
+max_component_size : 1
+# components : 24
+time for composition : 0.01 sec
+time for component generation : 0.00 sec
+**************************************************

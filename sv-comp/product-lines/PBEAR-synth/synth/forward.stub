@@ -1,0 +1,24 @@
+outputs: queue_empty queued_client queued_message 
+logs: 
+{"Func":"forward","Input":[{"Var":"client","Val":194},{"Var":"msg","Val":-15},{"Var":"__SELECTED_FEATURE_Encrypt","Val":-37},{"Var":"__SELECTED_FEATURE_Sign","Val":37},{"Var":"__SELECTED_FEATURE_Verify","Val":39}],"Output":[{"Var":"queue_empty","Val":0},{"Var":"queued_client","Val":194},{"Var":"queued_message","Val":-15}],"InitOutput":[{"Var":"queue_empty","Val":1},{"Var":"queued_client","Val":0},{"Var":"queued_message","Val":0}],}
+{"Func":"forward","Input":[{"Var":"client","Val":194},{"Var":"msg","Val":-15},{"Var":"__SELECTED_FEATURE_Encrypt","Val":-37},{"Var":"__SELECTED_FEATURE_Sign","Val":37},{"Var":"__SELECTED_FEATURE_Verify","Val":39}],"Output":[{"Var":"queue_empty","Val":0},{"Var":"queued_client","Val":194},{"Var":"queued_message","Val":-15}],"InitOutput":[{"Var":"queue_empty","Val":1},{"Var":"queued_client","Val":0},{"Var":"queued_message","Val":0}],}
+{"Func":"forward","Input":[{"Var":"client","Val":194},{"Var":"msg","Val":-15},{"Var":"__SELECTED_FEATURE_Encrypt","Val":-37},{"Var":"__SELECTED_FEATURE_Sign","Val":37},{"Var":"__SELECTED_FEATURE_Verify","Val":39}],"Output":[{"Var":"queue_empty","Val":0},{"Var":"queued_client","Val":194},{"Var":"queued_message","Val":-15}],"InitOutput":[{"Var":"queue_empty","Val":1},{"Var":"queued_client","Val":0},{"Var":"queued_message","Val":0}],}
+logs end
+SyGuS code:
+queue_empty:0
+queued_client:__iv__input_3_
+queued_message:__iv__input_4_
+SyGuS end
+assumes:
+queue_empty:queue_empty == 0
+queued_client:1
+queued_message:1
+assumes end:
+queue_empty = 0;
+__CPROVER_assume(queue_empty == 0);
+queued_client = client;
+queued_message = msg;
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+max_comp_size: 1

@@ -1,0 +1,20 @@
+outputs: __iv__return_expr_isKeyPairValid 
+logs: 
+{"Func":"isKeyPairValid","Input":[{"Var":"publicKey","Val":54},{"Var":"privateKey","Val":0}],"Output":[{"Var":"__iv__return_expr_isKeyPairValid","Val":0}],"InitOutput":[],}
+{"Func":"isKeyPairValid","Input":[{"Var":"publicKey","Val":23},{"Var":"privateKey","Val":23}],"Output":[{"Var":"__iv__return_expr_isKeyPairValid","Val":1}],"InitOutput":[],}
+{"Func":"isKeyPairValid","Input":[{"Var":"publicKey","Val":-160},{"Var":"privateKey","Val":15}],"Output":[{"Var":"__iv__return_expr_isKeyPairValid","Val":0}],"InitOutput":[],}
+logs end
+SyGuS code:
+__iv__return_expr_isKeyPairValid:ite = __iv__input_1_ __iv__input_0_ ) 1 0 )
+SyGuS end
+assumes:
+__iv__return_expr_isKeyPairValid:__iv__return_expr_isKeyPairValid == 0 || __iv__return_expr_isKeyPairValid == 1
+assumes end:
+signed int __iv__return_expr_isKeyPairValid;
+if(publicKey==privateKey) __iv__return_expr_isKeyPairValid = 1; else __iv__return_expr_isKeyPairValid = 0; 
+__CPROVER_assume(__iv__return_expr_isKeyPairValid == 0 || __iv__return_expr_isKeyPairValid == 1);
+return __iv__return_expr_isKeyPairValid;
+complexity: 1
+accuracy: 99.98%
+coverage: 100.00%
+max_comp_size: 1

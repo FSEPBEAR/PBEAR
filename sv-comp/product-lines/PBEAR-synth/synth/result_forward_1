@@ -1,0 +1,9 @@
+(define-fun forward ( (__iv__input_0_ Int) (__iv__input_1_ Int) (__iv__input_2_ Int) (__iv__input_3_ Int) (__iv__input_4_ Int)) Int __iv__input_3_)
+****************** statistics *******************
+size : 1
+time : 0.00 sec
+max_component_size : 1
+# components : 22
+time for composition : 0.00 sec
+time for component generation : 0.00 sec
+**************************************************
