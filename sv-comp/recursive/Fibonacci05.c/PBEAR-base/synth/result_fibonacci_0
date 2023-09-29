@@ -1,0 +1,9 @@
+(define-fun fibonacci ( (__iv__input_0_ Int)) Int (ite (>= __iv__input_0_ (- (* 5 5) __iv__input_0_)) (ite (>= __iv__input_0_ (* 2 (+ 5 2))) (* (- 0 (+ 5 __iv__input_0_)) (+ (- -1 (* 5 __iv__input_0_)) (+ 2 (+ __iv__input_0_ __iv__input_0_)))) (- (* 5 (+ 2 __iv__input_0_)) (+ (* __iv__input_0_ (- -1 __iv__input_0_)) (- (* 5 5) 1)))) (ite (= __iv__input_0_ (+ 5 5)) (+ 5 (* 5 __iv__input_0_)) (ite (and (>= __iv__input_0_ 2) (< __iv__input_0_ 5)) (- __iv__input_0_ 1) (ite (or (>= 1 __iv__input_0_) (= 5 __iv__input_0_)) __iv__input_0_ (* __iv__input_0_ __iv__input_0_))))))
+****************** statistics *******************
+size : 84
+time : 0.69 sec
+max_component_size : 5
+# components : 317
+time for composition : 0.59 sec
+time for component generation : 0.09 sec
+**************************************************

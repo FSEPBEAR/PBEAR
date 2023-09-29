@@ -1,0 +1,10 @@
+--src data/sv-benchmarks/c/recursive/Fibonacci05.c --wd results/recursive/Fibonacci05.c/refine --unwind 1000 --refine --run-original --sv-comp-mode 
+code parsing time: 0.432 sec
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 3.534 sec
+
+the property is TRUE alarm.
+peak memory usage: 299.54 MB
+
+total CBMC running time: 3.534 sec

@@ -1,0 +1,3 @@
+int __iv__current_func_call;
+signed int fibonacci(signed int n);
+void reach_error();

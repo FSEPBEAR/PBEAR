@@ -1,0 +1,30 @@
+typedef unsigned char __CPROVER_bool;
+typedef unsigned int __CPROVER_size_t;
+typedef unsigned int size_t;
+typedef unsigned int time_t;
+typedef unsigned short int wchar_t;
+void _iv_() {signed int x;
+x = __VERIFIER_nondet_signed_int();
+signed int result;
+__iv__current_func_call = 1;
+result=fibonacci(x);
+!(x != 5 || result == 3);
+return 0;
+__iv__current_func_call = 2;
+reach_error();
+abort();
+return __VERIFIER_nondet_signed_int();
+!(n < 1);
+return 0;
+!(n == 1);
+return 1;
+signed int return_value_fibonacci;
+__iv__current_func_call = 4;
+return_value_fibonacci=fibonacci(n - 1);
+signed int return_value_fibonacci_0;
+__iv__current_func_call = 5;
+return_value_fibonacci_0=fibonacci(n - 2);
+return return_value_fibonacci + return_value_fibonacci_0;
+assert(0 != 0);
+
+}

@@ -1,0 +1,24 @@
+outputs: __iv__return_expr_fibonacci 
+logs: 
+{"Func":"fibonacci","Input":[{"Var":"n","Val":11}],"Output":[{"Var":"__iv__return_expr_fibonacci","Val":89}],"InitOutput":[],}
+{"Func":"fibonacci","Input":[{"Var":"n","Val":14}],"Output":[{"Var":"__iv__return_expr_fibonacci","Val":377}],"InitOutput":[],}
+{"Func":"fibonacci","Input":[{"Var":"n","Val":-33}],"Output":[{"Var":"__iv__return_expr_fibonacci","Val":0}],"InitOutput":[],}
+{"Func":"fibonacci","Input":[{"Var":"n","Val":1}],"Output":[{"Var":"__iv__return_expr_fibonacci","Val":1}],"InitOutput":[],}
+{"Func":"fibonacci","Input":[{"Var":"n","Val":3}],"Output":[{"Var":"__iv__return_expr_fibonacci","Val":2}],"InitOutput":[],}
+{"Func":"fibonacci","Input":[{"Var":"n","Val":13}],"Output":[{"Var":"__iv__return_expr_fibonacci","Val":233}],"InitOutput":[],}
+{"Func":"fibonacci","Input":[{"Var":"n","Val":4}],"Output":[{"Var":"__iv__return_expr_fibonacci","Val":3}],"InitOutput":[],}
+{"Func":"fibonacci","Input":[{"Var":"n","Val":12}],"Output":[{"Var":"__iv__return_expr_fibonacci","Val":144}],"InitOutput":[],}
+logs end
+SyGuS code:
+__iv__return_expr_fibonacci:ite or >= __iv__input_0_ 5 ) = 1 __iv__input_0_ ) ) ite >= 2 - * 5 3 ) __iv__input_0_ ) ) ite = 5 - __iv__input_0_ + 5 3 ) ) ) + * __iv__input_0_ + 5 3 ) ) + * 3 + 5 __iv__input_0_ ) ) * 5 * 5 3 ) ) ) ) * - -1 + __iv__input_0_ __iv__input_0_ ) ) - 1 __iv__input_0_ ) ) ) ite = 2 - __iv__input_0_ * 3 3 ) ) ) + * 3 __iv__input_0_ ) - * 5 __iv__input_0_ ) -1 ) ) * __iv__input_0_ __iv__input_0_ ) ) ) ite and >= 5 __iv__input_0_ ) >= __iv__input_0_ 2 ) ) - __iv__input_0_ 1 ) 0 ) )
+SyGuS end
+assumes:
+__iv__return_expr_fibonacci:1
+assumes end:
+signed int __iv__return_expr_fibonacci;
+if((n>=5)||(1==n)) if(2>=(15-n)) if(5==(n-8)) __iv__return_expr_fibonacci = ((n*8)+((3*(5+n))+75)); else __iv__return_expr_fibonacci = (((-1)-(n+n))*(1-n)); else if(2==(n-9)) __iv__return_expr_fibonacci = ((3*n)+((5*n)-(-1))); else __iv__return_expr_fibonacci = (n*n); else if((5>=n)&&(n>=2)) __iv__return_expr_fibonacci = (n-1); else __iv__return_expr_fibonacci = 0; 
+return __iv__return_expr_fibonacci;
+complexity: 5
+accuracy: 98.34%
+coverage: 47.06%
+max_comp_size: 5
