@@ -1,0 +1,219 @@
+--src data/elev/src/p3/elev.c --wd results/elevator/p3/origin/ --unwind 1000 --object-bits 14 --run-original 
+code parsing time: 0.712 sec
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 2.284 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 20, timeout: 86400 sec)
+cbmc running time: 6.685 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 30, timeout: 86400 sec)
+cbmc running time: 14.472 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 40, timeout: 86400 sec)
+cbmc running time: 24.302 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 50, timeout: 86400 sec)
+cbmc running time: 34.581 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 60, timeout: 86400 sec)
+cbmc running time: 51.862 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 70, timeout: 86400 sec)
+cbmc running time: 65.812 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 80, timeout: 86400 sec)
+cbmc running time: 122.896 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 90, timeout: 86400 sec)
+cbmc running time: 156.988 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 100, timeout: 86400 sec)
+cbmc running time: 217.874 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 110, timeout: 86400 sec)
+cbmc running time: 272.413 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 120, timeout: 86400 sec)
+cbmc running time: 299.979 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 130, timeout: 86400 sec)
+cbmc running time: 333.981 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 140, timeout: 86400 sec)
+cbmc running time: 1023.211 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 150, timeout: 86400 sec)
+cbmc running time: 636.03 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 160, timeout: 86400 sec)
+cbmc running time: 829.841 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 170, timeout: 86400 sec)
+cbmc running time: 680.241 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 180, timeout: 86400 sec)
+cbmc running time: 1340.596 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 190, timeout: 86400 sec)
+cbmc running time: 882.997 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 200, timeout: 86400 sec)
+cbmc running time: 1814.341 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 210, timeout: 86400 sec)
+cbmc running time: 2002.06 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 220, timeout: 86400 sec)
+cbmc running time: 2900.029 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 230, timeout: 86400 sec)
+cbmc running time: 4431.014 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 240, timeout: 86400 sec)
+cbmc running time: 2257.555 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 250, timeout: 86400 sec)
+cbmc running time: 2686.322 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 260, timeout: 86400 sec)
+cbmc running time: 4776.065 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 270, timeout: 86400 sec)
+cbmc running time: 7271.28 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 280, timeout: 86400 sec)
+cbmc running time: 9505.879 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 290, timeout: 86400 sec)
+cbmc running time: 4584.223 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 300, timeout: 86400 sec)
+cbmc running time: 5272.834 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 310, timeout: 86400 sec)
+cbmc running time: 7456.366 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 320, timeout: 86400 sec)
+cbmc running time: 6102.81 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 330, timeout: 86400 sec)
+cbmc running time: 10951.533 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 340, timeout: 86400 sec)
+cbmc running time: 14280.295 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 350, timeout: 86400 sec)
+cbmc running time: 11568.212 sec
+
+verification results: 
+property 'assert((state != 3));' is not violated.
+
+run cbmc: (unwind: 360, timeout: 86400 sec)
+cbmc running time: 1023.908 sec
+
+verification results: 
+ran out of memory
+total CBMC running time: 105881.766 sec
