@@ -1,0 +1,68 @@
+--src data/elev/src/p1/elev.c --wd results/elevator/ --unwind 1000 --synth-mode --synth-timeout 300 --synth-max-size 256 --synth-max-height 10 
+code parsing time: 0.817 sec
+
+select target function calls:
+elev_get_button_signal((elev_button_type_t)(button), floorNum) (call id 49) influences 5 external nodes
+internal node ratio: 0.85% (6 of 709)
+
+floorIsOrdered(previousMainFloor, motorDirection) (call id 20) influences 13 external nodes
+internal node ratio: 19.32% (137 of 709)
+
+isButtonPressed() (call id 11) influences 7 external nodes
+internal node ratio: 2.96% (21 of 709)
+
+floorIsOrdered(previousMainFloor, motorDirection) (call id 14) influences 13 external nodes
+internal node ratio: 12.69% (90 of 709)
+
+predict complexity: (unwind 1000)
+criterion unwind: 2
+floorIsOrdered(previousMainFloor, motorDirection): original cmplx: 25
+isButtonPressed(): original cmplx: 10
+elev_get_button_signal((elev_button_type_t)(button), floorNum): original cmplx: 1
+total cmplx: 368
+
+loading I/O examples:
+each logs of functions:
+elev_get_button_signal: 7, output range: 2
+floorIsOrdered: 8644, output range: 2
+isButtonPressed: 9883, output range: 2
+
+total number of I/O examples: 18534
+loading time: 14.33 sec
+
+synthesize stub:
+function elev_get_button_signal: 2 iterations
+function floorIsOrdered: 771 iterations
+function isButtonPressed: 511 iterations
+function elev_get_button_signal: 
+signed int __iv__return_expr_elev_get_button_signal;
+signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+return __iv__return_expr_elev_get_button_signal;
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 2
+
+function floorIsOrdered: 
+signed int __iv__return_expr_floorIsOrdered;
+if(1==orderMatrix[2][0]) __iv__return_expr_floorIsOrdered = 1; else if(motorDir>=2) __iv__return_expr_floorIsOrdered = 0; else if(orderMatrix[0][3]==motorDir) __iv__return_expr_floorIsOrdered = 1; else __iv__return_expr_floorIsOrdered = 0; 
+__CPROVER_assume(__iv__return_expr_floorIsOrdered == 0 || __iv__return_expr_floorIsOrdered == 1);
+return __iv__return_expr_floorIsOrdered;
+complexity: 3
+accuracy: 77.56%
+coverage: 100.00%
+# constraints: 9
+
+function isButtonPressed: 
+signed int __iv__return_expr_isButtonPressed;
+if(1==orderMatrix[0][0]) __iv__return_expr_isButtonPressed = orderMatrix[0][0]; else if(1==orderMatrix[0][3]) __iv__return_expr_isButtonPressed = 1; else if(1==orderMatrix[2][1]) __iv__return_expr_isButtonPressed = 1; else __iv__return_expr_isButtonPressed = 0; 
+__CPROVER_assume(__iv__return_expr_isButtonPressed == 0 || __iv__return_expr_isButtonPressed == 1);
+return __iv__return_expr_isButtonPressed;
+complexity: 3
+accuracy: 83.83%
+coverage: 100.00%
+# constraints: 10
+
+synthesizing time: 3600.019 sec
