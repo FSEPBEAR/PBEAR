@@ -1,0 +1,80 @@
+Parsing results/combinations/gcd_3+newton_1_4.i/target.c
+Converting
+Type-checking target
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Running with 8 object bits, 56 offset bits (default)
+Starting Bounded Model Checking
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+Runtime Symex: 0.00644983s
+size of program expression: 146 steps
+simple slicing removed 11 assignments
+Generated 2 VCC(s), 2 remaining after simplification
+Runtime Postprocess Equation: 1.7614e-05s
+Passing problem to propositional reduction
+converting SSA
+Runtime Convert SSA: 0.0718482s
+Running propositional reduction
+Post-processing
+Runtime Post-process: 2.5362e-05s
+Solving with MiniSAT 2.2.1 with simplifier
+58597 variables, 268440 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 39.7404s
+Runtime decision procedure: 39.8123s
+Building error trace
+** Results:
+results/combinations/gcd_3+newton_1_4.i/target.c function reach_error
+[reach_error.assertion.1] line 94 assertion FALSE: FAILURE
+Trace for reach_error.assertion.1:
+State 24 file results/combinations/gcd_3+newton_1_4.i/target.c function main line 25 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_int=0 (00000000 00000000 00000000 00000000)
+State 25 file results/combinations/gcd_3+newton_1_4.i/target.c function main line 26 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_int=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 30 file results/combinations/gcd_3+newton_1_4.i/target.c function main2 line 37 thread 0
+----------------------------------------------------
+  IN=0.0f (00000000 00000000 00000000 00000000)
+State 31 file results/combinations/gcd_3+newton_1_4.i/target.c function main2 line 38 thread 0
+----------------------------------------------------
+  IN=-0.659625f (10111111 00101000 11011101 00110011)
+__iv__test_case:-0.659625
+State 35 file results/combinations/gcd_3+newton_1_4.i/target.c function main2 line 40 thread 0
+----------------------------------------------------
+  cond=1 (00000000 00000000 00000000 00000001)
+State 39 file results/combinations/gcd_3+newton_1_4.i/target.c function main2 line 41 thread 0
+----------------------------------------------------
+  x=0.0f (00000000 00000000 00000000 00000000)
+State 40 file results/combinations/gcd_3+newton_1_4.i/target.c function main2 line 42 thread 0
+----------------------------------------------------
+  return_value_f=0.0f (00000000 00000000 00000000 00000000)
+State 43 file results/combinations/gcd_3+newton_1_4.i/target.c function main2 line 43 thread 0
+----------------------------------------------------
+  x=-0.659625f (10111111 00101000 11011101 00110011)
+State 46 file results/combinations/gcd_3+newton_1_4.i/target.c function main2 line 43 thread 0
+----------------------------------------------------
+  return_value_f=-0.612842f (10111111 00011100 11100011 00111011)
+State 47 file results/combinations/gcd_3+newton_1_4.i/target.c function main2 line 44 thread 0
+----------------------------------------------------
+  return_value_fp=0.0f (00000000 00000000 00000000 00000000)
+State 50 file results/combinations/gcd_3+newton_1_4.i/target.c function main2 line 45 thread 0
+----------------------------------------------------
+  x=-0.659625f (10111111 00101000 11011101 00110011)
+State 53 file results/combinations/gcd_3+newton_1_4.i/target.c function main2 line 45 thread 0
+----------------------------------------------------
+  return_value_fp=0.79045f (00111111 01001010 01011010 11101100)
+State 54 file results/combinations/gcd_3+newton_1_4.i/target.c function main2 line 46 thread 0
+----------------------------------------------------
+  x=0.115683f (00111101 11101100 11101011 00110000)
+violated property: Node_9_105
+Violated property:
+  file results/combinations/gcd_3+newton_1_4.i/target.c function reach_error line 94 thread 0
+  assertion FALSE
+  0 != 0
+** 1 of 1 failed (2 iterations)
+VERIFICATION FAILED

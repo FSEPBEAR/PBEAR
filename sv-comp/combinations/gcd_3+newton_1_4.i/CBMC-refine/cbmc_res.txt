@@ -1,0 +1,411 @@
+Parsing data/sv-benchmarks/c/combinations/gcd_3+newton_1_4.i
+Converting
+Type-checking gcd_3+newton_1_4
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Running with 8 object bits, 56 offset bits (default)
+Starting Bounded Model Checking
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+Runtime Symex: 0.0067103s
+size of program expression: 222 steps
+simple slicing removed 11 assignments
+Generated 2 VCC(s), 2 remaining after simplification
+Runtime Postprocess Equation: 1.9688e-05s
+Passing problem to refinement loop with MiniSAT 2.2.1 with simplifier
+converting SSA
+Runtime Convert SSA: 0.00552861s
+Running refinement loop with MiniSAT 2.2.1 with simplifier
+BV-Refinement: post-processing
+BV-Refinement: iteration 1
+2425 variables, 3694 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '24/floatbv_minus' (state 0)
+Found spurious '33/floatbv_minus' (state 0)
+Found spurious '34/floatbv_div' (state 0)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 2
+2438 variables, 2157 clauses
+SAT checker: instance is UNSATISFIABLE
+Found assumption for '23/floatbv_plus' in proof (state 0)
+Found assumption for '24/floatbv_minus' in proof (state 0)
+BV-Refinement: got UNSAT, and the proof fails, refining
+BV-Refinement: iteration 3
+2438 variables, 2139 clauses
+SAT checker: instance is UNSATISFIABLE
+Found assumption for '0/mod' in proof (state 0)
+Found assumption for '12/floatbv_minus' in proof (state 0)
+Found assumption for '14/floatbv_mult' in proof (state 0)
+Found assumption for '15/floatbv_mult' in proof (state 0)
+Found assumption for '17/floatbv_mult' in proof (state 0)
+Found assumption for '18/floatbv_mult' in proof (state 0)
+Found assumption for '20/floatbv_mult' in proof (state 0)
+Found assumption for '21/floatbv_mult' in proof (state 0)
+Found assumption for '26/floatbv_mult' in proof (state 0)
+Found assumption for '28/floatbv_mult' in proof (state 0)
+Found assumption for '29/floatbv_mult' in proof (state 0)
+Found assumption for '31/floatbv_mult' in proof (state 0)
+Found assumption for '32/floatbv_mult' in proof (state 0)
+Found assumption for '33/floatbv_minus' in proof (state 0)
+BV-Refinement: got UNSAT, and the proof fails, refining
+BV-Refinement: iteration 4
+2438 variables, 2139 clauses
+SAT checker: instance is UNSATISFIABLE
+Found assumption for '33/floatbv_minus' in proof (state 1)
+Found assumption for '34/floatbv_div' in proof (state 0)
+BV-Refinement: got UNSAT, and the proof fails, refining
+BV-Refinement: iteration 5
+2438 variables, 2139 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '22/floatbv_plus' (state 0)
+Found spurious '24/floatbv_minus' (state 1)
+Found spurious '25/floatbv_div' (state 0)
+Found spurious '33/floatbv_minus' (state 1)
+Found spurious '34/floatbv_div' (state 1)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 6
+2459 variables, 2592 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '10/floatbv_plus' (state 0)
+Found spurious '23/floatbv_plus' (state 0)
+Found spurious '33/floatbv_minus' (state 2)
+Found spurious '34/floatbv_div' (state 2)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 7
+2479 variables, 2983 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '23/floatbv_plus' (state 1)
+Found spurious '27/floatbv_div' (state 0)
+Found spurious '33/floatbv_minus' (state 3)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 8
+2492 variables, 3234 clauses
+SAT checker: instance is UNSATISFIABLE
+Found assumption for '22/floatbv_plus' in proof (state 0)
+Found assumption for '23/floatbv_plus' in proof (state 1)
+Found assumption for '24/floatbv_minus' in proof (state 1)
+Found assumption for '25/floatbv_div' in proof (state 0)
+Found assumption for '27/floatbv_div' in proof (state 0)
+Found assumption for '29/floatbv_mult' in proof (state 1)
+Found assumption for '32/floatbv_mult' in proof (state 1)
+BV-Refinement: got UNSAT, and the proof fails, refining
+BV-Refinement: iteration 9
+2492 variables, 3216 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '22/floatbv_plus' (state 1)
+Found spurious '27/floatbv_div' (state 1)
+Found spurious '28/floatbv_mult' (state 0)
+Found spurious '32/floatbv_mult' (state 0)
+Found spurious '33/floatbv_minus' (state 4)
+Found spurious '34/floatbv_div' (state 3)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 10
+2520 variables, 3810 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '22/floatbv_plus' (state 2)
+Found spurious '23/floatbv_plus' (state 2)
+Found spurious '24/floatbv_minus' (state 2)
+Found spurious '25/floatbv_div' (state 1)
+Found spurious '26/floatbv_mult' (state 0)
+Found spurious '27/floatbv_div' (state 2)
+Found spurious '28/floatbv_mult' (state 1)
+Found spurious '29/floatbv_mult' (state 0)
+Found spurious '32/floatbv_mult' (state 1)
+Found spurious '33/floatbv_minus' (state 10000)
+Found spurious '34/floatbv_div' (state 4)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 11
+3764 variables, 9724 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '12/floatbv_minus' (state 0)
+Found spurious '14/floatbv_mult' (state 0)
+Found spurious '15/floatbv_mult' (state 0)
+Found spurious '17/floatbv_mult' (state 0)
+Found spurious '18/floatbv_mult' (state 0)
+Found spurious '20/floatbv_mult' (state 0)
+Found spurious '21/floatbv_mult' (state 0)
+Found spurious '22/floatbv_plus' (state 3)
+Found spurious '23/floatbv_plus' (state 3)
+Found spurious '24/floatbv_minus' (state 3)
+Found spurious '25/floatbv_div' (state 2)
+Found spurious '26/floatbv_mult' (state 1)
+Found spurious '27/floatbv_div' (state 3)
+Found spurious '28/floatbv_mult' (state 2)
+Found spurious '29/floatbv_mult' (state 1)
+Found spurious '30/floatbv_div' (state 0)
+Found spurious '31/floatbv_mult' (state 0)
+Found spurious '32/floatbv_mult' (state 2)
+Found spurious '34/floatbv_div' (state 10000)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 12
+8400 variables, 32613 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '12/floatbv_minus' (state 1)
+Found spurious '14/floatbv_mult' (state 1)
+Found spurious '15/floatbv_mult' (state 1)
+Found spurious '17/floatbv_mult' (state 1)
+Found spurious '18/floatbv_mult' (state 1)
+Found spurious '20/floatbv_mult' (state 1)
+Found spurious '21/floatbv_mult' (state 1)
+Found spurious '22/floatbv_plus' (state 4)
+Found spurious '23/floatbv_plus' (state 4)
+Found spurious '24/floatbv_minus' (state 4)
+Found spurious '25/floatbv_div' (state 3)
+Found spurious '26/floatbv_mult' (state 2)
+Found spurious '27/floatbv_div' (state 4)
+Found spurious '28/floatbv_mult' (state 3)
+Found spurious '29/floatbv_mult' (state 2)
+Found spurious '32/floatbv_mult' (state 3)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 13
+8474 variables, 32365 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '12/floatbv_minus' (state 2)
+Found spurious '13/floatbv_div' (state 0)
+Found spurious '14/floatbv_mult' (state 2)
+Found spurious '22/floatbv_plus' (state 10000)
+Found spurious '23/floatbv_plus' (state 10000)
+Found spurious '24/floatbv_minus' (state 10000)
+Found spurious '25/floatbv_div' (state 4)
+Found spurious '27/floatbv_div' (state 10000)
+Found spurious '28/floatbv_mult' (state 4)
+Found spurious '29/floatbv_mult' (state 3)
+Found spurious '32/floatbv_mult' (state 4)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 14
+13616 variables, 53639 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '12/floatbv_minus' (state 3)
+Found spurious '14/floatbv_mult' (state 3)
+Found spurious '15/floatbv_mult' (state 2)
+Found spurious '25/floatbv_div' (state 10000)
+Found spurious '26/floatbv_mult' (state 3)
+Found spurious '28/floatbv_mult' (state 10000)
+Found spurious '29/floatbv_mult' (state 4)
+Found spurious '32/floatbv_mult' (state 10000)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 15
+20884 variables, 84269 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '12/floatbv_minus' (state 4)
+Found spurious '14/floatbv_mult' (state 4)
+Found spurious '15/floatbv_mult' (state 3)
+Found spurious '26/floatbv_mult' (state 4)
+Found spurious '29/floatbv_mult' (state 10000)
+Found spurious '31/floatbv_mult' (state 1)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 16
+23803 variables, 96401 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '12/floatbv_minus' (state 10000)
+Found spurious '14/floatbv_mult' (state 10000)
+Found spurious '15/floatbv_mult' (state 4)
+Found spurious '26/floatbv_mult' (state 10000)
+Found spurious '31/floatbv_mult' (state 2)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 17
+30774 variables, 129591 clauses
+SAT checker: instance is UNSATISFIABLE
+Found assumption for '0/mod' in proof (state 1)
+Found assumption for '1/mod' in proof (state 0)
+Found assumption for '10/floatbv_plus' in proof (state 0)
+Found assumption for '11/floatbv_plus' in proof (state 0)
+Found assumption for '12/floatbv_minus' in proof (state 1)
+Found assumption for '13/floatbv_div' in proof (state 0)
+Found assumption for '14/floatbv_mult' in proof (state 1)
+Found assumption for '15/floatbv_mult' in proof (state 1)
+Found assumption for '17/floatbv_mult' in proof (state 1)
+Found assumption for '18/floatbv_mult' in proof (state 1)
+Found assumption for '20/floatbv_mult' in proof (state 1)
+Found assumption for '21/floatbv_mult' in proof (state 1)
+Found assumption for '22/floatbv_plus' in proof (state 1)
+Found assumption for '25/floatbv_div' in proof (state 1)
+Found assumption for '26/floatbv_mult' in proof (state 1)
+Found assumption for '27/floatbv_div' in proof (state 1)
+Found assumption for '28/floatbv_mult' in proof (state 1)
+Found assumption for '30/floatbv_div' in proof (state 0)
+Found assumption for '31/floatbv_mult' in proof (state 1)
+Found assumption for '34/floatbv_div' in proof (state 1)
+BV-Refinement: got UNSAT, and the proof fails, refining
+BV-Refinement: iteration 18
+30774 variables, 126070 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '10/floatbv_plus' (state 1)
+Found spurious '11/floatbv_plus' (state 0)
+Found spurious '13/floatbv_div' (state 1)
+Found spurious '15/floatbv_mult' (state 10000)
+Found spurious '18/floatbv_mult' (state 2)
+Found spurious '30/floatbv_div' (state 1)
+Found spurious '31/floatbv_mult' (state 3)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 19
+33667 variables, 140871 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '10/floatbv_plus' (state 2)
+Found spurious '11/floatbv_plus' (state 1)
+Found spurious '16/floatbv_div' (state 0)
+Found spurious '19/floatbv_div' (state 0)
+Found spurious '30/floatbv_div' (state 2)
+Found spurious '31/floatbv_mult' (state 4)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 20
+33691 variables, 140792 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '10/floatbv_plus' (state 3)
+Found spurious '11/floatbv_plus' (state 2)
+Found spurious '17/floatbv_mult' (state 2)
+Found spurious '20/floatbv_mult' (state 2)
+Found spurious '21/floatbv_mult' (state 2)
+Found spurious '30/floatbv_div' (state 3)
+Found spurious '31/floatbv_mult' (state 10000)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 21
+36613 variables, 155680 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '10/floatbv_plus' (state 4)
+Found spurious '11/floatbv_plus' (state 3)
+Found spurious '13/floatbv_div' (state 2)
+Found spurious '18/floatbv_mult' (state 3)
+Found spurious '30/floatbv_div' (state 4)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 22
+36634 variables, 155529 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '10/floatbv_plus' (state 10000)
+Found spurious '11/floatbv_plus' (state 4)
+Found spurious '17/floatbv_mult' (state 3)
+Found spurious '18/floatbv_mult' (state 4)
+Found spurious '20/floatbv_mult' (state 3)
+Found spurious '21/floatbv_mult' (state 3)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 23
+37859 variables, 161036 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '11/floatbv_plus' (state 10000)
+Found spurious '13/floatbv_div' (state 3)
+Found spurious '17/floatbv_mult' (state 4)
+Found spurious '18/floatbv_mult' (state 10000)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 24
+41961 variables, 179577 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '13/floatbv_div' (state 4)
+Found spurious '17/floatbv_mult' (state 10000)
+Found spurious '30/floatbv_div' (state 10000)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 25
+46654 variables, 199505 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '13/floatbv_div' (state 10000)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 26
+48212 variables, 203403 clauses
+SAT checker: instance is UNSATISFIABLE
+Found assumption for '0/mod' in proof (state 2)
+Found assumption for '1/mod' in proof (state 1)
+Found assumption for '2/mod' in proof (state 0)
+Found assumption for '10/floatbv_plus' in proof (state 1)
+Found assumption for '11/floatbv_plus' in proof (state 1)
+Found assumption for '13/floatbv_div' in proof (state 1)
+Found assumption for '16/floatbv_div' in proof (state 0)
+Found assumption for '19/floatbv_div' in proof (state 0)
+Found assumption for '30/floatbv_div' in proof (state 1)
+BV-Refinement: got UNSAT, and the proof fails, refining
+BV-Refinement: iteration 27
+48212 variables, 202116 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '16/floatbv_div' (state 1)
+Found spurious '20/floatbv_mult' (state 4)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 28
+48220 variables, 202290 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '0/mod' (state 0)
+Found spurious '19/floatbv_div' (state 1)
+Found spurious '20/floatbv_mult' (state 10000)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 29
+53769 variables, 229044 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '19/floatbv_div' (state 2)
+Found spurious '21/floatbv_mult' (state 4)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 30
+53777 variables, 220700 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '19/floatbv_div' (state 3)
+Found spurious '21/floatbv_mult' (state 10000)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 31
+56674 variables, 235085 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '16/floatbv_div' (state 2)
+Found spurious '19/floatbv_div' (state 4)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 32
+56680 variables, 234509 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '16/floatbv_div' (state 3)
+Found spurious '19/floatbv_div' (state 10000)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 33
+58674 variables, 242963 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '16/floatbv_div' (state 4)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 34
+58677 variables, 241128 clauses
+SAT checker: instance is SATISFIABLE
+Found spurious '16/floatbv_div' (state 10000)
+BV-Refinement: got SAT, and it is spurious, refining
+BV-Refinement: iteration 35
+60351 variables, 247965 clauses
+SAT checker: instance is UNSATISFIABLE
+Found assumption for '0/mod' in proof (state 3)
+Found assumption for '1/mod' in proof (state 2)
+Found assumption for '2/mod' in proof (state 1)
+Found assumption for '3/mod' in proof (state 0)
+Found assumption for '16/floatbv_div' in proof (state 1)
+Found assumption for '19/floatbv_div' in proof (state 1)
+BV-Refinement: got UNSAT, and the proof fails, refining
+BV-Refinement: iteration 36
+60351 variables, 246219 clauses
+SAT checker: instance is SATISFIABLE
+BV-Refinement: got SAT, and it simulates => SAT
+Total iterations: 36
+Runtime Solver: 77.4952s
+Runtime decision procedure: 77.5008s
+Building error trace
+** Results:
+data/sv-benchmarks/c/combinations/gcd_3+newton_1_4.i function reach_error
+[reach_error.assertion.1] line 22 assertion 0: FAILURE
+Trace for reach_error.assertion.1:
+State 29 file data/sv-benchmarks/c/combinations/gcd_3+newton_1_4.i function main2 line 90 thread 0
+----------------------------------------------------
+  IN=0.0f (00000000 00000000 00000000 00000000)
+State 32 file data/sv-benchmarks/c/combinations/gcd_3+newton_1_4.i function main2 line 90 thread 0
+----------------------------------------------------
+  IN=-0.684489f (10111111 00101111 00111010 10101010)
+State 35 file data/sv-benchmarks/c/combinations/gcd_3+newton_1_4.i function main2 line 91 thread 0
+----------------------------------------------------
+  cond=1 (00000000 00000000 00000000 00000001)
+State 38 file data/sv-benchmarks/c/combinations/gcd_3+newton_1_4.i function main2 line 93 thread 0
+----------------------------------------------------
+  x=0.0f (00000000 00000000 00000000 00000000)
+State 42 file data/sv-benchmarks/c/combinations/gcd_3+newton_1_4.i function main2 line 93 thread 0
+----------------------------------------------------
+  x=-0.684489f (10111111 00101111 00111010 10101010)
+State 49 file data/sv-benchmarks/c/combinations/gcd_3+newton_1_4.i function main2 line 93 thread 0
+----------------------------------------------------
+  x=-0.684489f (10111111 00101111 00111010 10101010)
+State 53 file data/sv-benchmarks/c/combinations/gcd_3+newton_1_4.i function main2 line 93 thread 0
+----------------------------------------------------
+  x=0.13136f (00111110 00000110 10000011 01000100)
+Violated property:
+  file data/sv-benchmarks/c/combinations/gcd_3+newton_1_4.i function reach_error line 22 thread 0
+  assertion 0
+  FALSE
+** 1 of 1 failed (2 iterations)
+VERIFICATION FAILED

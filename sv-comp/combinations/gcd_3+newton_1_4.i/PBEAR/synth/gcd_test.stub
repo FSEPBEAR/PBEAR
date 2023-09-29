@@ -1,0 +1,21 @@
+outputs: __iv__return_expr_gcd_test 
+logs: 
+{"Func":"gcd_test","Input":[{"Var":"a","Val":72},{"Var":"b","Val":-63}],"Output":[{"Var":"__iv__return_expr_gcd_test","Val":9}],"InitOutput":[],}
+{"Func":"gcd_test","Input":[{"Var":"a","Val":-46},{"Var":"b","Val":-92}],"Output":[{"Var":"__iv__return_expr_gcd_test","Val":46}],"InitOutput":[],}
+{"Func":"gcd_test","Input":[{"Var":"a","Val":76},{"Var":"b","Val":-128}],"Output":[{"Var":"__iv__return_expr_gcd_test","Val":-4}],"InitOutput":[],}
+{"Func":"gcd_test","Input":[{"Var":"a","Val":-116},{"Var":"b","Val":-87}],"Output":[{"Var":"__iv__return_expr_gcd_test","Val":29}],"InitOutput":[],}
+logs end
+SyGuS code:
+__iv__return_expr_gcd_test:ite >= % __iv__input_0_ 3 ) 1 ) - -1 3 ) ite >= -1 __iv__input_0_ ) - % __iv__input_1_ __iv__input_0_ ) __iv__input_0_ ) + __iv__input_1_ __iv__input_0_ ) ) )
+SyGuS end
+assumes:
+__iv__return_expr_gcd_test:__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127)
+assumes end:
+signed char __iv__return_expr_gcd_test;
+if((a%3)>=1) __iv__return_expr_gcd_test = (-4); else if((-1)>=a) __iv__return_expr_gcd_test = ((b%a)-a); else __iv__return_expr_gcd_test = (b+a); 
+__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+return __iv__return_expr_gcd_test;
+complexity: 2
+accuracy: 5.88%
+coverage: 90.72%
+max_comp_size: 5
