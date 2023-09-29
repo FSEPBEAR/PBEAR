@@ -1,0 +1,10 @@
+void __VERIFIER_assert(int cond);
+int __iv__current_func_call;
+void __VERIFIER_assert(int cond);
+void assume_abort_if_not(signed int cond);
+float f(float x);
+float fp(float x);
+signed char gcd_test(signed char a, signed char b);
+signed int main1();
+signed int main2();
+void reach_error();

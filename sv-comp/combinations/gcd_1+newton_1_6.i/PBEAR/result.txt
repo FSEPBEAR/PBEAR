@@ -1,0 +1,110 @@
+ --src data/sv-benchmarks/c/combinations/gcd_1+newton_1_6.i --wd results/combinations/gcd_1+newton_1_6.i/ --unwind 1000 --synth-dir results/combinations/synth --synth-timeout 300 --synth-max-size 512 --synth-max-height 15 --sv-comp-mode 
+code parsing time: 0.481 sec
+
+select target function calls:
+gcd_test(x, y) (call id 12) influences 2 external nodes
+internal node ratio: 2.15% (2 of 93)
+
+find the best target combination:
+predict complexity: (unwind 1000)
+criterion unwind: 1
+gcd_test(x, y): original cmplx: 3, stub cmplx: 2
+total cmplx: 8
+
+Jul 18, 2023 6:06:08 PM iv_checker.select.TargetFunctionSelector printRank
+INFO: 
+1. gcd_test(x, y);  fitness: 4.000
+
+call gcd_test(x, y) (call id 12)
+Iteration 0:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%a)) __iv__return_expr_gcd_test = (0-(b%a)); else if((-1)>=a) __iv__return_expr_gcd_test = (0-a); else __iv__return_expr_gcd_test = (a-(b%a)); 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 2
+accuracy: 11.25%
+coverage: 92.47%
+# constraints: 5
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.364 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+Counterexample-guided true alarm finding: 
+Jul 18, 2023 6:06:08 PM Main findTrueAlarm
+WARNING: the CBMC's counterexample didn't reproduce the violation. Can't true alarm finding.
+timeout: the monitored command dumped core
+Floating point exception
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 0.667 sec
+
+Iteration 1:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if(a<(b*a)) if((-1)>=a) __iv__return_expr_gcd_test = (0-a); else __iv__return_expr_gcd_test = (b-a); else __iv__return_expr_gcd_test = (b+a); 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 3
+# constraints: 6
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.341 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+Counterexample-guided true alarm finding: 
+cbmc time (unwind: 10): 0.253 sec
+property 'assert(FALSE);' is FALSE alarm.
+true alarm finding time: 0.43 sec
+
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+on each refinement:
+on each refinement:
+on each refinement:
+on each refinement:
+on each refinement:
+on each refinement:
+on each refinement:
+on each refinement:
+on each refinement:
+on each refinement:
+on each refinement:
+on each refinement:
+on each refinement:
+on each refinement:
+on each refinement:
+on each refinement:
+on each refinement:
+on each refinement:
+on each refinement:
+on each refinement:
+refinement time: 71.964 sec
+
+Iteration 2:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = 17; else if(0>=b) if(1==(a%5)) __iv__return_expr_gcd_test = a; else __iv__return_expr_gcd_test = (0-a); else if(0==(b+a)) __iv__return_expr_gcd_test = b; else if(0==a) __iv__return_expr_gcd_test = b; else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(a==(b+b)) __iv__return_expr_gcd_test = b; else if(a==(3*b)) __iv__return_expr_gcd_test = b; else if(3==(b%5)) __iv__return_expr_gcd_test = b; else if(b>=2) if(a==(5*b)) __iv__return_expr_gcd_test = b; else if((-1)==(a%5)) __iv__return_expr_gcd_test = b; else if(a<b) if((a%3)>=2) __iv__return_expr_gcd_test = (b-a); else __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = 1; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 14
+# constraints: 27
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 5.215 sec
+
+verification results: 
+property 'assert(FALSE);' is TRUE alarm.
+
+total CBMC running time: 5.92 sec
+total true alarm finding time: 0.43 sec
+total refinement time: 72.632 sec
+peak memory usage: 55.30 MB

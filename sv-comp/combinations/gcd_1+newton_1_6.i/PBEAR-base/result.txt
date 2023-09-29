@@ -1,0 +1,800 @@
+--src data/sv-benchmarks/c/combinations/gcd_1+newton_1_6.i --wd results/combinations/gcd_1+newton_1_6.i/no_alarm --no-alarm-filtering --unwind 1000 --synth-dir results/combinations/synth --synth-timeout 300 --synth-max-size 512 --synth-max-height 15 --sv-comp-mode 
+code parsing time: 0.522 sec
+
+select target function calls:
+gcd_test(x, y) (call id 12) influences 2 external nodes
+internal node ratio: 2.15% (2 of 93)
+
+find the best target combination:
+predict complexity: (unwind 1000)
+criterion unwind: 1
+gcd_test(x, y): original cmplx: 3, stub cmplx: 2
+total cmplx: 8
+
+Jul 26, 2023 3:58:37 PM iv_checker.select.TargetFunctionSelector printRank
+INFO: 
+1. gcd_test(x, y);  fitness: 4.000
+
+call gcd_test(x, y) (call id 12)
+Iteration 0:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%a)) __iv__return_expr_gcd_test = (0-(b%a)); else if((-1)>=a) __iv__return_expr_gcd_test = (0-a); else __iv__return_expr_gcd_test = (a-(b%a)); 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 2
+accuracy: 11.25%
+coverage: 92.47%
+# constraints: 5
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.422 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 0.672 sec
+
+Iteration 1:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if(a<(b*a)) if((-1)>=a) __iv__return_expr_gcd_test = (0-a); else __iv__return_expr_gcd_test = (b-a); else __iv__return_expr_gcd_test = (b+a); 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 3
+# constraints: 6
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.346 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 1.646 sec
+
+Iteration 2:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if(b>=2) __iv__return_expr_gcd_test = (b-a); else if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if((b*b)<a) __iv__return_expr_gcd_test = a; else if((-1)>=(a%2)) __iv__return_expr_gcd_test = (0-b); else if((-1)==(a%5)) __iv__return_expr_gcd_test = (0-a); else __iv__return_expr_gcd_test = 1; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 5
+# constraints: 7
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.466 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 1.664 sec
+
+Iteration 3:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = 17; else if(b>=2) __iv__return_expr_gcd_test = (b-a); else if((b*a)<a) __iv__return_expr_gcd_test = a; else if((-1)==(a%5)) __iv__return_expr_gcd_test = (0-a); else __iv__return_expr_gcd_test = (b*(b%2)); 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 4
+# constraints: 8
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.423 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 0.859 sec
+
+Iteration 4:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if(0==(b%3)) if((b*a)<a) __iv__return_expr_gcd_test = a; else if((-1)>=a) __iv__return_expr_gcd_test = (0-a); else __iv__return_expr_gcd_test = (b-a); else if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 4
+# constraints: 9
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.584 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 0.974 sec
+
+Iteration 5:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if(0>=(b%5)) if(1==(a%5)) __iv__return_expr_gcd_test = a; else if((-1)>=(3+a)) __iv__return_expr_gcd_test = (0-a); else __iv__return_expr_gcd_test = (b-a); else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 4
+# constraints: 10
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.413 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 2.508 sec
+
+Iteration 6:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = 17; else if(b>=25) __iv__return_expr_gcd_test = (b-a); else if((-1)>=(a%2)) __iv__return_expr_gcd_test = (0-a); else if((-1)==(a%5)) __iv__return_expr_gcd_test = (0-a); else if(1==(a%5)) __iv__return_expr_gcd_test = a; else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 5
+# constraints: 11
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.394 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 1.109 sec
+
+Iteration 7:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = 17; else if(0>=b) if((b*a)<a) __iv__return_expr_gcd_test = a; else __iv__return_expr_gcd_test = (0-a); else if(b>=25) __iv__return_expr_gcd_test = (b-a); else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 4
+# constraints: 12
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.451 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 3.974 sec
+
+Iteration 8:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if((-1)>=(b%5)) __iv__return_expr_gcd_test = (0-b); else if((-1)==(a%5)) __iv__return_expr_gcd_test = (0-a); else if(b==15) __iv__return_expr_gcd_test = b; else if(b<(a%3)) __iv__return_expr_gcd_test = a; else if(0==(b%5)) __iv__return_expr_gcd_test = (b-a); else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 6
+# constraints: 13
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.48 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 1.209 sec
+
+Iteration 9:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if(0>=b) if(1==(a%5)) __iv__return_expr_gcd_test = a; else __iv__return_expr_gcd_test = (0-a); else if(b>=25) if((a%3)>=2) __iv__return_expr_gcd_test = (b-a); else __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 5
+# constraints: 14
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.538 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 2.006 sec
+
+Iteration 10:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = 17; else if(b<(a%3)) __iv__return_expr_gcd_test = (a-(b+b)); else if(0==b) __iv__return_expr_gcd_test = (0-a); else if(0==(b%2)) __iv__return_expr_gcd_test = (a-(b-a)); else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 4
+# constraints: 15
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.51 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 1.873 sec
+
+Iteration 11:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if((-1)>=(b%5)) __iv__return_expr_gcd_test = (0-b); else if(b<(a%3)) __iv__return_expr_gcd_test = a; else if(0==b) __iv__return_expr_gcd_test = (0-a); else if(!(0==a)) if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(b>=25) __iv__return_expr_gcd_test = (a-(b-a)); else __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 7
+# constraints: 16
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.373 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 1.044 sec
+
+Iteration 12:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = 17; else if(0>=b) if(1==(a%5)) __iv__return_expr_gcd_test = a; else __iv__return_expr_gcd_test = (0-a); else if(0==a) __iv__return_expr_gcd_test = b; else if(0==(b%2)) __iv__return_expr_gcd_test = (a-(b-a)); else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 5
+# constraints: 17
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.374 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 1.494 sec
+
+Iteration 13:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if(0>=b) if(1==(a%5)) __iv__return_expr_gcd_test = a; else __iv__return_expr_gcd_test = (0-a); else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(b>=25) __iv__return_expr_gcd_test = (a-(b-a)); else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 5
+# constraints: 18
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.454 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 4.696 sec
+
+Iteration 14:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = 17; else if((-1)>=(b%5)) __iv__return_expr_gcd_test = (0-a); else if(b<(a%5)) __iv__return_expr_gcd_test = a; else if(0==b) __iv__return_expr_gcd_test = (0-a); else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(b==15) __iv__return_expr_gcd_test = b; else if(a==(b+b)) __iv__return_expr_gcd_test = b; else if((-1)==(a%5)) __iv__return_expr_gcd_test = 3; else if(3==b) __iv__return_expr_gcd_test = 3; else if((-1)>=(a%3)) __iv__return_expr_gcd_test = 2; else if(2==a) __iv__return_expr_gcd_test = 2; else if(2==(b%5)) __iv__return_expr_gcd_test = b; else if((b%3)>=1) __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = (b-a); 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 13
+# constraints: 19
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.418 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 1.273 sec
+
+Iteration 15:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = 17; else if(0>=b) if((-1)>=(a%5)) __iv__return_expr_gcd_test = (0-a); else __iv__return_expr_gcd_test = a; else if(0==a) __iv__return_expr_gcd_test = b; else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(b>=2) if(b==15) __iv__return_expr_gcd_test = b; else if(0==(b%5)) __iv__return_expr_gcd_test = (a-(b-a)); else __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = 1; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 8
+# constraints: 20
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 1.466 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 2.11 sec
+
+Iteration 16:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if(0>=b) if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if((-1)>=(a%5)) __iv__return_expr_gcd_test = (0-a); else __iv__return_expr_gcd_test = a; else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(b==15) __iv__return_expr_gcd_test = b; else if(a==(b+b)) __iv__return_expr_gcd_test = b; else if(b>=25) __iv__return_expr_gcd_test = (a-(b-a)); else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 7
+# constraints: 21
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.393 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 6.574 sec
+
+Iteration 17:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if((-1)>=(b%5)) __iv__return_expr_gcd_test = (0-b); else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(b==15) __iv__return_expr_gcd_test = b; else if(a==(b+b)) __iv__return_expr_gcd_test = b; else if(5==b) __iv__return_expr_gcd_test = 5; else if(0==(b+a)) __iv__return_expr_gcd_test = 3; else if((a%5)>=(-1)) if(0==b) __iv__return_expr_gcd_test = (a*(a%5)); else if((-1)==(a%5)) __iv__return_expr_gcd_test = 3; else if(3==b) __iv__return_expr_gcd_test = 3; else if(b>=(1-a)) if(2==a) __iv__return_expr_gcd_test = a; else if(1>=(b%3)) if(a==(b*a)) __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = (b-a); else __iv__return_expr_gcd_test = a; else __iv__return_expr_gcd_test = 2; else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 15
+# constraints: 22
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.502 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 6.405 sec
+
+Iteration 18:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = 17; else if((-1)>=(b%5)) __iv__return_expr_gcd_test = (0-a); else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(3>=(a%5)) if((a%5)<(-1)) __iv__return_expr_gcd_test = b; else if(a==(b+b)) __iv__return_expr_gcd_test = b; else if(5==b) __iv__return_expr_gcd_test = 5; else if((-1)>=(a%3)) __iv__return_expr_gcd_test = 2; else if((-1)>=(b*a)) __iv__return_expr_gcd_test = 3; else if((-1)==(a%5)) __iv__return_expr_gcd_test = (0-a); else if((b*a)<a) __iv__return_expr_gcd_test = a; else if(3==b) __iv__return_expr_gcd_test = 3; else if(2==a) __iv__return_expr_gcd_test = 2; else if(2==(b%5)) __iv__return_expr_gcd_test = b; else if((b%2)>=1) __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = (b-a); else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 15
+# constraints: 23
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.921 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 6.239 sec
+
+Iteration 19:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if((-1)>=(b%5)) __iv__return_expr_gcd_test = (0-b); else if(0==(b+a)) __iv__return_expr_gcd_test = b; else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(a==(3*b)) __iv__return_expr_gcd_test = b; else if(a==(b+b)) __iv__return_expr_gcd_test = b; else if((a%5)<(-1)) __iv__return_expr_gcd_test = b; else if(5==b) __iv__return_expr_gcd_test = 5; else if((-1)>=(a%3)) __iv__return_expr_gcd_test = 2; else if((b*a)>=(-1)) if((-1)==(a%5)) __iv__return_expr_gcd_test = (0-a); else if(0==b) __iv__return_expr_gcd_test = a; else if(3==b) __iv__return_expr_gcd_test = 3; else if(2==a) __iv__return_expr_gcd_test = a; else if((b%3)>=2) __iv__return_expr_gcd_test = a; else if(a==(b*a)) __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = (b-a); else __iv__return_expr_gcd_test = 3; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 16
+# constraints: 24
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.48 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 8.957 sec
+
+Iteration 20:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if((-1)>=(b%5)) __iv__return_expr_gcd_test = (0-b); else if(a==(3*b)) __iv__return_expr_gcd_test = b; else if((a%5)<(-1)) __iv__return_expr_gcd_test = b; else if(0==(b+a)) __iv__return_expr_gcd_test = b; else if((a%2)>=0) if(b==15) __iv__return_expr_gcd_test = b; else if(a==(b+b)) __iv__return_expr_gcd_test = b; else if(5==b) __iv__return_expr_gcd_test = 5; else if((-1)>=(a%3)) __iv__return_expr_gcd_test = 2; else if((b*a)>=(-1)) if((-1)==(a%5)) __iv__return_expr_gcd_test = (0-a); else if(0==b) __iv__return_expr_gcd_test = a; else if(3==b) __iv__return_expr_gcd_test = 3; else if(2==a) __iv__return_expr_gcd_test = a; else if(1>=(b%3)) if(a==(b*a)) __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = (b-a); else __iv__return_expr_gcd_test = a; else __iv__return_expr_gcd_test = 3; else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 17
+# constraints: 25
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.497 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 1.444 sec
+
+Iteration 21:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if(0>=b) if(a>=(b*b)) __iv__return_expr_gcd_test = a; else __iv__return_expr_gcd_test = (0-a); else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(0==a) __iv__return_expr_gcd_test = b; else if(a==(3*b)) __iv__return_expr_gcd_test = b; else if(b>=2) if(0==(b%2)) if(2==b) __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = (b-a); else __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = 1; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 9
+# constraints: 26
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.382 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 7.319 sec
+
+Iteration 22:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if((-1)>=(b%5)) __iv__return_expr_gcd_test = (0-b); else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(0==(b+a)) __iv__return_expr_gcd_test = b; else if((-1)>=(a%2)) __iv__return_expr_gcd_test = b; else if(a==(3*b)) __iv__return_expr_gcd_test = b; else if((a%5)<(-1)) __iv__return_expr_gcd_test = b; else if(b==15) __iv__return_expr_gcd_test = b; else if(a==(b+b)) __iv__return_expr_gcd_test = b; else if(5==b) __iv__return_expr_gcd_test = 5; else if(0==b) __iv__return_expr_gcd_test = (a*(a%5)); else if((-1)==(a%5)) __iv__return_expr_gcd_test = 3; else if(3==b) __iv__return_expr_gcd_test = 3; else if((b*a)>=a) if(2==a) __iv__return_expr_gcd_test = a; else if((b%3)>=2) __iv__return_expr_gcd_test = a; else if(a==(b*a)) __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = (b-a); else __iv__return_expr_gcd_test = 2; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 17
+# constraints: 27
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.404 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 10.746 sec
+
+Iteration 23:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if((-1)>=(b%5)) __iv__return_expr_gcd_test = (0-b); else if(a==(3*b)) __iv__return_expr_gcd_test = b; else if((a%5)<(-1)) __iv__return_expr_gcd_test = b; else if((a%3)>=(-1)) if(b==10) __iv__return_expr_gcd_test = b; else if(0==(b+a)) __iv__return_expr_gcd_test = b; else if((-1)>=(a%2)) __iv__return_expr_gcd_test = b; else if(b==15) __iv__return_expr_gcd_test = b; else if(a==(b+b)) __iv__return_expr_gcd_test = b; else if(5==b) __iv__return_expr_gcd_test = 5; else if(0==b) __iv__return_expr_gcd_test = (a*(a%5)); else if((-1)==(a%5)) __iv__return_expr_gcd_test = 3; else if((b*a)>=a) if(3==b) __iv__return_expr_gcd_test = 3; else if(2==a) __iv__return_expr_gcd_test = a; else if(1>=(b%5)) if((b%2)>=1) __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = (b-a); else __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = 2; else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 18
+# constraints: 28
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.402 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 1.664 sec
+
+Iteration 24:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if(0>=b) if(a>=(b*b)) __iv__return_expr_gcd_test = a; else __iv__return_expr_gcd_test = (0-a); else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(0==a) __iv__return_expr_gcd_test = b; else if(a==(3*b)) __iv__return_expr_gcd_test = b; else if((a%3)<(-1)) __iv__return_expr_gcd_test = b; else if(b==10) __iv__return_expr_gcd_test = b; else if(b>=2) if(0==(b%2)) if(2==b) __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = (b-a); else __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = 1; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 11
+# constraints: 29
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.411 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 11.241 sec
+
+Iteration 25:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if((-1)>=(b%5)) __iv__return_expr_gcd_test = (0-b); else if((a%5)>=(-1)) if(a==(3*b)) __iv__return_expr_gcd_test = b; else if((-1)>=(a%2)) __iv__return_expr_gcd_test = b; else if((a%3)<(-1)) __iv__return_expr_gcd_test = b; else if(b==15) __iv__return_expr_gcd_test = b; else if(a==(b+b)) __iv__return_expr_gcd_test = b; else if(5==b) __iv__return_expr_gcd_test = 5; else if(b==10) __iv__return_expr_gcd_test = b; else if(0==b) __iv__return_expr_gcd_test = (a*(a%5)); else if((b*a)>=a) if(3==b) __iv__return_expr_gcd_test = 3; else if(2==a) __iv__return_expr_gcd_test = a; else if(1>=(b%5)) if((b%2)>=1) __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = (b-a); else __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 16
+# constraints: 30
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.45 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 5.985 sec
+
+Iteration 26:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if(0>=b) if((-1)>=(b%3)) __iv__return_expr_gcd_test = 17; else if((a%3)>=2) __iv__return_expr_gcd_test = a; else __iv__return_expr_gcd_test = (0-a); else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(a==(3*b)) __iv__return_expr_gcd_test = b; else if((a%3)<(-1)) __iv__return_expr_gcd_test = b; else if(b==10) __iv__return_expr_gcd_test = b; else if(b==15) __iv__return_expr_gcd_test = b; else if(a==(b+b)) __iv__return_expr_gcd_test = b; else if(!(b==a)) if(a>=(b*a)) __iv__return_expr_gcd_test = b; else if(3==b) __iv__return_expr_gcd_test = 3; else __iv__return_expr_gcd_test = (b-a); else __iv__return_expr_gcd_test = a; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 12
+# constraints: 31
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 1.092 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 11.163 sec
+
+Iteration 27:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = 17; else if((-1)>=(b%5)) __iv__return_expr_gcd_test = (0-a); else if(b==15) __iv__return_expr_gcd_test = b; else if((-1)>=(a%2)) __iv__return_expr_gcd_test = b; else if((a%3)<(-1)) __iv__return_expr_gcd_test = b; else if(a==(5*b)) __iv__return_expr_gcd_test = b; else if(a==(b%2)) __iv__return_expr_gcd_test = b; else if(0==(b+a)) __iv__return_expr_gcd_test = b; else if(5==b) __iv__return_expr_gcd_test = 5; else if(0==b) __iv__return_expr_gcd_test = (a*(a%5)); else if(5==(a-1)) __iv__return_expr_gcd_test = b; else if(0==(b%5)) __iv__return_expr_gcd_test = (a-(b-a)); else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 12
+# constraints: 32
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.397 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 11.924 sec
+
+Iteration 28:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = 17; else if((-1)>=(b%5)) __iv__return_expr_gcd_test = (0-a); else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(a==(3*b)) __iv__return_expr_gcd_test = b; else if((a%3)<(-1)) __iv__return_expr_gcd_test = b; else if(b==10) __iv__return_expr_gcd_test = b; else if(0==(b+a)) __iv__return_expr_gcd_test = b; else if((-1)>=(a%2)) __iv__return_expr_gcd_test = b; else if(a==(5*b)) __iv__return_expr_gcd_test = b; else if(b==15) __iv__return_expr_gcd_test = b; else if(a==(b+b)) __iv__return_expr_gcd_test = b; else if((-1)==(5+a)) __iv__return_expr_gcd_test = 1; else if((-1)==(a%3)) __iv__return_expr_gcd_test = b; else if((-1)>=(b*a)) __iv__return_expr_gcd_test = 3; else if((-1)==(a%5)) __iv__return_expr_gcd_test = (0-a); else if((b*a)<a) __iv__return_expr_gcd_test = a; else if(3==b) __iv__return_expr_gcd_test = 3; else if(5==(a-1)) __iv__return_expr_gcd_test = b; else if(2==a) __iv__return_expr_gcd_test = 2; else if(2==(b%5)) __iv__return_expr_gcd_test = b; else if((b%2)>=1) __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = (b-a); 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 21
+# constraints: 33
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.559 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 2.174 sec
+
+Iteration 29:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if(0>=b) if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if((b*a)<a) __iv__return_expr_gcd_test = a; else __iv__return_expr_gcd_test = (0-a); else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(0==a) __iv__return_expr_gcd_test = b; else if(a==(3*b)) __iv__return_expr_gcd_test = b; else if((a%3)<(-1)) __iv__return_expr_gcd_test = b; else if(a==(5*b)) __iv__return_expr_gcd_test = b; else if(b==15) __iv__return_expr_gcd_test = b; else if(a==(b+b)) __iv__return_expr_gcd_test = b; else if(b>=2) if((-1)==(2+a)) __iv__return_expr_gcd_test = b; else if(5==b) __iv__return_expr_gcd_test = b; else if((-1)==(a%5)) __iv__return_expr_gcd_test = b; else if(3==b) __iv__return_expr_gcd_test = b; else if((a%2)>=1) __iv__return_expr_gcd_test = a; else if(a>=9) if(b>=25) __iv__return_expr_gcd_test = (b-a); else __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = 1; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 18
+# constraints: 34
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.878 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 11.348 sec
+
+Iteration 30:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = 17; else if((-1)>=(b%5)) __iv__return_expr_gcd_test = (0-a); else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if((a%3)<(-1)) __iv__return_expr_gcd_test = b; else if(a==(5*b)) __iv__return_expr_gcd_test = b; else if(b==15) __iv__return_expr_gcd_test = b; else if(b==10) __iv__return_expr_gcd_test = b; else if(a==(b%2)) __iv__return_expr_gcd_test = b; else if(5==b) __iv__return_expr_gcd_test = 5; else if((-1)==(2+a)) __iv__return_expr_gcd_test = 3; else if(0==(b+a)) __iv__return_expr_gcd_test = b; else if((-1)>=(a%2)) __iv__return_expr_gcd_test = b; else if(3==b) __iv__return_expr_gcd_test = 3; else if(2>=(b%5)) if((a%5)<(-1)) __iv__return_expr_gcd_test = b; else if(0==b) __iv__return_expr_gcd_test = (a*(a%5)); else if(5==(a-1)) __iv__return_expr_gcd_test = b; else if(0==(b%3)) __iv__return_expr_gcd_test = (b-a); else __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 18
+# constraints: 35
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.412 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 14.518 sec
+
+Iteration 31:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = 17; else if((-1)>=(b%5)) __iv__return_expr_gcd_test = (0-a); else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(5==(a-1)) __iv__return_expr_gcd_test = b; else if((-1)>=(a%2)) __iv__return_expr_gcd_test = b; else if(a==(3*b)) __iv__return_expr_gcd_test = b; else if((a%3)<(-1)) __iv__return_expr_gcd_test = b; else if(b==15) __iv__return_expr_gcd_test = b; else if(a==(5*b)) __iv__return_expr_gcd_test = b; else if(a==(b%2)) __iv__return_expr_gcd_test = b; else if(b==10) __iv__return_expr_gcd_test = b; else if(a==(b+b)) __iv__return_expr_gcd_test = b; else if(5==b) __iv__return_expr_gcd_test = 5; else if(0==b) __iv__return_expr_gcd_test = (a*(a%5)); else if((a%5)<(-1)) __iv__return_expr_gcd_test = b; else if(1==(a%5)) __iv__return_expr_gcd_test = 3; else if(3==b) __iv__return_expr_gcd_test = 3; else if((b%3)>=1) __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = (b-a); 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 18
+# constraints: 36
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.523 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 8.243 sec
+
+Iteration 32:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if(0>=b) if((-1)>=(b%3)) __iv__return_expr_gcd_test = 17; else if(1==(a%5)) __iv__return_expr_gcd_test = a; else __iv__return_expr_gcd_test = (0-a); else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(3<(a%5)) __iv__return_expr_gcd_test = b; else if(2==(a%5)) __iv__return_expr_gcd_test = b; else if((a%3)<(-1)) __iv__return_expr_gcd_test = b; else if(!(b==a)) if(a==(3*b)) __iv__return_expr_gcd_test = b; else if(a==(5*b)) __iv__return_expr_gcd_test = b; else if(b==15) __iv__return_expr_gcd_test = b; else if(a==(b+b)) __iv__return_expr_gcd_test = b; else if(a==(b%2)) __iv__return_expr_gcd_test = b; else if((-1)==(2+a)) __iv__return_expr_gcd_test = 3; else if(1==(a%5)) __iv__return_expr_gcd_test = 3; else if(a>=(b*a)) __iv__return_expr_gcd_test = b; else if(a>=(b*b)) __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = (b-a); else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 17
+# constraints: 37
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.427 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 2.596 sec
+
+Iteration 33:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if(0>=b) if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if((-1)>=(3+a)) __iv__return_expr_gcd_test = (0-a); else __iv__return_expr_gcd_test = a; else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(3<(a%5)) __iv__return_expr_gcd_test = b; else if(0==a) __iv__return_expr_gcd_test = b; else if((a%3)<(-1)) __iv__return_expr_gcd_test = b; else if(a==(3*b)) __iv__return_expr_gcd_test = b; else if(a==(5*b)) __iv__return_expr_gcd_test = b; else if(b==15) __iv__return_expr_gcd_test = b; else if(a==(b+b)) __iv__return_expr_gcd_test = b; else if(b>=2) if((-1)==(2+a)) __iv__return_expr_gcd_test = b; else if(5==b) __iv__return_expr_gcd_test = b; else if((-1)==(a%5)) __iv__return_expr_gcd_test = b; else if(3==b) __iv__return_expr_gcd_test = b; else if(a>=(b*b)) __iv__return_expr_gcd_test = b; else if((5*b)<a) __iv__return_expr_gcd_test = b; else if(b==10) __iv__return_expr_gcd_test = b; else if(0==(b+a)) __iv__return_expr_gcd_test = b; else if((a%2)>=0) if(0==(b%5)) __iv__return_expr_gcd_test = (a-(b-a)); else __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = 1; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 22
+# constraints: 38
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.438 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 12.751 sec
+
+Iteration 34:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if((-1)>=(b%5)) __iv__return_expr_gcd_test = (0-b); else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(3<(a%5)) __iv__return_expr_gcd_test = b; else if((a%3)<(-1)) __iv__return_expr_gcd_test = b; else if(a==(3*b)) __iv__return_expr_gcd_test = b; else if(a==(5*b)) __iv__return_expr_gcd_test = b; else if(b==15) __iv__return_expr_gcd_test = b; else if(a==(b+b)) __iv__return_expr_gcd_test = b; else if(5==b) __iv__return_expr_gcd_test = 5; else if(5==(a-1)) __iv__return_expr_gcd_test = a; else if(b==10) __iv__return_expr_gcd_test = b; else if(a==25) __iv__return_expr_gcd_test = 1; else if(2==a) __iv__return_expr_gcd_test = a; else if(2==(a%5)) __iv__return_expr_gcd_test = b; else if(2==b) __iv__return_expr_gcd_test = 2; else if((-1)==(a%3)) __iv__return_expr_gcd_test = b; else if(2==(b%5)) __iv__return_expr_gcd_test = b; else if(0==b) __iv__return_expr_gcd_test = (a*(a%5)); else if(0==(b%2)) __iv__return_expr_gcd_test = (a-(b-a)); else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 20
+# constraints: 39
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.358 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 8.266 sec
+
+Iteration 35:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if((-1)>=(b%5)) __iv__return_expr_gcd_test = (0-b); else if(3<(a%5)) __iv__return_expr_gcd_test = b; else if((a%5)>=(-1)) if(a==(3*b)) __iv__return_expr_gcd_test = b; else if(a==(5*b)) __iv__return_expr_gcd_test = b; else if(0==(b+a)) __iv__return_expr_gcd_test = b; else if(b==10) __iv__return_expr_gcd_test = b; else if(a==(b+b)) __iv__return_expr_gcd_test = b; else if(5==(a-1)) __iv__return_expr_gcd_test = a; else if((-1)==(5+a)) __iv__return_expr_gcd_test = 1; else if(3==b) __iv__return_expr_gcd_test = 3; else if(0==b) __iv__return_expr_gcd_test = (a*(a%5)); else if((b*a)>=a) if(2==a) __iv__return_expr_gcd_test = a; else if(2==(a%5)) __iv__return_expr_gcd_test = b; else if((b%3)>=2) __iv__return_expr_gcd_test = a; else if(0==(b%5)) __iv__return_expr_gcd_test = (b-a); else __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 18
+# constraints: 40
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.511 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 8.573 sec
+
+Iteration 36:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if((-1)>=(b%3)) __iv__return_expr_gcd_test = 17; else if((-1)>=(b%5)) __iv__return_expr_gcd_test = (0-b); else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(!(0==a)) if(3<(a%5)) __iv__return_expr_gcd_test = b; else if((a%3)<(-1)) __iv__return_expr_gcd_test = b; else if(a==(3*b)) __iv__return_expr_gcd_test = b; else if(a==(5*b)) __iv__return_expr_gcd_test = b; else if(b==15) __iv__return_expr_gcd_test = b; else if(a==(b+b)) __iv__return_expr_gcd_test = b; else if(5==b) __iv__return_expr_gcd_test = 5; else if((-1)==(5+a)) __iv__return_expr_gcd_test = 1; else if(5==(a-1)) __iv__return_expr_gcd_test = a; else if(a==25) __iv__return_expr_gcd_test = 1; else if(1==b) __iv__return_expr_gcd_test = 1; else if(b<(a%5)) __iv__return_expr_gcd_test = a; else if(0==b) __iv__return_expr_gcd_test = (0-a); else if((-1)==(2+a)) __iv__return_expr_gcd_test = 3; else if(3==(a%5)) __iv__return_expr_gcd_test = a; else if(2==a) __iv__return_expr_gcd_test = a; else if(2==(a%5)) __iv__return_expr_gcd_test = b; else if(2==b) __iv__return_expr_gcd_test = 2; else if(1==(a%5)) __iv__return_expr_gcd_test = 3; else if(a>=(b*b)) __iv__return_expr_gcd_test = b; else if((-1)>=(b*a)) __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = (a-(b-a)); else __iv__return_expr_gcd_test = b; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 25
+# constraints: 41
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.821 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 8.534 sec
+
+Iteration 37:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if(0>=b) if((-1)>=(b%3)) __iv__return_expr_gcd_test = (b+(3*a)); else if(1==(a%5)) __iv__return_expr_gcd_test = a; else __iv__return_expr_gcd_test = (0-a); else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(3<(a%5)) __iv__return_expr_gcd_test = b; else if((a%3)<(-1)) __iv__return_expr_gcd_test = b; else if(a==(3*b)) __iv__return_expr_gcd_test = b; else if(a==(5*b)) __iv__return_expr_gcd_test = b; else if(b==15) __iv__return_expr_gcd_test = b; else if(a==(b+b)) __iv__return_expr_gcd_test = b; else if(5==b) __iv__return_expr_gcd_test = b; else if(!(3==b)) if(5==(a-1)) __iv__return_expr_gcd_test = a; else if(2==a) __iv__return_expr_gcd_test = a; else if(2==(a%5)) __iv__return_expr_gcd_test = b; else if(2==b) __iv__return_expr_gcd_test = 2; else if(b==10) __iv__return_expr_gcd_test = b; else if(0==(b+a)) __iv__return_expr_gcd_test = b; else if(a<(b*a)) __iv__return_expr_gcd_test = (a-(b-a)); else __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = 3; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 19
+# constraints: 42
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.563 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 3.308 sec
+
+Iteration 38:
+signed char __iv__gcd_test_stub(signed char a, signed char b) {
+	signed char __iv__return_expr_gcd_test;
+	if(0>=b) if((-1)>=(b%3)) __iv__return_expr_gcd_test = 17; else if((a%3)>=2) __iv__return_expr_gcd_test = a; else __iv__return_expr_gcd_test = (0-a); else if(3<(b%5)) __iv__return_expr_gcd_test = b; else if(3<(a%5)) __iv__return_expr_gcd_test = b; else if((a%3)<(-1)) __iv__return_expr_gcd_test = b; else if(a==(3*b)) __iv__return_expr_gcd_test = b; else if(a==(b%2)) __iv__return_expr_gcd_test = b; else if(0==a) __iv__return_expr_gcd_test = b; else if(a==(5*b)) __iv__return_expr_gcd_test = b; else if(b==15) __iv__return_expr_gcd_test = b; else if(a==(b+b)) __iv__return_expr_gcd_test = b; else if((-1)==(2+a)) __iv__return_expr_gcd_test = b; else if(b>=2) if(5==b) __iv__return_expr_gcd_test = b; else if(3==(a%5)) __iv__return_expr_gcd_test = b; else if((-1)==(5+a)) __iv__return_expr_gcd_test = b; else if((-1)==(a%5)) __iv__return_expr_gcd_test = b; else if(3==b) __iv__return_expr_gcd_test = b; else if((b*b)>=a) if(5<(a-b)) __iv__return_expr_gcd_test = b; else if(a>=9) __iv__return_expr_gcd_test = (a-(b-a)); else __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = b; else __iv__return_expr_gcd_test = 1; 
+	__CPROVER_assume(__iv__return_expr_gcd_test == -128 || (-63 <= __iv__return_expr_gcd_test && __iv__return_expr_gcd_test <= 127));
+	return __iv__return_expr_gcd_test;
+}
+complexity: 22
+# constraints: 43
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 6.346 sec
+
+verification results: 
+property 'assert(FALSE);' is TRUE alarm.
+
+total CBMC running time: 26.279 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 199.086 sec, # of refinements: 38
+peak memory usage: 60.45 MB

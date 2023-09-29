@@ -1,0 +1,10 @@
+--src data/sv-benchmarks/c/combinations/gcd_1+newton_1_6.i --wd results/combinations/gcd_1+newton_1_6.i/refine --unwind 1000 --refine --run-original --sv-comp-mode 
+code parsing time: 0.484 sec
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 5.901 sec
+
+the property is TRUE alarm.
+peak memory usage: 56.54 MB
+
+total CBMC running time: 5.901 sec

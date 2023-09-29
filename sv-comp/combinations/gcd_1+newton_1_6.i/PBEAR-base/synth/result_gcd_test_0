@@ -1,0 +1,9 @@
+(define-fun gcd_test ( (__iv__input_0_ Int) (__iv__input_1_ Int)) Int (ite (>= 0 __iv__input_1_) (ite (>= -1 (% __iv__input_1_ 3)) (+ 2 (* 5 3)) (ite (>= (% __iv__input_0_ 3) 2) __iv__input_0_ (- 0 __iv__input_0_))) (ite (< 3 (% __iv__input_1_ 5)) __iv__input_1_ (ite (< 3 (% __iv__input_0_ 5)) __iv__input_1_ (ite (< (% __iv__input_0_ 3) -1) __iv__input_1_ (ite (= __iv__input_0_ (* 3 __iv__input_1_)) __iv__input_1_ (ite (= __iv__input_0_ (% __iv__input_1_ 2)) __iv__input_1_ (ite (= 0 __iv__input_0_) __iv__input_1_ (ite (= __iv__input_0_ (* 5 __iv__input_1_)) __iv__input_1_ (ite (= __iv__input_1_ (* 5 3)) __iv__input_1_ (ite (= __iv__input_0_ (+ __iv__input_1_ __iv__input_1_)) __iv__input_1_ (ite (= -1 (+ 2 __iv__input_0_)) __iv__input_1_ (ite (>= __iv__input_1_ 2) (ite (= 5 __iv__input_1_) __iv__input_1_ (ite (= 3 (% __iv__input_0_ 5)) __iv__input_1_ (ite (= -1 (+ 5 __iv__input_0_)) __iv__input_1_ (ite (= -1 (% __iv__input_0_ 5)) __iv__input_1_ (ite (= 3 __iv__input_1_) __iv__input_1_ (ite (>= (* __iv__input_1_ __iv__input_1_) __iv__input_0_) (ite (< 5 (- __iv__input_0_ __iv__input_1_)) __iv__input_1_ (ite (>= __iv__input_0_ (* 3 3)) (- __iv__input_0_ (- __iv__input_1_ __iv__input_0_)) __iv__input_1_)) __iv__input_1_)))))) 1)))))))))))))
+****************** statistics *******************
+size : 155
+time : 3.29 sec
+max_component_size : 5
+# components : 1817
+time for composition : 2.55 sec
+time for component generation : 0.73 sec
+**************************************************

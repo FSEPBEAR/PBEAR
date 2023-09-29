@@ -1,0 +1,9 @@
+(define-fun gcd_test ( (__iv__input_0_ Int) (__iv__input_1_ Int)) Int (ite (= 0 (% __iv__input_0_ __iv__input_1_)) __iv__input_1_ (ite (= 3 (% __iv__input_1_ 5)) 3 (ite (= 2 (% __iv__input_0_ __iv__input_1_)) 2 (ite (= 2 (% __iv__input_1_ 5)) 2 1)))))
+****************** statistics *******************
+size : 29
+time : 1.03 sec
+max_component_size : 5
+# components : 1993
+time for composition : 0.13 sec
+time for component generation : 0.89 sec
+**************************************************
