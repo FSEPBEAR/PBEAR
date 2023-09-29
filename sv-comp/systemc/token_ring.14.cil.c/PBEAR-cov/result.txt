@@ -1,0 +1,101 @@
+--src data/sv-benchmarks/c/systemc/token_ring.14.cil.c --wd results/systemc/token_ring.14.cil.c/acc --unwind 1000 --synth-dir results/systemc/acc/synth --synth-only-acc --synth-timeout 600 --synth-max-size 512 --synth-max-height 15 --sv-comp-mode 
+code parsing time: 0.791 sec
+
+select target function calls:
+is_transmit9_triggered() (call id 32) is deterministic.
+is_transmit9_triggered() (call id 32) is independent call
+internal node ratio: 1.22% (14 of 1151)
+
+is_transmit10_triggered() (call id 33) is deterministic.
+is_transmit10_triggered() (call id 33) is independent call
+internal node ratio: 1.22% (14 of 1151)
+
+is_transmit11_triggered() (call id 34) is deterministic.
+is_transmit11_triggered() (call id 34) is independent call
+internal node ratio: 1.22% (14 of 1151)
+
+is_transmit12_triggered() (call id 35) is deterministic.
+is_transmit12_triggered() (call id 35) is independent call
+internal node ratio: 1.22% (14 of 1151)
+
+exists_runnable_thread() (call id 36) is independent call
+internal node ratio: 29.80% (343 of 1151)
+
+init_threads() (call id 8) is deterministic.
+init_threads() (call id 8) influences 13 external nodes
+internal node ratio: 1.13% (13 of 1151)
+
+exists_runnable_thread() (call id 17) is deterministic.
+exists_runnable_thread() (call id 17) is independent call
+internal node ratio: 22.59% (260 of 1151)
+
+stop_simulation() (call id 21) is deterministic.
+stop_simulation() (call id 21) is independent call
+internal node ratio: 22.59% (260 of 1151)
+
+exists_runnable_thread() (call id 22) is deterministic.
+exists_runnable_thread() (call id 22) is independent call
+internal node ratio: 22.59% (260 of 1151)
+
+is_master_triggered() (call id 23) is deterministic.
+is_master_triggered() (call id 23) is independent call
+internal node ratio: 1.22% (14 of 1151)
+
+is_transmit1_triggered() (call id 24) is deterministic.
+is_transmit1_triggered() (call id 24) is independent call
+internal node ratio: 0.96% (11 of 1151)
+
+is_transmit2_triggered() (call id 25) is deterministic.
+is_transmit2_triggered() (call id 25) is independent call
+internal node ratio: 1.22% (14 of 1151)
+
+is_transmit3_triggered() (call id 26) is deterministic.
+is_transmit3_triggered() (call id 26) is independent call
+internal node ratio: 1.22% (14 of 1151)
+
+is_transmit4_triggered() (call id 27) is deterministic.
+is_transmit4_triggered() (call id 27) is independent call
+internal node ratio: 1.22% (14 of 1151)
+
+is_transmit5_triggered() (call id 28) is deterministic.
+is_transmit5_triggered() (call id 28) is independent call
+internal node ratio: 1.22% (14 of 1151)
+
+is_transmit6_triggered() (call id 29) is deterministic.
+is_transmit6_triggered() (call id 29) is independent call
+internal node ratio: 1.22% (14 of 1151)
+
+is_transmit7_triggered() (call id 30) is deterministic.
+is_transmit7_triggered() (call id 30) is independent call
+internal node ratio: 1.22% (14 of 1151)
+
+is_transmit8_triggered() (call id 31) is deterministic.
+is_transmit8_triggered() (call id 31) is independent call
+internal node ratio: 1.22% (14 of 1151)
+
+find the best target combination:
+predict complexity: (unwind 1000)
+criterion unwind: 1
+total cmplx: 881
+
+Sep 22, 2023 3:53:23 PM iv_checker.select.TargetFunctionSelector printRank
+INFO: 
+
+call exists_runnable_thread() (call id 36)
+Iteration 0:
+signed int __iv__exists_runnable_thread_stub() {
+	signed int __iv__return_expr_exists_runnable_thread = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(__iv__return_expr_exists_runnable_thread == 0 || __iv__return_expr_exists_runnable_thread == 1);
+	return __iv__return_expr_exists_runnable_thread;
+}
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 29.129 sec
+
+verification results: 
+property 'assert(FALSE);' is TRUE alarm.
+
+total CBMC running time: 29.129 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 1082.46 MB

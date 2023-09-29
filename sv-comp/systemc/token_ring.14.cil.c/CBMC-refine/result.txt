@@ -1,0 +1,10 @@
+--src data/sv-benchmarks/c/systemc/token_ring.14.cil.c --wd results/systemc/token_ring.14.cil.c/refine --unwind 1000 --refine --run-original --sv-comp-mode 
+code parsing time: 0.819 sec
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 31.904 sec
+
+the property is TRUE alarm.
+peak memory usage: 1099.84 MB
+
+total CBMC running time: 31.904 sec

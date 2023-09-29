@@ -1,0 +1,57 @@
+--src data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c --wd results/systemc/token_ring.01.cil-2.c/no_alarm --no-alarm-filtering --unwind 1000 --synth-dir results/systemc/synth --synth-timeout 300 --synth-max-size 512 --synth-max-height 15 --sv-comp-mode 
+code parsing time: 0.553 sec
+
+select target function calls:
+exists_runnable_thread() (call id 17) is deterministic.
+exists_runnable_thread() (call id 17) is independent call
+internal node ratio: 13.47% (40 of 297)
+
+stop_simulation() (call id 21) is deterministic.
+stop_simulation() (call id 21) is independent call
+internal node ratio: 13.47% (40 of 297)
+
+exists_runnable_thread() (call id 22) is independent call
+internal node ratio: 19.19% (57 of 297)
+
+init_threads() (call id 8) is deterministic.
+init_threads() (call id 8) influences 2 external nodes
+internal node ratio: 0.67% (2 of 297)
+
+exists_runnable_thread() (call id 28) is deterministic.
+exists_runnable_thread() (call id 28) is independent call
+internal node ratio: 13.47% (40 of 297)
+
+is_master_triggered() (call id 29) is deterministic.
+is_master_triggered() (call id 29) is independent call
+internal node ratio: 4.71% (14 of 297)
+
+is_transmit1_triggered() (call id 30) is deterministic.
+is_transmit1_triggered() (call id 30) is independent call
+internal node ratio: 3.70% (11 of 297)
+
+find the best target combination:
+predict complexity: (unwind 1000)
+criterion unwind: 1
+total cmplx: 80
+
+Jul 26, 2023 4:09:33 PM iv_checker.select.TargetFunctionSelector printRank
+INFO: 
+
+call exists_runnable_thread() (call id 22)
+Iteration 0:
+signed int __iv__exists_runnable_thread_stub() {
+	signed int __iv__return_expr_exists_runnable_thread = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(__iv__return_expr_exists_runnable_thread == 0 || __iv__return_expr_exists_runnable_thread == 1);
+	return __iv__return_expr_exists_runnable_thread;
+}
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 2.287 sec
+
+verification results: 
+property 'assert(FALSE);' is TRUE alarm.
+
+total CBMC running time: 2.287 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 120.71 MB

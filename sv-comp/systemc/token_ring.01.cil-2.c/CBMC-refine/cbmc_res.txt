@@ -1,0 +1,616 @@
+Parsing data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c
+Converting
+Type-checking token_ring.01.cil-2
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Running with 8 object bits, 56 offset bits (default)
+Starting Bounded Model Checking
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+Runtime Symex: 0.420261s
+size of program expression: 32567 steps
+simple slicing removed 532 assignments
+Generated 198 VCC(s), 198 remaining after simplification
+Runtime Postprocess Equation: 0.00655483s
+Passing problem to refinement loop with MiniSAT 2.2.1 with simplifier
+converting SSA
+Runtime Convert SSA: 0.198911s
+Running refinement loop with MiniSAT 2.2.1 with simplifier
+BV-Refinement: post-processing
+BV-Refinement: iteration 1
+150866 variables, 347868 clauses
+SAT checker: instance is SATISFIABLE
+BV-Refinement: got SAT, and it simulates => SAT
+Total iterations: 1
+Runtime Solver: 0.541649s
+Runtime decision procedure: 0.741522s
+Building error trace
+** Results:
+data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function reach_error
+[reach_error.assertion.1] line 11 assertion 0: FAILURE
+Trace for reach_error.assertion.1:
+State 36 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function main line 485 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 39 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function init_model line 400 thread 0
+----------------------------------------------------
+  m_i=1 (00000000 00000000 00000000 00000001)
+State 40 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function init_model line 401 thread 0
+----------------------------------------------------
+  t1_i=1 (00000000 00000000 00000000 00000001)
+State 44 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function start_simulation line 426 thread 0
+----------------------------------------------------
+  kernel_st=0 (00000000 00000000 00000000 00000000)
+State 45 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function start_simulation line 427 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 46 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function start_simulation line 428 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 47 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function start_simulation line 432 thread 0
+----------------------------------------------------
+  kernel_st=0 (00000000 00000000 00000000 00000000)
+State 54 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function init_threads line 183 thread 0
+----------------------------------------------------
+  m_st=0 (00000000 00000000 00000000 00000000)
+State 57 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function init_threads line 188 thread 0
+----------------------------------------------------
+  t1_st=0 (00000000 00000000 00000000 00000000)
+State 69 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 324 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 70 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 325 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 73 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function is_master_triggered line 133 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 75 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function is_master_triggered line 146 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 78 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 329 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 82 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function is_transmit1_triggered line 152 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 84 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function is_transmit1_triggered line 165 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 87 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 337 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 98 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function start_simulation line 443 thread 0
+----------------------------------------------------
+  kernel_st=1 (00000000 00000000 00000000 00000001)
+State 101 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 218 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 105 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function exists_runnable_thread line 197 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 107 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function exists_runnable_thread line 201 thread 0
+----------------------------------------------------
+  __retres1=1 (00000000 00000000 00000000 00000001)
+State 111 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 225 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 114 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 233 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+State 115 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 234 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+State 118 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 247 thread 0
+----------------------------------------------------
+  tmp_ndt_2=0 (00000000 00000000 00000000 00000000)
+State 119 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 248 thread 0
+----------------------------------------------------
+  tmp_ndt_2=2048 (00000000 00000000 00001000 00000000)
+State 121 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 251 thread 0
+----------------------------------------------------
+  t1_st=1 (00000000 00000000 00000000 00000001)
+State 127 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function transmit1 line 113 thread 0
+----------------------------------------------------
+  t1_pc=1 (00000000 00000000 00000000 00000001)
+State 128 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function transmit1 line 114 thread 0
+----------------------------------------------------
+  t1_st=2 (00000000 00000000 00000000 00000010)
+State 136 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function exists_runnable_thread line 197 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 138 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function exists_runnable_thread line 201 thread 0
+----------------------------------------------------
+  __retres1=1 (00000000 00000000 00000000 00000001)
+State 142 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 225 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 145 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 233 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+State 146 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 234 thread 0
+----------------------------------------------------
+  tmp_ndt_1=134217728 (00001000 00000000 00000000 00000000)
+State 148 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 237 thread 0
+----------------------------------------------------
+  m_st=1 (00000000 00000000 00000000 00000001)
+State 151 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function master line 42 thread 0
+----------------------------------------------------
+  tmp_var=0 (00000000 00000000 00000000 00000000)
+State 154 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function master line 42 thread 0
+----------------------------------------------------
+  tmp_var=-2147483520 (10000000 00000000 00000000 10000000)
+State 158 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function master line 58 thread 0
+----------------------------------------------------
+  token=0 (00000000 00000000 00000000 00000000)
+State 159 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function master line 59 thread 0
+----------------------------------------------------
+  local=0 (00000000 00000000 00000000 00000000)
+State 160 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function master line 60 thread 0
+----------------------------------------------------
+  E_1=1 (00000000 00000000 00000000 00000001)
+State 165 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 324 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 166 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 325 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 169 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function is_master_triggered line 133 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 171 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function is_master_triggered line 146 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 174 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 329 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 178 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function is_transmit1_triggered line 152 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 181 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function is_transmit1_triggered line 157 thread 0
+----------------------------------------------------
+  __retres1=1 (00000000 00000000 00000000 00000001)
+State 185 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 337 thread 0
+----------------------------------------------------
+  tmp___0=1 (00000000 00000000 00000000 00000001)
+State 187 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 340 thread 0
+----------------------------------------------------
+  t1_st=0 (00000000 00000000 00000000 00000000)
+State 190 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function master line 62 thread 0
+----------------------------------------------------
+  E_1=2 (00000000 00000000 00000000 00000010)
+State 191 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function master line 63 thread 0
+----------------------------------------------------
+  m_pc=1 (00000000 00000000 00000000 00000001)
+State 192 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function master line 64 thread 0
+----------------------------------------------------
+  m_st=2 (00000000 00000000 00000000 00000010)
+State 196 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 247 thread 0
+----------------------------------------------------
+  tmp_ndt_2=0 (00000000 00000000 00000000 00000000)
+State 197 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 248 thread 0
+----------------------------------------------------
+  tmp_ndt_2=4194304 (00000000 01000000 00000000 00000000)
+State 199 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 251 thread 0
+----------------------------------------------------
+  t1_st=1 (00000000 00000000 00000000 00000001)
+State 204 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function transmit1 line 119 thread 0
+----------------------------------------------------
+  token=1 (00000000 00000000 00000000 00000001)
+State 205 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function transmit1 line 120 thread 0
+----------------------------------------------------
+  E_M=1 (00000000 00000000 00000000 00000001)
+State 210 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 324 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 211 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 325 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 214 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function is_master_triggered line 133 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 217 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function is_master_triggered line 138 thread 0
+----------------------------------------------------
+  __retres1=1 (00000000 00000000 00000000 00000001)
+State 221 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 329 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 223 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 332 thread 0
+----------------------------------------------------
+  m_st=0 (00000000 00000000 00000000 00000000)
+State 226 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function is_transmit1_triggered line 152 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 229 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function is_transmit1_triggered line 165 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 232 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 337 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 236 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function transmit1 line 122 thread 0
+----------------------------------------------------
+  E_M=2 (00000000 00000000 00000000 00000010)
+State 239 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function transmit1 line 113 thread 0
+----------------------------------------------------
+  t1_pc=1 (00000000 00000000 00000000 00000001)
+State 240 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function transmit1 line 114 thread 0
+----------------------------------------------------
+  t1_st=2 (00000000 00000000 00000000 00000010)
+State 248 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function exists_runnable_thread line 197 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 250 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function exists_runnable_thread line 201 thread 0
+----------------------------------------------------
+  __retres1=1 (00000000 00000000 00000000 00000001)
+State 254 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 225 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 257 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 233 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+State 258 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 234 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+State 265 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function exists_runnable_thread line 197 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 267 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function exists_runnable_thread line 201 thread 0
+----------------------------------------------------
+  __retres1=1 (00000000 00000000 00000000 00000001)
+State 271 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 225 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 274 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 233 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+State 275 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 234 thread 0
+----------------------------------------------------
+  tmp_ndt_1=536870912 (00100000 00000000 00000000 00000000)
+State 277 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 237 thread 0
+----------------------------------------------------
+  m_st=1 (00000000 00000000 00000000 00000001)
+State 280 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function master line 42 thread 0
+----------------------------------------------------
+  tmp_var=0 (00000000 00000000 00000000 00000000)
+State 283 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function master line 42 thread 0
+----------------------------------------------------
+  tmp_var=1073741829 (01000000 00000000 00000000 00000101)
+State 291 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function master line 58 thread 0
+----------------------------------------------------
+  token=1925112831 (01110010 10111110 11100011 11111111)
+State 292 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function master line 59 thread 0
+----------------------------------------------------
+  local=1925112831 (01110010 10111110 11100011 11111111)
+State 293 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function master line 60 thread 0
+----------------------------------------------------
+  E_1=1 (00000000 00000000 00000000 00000001)
+State 298 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 324 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 299 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 325 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 302 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function is_master_triggered line 133 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 305 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function is_master_triggered line 146 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 308 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 329 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 312 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function is_transmit1_triggered line 152 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 315 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function is_transmit1_triggered line 157 thread 0
+----------------------------------------------------
+  __retres1=1 (00000000 00000000 00000000 00000001)
+State 319 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 337 thread 0
+----------------------------------------------------
+  tmp___0=1 (00000000 00000000 00000000 00000001)
+State 321 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 340 thread 0
+----------------------------------------------------
+  t1_st=0 (00000000 00000000 00000000 00000000)
+State 324 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function master line 62 thread 0
+----------------------------------------------------
+  E_1=2 (00000000 00000000 00000000 00000010)
+State 325 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function master line 63 thread 0
+----------------------------------------------------
+  m_pc=1 (00000000 00000000 00000000 00000001)
+State 326 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function master line 64 thread 0
+----------------------------------------------------
+  m_st=2 (00000000 00000000 00000000 00000010)
+State 330 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 247 thread 0
+----------------------------------------------------
+  tmp_ndt_2=0 (00000000 00000000 00000000 00000000)
+State 331 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 248 thread 0
+----------------------------------------------------
+  tmp_ndt_2=2 (00000000 00000000 00000000 00000010)
+State 333 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 251 thread 0
+----------------------------------------------------
+  t1_st=1 (00000000 00000000 00000000 00000001)
+State 338 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function transmit1 line 119 thread 0
+----------------------------------------------------
+  token=1925112832 (01110010 10111110 11100100 00000000)
+State 339 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function transmit1 line 120 thread 0
+----------------------------------------------------
+  E_M=1 (00000000 00000000 00000000 00000001)
+State 344 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 324 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 345 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 325 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 348 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function is_master_triggered line 133 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 351 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function is_master_triggered line 138 thread 0
+----------------------------------------------------
+  __retres1=1 (00000000 00000000 00000000 00000001)
+State 355 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 329 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 357 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 332 thread 0
+----------------------------------------------------
+  m_st=0 (00000000 00000000 00000000 00000000)
+State 360 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function is_transmit1_triggered line 152 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 363 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function is_transmit1_triggered line 165 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 366 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function activate_threads line 337 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 370 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function transmit1 line 122 thread 0
+----------------------------------------------------
+  E_M=2 (00000000 00000000 00000000 00000010)
+State 373 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function transmit1 line 113 thread 0
+----------------------------------------------------
+  t1_pc=1 (00000000 00000000 00000000 00000001)
+State 374 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function transmit1 line 114 thread 0
+----------------------------------------------------
+  t1_st=2 (00000000 00000000 00000000 00000010)
+State 382 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function exists_runnable_thread line 197 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 384 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function exists_runnable_thread line 201 thread 0
+----------------------------------------------------
+  __retres1=1 (00000000 00000000 00000000 00000001)
+State 388 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 225 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 391 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 233 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+State 392 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 234 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+State 399 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function exists_runnable_thread line 197 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 401 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function exists_runnable_thread line 201 thread 0
+----------------------------------------------------
+  __retres1=1 (00000000 00000000 00000000 00000001)
+State 405 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 225 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 408 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 233 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+State 409 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 234 thread 0
+----------------------------------------------------
+  tmp_ndt_1=4194304 (00000000 01000000 00000000 00000000)
+State 411 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function eval line 237 thread 0
+----------------------------------------------------
+  m_st=1 (00000000 00000000 00000000 00000001)
+State 414 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function master line 42 thread 0
+----------------------------------------------------
+  tmp_var=0 (00000000 00000000 00000000 00000000)
+State 417 file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function master line 42 thread 0
+----------------------------------------------------
+  tmp_var=5 (00000000 00000000 00000000 00000101)
+Violated property:
+  file data/sv-benchmarks/c/systemc/token_ring.01.cil-2.c function reach_error line 11 thread 0
+  assertion 0
+  FALSE
+** 1 of 1 failed (2 iterations)
+VERIFICATION FAILED
