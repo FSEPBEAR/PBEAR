@@ -1,0 +1,73 @@
+--src data/sv-benchmarks/c/systemc/token_ring.05.cil-2.c --wd results/systemc/token_ring.05.cil-2.c/acc --unwind 1000 --synth-dir results/systemc/acc/synth --synth-only-acc --synth-timeout 600 --synth-max-size 512 --synth-max-height 15 --sv-comp-mode 
+code parsing time: 0.663 sec
+
+select target function calls:
+stop_simulation() (call id 16) is deterministic.
+stop_simulation() (call id 16) is independent call
+internal node ratio: 19.70% (120 of 609)
+
+init_threads() (call id 3) is deterministic.
+init_threads() (call id 3) influences 6 external nodes
+internal node ratio: 0.99% (6 of 609)
+
+exists_runnable_thread() (call id 20) is deterministic.
+exists_runnable_thread() (call id 20) is independent call
+internal node ratio: 19.70% (120 of 609)
+
+is_master_triggered() (call id 37) is deterministic.
+is_master_triggered() (call id 37) is independent call
+internal node ratio: 2.30% (14 of 609)
+
+exists_runnable_thread() (call id 21) is independent call
+internal node ratio: 26.44% (161 of 609)
+
+is_transmit1_triggered() (call id 38) is deterministic.
+is_transmit1_triggered() (call id 38) is independent call
+internal node ratio: 1.81% (11 of 609)
+
+is_transmit2_triggered() (call id 39) is deterministic.
+is_transmit2_triggered() (call id 39) is independent call
+internal node ratio: 2.30% (14 of 609)
+
+is_transmit3_triggered() (call id 40) is deterministic.
+is_transmit3_triggered() (call id 40) is independent call
+internal node ratio: 2.30% (14 of 609)
+
+is_transmit4_triggered() (call id 41) is deterministic.
+is_transmit4_triggered() (call id 41) is independent call
+internal node ratio: 2.30% (14 of 609)
+
+is_transmit5_triggered() (call id 42) is deterministic.
+is_transmit5_triggered() (call id 42) is independent call
+internal node ratio: 2.30% (14 of 609)
+
+exists_runnable_thread() (call id 12) is deterministic.
+exists_runnable_thread() (call id 12) is independent call
+internal node ratio: 19.70% (120 of 609)
+
+find the best target combination:
+predict complexity: (unwind 1000)
+criterion unwind: 1
+total cmplx: 288
+
+Sep 22, 2023 3:53:14 PM iv_checker.select.TargetFunctionSelector printRank
+INFO: 
+
+call exists_runnable_thread() (call id 21)
+Iteration 0:
+signed int __iv__exists_runnable_thread_stub() {
+	signed int __iv__return_expr_exists_runnable_thread = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(__iv__return_expr_exists_runnable_thread == 0 || __iv__return_expr_exists_runnable_thread == 1);
+	return __iv__return_expr_exists_runnable_thread;
+}
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 6.346 sec
+
+verification results: 
+property 'assert(FALSE);' is TRUE alarm.
+
+total CBMC running time: 6.346 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 361.62 MB

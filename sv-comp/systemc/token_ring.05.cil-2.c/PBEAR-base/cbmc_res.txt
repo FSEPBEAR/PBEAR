@@ -1,0 +1,1513 @@
+Parsing results/systemc/token_ring.05.cil-2.c/no_alarm/target.c
+Converting
+Type-checking target
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Running with 8 object bits, 56 offset bits (default)
+Starting Bounded Model Checking
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+Runtime Symex: 1.82176s
+size of program expression: 118730 steps
+simple slicing removed 1739 assignments
+Generated 198 VCC(s), 198 remaining after simplification
+Runtime Postprocess Equation: 0.0370336s
+Passing problem to propositional reduction
+converting SSA
+Runtime Convert SSA: 0.765129s
+Running propositional reduction
+Post-processing
+Runtime Post-process: 2.4715e-05s
+Solving with MiniSAT 2.2.1 with simplifier
+574930 variables, 908981 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 3.27046s
+Runtime decision procedure: 4.04684s
+Building error trace
+** Results:
+results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function reach_error
+[reach_error.assertion.1] line 131 assertion FALSE: FAILURE
+Trace for reach_error.assertion.1:
+State 56 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function main line 71 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 59 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function init_model line 679 thread 0
+----------------------------------------------------
+  m_i=1 (00000000 00000000 00000000 00000001)
+State 60 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function init_model line 680 thread 0
+----------------------------------------------------
+  t1_i=1 (00000000 00000000 00000000 00000001)
+State 61 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function init_model line 681 thread 0
+----------------------------------------------------
+  t2_i=1 (00000000 00000000 00000000 00000001)
+State 62 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function init_model line 682 thread 0
+----------------------------------------------------
+  t3_i=1 (00000000 00000000 00000000 00000001)
+State 63 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function init_model line 683 thread 0
+----------------------------------------------------
+  t4_i=1 (00000000 00000000 00000000 00000001)
+State 64 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function init_model line 684 thread 0
+----------------------------------------------------
+  t5_i=1 (00000000 00000000 00000000 00000001)
+State 69 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function start_simulation line 78 thread 0
+----------------------------------------------------
+  kernel_st=0 (00000000 00000000 00000000 00000000)
+State 70 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function start_simulation line 79 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 71 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function start_simulation line 80 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 72 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function start_simulation line 81 thread 0
+----------------------------------------------------
+  kernel_st=0 (00000000 00000000 00000000 00000000)
+State 80 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function init_threads line 426 thread 0
+----------------------------------------------------
+  m_st=0 (00000000 00000000 00000000 00000000)
+State 83 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function init_threads line 432 thread 0
+----------------------------------------------------
+  t1_st=0 (00000000 00000000 00000000 00000000)
+State 86 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function init_threads line 438 thread 0
+----------------------------------------------------
+  t2_st=0 (00000000 00000000 00000000 00000000)
+State 89 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function init_threads line 444 thread 0
+----------------------------------------------------
+  t3_st=0 (00000000 00000000 00000000 00000000)
+State 92 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function init_threads line 450 thread 0
+----------------------------------------------------
+  t4_st=0 (00000000 00000000 00000000 00000000)
+State 95 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function init_threads line 456 thread 0
+----------------------------------------------------
+  t5_st=0 (00000000 00000000 00000000 00000000)
+State 117 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 390 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 118 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 391 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 119 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 392 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 120 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 393 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 121 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 394 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+State 122 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 395 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+State 125 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_master_triggered line 553 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 127 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_master_triggered line 560 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 130 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 396 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 134 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit1_triggered line 284 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 136 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit1_triggered line 291 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 139 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 400 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 143 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit2_triggered line 570 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 145 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit2_triggered line 577 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 148 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 404 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 152 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit3_triggered line 214 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 154 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit3_triggered line 221 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 157 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 408 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 161 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit4_triggered line 118 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 163 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit4_triggered line 125 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 166 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 412 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+State 170 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit5_triggered line 272 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 172 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit5_triggered line 279 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 175 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 416 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+State 195 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function start_simulation line 89 thread 0
+----------------------------------------------------
+  kernel_st=1 (00000000 00000000 00000000 00000001)
+State 198 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 147 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+__iv__stub_call:exists_runnable_thread
+__iv__stub_input:t1_st=0
+__iv__stub_input:t2_st=0
+__iv__stub_input:t3_st=0
+__iv__stub_input:t4_st=0
+__iv__stub_input:t5_st=0
+__iv__stub_input:m_st=0
+State 209 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function __iv__exists_runnable_thread_stub line 697 thread 0
+----------------------------------------------------
+  __iv__return_expr_exists_runnable_thread=0 (00000000 00000000 00000000 00000000)
+State 212 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function __iv__exists_runnable_thread_stub line 697 thread 0
+----------------------------------------------------
+  __iv__return_expr_exists_runnable_thread=1 (00000000 00000000 00000000 00000001)
+Assumption:
+  file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c line 698 function __iv__exists_runnable_thread_stub
+  __iv__return_expr_exists_runnable_thread == 0 || __iv__return_expr_exists_runnable_thread == 1
+__iv__stub_output:__iv__return_expr_exists_runnable_thread=1
+State 217 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 150 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 220 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 153 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+State 221 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 154 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 225 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 162 thread 0
+----------------------------------------------------
+  tmp_ndt_2=0 (00000000 00000000 00000000 00000000)
+State 226 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 163 thread 0
+----------------------------------------------------
+  tmp_ndt_2=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 230 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 171 thread 0
+----------------------------------------------------
+  tmp_ndt_3=0 (00000000 00000000 00000000 00000000)
+State 231 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 172 thread 0
+----------------------------------------------------
+  tmp_ndt_3=16 (00000000 00000000 00000000 00010000)
+__iv__test_case:16
+State 234 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 175 thread 0
+----------------------------------------------------
+  t2_st=1 (00000000 00000000 00000000 00000001)
+State 240 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit2 line 256 thread 0
+----------------------------------------------------
+  t2_pc=1 (00000000 00000000 00000000 00000001)
+State 241 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit2 line 257 thread 0
+----------------------------------------------------
+  t2_st=2 (00000000 00000000 00000000 00000010)
+State 246 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 180 thread 0
+----------------------------------------------------
+  tmp_ndt_4=0 (00000000 00000000 00000000 00000000)
+State 247 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 181 thread 0
+----------------------------------------------------
+  tmp_ndt_4=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 251 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 189 thread 0
+----------------------------------------------------
+  tmp_ndt_5=0 (00000000 00000000 00000000 00000000)
+State 252 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 190 thread 0
+----------------------------------------------------
+  tmp_ndt_5=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 256 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 198 thread 0
+----------------------------------------------------
+  tmp_ndt_6=0 (00000000 00000000 00000000 00000000)
+State 257 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 199 thread 0
+----------------------------------------------------
+  tmp_ndt_6=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+__iv__stub_call:exists_runnable_thread
+__iv__stub_input:t1_st=0
+__iv__stub_input:t2_st=2
+__iv__stub_input:t3_st=0
+__iv__stub_input:t4_st=0
+__iv__stub_input:t5_st=0
+__iv__stub_input:m_st=0
+State 271 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function __iv__exists_runnable_thread_stub line 697 thread 0
+----------------------------------------------------
+  __iv__return_expr_exists_runnable_thread=0 (00000000 00000000 00000000 00000000)
+State 274 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function __iv__exists_runnable_thread_stub line 697 thread 0
+----------------------------------------------------
+  __iv__return_expr_exists_runnable_thread=1 (00000000 00000000 00000000 00000001)
+Assumption:
+  file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c line 698 function __iv__exists_runnable_thread_stub
+  __iv__return_expr_exists_runnable_thread == 0 || __iv__return_expr_exists_runnable_thread == 1
+__iv__stub_output:__iv__return_expr_exists_runnable_thread=1
+State 279 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 150 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 282 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 153 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+State 283 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 154 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 287 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 162 thread 0
+----------------------------------------------------
+  tmp_ndt_2=0 (00000000 00000000 00000000 00000000)
+State 288 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 163 thread 0
+----------------------------------------------------
+  tmp_ndt_2=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 293 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 180 thread 0
+----------------------------------------------------
+  tmp_ndt_4=0 (00000000 00000000 00000000 00000000)
+State 294 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 181 thread 0
+----------------------------------------------------
+  tmp_ndt_4=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 298 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 189 thread 0
+----------------------------------------------------
+  tmp_ndt_5=0 (00000000 00000000 00000000 00000000)
+State 299 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 190 thread 0
+----------------------------------------------------
+  tmp_ndt_5=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 303 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 198 thread 0
+----------------------------------------------------
+  tmp_ndt_6=0 (00000000 00000000 00000000 00000000)
+State 304 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 199 thread 0
+----------------------------------------------------
+  tmp_ndt_6=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+__iv__stub_call:exists_runnable_thread
+__iv__stub_input:t1_st=0
+__iv__stub_input:t2_st=2
+__iv__stub_input:t3_st=0
+__iv__stub_input:t4_st=0
+__iv__stub_input:t5_st=0
+__iv__stub_input:m_st=0
+State 318 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function __iv__exists_runnable_thread_stub line 697 thread 0
+----------------------------------------------------
+  __iv__return_expr_exists_runnable_thread=0 (00000000 00000000 00000000 00000000)
+State 321 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function __iv__exists_runnable_thread_stub line 697 thread 0
+----------------------------------------------------
+  __iv__return_expr_exists_runnable_thread=1 (00000000 00000000 00000000 00000001)
+Assumption:
+  file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c line 698 function __iv__exists_runnable_thread_stub
+  __iv__return_expr_exists_runnable_thread == 0 || __iv__return_expr_exists_runnable_thread == 1
+__iv__stub_output:__iv__return_expr_exists_runnable_thread=1
+State 326 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 150 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 329 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 153 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+State 330 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 154 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 334 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 162 thread 0
+----------------------------------------------------
+  tmp_ndt_2=0 (00000000 00000000 00000000 00000000)
+State 335 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 163 thread 0
+----------------------------------------------------
+  tmp_ndt_2=32768 (00000000 00000000 10000000 00000000)
+__iv__test_case:32768
+State 338 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 166 thread 0
+----------------------------------------------------
+  t1_st=1 (00000000 00000000 00000000 00000001)
+State 344 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit1 line 233 thread 0
+----------------------------------------------------
+  t1_pc=1 (00000000 00000000 00000000 00000001)
+State 345 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit1 line 234 thread 0
+----------------------------------------------------
+  t1_st=2 (00000000 00000000 00000000 00000010)
+State 351 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 180 thread 0
+----------------------------------------------------
+  tmp_ndt_4=0 (00000000 00000000 00000000 00000000)
+State 352 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 181 thread 0
+----------------------------------------------------
+  tmp_ndt_4=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 356 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 189 thread 0
+----------------------------------------------------
+  tmp_ndt_5=0 (00000000 00000000 00000000 00000000)
+State 357 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 190 thread 0
+----------------------------------------------------
+  tmp_ndt_5=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 361 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 198 thread 0
+----------------------------------------------------
+  tmp_ndt_6=0 (00000000 00000000 00000000 00000000)
+State 362 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 199 thread 0
+----------------------------------------------------
+  tmp_ndt_6=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+__iv__stub_call:exists_runnable_thread
+__iv__stub_input:t1_st=2
+__iv__stub_input:t2_st=2
+__iv__stub_input:t3_st=0
+__iv__stub_input:t4_st=0
+__iv__stub_input:t5_st=0
+__iv__stub_input:m_st=0
+State 376 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function __iv__exists_runnable_thread_stub line 697 thread 0
+----------------------------------------------------
+  __iv__return_expr_exists_runnable_thread=0 (00000000 00000000 00000000 00000000)
+State 379 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function __iv__exists_runnable_thread_stub line 697 thread 0
+----------------------------------------------------
+  __iv__return_expr_exists_runnable_thread=1 (00000000 00000000 00000000 00000001)
+Assumption:
+  file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c line 698 function __iv__exists_runnable_thread_stub
+  __iv__return_expr_exists_runnable_thread == 0 || __iv__return_expr_exists_runnable_thread == 1
+__iv__stub_output:__iv__return_expr_exists_runnable_thread=1
+State 384 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 150 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 387 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 153 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+State 388 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 154 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 394 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 180 thread 0
+----------------------------------------------------
+  tmp_ndt_4=0 (00000000 00000000 00000000 00000000)
+State 395 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 181 thread 0
+----------------------------------------------------
+  tmp_ndt_4=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 399 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 189 thread 0
+----------------------------------------------------
+  tmp_ndt_5=0 (00000000 00000000 00000000 00000000)
+State 400 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 190 thread 0
+----------------------------------------------------
+  tmp_ndt_5=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 404 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 198 thread 0
+----------------------------------------------------
+  tmp_ndt_6=0 (00000000 00000000 00000000 00000000)
+State 405 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 199 thread 0
+----------------------------------------------------
+  tmp_ndt_6=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+__iv__stub_call:exists_runnable_thread
+__iv__stub_input:t1_st=2
+__iv__stub_input:t2_st=2
+__iv__stub_input:t3_st=0
+__iv__stub_input:t4_st=0
+__iv__stub_input:t5_st=0
+__iv__stub_input:m_st=0
+State 419 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function __iv__exists_runnable_thread_stub line 697 thread 0
+----------------------------------------------------
+  __iv__return_expr_exists_runnable_thread=0 (00000000 00000000 00000000 00000000)
+State 422 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function __iv__exists_runnable_thread_stub line 697 thread 0
+----------------------------------------------------
+  __iv__return_expr_exists_runnable_thread=0 (00000000 00000000 00000000 00000000)
+Assumption:
+  file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c line 698 function __iv__exists_runnable_thread_stub
+  __iv__return_expr_exists_runnable_thread == 0 || __iv__return_expr_exists_runnable_thread == 1
+__iv__stub_output:__iv__return_expr_exists_runnable_thread=0
+State 427 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 150 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 430 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function start_simulation line 91 thread 0
+----------------------------------------------------
+  kernel_st=2 (00000000 00000000 00000000 00000010)
+State 435 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function start_simulation line 93 thread 0
+----------------------------------------------------
+  kernel_st=3 (00000000 00000000 00000000 00000011)
+State 454 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 390 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 455 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 391 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 456 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 392 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 457 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 393 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 458 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 394 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+State 459 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 395 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+State 462 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_master_triggered line 553 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 464 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_master_triggered line 560 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 467 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 396 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 471 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit1_triggered line 284 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 474 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit1_triggered line 291 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 477 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 400 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 481 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit2_triggered line 570 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 484 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit2_triggered line 577 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 487 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 404 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 491 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit3_triggered line 214 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 493 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit3_triggered line 221 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 496 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 408 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 500 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit4_triggered line 118 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 502 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit4_triggered line 125 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 505 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 412 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+State 509 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit5_triggered line 272 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 511 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit5_triggered line 279 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 514 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 416 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+State 535 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function exists_runnable_thread line 649 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 537 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function exists_runnable_thread line 651 thread 0
+----------------------------------------------------
+  __retres1=1 (00000000 00000000 00000000 00000001)
+State 541 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function start_simulation line 97 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 545 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function stop_simulation line 135 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 546 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function stop_simulation line 136 thread 0
+----------------------------------------------------
+  __retres2=0 (00000000 00000000 00000000 00000000)
+State 549 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function exists_runnable_thread line 649 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 551 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function exists_runnable_thread line 651 thread 0
+----------------------------------------------------
+  __retres1=1 (00000000 00000000 00000000 00000001)
+State 555 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function stop_simulation line 137 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 557 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function stop_simulation line 139 thread 0
+----------------------------------------------------
+  __retres2=0 (00000000 00000000 00000000 00000000)
+State 561 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function start_simulation line 104 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 565 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function start_simulation line 89 thread 0
+----------------------------------------------------
+  kernel_st=1 (00000000 00000000 00000000 00000001)
+State 568 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 147 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+__iv__stub_call:exists_runnable_thread
+__iv__stub_input:t1_st=2
+__iv__stub_input:t2_st=2
+__iv__stub_input:t3_st=0
+__iv__stub_input:t4_st=0
+__iv__stub_input:t5_st=0
+__iv__stub_input:m_st=0
+State 579 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function __iv__exists_runnable_thread_stub line 697 thread 0
+----------------------------------------------------
+  __iv__return_expr_exists_runnable_thread=0 (00000000 00000000 00000000 00000000)
+State 582 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function __iv__exists_runnable_thread_stub line 697 thread 0
+----------------------------------------------------
+  __iv__return_expr_exists_runnable_thread=1 (00000000 00000000 00000000 00000001)
+Assumption:
+  file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c line 698 function __iv__exists_runnable_thread_stub
+  __iv__return_expr_exists_runnable_thread == 0 || __iv__return_expr_exists_runnable_thread == 1
+__iv__stub_output:__iv__return_expr_exists_runnable_thread=1
+State 587 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 150 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 590 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 153 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+State 591 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 154 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 597 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 180 thread 0
+----------------------------------------------------
+  tmp_ndt_4=0 (00000000 00000000 00000000 00000000)
+State 598 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 181 thread 0
+----------------------------------------------------
+  tmp_ndt_4=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 602 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 189 thread 0
+----------------------------------------------------
+  tmp_ndt_5=0 (00000000 00000000 00000000 00000000)
+State 603 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 190 thread 0
+----------------------------------------------------
+  tmp_ndt_5=524288 (00000000 00001000 00000000 00000000)
+__iv__test_case:524288
+State 606 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 193 thread 0
+----------------------------------------------------
+  t4_st=1 (00000000 00000000 00000000 00000001)
+State 612 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit4 line 473 thread 0
+----------------------------------------------------
+  t4_pc=1 (00000000 00000000 00000000 00000001)
+State 613 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit4 line 474 thread 0
+----------------------------------------------------
+  t4_st=2 (00000000 00000000 00000000 00000010)
+State 618 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 198 thread 0
+----------------------------------------------------
+  tmp_ndt_6=0 (00000000 00000000 00000000 00000000)
+State 619 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 199 thread 0
+----------------------------------------------------
+  tmp_ndt_6=8 (00000000 00000000 00000000 00001000)
+__iv__test_case:8
+State 622 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 202 thread 0
+----------------------------------------------------
+  t5_st=1 (00000000 00000000 00000000 00000001)
+State 628 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit5 line 537 thread 0
+----------------------------------------------------
+  t5_pc=1 (00000000 00000000 00000000 00000001)
+State 629 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit5 line 538 thread 0
+----------------------------------------------------
+  t5_st=2 (00000000 00000000 00000000 00000010)
+__iv__stub_call:exists_runnable_thread
+__iv__stub_input:t1_st=2
+__iv__stub_input:t2_st=2
+__iv__stub_input:t3_st=0
+__iv__stub_input:t4_st=2
+__iv__stub_input:t5_st=2
+__iv__stub_input:m_st=0
+State 644 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function __iv__exists_runnable_thread_stub line 697 thread 0
+----------------------------------------------------
+  __iv__return_expr_exists_runnable_thread=0 (00000000 00000000 00000000 00000000)
+State 647 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function __iv__exists_runnable_thread_stub line 697 thread 0
+----------------------------------------------------
+  __iv__return_expr_exists_runnable_thread=1 (00000000 00000000 00000000 00000001)
+Assumption:
+  file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c line 698 function __iv__exists_runnable_thread_stub
+  __iv__return_expr_exists_runnable_thread == 0 || __iv__return_expr_exists_runnable_thread == 1
+__iv__stub_output:__iv__return_expr_exists_runnable_thread=1
+State 652 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 150 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 655 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 153 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+State 656 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 154 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 662 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 180 thread 0
+----------------------------------------------------
+  tmp_ndt_4=0 (00000000 00000000 00000000 00000000)
+State 663 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 181 thread 0
+----------------------------------------------------
+  tmp_ndt_4=1 (00000000 00000000 00000000 00000001)
+__iv__test_case:1
+State 666 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 184 thread 0
+----------------------------------------------------
+  t3_st=1 (00000000 00000000 00000000 00000001)
+State 672 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit3 line 633 thread 0
+----------------------------------------------------
+  t3_pc=1 (00000000 00000000 00000000 00000001)
+State 673 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit3 line 634 thread 0
+----------------------------------------------------
+  t3_st=2 (00000000 00000000 00000000 00000010)
+__iv__stub_call:exists_runnable_thread
+__iv__stub_input:t1_st=2
+__iv__stub_input:t2_st=2
+__iv__stub_input:t3_st=2
+__iv__stub_input:t4_st=2
+__iv__stub_input:t5_st=2
+__iv__stub_input:m_st=0
+State 690 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function __iv__exists_runnable_thread_stub line 697 thread 0
+----------------------------------------------------
+  __iv__return_expr_exists_runnable_thread=0 (00000000 00000000 00000000 00000000)
+State 693 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function __iv__exists_runnable_thread_stub line 697 thread 0
+----------------------------------------------------
+  __iv__return_expr_exists_runnable_thread=1 (00000000 00000000 00000000 00000001)
+Assumption:
+  file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c line 698 function __iv__exists_runnable_thread_stub
+  __iv__return_expr_exists_runnable_thread == 0 || __iv__return_expr_exists_runnable_thread == 1
+__iv__stub_output:__iv__return_expr_exists_runnable_thread=1
+State 698 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 150 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 701 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 153 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+State 702 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 154 thread 0
+----------------------------------------------------
+  tmp_ndt_1=65536 (00000000 00000001 00000000 00000000)
+__iv__test_case:65536
+State 705 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 157 thread 0
+----------------------------------------------------
+  m_st=1 (00000000 00000000 00000000 00000001)
+State 708 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function master line 582 thread 0
+----------------------------------------------------
+  tmp_var=0 (00000000 00000000 00000000 00000000)
+State 709 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function master line 583 thread 0
+----------------------------------------------------
+  tmp_var=5 (00000000 00000000 00000000 00000101)
+__iv__test_case:5
+State 714 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function master line 592 thread 0
+----------------------------------------------------
+  token=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 716 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function master line 594 thread 0
+----------------------------------------------------
+  local=0 (00000000 00000000 00000000 00000000)
+State 717 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function master line 595 thread 0
+----------------------------------------------------
+  E_1=1 (00000000 00000000 00000000 00000001)
+State 722 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 390 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 723 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 391 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 724 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 392 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 725 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 393 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 726 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 394 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+State 727 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 395 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+State 730 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_master_triggered line 553 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 732 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_master_triggered line 560 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 735 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 396 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 739 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit1_triggered line 284 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 742 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit1_triggered line 287 thread 0
+----------------------------------------------------
+  __retres1=1 (00000000 00000000 00000000 00000001)
+State 746 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 400 thread 0
+----------------------------------------------------
+  tmp___0=1 (00000000 00000000 00000000 00000001)
+State 748 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 402 thread 0
+----------------------------------------------------
+  t1_st=0 (00000000 00000000 00000000 00000000)
+State 751 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit2_triggered line 570 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 754 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit2_triggered line 577 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 757 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 404 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 761 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit3_triggered line 214 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 764 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit3_triggered line 221 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 767 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 408 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 771 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit4_triggered line 118 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 774 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit4_triggered line 125 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 777 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 412 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+State 781 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit5_triggered line 272 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 784 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit5_triggered line 279 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 787 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 416 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+State 792 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function master line 597 thread 0
+----------------------------------------------------
+  E_1=2 (00000000 00000000 00000000 00000010)
+State 793 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function master line 598 thread 0
+----------------------------------------------------
+  m_pc=1 (00000000 00000000 00000000 00000001)
+State 794 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function master line 599 thread 0
+----------------------------------------------------
+  m_st=2 (00000000 00000000 00000000 00000010)
+State 798 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 162 thread 0
+----------------------------------------------------
+  tmp_ndt_2=0 (00000000 00000000 00000000 00000000)
+State 799 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 163 thread 0
+----------------------------------------------------
+  tmp_ndt_2=16384 (00000000 00000000 01000000 00000000)
+__iv__test_case:16384
+State 802 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 166 thread 0
+----------------------------------------------------
+  t1_st=1 (00000000 00000000 00000000 00000001)
+State 807 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit1 line 237 thread 0
+----------------------------------------------------
+  token=1 (00000000 00000000 00000000 00000001)
+State 808 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit1 line 238 thread 0
+----------------------------------------------------
+  E_2=1 (00000000 00000000 00000000 00000001)
+State 813 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 390 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 814 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 391 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 815 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 392 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 816 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 393 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 817 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 394 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+State 818 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 395 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+State 821 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_master_triggered line 553 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 824 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_master_triggered line 560 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 827 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 396 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 831 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit1_triggered line 284 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 834 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit1_triggered line 291 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 837 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 400 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 841 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit2_triggered line 570 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 844 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit2_triggered line 573 thread 0
+----------------------------------------------------
+  __retres1=1 (00000000 00000000 00000000 00000001)
+State 848 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 404 thread 0
+----------------------------------------------------
+  tmp___1=1 (00000000 00000000 00000000 00000001)
+State 850 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 406 thread 0
+----------------------------------------------------
+  t2_st=0 (00000000 00000000 00000000 00000000)
+State 853 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit3_triggered line 214 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 856 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit3_triggered line 221 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 859 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 408 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 863 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit4_triggered line 118 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 866 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit4_triggered line 125 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 869 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 412 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+State 873 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit5_triggered line 272 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 876 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit5_triggered line 279 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 879 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 416 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+State 884 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit1 line 240 thread 0
+----------------------------------------------------
+  E_2=2 (00000000 00000000 00000000 00000010)
+State 887 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit1 line 233 thread 0
+----------------------------------------------------
+  t1_pc=1 (00000000 00000000 00000000 00000001)
+State 888 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit1 line 234 thread 0
+----------------------------------------------------
+  t1_st=2 (00000000 00000000 00000000 00000010)
+State 893 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 171 thread 0
+----------------------------------------------------
+  tmp_ndt_3=0 (00000000 00000000 00000000 00000000)
+State 894 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 172 thread 0
+----------------------------------------------------
+  tmp_ndt_3=-2147483648 (10000000 00000000 00000000 00000000)
+__iv__test_case:-2147483648
+State 897 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 175 thread 0
+----------------------------------------------------
+  t2_st=1 (00000000 00000000 00000000 00000001)
+State 902 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit2 line 260 thread 0
+----------------------------------------------------
+  token=2 (00000000 00000000 00000000 00000010)
+State 903 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit2 line 261 thread 0
+----------------------------------------------------
+  E_3=1 (00000000 00000000 00000000 00000001)
+State 908 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 390 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 909 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 391 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 910 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 392 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 911 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 393 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 912 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 394 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+State 913 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 395 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+State 916 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_master_triggered line 553 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 919 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_master_triggered line 560 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 922 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 396 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 926 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit1_triggered line 284 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 929 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit1_triggered line 291 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 932 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 400 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 936 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit2_triggered line 570 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 939 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit2_triggered line 577 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 942 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 404 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 946 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit3_triggered line 214 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 949 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit3_triggered line 217 thread 0
+----------------------------------------------------
+  __retres1=1 (00000000 00000000 00000000 00000001)
+State 953 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 408 thread 0
+----------------------------------------------------
+  tmp___2=1 (00000000 00000000 00000000 00000001)
+State 955 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 410 thread 0
+----------------------------------------------------
+  t3_st=0 (00000000 00000000 00000000 00000000)
+State 958 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit4_triggered line 118 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 961 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit4_triggered line 125 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 964 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 412 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+State 968 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit5_triggered line 272 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 971 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit5_triggered line 279 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 974 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 416 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+State 979 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit2 line 263 thread 0
+----------------------------------------------------
+  E_3=2 (00000000 00000000 00000000 00000010)
+State 982 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit2 line 256 thread 0
+----------------------------------------------------
+  t2_pc=1 (00000000 00000000 00000000 00000001)
+State 983 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit2 line 257 thread 0
+----------------------------------------------------
+  t2_st=2 (00000000 00000000 00000000 00000010)
+State 988 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 180 thread 0
+----------------------------------------------------
+  tmp_ndt_4=0 (00000000 00000000 00000000 00000000)
+State 989 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 181 thread 0
+----------------------------------------------------
+  tmp_ndt_4=1 (00000000 00000000 00000000 00000001)
+__iv__test_case:1
+State 992 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 184 thread 0
+----------------------------------------------------
+  t3_st=1 (00000000 00000000 00000000 00000001)
+State 997 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit3 line 637 thread 0
+----------------------------------------------------
+  token=3 (00000000 00000000 00000000 00000011)
+State 998 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit3 line 638 thread 0
+----------------------------------------------------
+  E_4=1 (00000000 00000000 00000000 00000001)
+State 1003 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 390 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1004 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 391 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 1005 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 392 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 1006 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 393 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 1007 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 394 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+State 1008 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 395 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+State 1011 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_master_triggered line 553 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1014 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_master_triggered line 560 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1017 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 396 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1021 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit1_triggered line 284 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1024 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit1_triggered line 291 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1027 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 400 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 1031 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit2_triggered line 570 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1034 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit2_triggered line 577 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1037 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 404 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 1041 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit3_triggered line 214 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1044 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit3_triggered line 221 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1047 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 408 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 1051 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit4_triggered line 118 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1054 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit4_triggered line 121 thread 0
+----------------------------------------------------
+  __retres1=1 (00000000 00000000 00000000 00000001)
+State 1058 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 412 thread 0
+----------------------------------------------------
+  tmp___3=1 (00000000 00000000 00000000 00000001)
+State 1060 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 414 thread 0
+----------------------------------------------------
+  t4_st=0 (00000000 00000000 00000000 00000000)
+State 1063 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit5_triggered line 272 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1066 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit5_triggered line 279 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1069 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 416 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+State 1074 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit3 line 640 thread 0
+----------------------------------------------------
+  E_4=2 (00000000 00000000 00000000 00000010)
+State 1077 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit3 line 633 thread 0
+----------------------------------------------------
+  t3_pc=1 (00000000 00000000 00000000 00000001)
+State 1078 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit3 line 634 thread 0
+----------------------------------------------------
+  t3_st=2 (00000000 00000000 00000000 00000010)
+State 1083 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 189 thread 0
+----------------------------------------------------
+  tmp_ndt_5=0 (00000000 00000000 00000000 00000000)
+State 1084 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 190 thread 0
+----------------------------------------------------
+  tmp_ndt_5=512 (00000000 00000000 00000010 00000000)
+__iv__test_case:512
+State 1087 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 193 thread 0
+----------------------------------------------------
+  t4_st=1 (00000000 00000000 00000000 00000001)
+State 1092 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit4 line 477 thread 0
+----------------------------------------------------
+  token=4 (00000000 00000000 00000000 00000100)
+State 1093 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit4 line 478 thread 0
+----------------------------------------------------
+  E_5=1 (00000000 00000000 00000000 00000001)
+State 1098 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 390 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1099 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 391 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 1100 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 392 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 1101 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 393 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 1102 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 394 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+State 1103 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 395 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+State 1106 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_master_triggered line 553 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1109 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_master_triggered line 560 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1112 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 396 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1116 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit1_triggered line 284 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1119 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit1_triggered line 291 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1122 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 400 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 1126 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit2_triggered line 570 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1129 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit2_triggered line 577 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1132 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 404 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 1136 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit3_triggered line 214 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1139 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit3_triggered line 221 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1142 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 408 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 1146 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit4_triggered line 118 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1149 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit4_triggered line 125 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1152 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 412 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+State 1156 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit5_triggered line 272 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1159 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit5_triggered line 275 thread 0
+----------------------------------------------------
+  __retres1=1 (00000000 00000000 00000000 00000001)
+State 1163 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 416 thread 0
+----------------------------------------------------
+  tmp___4=1 (00000000 00000000 00000000 00000001)
+State 1165 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 418 thread 0
+----------------------------------------------------
+  t5_st=0 (00000000 00000000 00000000 00000000)
+State 1169 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit4 line 480 thread 0
+----------------------------------------------------
+  E_5=2 (00000000 00000000 00000000 00000010)
+State 1172 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit4 line 473 thread 0
+----------------------------------------------------
+  t4_pc=1 (00000000 00000000 00000000 00000001)
+State 1173 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit4 line 474 thread 0
+----------------------------------------------------
+  t4_st=2 (00000000 00000000 00000000 00000010)
+State 1178 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 198 thread 0
+----------------------------------------------------
+  tmp_ndt_6=0 (00000000 00000000 00000000 00000000)
+State 1179 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 199 thread 0
+----------------------------------------------------
+  tmp_ndt_6=-2147483648 (10000000 00000000 00000000 00000000)
+__iv__test_case:-2147483648
+State 1182 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 202 thread 0
+----------------------------------------------------
+  t5_st=1 (00000000 00000000 00000000 00000001)
+State 1187 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit5 line 541 thread 0
+----------------------------------------------------
+  token=5 (00000000 00000000 00000000 00000101)
+State 1188 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit5 line 542 thread 0
+----------------------------------------------------
+  E_M=1 (00000000 00000000 00000000 00000001)
+State 1193 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 390 thread 0
+----------------------------------------------------
+  tmp=0 (00000000 00000000 00000000 00000000)
+State 1194 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 391 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 1195 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 392 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 1196 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 393 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 1197 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 394 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+State 1198 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 395 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+State 1201 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_master_triggered line 553 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1204 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_master_triggered line 556 thread 0
+----------------------------------------------------
+  __retres1=1 (00000000 00000000 00000000 00000001)
+State 1208 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 396 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 1210 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 398 thread 0
+----------------------------------------------------
+  m_st=0 (00000000 00000000 00000000 00000000)
+State 1213 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit1_triggered line 284 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1216 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit1_triggered line 291 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1219 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 400 thread 0
+----------------------------------------------------
+  tmp___0=0 (00000000 00000000 00000000 00000000)
+State 1223 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit2_triggered line 570 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1226 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit2_triggered line 577 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1229 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 404 thread 0
+----------------------------------------------------
+  tmp___1=0 (00000000 00000000 00000000 00000000)
+State 1233 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit3_triggered line 214 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1236 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit3_triggered line 221 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1239 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 408 thread 0
+----------------------------------------------------
+  tmp___2=0 (00000000 00000000 00000000 00000000)
+State 1243 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit4_triggered line 118 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1246 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit4_triggered line 125 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1249 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 412 thread 0
+----------------------------------------------------
+  tmp___3=0 (00000000 00000000 00000000 00000000)
+State 1253 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit5_triggered line 272 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1256 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function is_transmit5_triggered line 279 thread 0
+----------------------------------------------------
+  __retres1=0 (00000000 00000000 00000000 00000000)
+State 1259 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function activate_threads line 416 thread 0
+----------------------------------------------------
+  tmp___4=0 (00000000 00000000 00000000 00000000)
+State 1264 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit5 line 544 thread 0
+----------------------------------------------------
+  E_M=2 (00000000 00000000 00000000 00000010)
+State 1267 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit5 line 537 thread 0
+----------------------------------------------------
+  t5_pc=1 (00000000 00000000 00000000 00000001)
+State 1268 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function transmit5 line 538 thread 0
+----------------------------------------------------
+  t5_st=2 (00000000 00000000 00000000 00000010)
+__iv__stub_call:exists_runnable_thread
+__iv__stub_input:t1_st=2
+__iv__stub_input:t2_st=2
+__iv__stub_input:t3_st=2
+__iv__stub_input:t4_st=2
+__iv__stub_input:t5_st=2
+__iv__stub_input:m_st=0
+State 1283 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function __iv__exists_runnable_thread_stub line 697 thread 0
+----------------------------------------------------
+  __iv__return_expr_exists_runnable_thread=0 (00000000 00000000 00000000 00000000)
+State 1286 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function __iv__exists_runnable_thread_stub line 697 thread 0
+----------------------------------------------------
+  __iv__return_expr_exists_runnable_thread=1 (00000000 00000000 00000000 00000001)
+Assumption:
+  file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c line 698 function __iv__exists_runnable_thread_stub
+  __iv__return_expr_exists_runnable_thread == 0 || __iv__return_expr_exists_runnable_thread == 1
+__iv__stub_output:__iv__return_expr_exists_runnable_thread=1
+State 1291 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 150 thread 0
+----------------------------------------------------
+  tmp=1 (00000000 00000000 00000000 00000001)
+State 1294 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 153 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+State 1295 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 154 thread 0
+----------------------------------------------------
+  tmp_ndt_1=1073741824 (01000000 00000000 00000000 00000000)
+__iv__test_case:1073741824
+State 1298 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function eval line 157 thread 0
+----------------------------------------------------
+  m_st=1 (00000000 00000000 00000000 00000001)
+State 1301 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function master line 582 thread 0
+----------------------------------------------------
+  tmp_var=0 (00000000 00000000 00000000 00000000)
+State 1302 file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function master line 583 thread 0
+----------------------------------------------------
+  tmp_var=5 (00000000 00000000 00000000 00000101)
+__iv__test_case:5
+violated property: Node_5_67
+Violated property:
+  file results/systemc/token_ring.05.cil-2.c/no_alarm/target.c function reach_error line 131 thread 0
+  assertion FALSE
+  0 != 0
+** 1 of 1 failed (2 iterations)
+VERIFICATION FAILED
