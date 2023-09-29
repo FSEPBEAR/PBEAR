@@ -1,0 +1,20 @@
+outputs: __iv__return_expr_elev_get_button_signal 
+logs: 
+{"Func":"elev_get_button_signal","Input":[{"Var":"button","Val":1},{"Var":"floor","Val":1},{"Var":"__iv__nondet_input_elev_get_button_signal_1","Val":0}],"Output":[{"Var":"__iv__return_expr_elev_get_button_signal","Val":0}],"InitOutput":[],}
+{"Func":"elev_get_button_signal","Input":[{"Var":"button","Val":0},{"Var":"floor","Val":0},{"Var":"__iv__nondet_input_elev_get_button_signal_1","Val":1}],"Output":[{"Var":"__iv__return_expr_elev_get_button_signal","Val":1}],"InitOutput":[],}
+logs end
+SyGuS code:
+__iv__return_expr_elev_get_button_signal:__iv__input_0_
+SyGuS end
+assumes:
+__iv__return_expr_elev_get_button_signal:__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1
+assumes end:
+signed int __iv__return_expr_elev_get_button_signal;
+signed int __iv__nondet_input_elev_get_button_signal_1 = __VERIFIER_nondet_signed_int();
+__iv__return_expr_elev_get_button_signal = __iv__nondet_input_elev_get_button_signal_1;
+__CPROVER_assume(__iv__return_expr_elev_get_button_signal == 0 || __iv__return_expr_elev_get_button_signal == 1);
+return __iv__return_expr_elev_get_button_signal;
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+max_comp_size: 1
