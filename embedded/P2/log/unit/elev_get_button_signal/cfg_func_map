@@ -1,4 +1,0 @@
-elev_get_button_signal 1
-io_read_bit 43
-comedi_dio_read 46
-main 55
