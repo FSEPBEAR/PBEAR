@@ -1,0 +1,16 @@
+--src data/Brobot/p1/brobot.c --wd results/brobot/p1/origin --unwind 1000 --run-original 
+code parsing time: 0.682 sec
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 10.376 sec
+
+verification results: 
+property 'assert(!((isAllReached != 0)));' is not violated.
+
+run cbmc: (unwind: 20, timeout: 86400 sec)
+cbmc running time: 3346.645 sec
+
+verification results: 
+property 'assert(!((isAllReached != 0)));' is TRUE alarm.
+
+total CBMC running time: 3357.021 sec

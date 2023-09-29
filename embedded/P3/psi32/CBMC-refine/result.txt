@@ -1,0 +1,24 @@
+total CBMC running time: 3488.088 sec
+--src data/Brobot/p2/brobot.c --wd results/brobot/p2/refine --unwind 1000 --run-original --refine 
+code parsing time: 0.657 sec
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 24.032 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+run cbmc: (unwind: 20, timeout: 86400 sec)
+cbmc running time: 267.254 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+run cbmc: (unwind: 30, timeout: 86400 sec)
+cbmc running time: 43446.168 sec
+
+verification results: 
+property 'assert((state != 2));' is TRUE alarm.
+
+total CBMC running time: 43737.453 sec
+peak memory usage: 44136.12 MB

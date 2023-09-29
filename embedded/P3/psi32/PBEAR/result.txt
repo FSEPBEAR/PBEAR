@@ -1,0 +1,103 @@
+--src data/Brobot/p2/brobot.c --wd results/brobot/p2 --unwind 1000 
+code parsing time: 0.611 sec
+
+select target function calls:
+medianFilter() (call id 80) is independent call
+internal node ratio: 0.00% (0 of 569)
+
+medianFilter() (call id 66) is independent call
+internal node ratio: 0.00% (0 of 569)
+
+medianFilter() (call id 83) is independent call
+internal node ratio: 0.00% (0 of 569)
+
+medianFilter() (call id 57) is independent call
+internal node ratio: 0.00% (0 of 569)
+
+medianFilter() (call id 59) is independent call
+internal node ratio: 0.00% (0 of 569)
+
+medianFilter() (call id 77) is independent call
+internal node ratio: 0.00% (0 of 569)
+
+find the best target combination:
+predict complexity: (unwind 1000)
+criterion unwind: 1
+total cmplx: 72
+
+Jul 17, 2023 10:59:22 AM iv_checker.select.TargetFunctionSelector printRank
+INFO: 
+
+call medianFilter() (call id 80)
+call medianFilter() (call id 66)
+call medianFilter() (call id 83)
+call medianFilter() (call id 57)
+call medianFilter() (call id 59)
+call medianFilter() (call id 77)
+Iteration 0:
+signed int __iv__medianFilter_stub() {
+	signed int __iv__return_expr_medianFilter = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(0 <= __iv__return_expr_medianFilter && __iv__return_expr_medianFilter <= 65535);
+	return __iv__return_expr_medianFilter;
+}
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 9.918 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 9.918 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec
+
+call medianFilter() (call id 80)
+call medianFilter() (call id 66)
+call medianFilter() (call id 83)
+call medianFilter() (call id 57)
+call medianFilter() (call id 59)
+call medianFilter() (call id 77)
+Iteration 0:
+signed int __iv__medianFilter_stub() {
+	signed int __iv__return_expr_medianFilter = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(0 <= __iv__return_expr_medianFilter && __iv__return_expr_medianFilter <= 65535);
+	return __iv__return_expr_medianFilter;
+}
+
+run cbmc: (unwind: 20, timeout: 86400 sec)
+cbmc running time: 92.164 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+total CBMC running time: 102.082 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec
+
+call medianFilter() (call id 80)
+call medianFilter() (call id 66)
+call medianFilter() (call id 83)
+call medianFilter() (call id 57)
+call medianFilter() (call id 59)
+call medianFilter() (call id 77)
+Iteration 0:
+signed int __iv__medianFilter_stub() {
+	signed int __iv__return_expr_medianFilter = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(0 <= __iv__return_expr_medianFilter && __iv__return_expr_medianFilter <= 65535);
+	return __iv__return_expr_medianFilter;
+}
+
+run cbmc: (unwind: 30, timeout: 86400 sec)
+cbmc running time: 648.136 sec
+
+verification results: 
+property 'assert((state != 2));' is FALSE alarm.
+Counterexample-guided true alarm finding: 
+cbmc time (unwind: 30): 0.331 sec
+property 'assert((state != 2));' is TRUE alarm.
+true alarm finding time: 0.824 sec
+
+
+total CBMC running time: 750.218 sec
+total true alarm finding time: 0.824 sec
+total refinement time: 0.0 sec

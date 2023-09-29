@@ -1,0 +1,80 @@
+--src data/Brobot/p1/brobot.c --wd results/brobot/p1 --unwind 1000 
+code parsing time: 0.686 sec
+
+select target function calls:
+medianFilter() (call id 49) is independent call
+internal node ratio: 0.00% (0 of 566)
+
+medianFilter() (call id 66) is independent call
+internal node ratio: 0.00% (0 of 566)
+
+medianFilter() (call id 40) is independent call
+internal node ratio: 0.00% (0 of 566)
+
+medianFilter() (call id 60) is independent call
+internal node ratio: 0.00% (0 of 566)
+
+medianFilter() (call id 47) is independent call
+internal node ratio: 0.00% (0 of 566)
+
+medianFilter() (call id 63) is independent call
+internal node ratio: 0.00% (0 of 566)
+
+find the best target combination:
+predict complexity: (unwind 1000)
+criterion unwind: 1
+total cmplx: 69
+
+Jul 17, 2023 10:56:49 AM iv_checker.select.TargetFunctionSelector printRank
+INFO: 
+
+call medianFilter() (call id 49)
+call medianFilter() (call id 66)
+call medianFilter() (call id 40)
+call medianFilter() (call id 60)
+call medianFilter() (call id 47)
+call medianFilter() (call id 63)
+Iteration 0:
+signed int __iv__medianFilter_stub() {
+	signed int __iv__return_expr_medianFilter = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(0 <= __iv__return_expr_medianFilter && __iv__return_expr_medianFilter <= 65535);
+	return __iv__return_expr_medianFilter;
+}
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 4.578 sec
+
+verification results: 
+property 'assert(!((isAllReached != 0)));' is not violated.
+
+total CBMC running time: 4.578 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec
+
+call medianFilter() (call id 49)
+call medianFilter() (call id 66)
+call medianFilter() (call id 40)
+call medianFilter() (call id 60)
+call medianFilter() (call id 47)
+call medianFilter() (call id 63)
+Iteration 0:
+signed int __iv__medianFilter_stub() {
+	signed int __iv__return_expr_medianFilter = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(0 <= __iv__return_expr_medianFilter && __iv__return_expr_medianFilter <= 65535);
+	return __iv__return_expr_medianFilter;
+}
+
+run cbmc: (unwind: 20, timeout: 86400 sec)
+cbmc running time: 145.892 sec
+
+verification results: 
+property 'assert(!((isAllReached != 0)));' is FALSE alarm.
+Counterexample-guided true alarm finding: 
+cbmc time (unwind: 20): 0.166 sec
+property 'assert(!((isAllReached != 0)));' is TRUE alarm.
+true alarm finding time: 0.62 sec
+
+
+total CBMC running time: 150.47 sec
+total true alarm finding time: 0.62 sec
+total refinement time: 0.0 sec

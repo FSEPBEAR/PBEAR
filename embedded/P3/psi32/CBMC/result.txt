@@ -1,0 +1,22 @@
+--src data/Brobot/p2/brobot.c --wd results/brobot/p2/origin --unwind 1000 --run-original 
+code parsing time: 0.661 sec
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 23.745 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+run cbmc: (unwind: 20, timeout: 86400 sec)
+cbmc running time: 262.104 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+run cbmc: (unwind: 30, timeout: 86400 sec)
+cbmc running time: 42869.777 sec
+
+verification results: 
+property 'assert((state != 2));' is TRUE alarm.
+
+total CBMC running time: 43155.625 sec
