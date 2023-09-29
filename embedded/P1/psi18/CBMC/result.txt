@@ -1,0 +1,40 @@
+--src data/obj_follower/apps/p10/obj_follower.c --wd results/obj-follow/p10/origin --unwind 1000 --run-original 
+code parsing time: 0.928 sec
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.116 sec
+
+verification results: 
+property 'assert((!(((ctl_size <= 83) && (ctl_size > 0))) || (new_speed > 0)));' is not violated.
+
+run cbmc: (unwind: 20, timeout: 86400 sec)
+cbmc running time: 0.143 sec
+
+verification results: 
+property 'assert((!(((ctl_size <= 83) && (ctl_size > 0))) || (new_speed > 0)));' is not violated.
+
+run cbmc: (unwind: 30, timeout: 86400 sec)
+cbmc running time: 0.152 sec
+
+verification results: 
+property 'assert((!(((ctl_size <= 83) && (ctl_size > 0))) || (new_speed > 0)));' is not violated.
+
+run cbmc: (unwind: 40, timeout: 86400 sec)
+cbmc running time: 0.209 sec
+
+verification results: 
+property 'assert((!(((ctl_size <= 83) && (ctl_size > 0))) || (new_speed > 0)));' is not violated.
+
+run cbmc: (unwind: 50, timeout: 86400 sec)
+cbmc running time: 574.269 sec
+
+verification results: 
+property 'assert((!(((ctl_size <= 83) && (ctl_size > 0))) || (new_speed > 0)));' is not violated.
+
+run cbmc: (unwind: 60, timeout: 86400 sec)
+cbmc running time: 7754.656 sec
+
+verification results: 
+property 'assert((!(((ctl_size <= 83) && (ctl_size > 0))) || (new_speed > 0)));' is TRUE alarm.
+
+total CBMC running time: 8329.545 sec

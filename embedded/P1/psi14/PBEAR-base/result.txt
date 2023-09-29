@@ -1,0 +1,379 @@
+--src data/obj_follower/apps/p6/obj_follower.c --wd results/obj-follow/p6/no_alarm --unwind 1000 --no-alarm-filtering --synth-dir results/obj-follow/synth --synth-timeout 600 --synth-max-size 512 --synth-max-height 15 
+code parsing time: 0.984 sec
+
+select target function calls:
+getbiggestrect((U8)(0), -1) (call id 48) influences 1 external nodes
+internal node ratio: 1.80% (14 of 779)
+
+getArea((U8)(rectindex)) (call id 49) is independent call
+internal node ratio: 6.42% (50 of 779)
+
+fisqrt(area) (call id 51) is independent call
+internal node ratio: 11.04% (86 of 779)
+
+getArea((U8)(i)) (call id 6) influences 1 external nodes
+internal node ratio: 2.18% (17 of 779)
+
+getWidth(getArea__rectindex) (call id 7) is independent call
+internal node ratio: 1.80% (14 of 779)
+
+getHeight(getArea__rectindex) (call id 8) is independent call
+internal node ratio: 1.80% (14 of 779)
+
+find the best target combination:
+predict complexity: (unwind 1000)
+criterion unwind: 4
+getbiggestrect((U8)(0), -1): original cmplx: 20, stub cmplx: 9
+getArea((U8)(i)): original cmplx: 2, stub cmplx: 0
+total cmplx: 2275
+
+Jul 26, 2023 10:55:02 PM iv_checker.select.TargetFunctionSelector printRank
+INFO: 
+1. getbiggestrect((U8)(0), -1);  fitness: 5.000
+2. getArea((U8)(i));  fitness: 1.000
+
+call getbiggestrect((U8)(0), -1) (call id 48)
+call getArea((U8)(rectindex)) (call id 49)
+call fisqrt(area) (call id 51)
+call getWidth(getArea__rectindex) (call id 7)
+call getHeight(getArea__rectindex) (call id 8)
+Iteration 0:
+signed int __iv__getbiggestrect_stub(U8 pcolorid, signed int pminarea) {
+	signed int __iv__return_expr_getbiggestrect;
+	if(pcolorid==nxtcamdata[36]) if(nxtcamdata[0]>=nxtcamdata[15]) __iv__return_expr_getbiggestrect = 6; else if(nxtcamdata[1]>=nxtcamdata[9]) __iv__return_expr_getbiggestrect = nxtcamdata[6]; else __iv__return_expr_getbiggestrect = 7; else if(pcolorid==nxtcamdata[1]) if(nxtcamdata[12]<nxtcamdata[40]) if(3==nxtcamdata[38]) __iv__return_expr_getbiggestrect = nxtcamdata[38]; else __iv__return_expr_getbiggestrect = 5; else if(nxtcamdata[18]>=nxtcamdata[20]) if(nxtcamdata[31]==nxtcamdata[29]) __iv__return_expr_getbiggestrect = nxtcamdata[17]; else __iv__return_expr_getbiggestrect = 1; else __iv__return_expr_getbiggestrect = 0; else if(pcolorid==nxtcamdata[21]) __iv__return_expr_getbiggestrect = 4; else __iv__return_expr_getbiggestrect = (-1); 
+	__CPROVER_assume((-1 <= __iv__return_expr_getbiggestrect && __iv__return_expr_getbiggestrect <= 7));
+	return __iv__return_expr_getbiggestrect;
+}
+complexity: 9
+accuracy: 73.69%
+coverage: 100.00%
+# constraints: 33
+
+signed int __iv__getArea_stub(U8 getArea__rectindex) {
+	signed int __iv__return_expr_getArea = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(-65025 <= __iv__return_expr_getArea && __iv__return_expr_getArea <= 65025);
+	return __iv__return_expr_getArea;
+}
+
+signed int __iv__fisqrt_stub(signed int val) {
+	signed int __iv__return_expr_fisqrt = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(0 <= __iv__return_expr_fisqrt && __iv__return_expr_fisqrt <= 45977);
+	return __iv__return_expr_fisqrt;
+}
+
+signed int __iv__getWidth_stub(U8 getWidth__rectindex) {
+	signed int __iv__return_expr_getWidth = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(-255 <= __iv__return_expr_getWidth && __iv__return_expr_getWidth <= 255);
+	return __iv__return_expr_getWidth;
+}
+
+signed int __iv__getHeight_stub(U8 getHeight__rectindex) {
+	signed int __iv__return_expr_getHeight = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(-255 <= __iv__return_expr_getHeight && __iv__return_expr_getHeight <= 255);
+	return __iv__return_expr_getHeight;
+}
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.118 sec
+
+verification results: 
+property 'assert((acq_size == 0));' is not violated.
+
+total CBMC running time: 0.118 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 10.04 MB
+
+call getbiggestrect((U8)(0), -1) (call id 48)
+call getArea((U8)(rectindex)) (call id 49)
+call fisqrt(area) (call id 51)
+call getWidth(getArea__rectindex) (call id 7)
+call getHeight(getArea__rectindex) (call id 8)
+Iteration 0:
+signed int __iv__getbiggestrect_stub(U8 pcolorid, signed int pminarea) {
+	signed int __iv__return_expr_getbiggestrect;
+	if(pcolorid==nxtcamdata[36]) if(nxtcamdata[0]>=nxtcamdata[15]) __iv__return_expr_getbiggestrect = 6; else if(nxtcamdata[1]>=nxtcamdata[9]) __iv__return_expr_getbiggestrect = nxtcamdata[6]; else __iv__return_expr_getbiggestrect = 7; else if(pcolorid==nxtcamdata[1]) if(nxtcamdata[12]<nxtcamdata[40]) if(3==nxtcamdata[38]) __iv__return_expr_getbiggestrect = nxtcamdata[38]; else __iv__return_expr_getbiggestrect = 5; else if(nxtcamdata[18]>=nxtcamdata[20]) if(nxtcamdata[31]==nxtcamdata[29]) __iv__return_expr_getbiggestrect = nxtcamdata[17]; else __iv__return_expr_getbiggestrect = 1; else __iv__return_expr_getbiggestrect = 0; else if(pcolorid==nxtcamdata[21]) __iv__return_expr_getbiggestrect = 4; else __iv__return_expr_getbiggestrect = (-1); 
+	__CPROVER_assume((-1 <= __iv__return_expr_getbiggestrect && __iv__return_expr_getbiggestrect <= 7));
+	return __iv__return_expr_getbiggestrect;
+}
+complexity: 9
+accuracy: 73.69%
+coverage: 100.00%
+# constraints: 33
+
+signed int __iv__getArea_stub(U8 getArea__rectindex) {
+	signed int __iv__return_expr_getArea = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(-65025 <= __iv__return_expr_getArea && __iv__return_expr_getArea <= 65025);
+	return __iv__return_expr_getArea;
+}
+
+signed int __iv__fisqrt_stub(signed int val) {
+	signed int __iv__return_expr_fisqrt = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(0 <= __iv__return_expr_fisqrt && __iv__return_expr_fisqrt <= 45977);
+	return __iv__return_expr_fisqrt;
+}
+
+signed int __iv__getWidth_stub(U8 getWidth__rectindex) {
+	signed int __iv__return_expr_getWidth = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(-255 <= __iv__return_expr_getWidth && __iv__return_expr_getWidth <= 255);
+	return __iv__return_expr_getWidth;
+}
+
+signed int __iv__getHeight_stub(U8 getHeight__rectindex) {
+	signed int __iv__return_expr_getHeight = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(-255 <= __iv__return_expr_getHeight && __iv__return_expr_getHeight <= 255);
+	return __iv__return_expr_getHeight;
+}
+
+run cbmc: (unwind: 20, timeout: 86400 sec)
+cbmc running time: 0.154 sec
+
+verification results: 
+property 'assert((acq_size == 0));' is not violated.
+
+total CBMC running time: 0.272 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 10.04 MB
+
+call getbiggestrect((U8)(0), -1) (call id 48)
+call getArea((U8)(rectindex)) (call id 49)
+call fisqrt(area) (call id 51)
+call getWidth(getArea__rectindex) (call id 7)
+call getHeight(getArea__rectindex) (call id 8)
+Iteration 0:
+signed int __iv__getbiggestrect_stub(U8 pcolorid, signed int pminarea) {
+	signed int __iv__return_expr_getbiggestrect;
+	if(pcolorid==nxtcamdata[36]) if(nxtcamdata[0]>=nxtcamdata[15]) __iv__return_expr_getbiggestrect = 6; else if(nxtcamdata[1]>=nxtcamdata[9]) __iv__return_expr_getbiggestrect = nxtcamdata[6]; else __iv__return_expr_getbiggestrect = 7; else if(pcolorid==nxtcamdata[1]) if(nxtcamdata[12]<nxtcamdata[40]) if(3==nxtcamdata[38]) __iv__return_expr_getbiggestrect = nxtcamdata[38]; else __iv__return_expr_getbiggestrect = 5; else if(nxtcamdata[18]>=nxtcamdata[20]) if(nxtcamdata[31]==nxtcamdata[29]) __iv__return_expr_getbiggestrect = nxtcamdata[17]; else __iv__return_expr_getbiggestrect = 1; else __iv__return_expr_getbiggestrect = 0; else if(pcolorid==nxtcamdata[21]) __iv__return_expr_getbiggestrect = 4; else __iv__return_expr_getbiggestrect = (-1); 
+	__CPROVER_assume((-1 <= __iv__return_expr_getbiggestrect && __iv__return_expr_getbiggestrect <= 7));
+	return __iv__return_expr_getbiggestrect;
+}
+complexity: 9
+accuracy: 73.69%
+coverage: 100.00%
+# constraints: 33
+
+signed int __iv__getArea_stub(U8 getArea__rectindex) {
+	signed int __iv__return_expr_getArea = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(-65025 <= __iv__return_expr_getArea && __iv__return_expr_getArea <= 65025);
+	return __iv__return_expr_getArea;
+}
+
+signed int __iv__fisqrt_stub(signed int val) {
+	signed int __iv__return_expr_fisqrt = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(0 <= __iv__return_expr_fisqrt && __iv__return_expr_fisqrt <= 45977);
+	return __iv__return_expr_fisqrt;
+}
+
+signed int __iv__getWidth_stub(U8 getWidth__rectindex) {
+	signed int __iv__return_expr_getWidth = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(-255 <= __iv__return_expr_getWidth && __iv__return_expr_getWidth <= 255);
+	return __iv__return_expr_getWidth;
+}
+
+signed int __iv__getHeight_stub(U8 getHeight__rectindex) {
+	signed int __iv__return_expr_getHeight = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(-255 <= __iv__return_expr_getHeight && __iv__return_expr_getHeight <= 255);
+	return __iv__return_expr_getHeight;
+}
+
+run cbmc: (unwind: 30, timeout: 86400 sec)
+cbmc running time: 0.171 sec
+
+verification results: 
+property 'assert((acq_size == 0));' is not violated.
+
+total CBMC running time: 0.443 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 10.04 MB
+
+call getbiggestrect((U8)(0), -1) (call id 48)
+call getArea((U8)(rectindex)) (call id 49)
+call fisqrt(area) (call id 51)
+call getWidth(getArea__rectindex) (call id 7)
+call getHeight(getArea__rectindex) (call id 8)
+Iteration 0:
+signed int __iv__getbiggestrect_stub(U8 pcolorid, signed int pminarea) {
+	signed int __iv__return_expr_getbiggestrect;
+	if(pcolorid==nxtcamdata[36]) if(nxtcamdata[0]>=nxtcamdata[15]) __iv__return_expr_getbiggestrect = 6; else if(nxtcamdata[1]>=nxtcamdata[9]) __iv__return_expr_getbiggestrect = nxtcamdata[6]; else __iv__return_expr_getbiggestrect = 7; else if(pcolorid==nxtcamdata[1]) if(nxtcamdata[12]<nxtcamdata[40]) if(3==nxtcamdata[38]) __iv__return_expr_getbiggestrect = nxtcamdata[38]; else __iv__return_expr_getbiggestrect = 5; else if(nxtcamdata[18]>=nxtcamdata[20]) if(nxtcamdata[31]==nxtcamdata[29]) __iv__return_expr_getbiggestrect = nxtcamdata[17]; else __iv__return_expr_getbiggestrect = 1; else __iv__return_expr_getbiggestrect = 0; else if(pcolorid==nxtcamdata[21]) __iv__return_expr_getbiggestrect = 4; else __iv__return_expr_getbiggestrect = (-1); 
+	__CPROVER_assume((-1 <= __iv__return_expr_getbiggestrect && __iv__return_expr_getbiggestrect <= 7));
+	return __iv__return_expr_getbiggestrect;
+}
+complexity: 9
+accuracy: 73.69%
+coverage: 100.00%
+# constraints: 33
+
+signed int __iv__getArea_stub(U8 getArea__rectindex) {
+	signed int __iv__return_expr_getArea = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(-65025 <= __iv__return_expr_getArea && __iv__return_expr_getArea <= 65025);
+	return __iv__return_expr_getArea;
+}
+
+signed int __iv__fisqrt_stub(signed int val) {
+	signed int __iv__return_expr_fisqrt = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(0 <= __iv__return_expr_fisqrt && __iv__return_expr_fisqrt <= 45977);
+	return __iv__return_expr_fisqrt;
+}
+
+signed int __iv__getWidth_stub(U8 getWidth__rectindex) {
+	signed int __iv__return_expr_getWidth = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(-255 <= __iv__return_expr_getWidth && __iv__return_expr_getWidth <= 255);
+	return __iv__return_expr_getWidth;
+}
+
+signed int __iv__getHeight_stub(U8 getHeight__rectindex) {
+	signed int __iv__return_expr_getHeight = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(-255 <= __iv__return_expr_getHeight && __iv__return_expr_getHeight <= 255);
+	return __iv__return_expr_getHeight;
+}
+
+run cbmc: (unwind: 40, timeout: 86400 sec)
+cbmc running time: 355.309 sec
+
+verification results: 
+property 'assert((acq_size == 0));' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 5.133 sec
+
+Iteration 1:
+signed int __iv__getbiggestrect_stub(U8 pcolorid, signed int pminarea) {
+	signed int __iv__return_expr_getbiggestrect;
+	if(pcolorid<nxtcamdata[36]) if(nxtcamdata[32]<nxtcamdata[18]) if(nxtcamdata[11]<nxtcamdata[26]) if(pcolorid==nxtcamdata[21]) __iv__return_expr_getbiggestrect = 4; else if(nxtcamdata[2]<nxtcamdata[1]) __iv__return_expr_getbiggestrect = (-1); else __iv__return_expr_getbiggestrect = 0; else if(nxtcamdata[32]<nxtcamdata[31]) __iv__return_expr_getbiggestrect = 5; else __iv__return_expr_getbiggestrect = 1; else if(3==nxtcamdata[38]) __iv__return_expr_getbiggestrect = nxtcamdata[38]; else __iv__return_expr_getbiggestrect = nxtcamdata[17]; else if(pcolorid<nxtcamdata[28]) if(nxtcamdata[14]<nxtcamdata[11]) __iv__return_expr_getbiggestrect = 6; else if(nxtcamdata[39]<nxtcamdata[40]) __iv__return_expr_getbiggestrect = 7; else __iv__return_expr_getbiggestrect = 6; else __iv__return_expr_getbiggestrect = (-1); 
+	__CPROVER_assume((-1 <= __iv__return_expr_getbiggestrect && __iv__return_expr_getbiggestrect <= 7));
+	return __iv__return_expr_getbiggestrect;
+}
+complexity: 10
+# constraints: 34
+
+signed int __iv__getArea_stub(U8 getArea__rectindex) {
+	signed int __iv__return_expr_getArea = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(-65025 <= __iv__return_expr_getArea && __iv__return_expr_getArea <= 65025);
+	return __iv__return_expr_getArea;
+}
+
+signed int __iv__fisqrt_stub(signed int val) {
+	signed int __iv__return_expr_fisqrt = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(0 <= __iv__return_expr_fisqrt && __iv__return_expr_fisqrt <= 45977);
+	return __iv__return_expr_fisqrt;
+}
+
+signed int __iv__getWidth_stub(U8 getWidth__rectindex) {
+	signed int __iv__return_expr_getWidth = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(-255 <= __iv__return_expr_getWidth && __iv__return_expr_getWidth <= 255);
+	return __iv__return_expr_getWidth;
+}
+
+signed int __iv__getHeight_stub(U8 getHeight__rectindex) {
+	signed int __iv__return_expr_getHeight = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(-255 <= __iv__return_expr_getHeight && __iv__return_expr_getHeight <= 255);
+	return __iv__return_expr_getHeight;
+}
+
+run cbmc: (unwind: 40, timeout: 86400 sec)
+cbmc running time: 0.228 sec
+
+verification results: 
+property 'assert((acq_size == 0));' is not violated.
+
+total CBMC running time: 355.98 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 5.133 sec, # of refinements: 1
+peak memory usage: 5969.51 MB
+
+call getbiggestrect((U8)(0), -1) (call id 48)
+call getArea((U8)(rectindex)) (call id 49)
+call fisqrt(area) (call id 51)
+call getWidth(getArea__rectindex) (call id 7)
+call getHeight(getArea__rectindex) (call id 8)
+Iteration 0:
+signed int __iv__getbiggestrect_stub(U8 pcolorid, signed int pminarea) {
+	signed int __iv__return_expr_getbiggestrect;
+	if(pcolorid<nxtcamdata[36]) if(nxtcamdata[32]<nxtcamdata[18]) if(nxtcamdata[11]<nxtcamdata[26]) if(pcolorid==nxtcamdata[21]) __iv__return_expr_getbiggestrect = 4; else if(nxtcamdata[2]<nxtcamdata[1]) __iv__return_expr_getbiggestrect = (-1); else __iv__return_expr_getbiggestrect = 0; else if(nxtcamdata[32]<nxtcamdata[31]) __iv__return_expr_getbiggestrect = 5; else __iv__return_expr_getbiggestrect = 1; else if(3==nxtcamdata[38]) __iv__return_expr_getbiggestrect = nxtcamdata[38]; else __iv__return_expr_getbiggestrect = nxtcamdata[17]; else if(pcolorid<nxtcamdata[28]) if(nxtcamdata[14]<nxtcamdata[11]) __iv__return_expr_getbiggestrect = 6; else if(nxtcamdata[39]<nxtcamdata[40]) __iv__return_expr_getbiggestrect = 7; else __iv__return_expr_getbiggestrect = 6; else __iv__return_expr_getbiggestrect = (-1); 
+	__CPROVER_assume((-1 <= __iv__return_expr_getbiggestrect && __iv__return_expr_getbiggestrect <= 7));
+	return __iv__return_expr_getbiggestrect;
+}
+complexity: 10
+# constraints: 34
+
+signed int __iv__getArea_stub(U8 getArea__rectindex) {
+	signed int __iv__return_expr_getArea = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(-65025 <= __iv__return_expr_getArea && __iv__return_expr_getArea <= 65025);
+	return __iv__return_expr_getArea;
+}
+
+signed int __iv__fisqrt_stub(signed int val) {
+	signed int __iv__return_expr_fisqrt = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(0 <= __iv__return_expr_fisqrt && __iv__return_expr_fisqrt <= 45977);
+	return __iv__return_expr_fisqrt;
+}
+
+signed int __iv__getWidth_stub(U8 getWidth__rectindex) {
+	signed int __iv__return_expr_getWidth = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(-255 <= __iv__return_expr_getWidth && __iv__return_expr_getWidth <= 255);
+	return __iv__return_expr_getWidth;
+}
+
+signed int __iv__getHeight_stub(U8 getHeight__rectindex) {
+	signed int __iv__return_expr_getHeight = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(-255 <= __iv__return_expr_getHeight && __iv__return_expr_getHeight <= 255);
+	return __iv__return_expr_getHeight;
+}
+
+run cbmc: (unwind: 50, timeout: 86400 sec)
+cbmc running time: 687.326 sec
+
+verification results: 
+property 'assert((acq_size == 0));' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 6.781 sec
+
+Iteration 1:
+signed int __iv__getbiggestrect_stub(U8 pcolorid, signed int pminarea) {
+	signed int __iv__return_expr_getbiggestrect;
+	if(3==nxtcamdata[38]) __iv__return_expr_getbiggestrect = nxtcamdata[38]; else if(5==nxtcamdata[12]) __iv__return_expr_getbiggestrect = nxtcamdata[17]; else if(nxtcamdata[15]<nxtcamdata[12]) __iv__return_expr_getbiggestrect = 6; else if(nxtcamdata[5]<nxtcamdata[27]) __iv__return_expr_getbiggestrect = 7; else if(nxtcamdata[29]>=nxtcamdata[0]) if(pcolorid<nxtcamdata[36]) if(nxtcamdata[11]<nxtcamdata[26]) if(pcolorid==nxtcamdata[21]) __iv__return_expr_getbiggestrect = 4; else if(nxtcamdata[40]<nxtcamdata[1]) __iv__return_expr_getbiggestrect = (-1); else __iv__return_expr_getbiggestrect = 0; else if(nxtcamdata[23]<nxtcamdata[38]) __iv__return_expr_getbiggestrect = nxtcamdata[36]; else __iv__return_expr_getbiggestrect = 5; else if(pcolorid<nxtcamdata[13]) if(nxtcamdata[40]<nxtcamdata[17]) __iv__return_expr_getbiggestrect = 6; else __iv__return_expr_getbiggestrect = 7; else __iv__return_expr_getbiggestrect = (-1); else __iv__return_expr_getbiggestrect = 1; 
+	__CPROVER_assume((-1 <= __iv__return_expr_getbiggestrect && __iv__return_expr_getbiggestrect <= 7));
+	return __iv__return_expr_getbiggestrect;
+}
+complexity: 12
+# constraints: 35
+
+signed int __iv__getArea_stub(U8 getArea__rectindex) {
+	signed int __iv__return_expr_getArea = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(-65025 <= __iv__return_expr_getArea && __iv__return_expr_getArea <= 65025);
+	return __iv__return_expr_getArea;
+}
+
+signed int __iv__fisqrt_stub(signed int val) {
+	signed int __iv__return_expr_fisqrt = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(0 <= __iv__return_expr_fisqrt && __iv__return_expr_fisqrt <= 45977);
+	return __iv__return_expr_fisqrt;
+}
+
+signed int __iv__getWidth_stub(U8 getWidth__rectindex) {
+	signed int __iv__return_expr_getWidth = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(-255 <= __iv__return_expr_getWidth && __iv__return_expr_getWidth <= 255);
+	return __iv__return_expr_getWidth;
+}
+
+signed int __iv__getHeight_stub(U8 getHeight__rectindex) {
+	signed int __iv__return_expr_getHeight = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(-255 <= __iv__return_expr_getHeight && __iv__return_expr_getHeight <= 255);
+	return __iv__return_expr_getHeight;
+}
+
+run cbmc: (unwind: 50, timeout: 86400 sec)
+cbmc running time: 582.049 sec
+
+verification results: 
+property 'assert((acq_size == 0));' is TRUE alarm.
+
+total CBMC running time: 1625.355 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 11.915 sec, # of refinements: 2
+peak memory usage: 14641.92 MB

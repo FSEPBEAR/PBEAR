@@ -1,0 +1,40 @@
+--src data/obj_follower/apps/p4/obj_follower.c --wd results/obj-follow/p4/refine --unwind 1000 --run-original --refine 
+code parsing time: 0.935 sec
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.099 sec
+
+verification results: 
+property 'assert(((direction_adjustment < 20) && (direction_adjustment > -20)));' is not violated.
+
+run cbmc: (unwind: 20, timeout: 86400 sec)
+cbmc running time: 0.141 sec
+
+verification results: 
+property 'assert(((direction_adjustment < 20) && (direction_adjustment > -20)));' is not violated.
+
+run cbmc: (unwind: 30, timeout: 86400 sec)
+cbmc running time: 0.162 sec
+
+verification results: 
+property 'assert(((direction_adjustment < 20) && (direction_adjustment > -20)));' is not violated.
+
+run cbmc: (unwind: 40, timeout: 86400 sec)
+cbmc running time: 0.213 sec
+
+verification results: 
+property 'assert(((direction_adjustment < 20) && (direction_adjustment > -20)));' is not violated.
+
+run cbmc: (unwind: 50, timeout: 86400 sec)
+cbmc running time: 601.992 sec
+
+verification results: 
+property 'assert(((direction_adjustment < 20) && (direction_adjustment > -20)));' is not violated.
+
+run cbmc: (unwind: 60, timeout: 86400 sec)
+cbmc running time: 1914.603 sec
+
+verification results: 
+property 'assert(((direction_adjustment < 20) && (direction_adjustment > -20)));' is TRUE alarm.
+
+total CBMC running time: 2517.21 sec

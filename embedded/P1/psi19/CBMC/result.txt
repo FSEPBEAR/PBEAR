@@ -1,0 +1,69 @@
+--src data/obj_follower/apps/p11/obj_follower.c --wd results/obj-follow/p11/origin --unwind 1000 --run-original 
+code parsing time: 0.922 sec
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.099 sec
+
+verification results: 
+property 'assert((!((ctl_size >= 84)) || (new_speed < 0)));' is not violated.
+
+run cbmc: (unwind: 20, timeout: 86400 sec)
+cbmc running time: 0.117 sec
+
+verification results: 
+property 'assert((!((ctl_size >= 84)) || (new_speed < 0)));' is not violated.
+
+run cbmc: (unwind: 30, timeout: 86400 sec)
+cbmc running time: 0.157 sec
+
+verification results: 
+property 'assert((!((ctl_size >= 84)) || (new_speed < 0)));' is not violated.
+
+run cbmc: (unwind: 40, timeout: 86400 sec)
+cbmc running time: 0.213 sec
+
+verification results: 
+property 'assert((!((ctl_size >= 84)) || (new_speed < 0)));' is not violated.
+
+run cbmc: (unwind: 50, timeout: 86400 sec)
+cbmc running time: 571.174 sec
+
+verification results: 
+property 'assert((!((ctl_size >= 84)) || (new_speed < 0)));' is not violated.
+
+run cbmc: (unwind: 60, timeout: 86400 sec)
+cbmc running time: 1017.124 sec
+
+verification results: 
+property 'assert((!((ctl_size >= 84)) || (new_speed < 0)));' is not violated.
+
+run cbmc: (unwind: 70, timeout: 86400 sec)
+cbmc running time: 1472.765 sec
+
+verification results: 
+property 'assert((!((ctl_size >= 84)) || (new_speed < 0)));' is not violated.
+
+run cbmc: (unwind: 80, timeout: 86400 sec)
+cbmc running time: 2912.043 sec
+
+verification results: 
+property 'assert((!((ctl_size >= 84)) || (new_speed < 0)));' is not violated.
+
+run cbmc: (unwind: 90, timeout: 86400 sec)
+cbmc running time: 2284.756 sec
+
+verification results: 
+property 'assert((!((ctl_size >= 84)) || (new_speed < 0)));' is not violated.
+
+run cbmc: (unwind: 100, timeout: 86400 sec)
+cbmc running time: 10162.597 sec
+
+verification results: 
+property 'assert((!((ctl_size >= 84)) || (new_speed < 0)));' is not violated.
+
+run cbmc: (unwind: 110, timeout: 86400 sec)
+cbmc running time: 1927.925 sec
+
+verification results: 
+ran out of memory
+total CBMC running time: 20348.97 sec

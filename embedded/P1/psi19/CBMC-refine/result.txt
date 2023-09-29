@@ -1,0 +1,70 @@
+--src data/obj_follower/apps/p11/obj_follower.c --wd results/obj-follow/p11/refine --unwind 1000 --run-original --refine 
+code parsing time: 0.915 sec
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.111 sec
+
+verification results: 
+property 'assert((!((ctl_size >= 84)) || (new_speed < 0)));' is not violated.
+
+run cbmc: (unwind: 20, timeout: 86400 sec)
+cbmc running time: 0.139 sec
+
+verification results: 
+property 'assert((!((ctl_size >= 84)) || (new_speed < 0)));' is not violated.
+
+run cbmc: (unwind: 30, timeout: 86400 sec)
+cbmc running time: 0.166 sec
+
+verification results: 
+property 'assert((!((ctl_size >= 84)) || (new_speed < 0)));' is not violated.
+
+run cbmc: (unwind: 40, timeout: 86400 sec)
+cbmc running time: 0.211 sec
+
+verification results: 
+property 'assert((!((ctl_size >= 84)) || (new_speed < 0)));' is not violated.
+
+run cbmc: (unwind: 50, timeout: 86400 sec)
+cbmc running time: 606.006 sec
+
+verification results: 
+property 'assert((!((ctl_size >= 84)) || (new_speed < 0)));' is not violated.
+
+run cbmc: (unwind: 60, timeout: 86400 sec)
+cbmc running time: 1799.054 sec
+
+verification results: 
+property 'assert((!((ctl_size >= 84)) || (new_speed < 0)));' is not violated.
+
+run cbmc: (unwind: 70, timeout: 86400 sec)
+cbmc running time: 3063.477 sec
+
+verification results: 
+property 'assert((!((ctl_size >= 84)) || (new_speed < 0)));' is not violated.
+
+run cbmc: (unwind: 80, timeout: 86400 sec)
+cbmc running time: 4013.577 sec
+
+verification results: 
+property 'assert((!((ctl_size >= 84)) || (new_speed < 0)));' is not violated.
+
+run cbmc: (unwind: 90, timeout: 86400 sec)
+cbmc running time: 6077.001 sec
+
+verification results: 
+property 'assert((!((ctl_size >= 84)) || (new_speed < 0)));' is not violated.
+
+run cbmc: (unwind: 100, timeout: 86400 sec)
+cbmc running time: 9616.087 sec
+
+verification results: 
+property 'assert((!((ctl_size >= 84)) || (new_speed < 0)));' is not violated.
+
+run cbmc: (unwind: 110, timeout: 86400 sec)
+cbmc running time: 14587.028 sec
+
+verification results: 
+property 'assert((!((ctl_size >= 84)) || (new_speed < 0)));' is TRUE alarm.
+
+total CBMC running time: 39762.855 sec

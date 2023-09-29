@@ -1,0 +1,34 @@
+--src data/obj_follower/apps/p9/obj_follower.c --wd results/obj-follow/p9/refine --unwind 1000 --run-original --refine 
+code parsing time: 0.929 sec
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.094 sec
+
+verification results: 
+property 'assert(!((((acq_size < 50) && (acq_size > 0)) && (x == 83))));' is not violated.
+
+run cbmc: (unwind: 20, timeout: 86400 sec)
+cbmc running time: 0.131 sec
+
+verification results: 
+property 'assert(!((((acq_size < 50) && (acq_size > 0)) && (x == 83))));' is not violated.
+
+run cbmc: (unwind: 30, timeout: 86400 sec)
+cbmc running time: 0.15 sec
+
+verification results: 
+property 'assert(!((((acq_size < 50) && (acq_size > 0)) && (x == 83))));' is not violated.
+
+run cbmc: (unwind: 40, timeout: 86400 sec)
+cbmc running time: 0.211 sec
+
+verification results: 
+property 'assert(!((((acq_size < 50) && (acq_size > 0)) && (x == 83))));' is not violated.
+
+run cbmc: (unwind: 50, timeout: 86400 sec)
+cbmc running time: 952.991 sec
+
+verification results: 
+property 'assert(!((((acq_size < 50) && (acq_size > 0)) && (x == 83))));' is TRUE alarm.
+
+total CBMC running time: 953.577 sec

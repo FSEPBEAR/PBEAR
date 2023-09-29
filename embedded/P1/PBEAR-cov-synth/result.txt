@@ -1,0 +1,94 @@
+--src data/obj_follower/apps/p1/obj_follower.c --wd results/obj-follow/acc --ld results/obj-follow/log/unit --unwind 1000 --synth-only-acc --synth-mode --synth-timeout 300 --synth-max-size 256 --synth-max-height 10 
+code parsing time: 0.951 sec
+
+select target function calls:
+getWidth(getArea__rectindex) (call id 16) influences 3 external nodes
+internal node ratio: 1.70% (14 of 822)
+
+getHeight(getArea__rectindex) (call id 17) influences 3 external nodes
+internal node ratio: 1.70% (14 of 822)
+
+getbiggestrect((U8)(0), -1) (call id 24) influences 4 external nodes
+internal node ratio: 1.70% (14 of 822)
+
+getArea((U8)(rectindex)) (call id 25) influences 3 external nodes
+internal node ratio: 6.08% (50 of 822)
+
+fisqrt(area) (call id 27) influences 3 external nodes
+internal node ratio: 10.46% (86 of 822)
+
+getArea((U8)(i)) (call id 15) influences 4 external nodes
+internal node ratio: 2.07% (17 of 822)
+
+predict complexity: (unwind 1000)
+criterion unwind: 4
+getbiggestrect((U8)(0), -1): original cmplx: 20
+getArea((U8)(i)): original cmplx: 2
+getWidth(getArea__rectindex): original cmplx: 1
+getHeight(getArea__rectindex): original cmplx: 1
+fisqrt(area): original cmplx: 5
+total cmplx: 2283
+
+loading I/O examples:
+each logs of functions:
+fisqrt: 559, output range: 23
+getbiggestrect: 9564, output range: 9
+getArea: 9315, output range: 377
+getWidth: 9347, output range: 225
+getHeight: 9256, output range: 209
+
+total number of I/O examples: 38041
+loading time: 38.98 sec
+
+synthesize stub:
+function fisqrt: 
+signed int __iv__return_expr_fisqrt;
+if(90>=val) if(8>=val) __iv__return_expr_fisqrt = 2; else __iv__return_expr_fisqrt = 5; else if((90*val)>=44115) __iv__return_expr_fisqrt = 22; else if(val>=450) __iv__return_expr_fisqrt = 21; else __iv__return_expr_fisqrt = 16; 
+__CPROVER_assume(0 <= __iv__return_expr_fisqrt && __iv__return_expr_fisqrt <= 45977);
+return __iv__return_expr_fisqrt;
+complexity: 4
+accuracy: 28.62%
+coverage: 21.74%
+# constraints: 6
+
+function getbiggestrect: 
+signed int __iv__return_expr_getbiggestrect;
+if(5==nxtcamdata[12]) __iv__return_expr_getbiggestrect = 2; else if(pcolorid==nxtcamdata[6]) if(nxtcamdata[22]>=nxtcamdata[10]) __iv__return_expr_getbiggestrect = 5; else if(nxtcamdata[0]>=nxtcamdata[15]) __iv__return_expr_getbiggestrect = 6; else if(nxtcamdata[19]==nxtcamdata[11]) __iv__return_expr_getbiggestrect = 5; else if(nxtcamdata[24]==nxtcamdata[10]) __iv__return_expr_getbiggestrect = 5; else if(0>=nxtcamdata[4]) __iv__return_expr_getbiggestrect = nxtcamdata[40]; else if(nxtcamdata[2]==nxtcamdata[10]) __iv__return_expr_getbiggestrect = 6; else if(nxtcamdata[0]>=nxtcamdata[14]) __iv__return_expr_getbiggestrect = 6; else if(nxtcamdata[19]==nxtcamdata[18]) __iv__return_expr_getbiggestrect = 6; else if(nxtcamdata[32]>=nxtcamdata[30]) __iv__return_expr_getbiggestrect = 6; else if(nxtcamdata[23]>=nxtcamdata[20]) __iv__return_expr_getbiggestrect = 7; else if(nxtcamdata[0]>=nxtcamdata[5]) __iv__return_expr_getbiggestrect = nxtcamdata[5]; else if(pcolorid<nxtcamdata[3]) if(nxtcamdata[0]>=nxtcamdata[18]) __iv__return_expr_getbiggestrect = 7; else if(nxtcamdata[19]>=nxtcamdata[29]) __iv__return_expr_getbiggestrect = 7; else __iv__return_expr_getbiggestrect = 1; else __iv__return_expr_getbiggestrect = 7; else if(pcolorid==nxtcamdata[21]) __iv__return_expr_getbiggestrect = 4; else if(nxtcamdata[27]==nxtcamdata[0]) __iv__return_expr_getbiggestrect = 0; else if(pcolorid==nxtcamdata[36]) __iv__return_expr_getbiggestrect = 7; else __iv__return_expr_getbiggestrect = (-1); 
+__CPROVER_assume((-1 <= __iv__return_expr_getbiggestrect && __iv__return_expr_getbiggestrect <= 7));
+return __iv__return_expr_getbiggestrect;
+complexity: 19
+accuracy: 70.79%
+coverage: 88.89%
+# constraints: 40
+
+function getArea: 
+signed int __iv__return_expr_getArea;
+__iv__return_expr_getArea = 0;
+__CPROVER_assume(-65025 <= __iv__return_expr_getArea && __iv__return_expr_getArea <= 65025);
+return __iv__return_expr_getArea;
+complexity: 0
+accuracy: 87.75%
+coverage: 0.27%
+# constraints: 1
+
+function getWidth: 
+signed int __iv__return_expr_getWidth;
+__iv__return_expr_getWidth = nxtcamdata[34];
+__CPROVER_assume(-255 <= __iv__return_expr_getWidth && __iv__return_expr_getWidth <= 255);
+return __iv__return_expr_getWidth;
+complexity: 0
+accuracy: 64.76%
+coverage: 33.78%
+# constraints: 1
+
+function getHeight: 
+signed int __iv__return_expr_getHeight;
+__iv__return_expr_getHeight = nxtcamdata[38];
+__CPROVER_assume(-255 <= __iv__return_expr_getHeight && __iv__return_expr_getHeight <= 255);
+return __iv__return_expr_getHeight;
+complexity: 0
+accuracy: 67.58%
+coverage: 38.28%
+# constraints: 1
+
+synthesizing time: 3600.02 sec

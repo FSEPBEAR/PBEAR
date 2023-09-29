@@ -1,0 +1,9 @@
+(define-fun getArea ( (__iv__input_0_ Int) (__iv__input_1_ Int) (__iv__input_2_ Int) (__iv__input_3_ Int) (__iv__input_4_ Int) (__iv__input_5_ Int) (__iv__input_6_ Int) (__iv__input_7_ Int) (__iv__input_8_ Int) (__iv__input_9_ Int) (__iv__input_10_ Int) (__iv__input_11_ Int) (__iv__input_12_ Int) (__iv__input_13_ Int) (__iv__input_14_ Int) (__iv__input_15_ Int) (__iv__input_16_ Int) (__iv__input_17_ Int) (__iv__input_18_ Int) (__iv__input_19_ Int) (__iv__input_20_ Int) (__iv__input_21_ Int) (__iv__input_22_ Int) (__iv__input_23_ Int) (__iv__input_24_ Int) (__iv__input_25_ Int) (__iv__input_26_ Int) (__iv__input_27_ Int) (__iv__input_28_ Int) (__iv__input_29_ Int) (__iv__input_30_ Int) (__iv__input_31_ Int) (__iv__input_32_ Int) (__iv__input_33_ Int) (__iv__input_34_ Int) (__iv__input_35_ Int) (__iv__input_36_ Int) (__iv__input_37_ Int) (__iv__input_38_ Int) (__iv__input_39_ Int) (__iv__input_40_ Int) (__iv__input_41_ Int)) Int (ite (>= __iv__input_0_ __iv__input_6_) (ite (>= __iv__input_12_ __iv__input_1_) (* 2 (* 3 __iv__input_13_)) (ite (>= __iv__input_20_ __iv__input_1_) (* 2 (* 2 (- __iv__input_18_ 3))) (* __iv__input_26_ (- __iv__input_29_ 5)))) (ite (= 2 __iv__input_0_) (* __iv__input_5_ __iv__input_6_) __iv__input_0_)))
+****************** statistics *******************
+size : 37
+time : 0.33 sec
+max_component_size : 1
+# components : 80
+time for composition : 0.32 sec
+time for component generation : 0.01 sec
+**************************************************

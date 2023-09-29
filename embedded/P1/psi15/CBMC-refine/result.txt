@@ -1,0 +1,46 @@
+--src data/obj_follower/apps/p7/obj_follower.c --wd results/obj-follow/p7/refine --unwind 1000 --run-original --refine 
+code parsing time: 0.937 sec
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.112 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+run cbmc: (unwind: 20, timeout: 86400 sec)
+cbmc running time: 0.137 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+run cbmc: (unwind: 30, timeout: 86400 sec)
+cbmc running time: 0.157 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+run cbmc: (unwind: 40, timeout: 86400 sec)
+cbmc running time: 0.209 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+run cbmc: (unwind: 50, timeout: 86400 sec)
+cbmc running time: 616.624 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+run cbmc: (unwind: 60, timeout: 86400 sec)
+cbmc running time: 1478.426 sec
+
+verification results: 
+property 'assert((state != 2));' is not violated.
+
+run cbmc: (unwind: 70, timeout: 86400 sec)
+cbmc running time: 2902.394 sec
+
+verification results: 
+property 'assert((state != 2));' is TRUE alarm.
+
+total CBMC running time: 4998.059 sec

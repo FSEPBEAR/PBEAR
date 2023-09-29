@@ -1,0 +1,21 @@
+outputs: __iv__return_expr_fisqrt 
+logs: 
+{"Func":"fisqrt","Input":[{"Var":"val","Val":191}],"Output":[{"Var":"__iv__return_expr_fisqrt","Val":13}],"InitOutput":[],}
+{"Func":"fisqrt","Input":[{"Var":"val","Val":251}],"Output":[{"Var":"__iv__return_expr_fisqrt","Val":15}],"InitOutput":[],}
+{"Func":"fisqrt","Input":[{"Var":"val","Val":154}],"Output":[{"Var":"__iv__return_expr_fisqrt","Val":11}],"InitOutput":[],}
+{"Func":"fisqrt","Input":[{"Var":"val","Val":425}],"Output":[{"Var":"__iv__return_expr_fisqrt","Val":20}],"InitOutput":[],}
+logs end
+SyGuS code:
+__iv__return_expr_fisqrt:ite >= __iv__input_0_ * 15 15 ) ) ite >= __iv__input_0_ + 181 181 ) ) + 15 5 ) 15 ) ite >= 181 __iv__input_0_ ) 11 - 15 2 ) ) )
+SyGuS end
+assumes:
+__iv__return_expr_fisqrt:0 <= __iv__return_expr_fisqrt && __iv__return_expr_fisqrt <= 45977
+assumes end:
+signed int __iv__return_expr_fisqrt;
+if(val>=225) if(val>=362) __iv__return_expr_fisqrt = 20; else __iv__return_expr_fisqrt = 15; else if(181>=val) __iv__return_expr_fisqrt = 11; else __iv__return_expr_fisqrt = 13; 
+__CPROVER_assume(0 <= __iv__return_expr_fisqrt && __iv__return_expr_fisqrt <= 45977);
+return __iv__return_expr_fisqrt;
+complexity: 3
+accuracy: 22.18%
+coverage: 17.39%
+max_comp_size: 3

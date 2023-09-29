@@ -1,0 +1,18 @@
+Parsing results/obj-follow/p8/acc/target.c
+Converting
+Type-checking target
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Running with 8 object bits, 56 offset bits (default)
+Starting Bounded Model Checking
+Runtime Symex: 118.561s
+size of program expression: 3643606 steps
+simple slicing removed 8 assignments
+Generated 170 VCC(s), 135 remaining after simplification
+Runtime Postprocess Equation: 1.43742s
+Passing problem to propositional reduction
+converting SSA
+SAT checker ran out of memory
+Out of memory

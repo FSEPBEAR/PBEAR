@@ -1,0 +1,19 @@
+Parsing results/obj-follow/p6/filter/target.c
+Converting
+Type-checking target
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Running with 8 object bits, 56 offset bits (default)
+Starting Bounded Model Checking
+Runtime Symex: 0.179834s
+size of program expression: 6295 steps
+simple slicing removed 0 assignments
+Generated 1 VCC(s), 0 remaining after simplification
+Runtime Postprocess Equation: 0.000443533s
+** Results:
+results/obj-follow/p6/filter/target.c function check_property_27_33
+[check_property_27_33.assertion.1] line 2942 assertion (acq_size == 0): SUCCESS
+** 0 of 1 failed (1 iterations)
+VERIFICATION SUCCESSFUL

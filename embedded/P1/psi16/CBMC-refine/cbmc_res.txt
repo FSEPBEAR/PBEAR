@@ -1,0 +1,29 @@
+Parsing results/obj-follow/p8/refine/target.c
+Converting
+Type-checking target
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Running with 8 object bits, 56 offset bits (default)
+Starting Bounded Model Checking
+Runtime Symex: 98.1356s
+size of program expression: 2688855 steps
+simple slicing removed 8 assignments
+Generated 120 VCC(s), 85 remaining after simplification
+Runtime Postprocess Equation: 0.998992s
+Passing problem to refinement loop with MiniSAT 2.2.1 with simplifier
+converting SSA
+Runtime Convert SSA: 142.84s
+Running refinement loop with MiniSAT 2.2.1 with simplifier
+BV-Refinement: post-processing
+BV-Refinement: iteration 1
+132006826 variables, 558472806 clauses
+SAT checker ran out of memory
+Runtime Solver: 1646.67s
+Runtime decision procedure: 1789.77s
+** Results:
+results/obj-follow/p8/refine/target.c function check_property
+[check_property.assertion.1] line 610 assertion (state != 2): ERROR
+** 0 of 1 failed (1 iterations)
+VERIFICATION ERROR

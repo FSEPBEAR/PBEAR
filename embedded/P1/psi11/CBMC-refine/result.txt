@@ -1,0 +1,40 @@
+--src data/obj_follower/apps/p2/obj_follower.c --wd results/obj-follow/p2/refine --unwind 1000 --run-original --refine 
+code parsing time: 0.984 sec
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.118 sec
+
+verification results: 
+property 'assert(!(((new_speed > 60) && !(((direction_adjustment < 15) && (direction_adjustment > -15))))));' is not violated.
+
+run cbmc: (unwind: 20, timeout: 86400 sec)
+cbmc running time: 0.155 sec
+
+verification results: 
+property 'assert(!(((new_speed > 60) && !(((direction_adjustment < 15) && (direction_adjustment > -15))))));' is not violated.
+
+run cbmc: (unwind: 30, timeout: 86400 sec)
+cbmc running time: 0.162 sec
+
+verification results: 
+property 'assert(!(((new_speed > 60) && !(((direction_adjustment < 15) && (direction_adjustment > -15))))));' is not violated.
+
+run cbmc: (unwind: 40, timeout: 86400 sec)
+cbmc running time: 0.211 sec
+
+verification results: 
+property 'assert(!(((new_speed > 60) && !(((direction_adjustment < 15) && (direction_adjustment > -15))))));' is not violated.
+
+run cbmc: (unwind: 50, timeout: 86400 sec)
+cbmc running time: 581.204 sec
+
+verification results: 
+property 'assert(!(((new_speed > 60) && !(((direction_adjustment < 15) && (direction_adjustment > -15))))));' is not violated.
+
+run cbmc: (unwind: 60, timeout: 86400 sec)
+cbmc running time: 2075.448 sec
+
+verification results: 
+property 'assert(!(((new_speed > 60) && !(((direction_adjustment < 15) && (direction_adjustment > -15))))));' is TRUE alarm.
+
+total CBMC running time: 2657.298 sec

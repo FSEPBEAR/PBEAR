@@ -1,0 +1,30 @@
+Parsing results/obj-follow/p3/acc/target.c
+Converting
+Type-checking target
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Running with 8 object bits, 56 offset bits (default)
+Starting Bounded Model Checking
+Runtime Symex: 74.5743s
+size of program expression: 2390552 steps
+simple slicing removed 8 assignments
+Generated 130 VCC(s), 95 remaining after simplification
+Runtime Postprocess Equation: 0.970617s
+Passing problem to propositional reduction
+converting SSA
+Runtime Convert SSA: 149.126s
+Running propositional reduction
+Post-processing
+Runtime Post-process: 0.0140123s
+Solving with MiniSAT 2.2.1 with simplifier
+135552830 variables, 588969809 clauses
+SAT checker ran out of memory
+Runtime Solver: 1742.11s
+Runtime decision procedure: 1891.49s
+** Results:
+results/obj-follow/p3/acc/target.c function check_property
+[check_property.assertion.1] line 585 assertion (state != 2): ERROR
+** 0 of 1 failed (1 iterations)
+VERIFICATION ERROR

@@ -1,0 +1,10 @@
+(define-fun fisqrt ( (__iv__input_0_ Int)) Int (- 4 (* (- -1 2) (ite (>= 33276 (* __iv__input_0_ __iv__input_0_)) 2 (ite (>= (* __iv__input_0_ __iv__input_0_) 40132) 4 3)))))
+****************** statistics *******************
+size : 21
+time : 131.77 sec
+max_component_size : 3
+# components : 726
+time for composition : 131.68 sec
+time for component generation : 0.10 sec
+**************************************************
+************************

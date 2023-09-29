@@ -1,0 +1,19 @@
+outputs: __iv__return_expr_getWidth 
+logs: 
+{"Func":"getWidth","Input":[{"Var":"nxtcamdata[0]","Val":0},{"Var":"nxtcamdata[1]","Val":0},{"Var":"nxtcamdata[2]","Val":169},{"Var":"nxtcamdata[3]","Val":0},{"Var":"nxtcamdata[4]","Val":33},{"Var":"nxtcamdata[5]","Val":0},{"Var":"nxtcamdata[6]","Val":0},{"Var":"nxtcamdata[7]","Val":0},{"Var":"nxtcamdata[8]","Val":2},{"Var":"nxtcamdata[9]","Val":2},{"Var":"nxtcamdata[10]","Val":0},{"Var":"nxtcamdata[11]","Val":0},{"Var":"nxtcamdata[12]","Val":0},{"Var":"nxtcamdata[13]","Val":0},{"Var":"nxtcamdata[14]","Val":0},{"Var":"getWidth__rectindex","Val":0},{"Var":"nxtcamdata[15]","Val":0},{"Var":"nxtcamdata[16]","Val":0},{"Var":"nxtcamdata[17]","Val":115},{"Var":"nxtcamdata[18]","Val":0},{"Var":"nxtcamdata[19]","Val":0},{"Var":"nxtcamdata[20]","Val":7},{"Var":"nxtcamdata[21]","Val":0},{"Var":"nxtcamdata[22]","Val":0},{"Var":"nxtcamdata[23]","Val":0},{"Var":"nxtcamdata[24]","Val":0},{"Var":"nxtcamdata[25]","Val":0},{"Var":"nxtcamdata[26]","Val":6},{"Var":"nxtcamdata[27]","Val":0},{"Var":"nxtcamdata[28]","Val":2},{"Var":"nxtcamdata[29]","Val":5},{"Var":"nxtcamdata[30]","Val":0},{"Var":"nxtcamdata[31]","Val":0},{"Var":"nxtcamdata[32]","Val":0},{"Var":"nxtcamdata[33]","Val":0},{"Var":"nxtcamdata[34]","Val":0},{"Var":"nxtcamdata[35]","Val":0},{"Var":"nxtcamdata[36]","Val":0},{"Var":"nxtcamdata[37]","Val":0},{"Var":"nxtcamdata[38]","Val":0},{"Var":"nxtcamdata[39]","Val":0},{"Var":"nxtcamdata[40]","Val":0}],"Output":[{"Var":"__iv__return_expr_getWidth","Val":136}],"InitOutput":[],}
+{"Func":"getWidth","Input":[{"Var":"nxtcamdata[0]","Val":0},{"Var":"nxtcamdata[1]","Val":0},{"Var":"nxtcamdata[2]","Val":140},{"Var":"nxtcamdata[3]","Val":0},{"Var":"nxtcamdata[4]","Val":0},{"Var":"nxtcamdata[5]","Val":0},{"Var":"nxtcamdata[6]","Val":0},{"Var":"nxtcamdata[7]","Val":0},{"Var":"nxtcamdata[8]","Val":0},{"Var":"nxtcamdata[9]","Val":0},{"Var":"nxtcamdata[10]","Val":0},{"Var":"nxtcamdata[11]","Val":143},{"Var":"nxtcamdata[12]","Val":0},{"Var":"nxtcamdata[13]","Val":0},{"Var":"nxtcamdata[14]","Val":0},{"Var":"getWidth__rectindex","Val":0},{"Var":"nxtcamdata[15]","Val":226},{"Var":"nxtcamdata[16]","Val":0},{"Var":"nxtcamdata[17]","Val":0},{"Var":"nxtcamdata[18]","Val":0},{"Var":"nxtcamdata[19]","Val":0},{"Var":"nxtcamdata[20]","Val":0},{"Var":"nxtcamdata[21]","Val":3},{"Var":"nxtcamdata[22]","Val":0},{"Var":"nxtcamdata[23]","Val":0},{"Var":"nxtcamdata[24]","Val":0},{"Var":"nxtcamdata[25]","Val":0},{"Var":"nxtcamdata[26]","Val":0},{"Var":"nxtcamdata[27]","Val":0},{"Var":"nxtcamdata[28]","Val":0},{"Var":"nxtcamdata[29]","Val":0},{"Var":"nxtcamdata[30]","Val":0},{"Var":"nxtcamdata[31]","Val":0},{"Var":"nxtcamdata[32]","Val":0},{"Var":"nxtcamdata[33]","Val":0},{"Var":"nxtcamdata[34]","Val":0},{"Var":"nxtcamdata[35]","Val":6},{"Var":"nxtcamdata[36]","Val":0},{"Var":"nxtcamdata[37]","Val":0},{"Var":"nxtcamdata[38]","Val":0},{"Var":"nxtcamdata[39]","Val":251},{"Var":"nxtcamdata[40]","Val":0}],"Output":[{"Var":"__iv__return_expr_getWidth","Val":140}],"InitOutput":[],}
+logs end
+SyGuS code:
+__iv__return_expr_getWidth:- __iv__input_23_ __iv__input_36_ )
+SyGuS end
+assumes:
+__iv__return_expr_getWidth:-255 <= __iv__return_expr_getWidth && __iv__return_expr_getWidth <= 255
+assumes end:
+signed int __iv__return_expr_getWidth;
+__iv__return_expr_getWidth = (nxtcamdata[2]-nxtcamdata[4]);
+__CPROVER_assume(-255 <= __iv__return_expr_getWidth && __iv__return_expr_getWidth <= 255);
+return __iv__return_expr_getWidth;
+complexity: 0
+accuracy: 37.82%
+coverage: 49.33%
+max_comp_size: 1

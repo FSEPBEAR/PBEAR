@@ -1,0 +1,1325 @@
+CBMC version 5.43.0 (cbmc-5.43.0) 64-bit x86_64 linux
+Parsing results/obj-follow/p7/filter/target.c
+Converting
+Type-checking target
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Running with 8 object bits, 56 offset bits (default)
+Starting Bounded Model Checking
+Not unwinding loop getbiggestrect.0 iteration 70 file results/obj-follow/p7/filter/target.c line 269 function getbiggestrect thread 0
+Not unwinding loop getbiggestrect.0 iteration 70 file results/obj-follow/p7/filter/target.c line 269 function getbiggestrect thread 0
+Runtime Symex: 0.47389s
+size of program expression: 13783 steps
+slicing removed 5550 assignments
+Generated 1 VCC(s), 1 remaining after simplification
+Runtime Postprocess Equation: 0.0173921s
+Passing problem to propositional reduction
+converting SSA
+Runtime Convert SSA: 0.468476s
+Running propositional reduction
+Post-processing
+Runtime Post-process: 0.000207623s
+Solving with MiniSAT 2.2.1 with simplifier
+370355 variables, 1752555 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 54.3022s
+Runtime decision procedure: 54.7711s
+Building error trace
+** Results:
+results/obj-follow/p7/filter/target.c function check_property_38_65
+[check_property_38_65.assertion.1] line 5760 assertion 0: FAILURE
+Trace for check_property_38_65.assertion.1:
+__iv__stub_call:__iv__start
+State 323 file results/obj-follow/p7/filter/target.c function i2c_start_transaction line 225 thread 0
+----------------------------------------------------
+  i2c_start_transaction_ret=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 325 file results/obj-follow/p7/filter/target.c function i2c_start_transaction line 230 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char=2 (00000000 00000000 00000000 00000010)
+__iv__test_case:2
+State 327 file results/obj-follow/p7/filter/target.c function i2c_start_transaction line 232 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char=2 (00000010)
+State 328 file results/obj-follow/p7/filter/target.c function i2c_start_transaction line 233 thread 0
+----------------------------------------------------
+  nxtcambuffer[0l]=2 (00000010)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 234 function i2c_start_transaction
+  (signed int)i2c_start_transaction__data[0l] <= 8
+State 333 file results/obj-follow/p7/filter/target.c function send_nxtcam_command_22_1 line 1809 thread 0
+----------------------------------------------------
+  ret=0 (00000000 00000000 00000000 00000000)
+__iv__stub_call:__iv__end
+State 335 file results/obj-follow/p7/filter/target.c function send_nxtcam_command_22_1 line 1810 thread 0
+----------------------------------------------------
+  __iv__return_expr_send_nxtcam_command=0 (00000000 00000000 00000000 00000000)
+State 337 file results/obj-follow/p7/filter/target.c function Func_AcquisitionTask_34_1 line 1670 thread 0
+----------------------------------------------------
+  return_value_send_nxtcam_command=0 (00000000 00000000 00000000 00000000)
+State 338 file results/obj-follow/p7/filter/target.c function Func_AcquisitionTask_34_1 line 1671 thread 0
+----------------------------------------------------
+  tracking_enabled=0 (00000000)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 3450 function Func_AcquisitionTask_34_3
+  (signed int)tracking_enabled == 0
+__iv__test_case:0
+State 1026 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3482 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char=6 (00000000 00000000 00000000 00000110)
+__iv__test_case:6
+State 1028 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3483 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char=6 (00000110)
+State 1029 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3484 thread 0
+----------------------------------------------------
+  nxtcamdata[0l]=6 (00000110)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 3485 function i2c_start_transaction_5_1
+  (signed int)i2c_start_transaction__data[0l] <= 8
+State 1031 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3490 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=2 (00000000 00000000 00000000 00000010)
+__iv__test_case:2
+State 1033 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3491 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=2 (00000010)
+State 1034 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3492 thread 0
+----------------------------------------------------
+  nxtcamdata[1l]=2 (00000010)
+State 1035 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3495 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=10 (00000000 00000000 00000000 00001010)
+__iv__test_case:10
+State 1037 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3496 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=10 (00001010)
+State 1038 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3497 thread 0
+----------------------------------------------------
+  nxtcamdata[2l]=10 (00001010)
+State 1039 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3500 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 1041 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3501 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=0 (00000000)
+State 1042 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3502 thread 0
+----------------------------------------------------
+  nxtcamdata[3l]=0 (00000000)
+State 1043 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3505 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=0x41 (00000000 00000000 00000000 01000001)
+__iv__test_case:65
+State 1045 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3506 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=65 (01000001)
+State 1046 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3507 thread 0
+----------------------------------------------------
+  nxtcamdata[4l]=65 (01000001)
+State 1047 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3510 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=254 (00000000 00000000 00000000 11111110)
+__iv__test_case:254
+State 1049 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3511 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=254 (11111110)
+State 1050 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3512 thread 0
+----------------------------------------------------
+  nxtcamdata[5l]=254 (11111110)
+State 1051 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3515 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=1 (00000000 00000000 00000000 00000001)
+__iv__test_case:1
+State 1053 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3516 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=1 (00000001)
+State 1054 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3517 thread 0
+----------------------------------------------------
+  nxtcamdata[6l]=1 (00000001)
+State 1055 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3520 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 1057 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3521 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=0 (00000000)
+State 1058 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3522 thread 0
+----------------------------------------------------
+  nxtcamdata[7l]=0 (00000000)
+State 1059 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3525 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=24 (00000000 00000000 00000000 00011000)
+__iv__test_case:24
+State 1061 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3526 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=24 (00011000)
+State 1062 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3527 thread 0
+----------------------------------------------------
+  nxtcamdata[8l]=24 (00011000)
+State 1063 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3530 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=1 (00000000 00000000 00000000 00000001)
+__iv__test_case:1
+State 1065 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3531 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=1 (00000001)
+State 1066 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3532 thread 0
+----------------------------------------------------
+  nxtcamdata[9l]=1 (00000001)
+State 1067 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3535 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=174 (00000000 00000000 00000000 10101110)
+__iv__test_case:174
+State 1069 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3536 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=174 (10101110)
+State 1070 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3537 thread 0
+----------------------------------------------------
+  nxtcamdata[10l]=174 (10101110)
+State 1071 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3540 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=128 (00000000 00000000 00000000 10000000)
+__iv__test_case:128
+State 1073 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3541 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=128 (10000000)
+State 1074 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3542 thread 0
+----------------------------------------------------
+  nxtcamdata[11l]=128 (10000000)
+State 1075 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3545 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=1 (00000000 00000000 00000000 00000001)
+__iv__test_case:1
+State 1077 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3546 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=1 (00000001)
+State 1078 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3547 thread 0
+----------------------------------------------------
+  nxtcamdata[12l]=1 (00000001)
+State 1079 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3550 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 1081 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3551 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=0 (00000000)
+State 1082 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3552 thread 0
+----------------------------------------------------
+  nxtcamdata[13l]=0 (00000000)
+State 1083 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3555 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 1085 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3556 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=0 (00000000)
+State 1086 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3557 thread 0
+----------------------------------------------------
+  nxtcamdata[14l]=0 (00000000)
+State 1087 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3560 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=244 (00000000 00000000 00000000 11110100)
+__iv__test_case:244
+State 1089 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3561 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=244 (11110100)
+State 1090 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3562 thread 0
+----------------------------------------------------
+  nxtcamdata[15l]=244 (11110100)
+State 1091 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3565 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=128 (00000000 00000000 00000000 10000000)
+__iv__test_case:128
+State 1093 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3566 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=128 (10000000)
+State 1094 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3567 thread 0
+----------------------------------------------------
+  nxtcamdata[16l]=128 (10000000)
+State 1095 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3570 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=1 (00000000 00000000 00000000 00000001)
+__iv__test_case:1
+State 1097 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3571 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=1 (00000001)
+State 1098 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3572 thread 0
+----------------------------------------------------
+  nxtcamdata[17l]=1 (00000001)
+State 1099 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3575 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=224 (00000000 00000000 00000000 11100000)
+__iv__test_case:224
+State 1101 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3576 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=224 (11100000)
+State 1102 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3577 thread 0
+----------------------------------------------------
+  nxtcamdata[18l]=224 (11100000)
+State 1103 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3580 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 1105 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3581 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=0 (00000000)
+State 1106 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3582 thread 0
+----------------------------------------------------
+  nxtcamdata[19l]=0 (00000000)
+State 1107 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3585 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=95 (00000000 00000000 00000000 01011111)
+__iv__test_case:95
+State 1109 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3586 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=95 (01011111)
+State 1110 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3587 thread 0
+----------------------------------------------------
+  nxtcamdata[20l]=95 (01011111)
+State 1111 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3590 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=1 (00000000 00000000 00000000 00000001)
+__iv__test_case:1
+State 1113 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3591 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=1 (00000001)
+State 1114 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3592 thread 0
+----------------------------------------------------
+  nxtcamdata[21l]=1 (00000001)
+State 1115 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3595 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=128 (00000000 00000000 00000000 10000000)
+__iv__test_case:128
+State 1117 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3596 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=128 (10000000)
+State 1118 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3597 thread 0
+----------------------------------------------------
+  nxtcamdata[22l]=128 (10000000)
+State 1119 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3600 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 1121 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3601 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=0 (00000000)
+State 1122 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3602 thread 0
+----------------------------------------------------
+  nxtcamdata[23l]=0 (00000000)
+State 1123 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3605 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=132 (00000000 00000000 00000000 10000100)
+__iv__test_case:132
+State 1125 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3606 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=132 (10000100)
+State 1126 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3607 thread 0
+----------------------------------------------------
+  nxtcamdata[24l]=132 (10000100)
+State 1127 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3610 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=29 (00000000 00000000 00000000 00011101)
+__iv__test_case:29
+State 1129 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3611 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=29 (00011101)
+State 1130 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3612 thread 0
+----------------------------------------------------
+  nxtcamdata[25l]=29 (00011101)
+State 1131 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3615 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 1133 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3616 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=0 (00000000)
+State 1134 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3617 thread 0
+----------------------------------------------------
+  nxtcamdata[26l]=0 (00000000)
+State 1135 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3620 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 1137 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3621 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=0 (00000000)
+State 1138 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3622 thread 0
+----------------------------------------------------
+  nxtcamdata[27l]=0 (00000000)
+State 1139 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3625 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=32 (00000000 00000000 00000000 00100000)
+__iv__test_case:32
+State 1141 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3626 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=32 (00100000)
+State 1142 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3627 thread 0
+----------------------------------------------------
+  nxtcamdata[28l]=32 (00100000)
+State 1143 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3630 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=1 (00000000 00000000 00000000 00000001)
+__iv__test_case:1
+State 1145 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3631 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=1 (00000001)
+State 1146 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3632 thread 0
+----------------------------------------------------
+  nxtcamdata[29l]=1 (00000001)
+State 1147 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3635 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=160 (00000000 00000000 00000000 10100000)
+__iv__test_case:160
+State 1149 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3636 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=160 (10100000)
+State 1150 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3637 thread 0
+----------------------------------------------------
+  nxtcamdata[30l]=160 (10100000)
+State 1151 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3640 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=4 (00000000 00000000 00000000 00000100)
+__iv__test_case:4
+State 1153 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3641 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=4 (00000100)
+State 1154 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3642 thread 0
+----------------------------------------------------
+  nxtcamdata[31l]=4 (00000100)
+State 1155 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3645 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=64 (00000000 00000000 00000000 01000000)
+__iv__test_case:64
+State 1157 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3646 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=64 (01000000)
+State 1158 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3647 thread 0
+----------------------------------------------------
+  nxtcamdata[32l]=64 (01000000)
+State 1159 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3650 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=192 (00000000 00000000 00000000 11000000)
+__iv__test_case:192
+State 1161 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3651 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=192 (11000000)
+State 1162 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3652 thread 0
+----------------------------------------------------
+  nxtcamdata[33l]=192 (11000000)
+State 1163 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3655 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=192 (00000000 00000000 00000000 11000000)
+__iv__test_case:192
+State 1165 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3656 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=192 (11000000)
+State 1166 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3657 thread 0
+----------------------------------------------------
+  nxtcamdata[34l]=192 (11000000)
+State 1167 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3660 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=188 (00000000 00000000 00000000 10111100)
+__iv__test_case:188
+State 1169 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3661 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=188 (10111100)
+State 1170 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3662 thread 0
+----------------------------------------------------
+  nxtcamdata[35l]=188 (10111100)
+State 1171 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3665 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=4 (00000000 00000000 00000000 00000100)
+__iv__test_case:4
+State 1173 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3666 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=4 (00000100)
+State 1174 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3667 thread 0
+----------------------------------------------------
+  nxtcamdata[36l]=4 (00000100)
+State 1175 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3670 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 1177 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3671 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=0 (00000000)
+State 1178 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3672 thread 0
+----------------------------------------------------
+  nxtcamdata[37l]=0 (00000000)
+State 1179 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3675 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=160 (00000000 00000000 00000000 10100000)
+__iv__test_case:160
+State 1181 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3676 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=160 (10100000)
+State 1182 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3677 thread 0
+----------------------------------------------------
+  nxtcamdata[38l]=160 (10100000)
+State 1183 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3680 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=64 (00000000 00000000 00000000 01000000)
+__iv__test_case:64
+State 1185 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3681 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=64 (01000000)
+State 1186 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3682 thread 0
+----------------------------------------------------
+  nxtcamdata[39l]=64 (01000000)
+State 1187 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3685 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=171 (00000000 00000000 00000000 10101011)
+__iv__test_case:171
+State 1189 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3686 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=171 (10101011)
+State 1190 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_1 line 3687 thread 0
+----------------------------------------------------
+  nxtcamdata[40l]=171 (10101011)
+State 1196 file results/obj-follow/p7/filter/target.c function getbiggestrect line 259 thread 0
+----------------------------------------------------
+  colorid=2 (00000000 00000000 00000000 00000010)
+State 1200 file results/obj-follow/p7/filter/target.c function getbiggestrect line 259 thread 0
+----------------------------------------------------
+  colorid=1 (00000000 00000000 00000000 00000001)
+State 1204 file results/obj-follow/p7/filter/target.c function getbiggestrect line 259 thread 0
+----------------------------------------------------
+  colorid=128 (00000000 00000000 00000000 10000000)
+State 1208 file results/obj-follow/p7/filter/target.c function getbiggestrect line 259 thread 0
+----------------------------------------------------
+  colorid=128 (00000000 00000000 00000000 10000000)
+State 1212 file results/obj-follow/p7/filter/target.c function getbiggestrect line 259 thread 0
+----------------------------------------------------
+  colorid=1 (00000000 00000000 00000000 00000001)
+State 1216 file results/obj-follow/p7/filter/target.c function getbiggestrect line 259 thread 0
+----------------------------------------------------
+  colorid=0 (00000000 00000000 00000000 00000000)
+State 1222 file results/obj-follow/p7/filter/target.c function getWidth line 282 thread 0
+----------------------------------------------------
+  xul=0 (00000000 00000000 00000000 00000000)
+State 1223 file results/obj-follow/p7/filter/target.c function getWidth line 284 thread 0
+----------------------------------------------------
+  xlr=1 (00000000 00000000 00000000 00000001)
+State 1226 file results/obj-follow/p7/filter/target.c function getArea line 275 thread 0
+----------------------------------------------------
+  return_value_getWidth=1 (00000000 00000000 00000000 00000001)
+State 1229 file results/obj-follow/p7/filter/target.c function getHeight line 289 thread 0
+----------------------------------------------------
+  yul=32 (00000000 00000000 00000000 00100000)
+State 1230 file results/obj-follow/p7/filter/target.c function getHeight line 291 thread 0
+----------------------------------------------------
+  ylr=160 (00000000 00000000 00000000 10100000)
+State 1233 file results/obj-follow/p7/filter/target.c function getArea line 277 thread 0
+----------------------------------------------------
+  return_value_getHeight=128 (00000000 00000000 00000000 10000000)
+State 1236 file results/obj-follow/p7/filter/target.c function getbiggestrect line 262 thread 0
+----------------------------------------------------
+  getbiggestrect__1__1__1__1__area=128 (00000000 00000000 00000000 10000000)
+State 1238 file results/obj-follow/p7/filter/target.c function getbiggestrect line 264 thread 0
+----------------------------------------------------
+  maxarea=128 (00000000 00000000 00000000 10000000)
+State 1243 file results/obj-follow/p7/filter/target.c function Func_AcquisitionTask_34_3 line 3452 thread 0
+----------------------------------------------------
+  rectindex=5 (00000000 00000000 00000000 00000101)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 3453 function Func_AcquisitionTask_34_3
+  !(!(rectindex >= 0))
+State 1247 file results/obj-follow/p7/filter/target.c function Func_AcquisitionTask_34_3 line 3454 thread 0
+----------------------------------------------------
+  getArea__rectindex=5 (00000101)
+State 1250 file results/obj-follow/p7/filter/target.c function getArea_25_1 line 3694 thread 0
+----------------------------------------------------
+  getWidth__rectindex=5 (00000101)
+State 1251 file results/obj-follow/p7/filter/target.c function getWidth_16_1 line 3703 thread 0
+----------------------------------------------------
+  xul=0 (00000000 00000000 00000000 00000000)
+State 1252 file results/obj-follow/p7/filter/target.c function getWidth_16_1 line 3705 thread 0
+----------------------------------------------------
+  xlr=1 (00000000 00000000 00000000 00000001)
+State 1253 file results/obj-follow/p7/filter/target.c function getWidth_16_1 line 3706 thread 0
+----------------------------------------------------
+  __iv__return_expr_getWidth=1 (00000000 00000000 00000000 00000001)
+State 1255 file results/obj-follow/p7/filter/target.c function getArea_25_1 line 3695 thread 0
+----------------------------------------------------
+  return_value_getWidth=1 (00000000 00000000 00000000 00000001)
+State 1258 file results/obj-follow/p7/filter/target.c function getArea_25_1 line 3697 thread 0
+----------------------------------------------------
+  getHeight__rectindex=5 (00000101)
+State 1259 file results/obj-follow/p7/filter/target.c function getHeight_17_1 line 3710 thread 0
+----------------------------------------------------
+  yul=32 (00000000 00000000 00000000 00100000)
+State 1260 file results/obj-follow/p7/filter/target.c function getHeight_17_1 line 3712 thread 0
+----------------------------------------------------
+  ylr=160 (00000000 00000000 00000000 10100000)
+State 1261 file results/obj-follow/p7/filter/target.c function getHeight_17_1 line 3713 thread 0
+----------------------------------------------------
+  __iv__return_expr_getHeight=128 (00000000 00000000 00000000 10000000)
+State 1263 file results/obj-follow/p7/filter/target.c function getArea_25_1 line 3698 thread 0
+----------------------------------------------------
+  return_value_getHeight=128 (00000000 00000000 00000000 10000000)
+State 1264 file results/obj-follow/p7/filter/target.c function getArea_25_1 line 3699 thread 0
+----------------------------------------------------
+  __iv__return_expr_getArea=128 (00000000 00000000 00000000 10000000)
+State 1266 file results/obj-follow/p7/filter/target.c function Func_AcquisitionTask_34_3 line 3455 thread 0
+----------------------------------------------------
+  area=128 (00000000 00000000 00000000 10000000)
+State 1269 file results/obj-follow/p7/filter/target.c function Func_AcquisitionTask_34_3 line 3456 thread 0
+----------------------------------------------------
+  datum=128 (00000000 00000000 00000000 10000000)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 3722 function median_filter_26_1
+  !(datpoint - buffer >= 15l)
+State 1271 file results/obj-follow/p7/filter/target.c function median_filter_26_1 line 3723 thread 0
+----------------------------------------------------
+  buffer[1l].value=128 (00000000 00000000 00000000 10000000)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 3727 function median_filter_26_1
+  !(scan->point == datpoint)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 3731 function median_filter_26_1
+  !(scan->point == datpoint)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 3732 function median_filter_26_1
+  !(scan->value >= datum)
+State 1275 file results/obj-follow/p7/filter/target.c function median_filter_26_1 line 3738 thread 0
+----------------------------------------------------
+  __iv__return_expr_median_filter=128 (00000000 00000000 00000000 10000000)
+State 1277 file results/obj-follow/p7/filter/target.c function Func_AcquisitionTask_34_3 line 3457 thread 0
+----------------------------------------------------
+  area=128 (00000000 00000000 00000000 10000000)
+State 1280 file results/obj-follow/p7/filter/target.c function Func_AcquisitionTask_34_3 line 3458 thread 0
+----------------------------------------------------
+  val=128 (00000000 00000000 00000000 10000000)
+State 1281 file results/obj-follow/p7/filter/target.c function fisqrt_27_1 line 3744 thread 0
+----------------------------------------------------
+  t=128 (00000000 00000000 00000000 10000000)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 3745 function fisqrt_27_1
+  !(t == 0)
+State 1283 file results/obj-follow/p7/filter/target.c function fisqrt_27_1 line 3747 thread 0
+----------------------------------------------------
+  t=64 (00000000 00000000 00000000 01000000)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 3748 function fisqrt_27_1
+  !(t == 0)
+State 1285 file results/obj-follow/p7/filter/target.c function fisqrt_27_1 line 3750 thread 0
+----------------------------------------------------
+  t=32 (00000000 00000000 00000000 00100000)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 3751 function fisqrt_27_1
+  !(t == 0)
+State 1287 file results/obj-follow/p7/filter/target.c function fisqrt_27_1 line 3753 thread 0
+----------------------------------------------------
+  t=16 (00000000 00000000 00000000 00010000)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 3754 function fisqrt_27_1
+  !(t == 0)
+State 1289 file results/obj-follow/p7/filter/target.c function fisqrt_27_1 line 3756 thread 0
+----------------------------------------------------
+  t=8 (00000000 00000000 00000000 00001000)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 3757 function fisqrt_27_1
+  !(t == 0)
+State 1291 file results/obj-follow/p7/filter/target.c function fisqrt_27_1 line 3759 thread 0
+----------------------------------------------------
+  t=4 (00000000 00000000 00000000 00000100)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 3760 function fisqrt_27_1
+  !(t == 0)
+State 1293 file results/obj-follow/p7/filter/target.c function fisqrt_27_1 line 3762 thread 0
+----------------------------------------------------
+  t=2 (00000000 00000000 00000000 00000010)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 3763 function fisqrt_27_1
+  !(t == 0)
+State 1295 file results/obj-follow/p7/filter/target.c function fisqrt_27_1 line 3765 thread 0
+----------------------------------------------------
+  t=1 (00000000 00000000 00000000 00000001)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 3766 function fisqrt_27_1
+  !(t == 0)
+State 1297 file results/obj-follow/p7/filter/target.c function fisqrt_27_1 line 3768 thread 0
+----------------------------------------------------
+  t=0 (00000000 00000000 00000000 00000000)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 3769 function fisqrt_27_1
+  t == 0
+State 1299 file results/obj-follow/p7/filter/target.c function fisqrt_27_1 line 3770 thread 0
+----------------------------------------------------
+  t=32 (00000000 00000000 00000000 00100000)
+State 1300 file results/obj-follow/p7/filter/target.c function fisqrt_27_1 line 3771 thread 0
+----------------------------------------------------
+  __iv__return_expr_fisqrt=11 (00000000 00000000 00000000 00001011)
+State 1302 file results/obj-follow/p7/filter/target.c function Func_AcquisitionTask_34_3 line 3459 thread 0
+----------------------------------------------------
+  acq_size=11 (00000000 00000000 00000000 00001011)
+State 1305 file results/obj-follow/p7/filter/target.c function Func_AcquisitionTask_34_3 line 3460 thread 0
+----------------------------------------------------
+  getX__rectindex=5 (00000101)
+State 1306 file results/obj-follow/p7/filter/target.c function getX_28_1 line 3775 thread 0
+----------------------------------------------------
+  xul=0 (00000000 00000000 00000000 00000000)
+State 1307 file results/obj-follow/p7/filter/target.c function getX_28_1 line 3777 thread 0
+----------------------------------------------------
+  xlr=1 (00000000 00000000 00000000 00000001)
+State 1308 file results/obj-follow/p7/filter/target.c function getX_28_1 line 3778 thread 0
+----------------------------------------------------
+  __iv__return_expr_getX=0 (00000000 00000000 00000000 00000000)
+State 1310 file results/obj-follow/p7/filter/target.c function Func_AcquisitionTask_34_3 line 3461 thread 0
+----------------------------------------------------
+  x=0 (00000000 00000000 00000000 00000000)
+State 1344 file results/obj-follow/p7/filter/target.c function Func_AcquisitionTask_34_4 line 3831 thread 0
+----------------------------------------------------
+  objData.position=0 (00000000 00000000 00000000 00000000)
+State 1345 file results/obj-follow/p7/filter/target.c function Func_AcquisitionTask_34_4 line 3832 thread 0
+----------------------------------------------------
+  objData.size=11 (00000000 00000000 00000000 00001011)
+State 1835 file results/obj-follow/p7/filter/target.c function Func_ControlTask_35_6 line 4774 thread 0
+----------------------------------------------------
+  data.position=0 (00000000 00000000 00000000 00000000)
+State 1836 file results/obj-follow/p7/filter/target.c function Func_ControlTask_35_6 line 4774 thread 0
+----------------------------------------------------
+  data.size=11 (00000000 00000000 00000000 00001011)
+State 1882 file results/obj-follow/p7/filter/target.c function Func_ControlTask_35_7 line 4854 thread 0
+----------------------------------------------------
+  ctl_size=11 (00000000 00000000 00000000 00001011)
+State 1883 file results/obj-follow/p7/filter/target.c function Func_ControlTask_35_7 line 4855 thread 0
+----------------------------------------------------
+  position=0 (00000000 00000000 00000000 00000000)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 4856 function Func_ControlTask_35_7
+  !(ctl_size >= 1 && position >= 1)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 4905 function update_prop_automata_37_55
+  !(!(!(ctl_size >= 84) && ctl_size >= 1))
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 5246 function Func_AcquisitionTask_34_7
+  (signed int)tracking_enabled == 0
+__iv__test_case:0
+State 2096 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5278 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char=8 (00000000 00000000 00000000 00001000)
+__iv__test_case:8
+State 2098 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5279 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char=8 (00001000)
+State 2099 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5280 thread 0
+----------------------------------------------------
+  nxtcamdata[0l]=8 (00001000)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 5281 function i2c_start_transaction_5_2
+  (signed int)i2c_start_transaction__data[0l] <= 8
+State 2101 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5286 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=1 (00000000 00000000 00000000 00000001)
+__iv__test_case:1
+State 2103 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5287 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=1 (00000001)
+State 2104 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5288 thread 0
+----------------------------------------------------
+  nxtcamdata[1l]=1 (00000001)
+State 2105 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5291 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 2107 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5292 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=0 (00000000)
+State 2108 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5293 thread 0
+----------------------------------------------------
+  nxtcamdata[2l]=0 (00000000)
+State 2109 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5296 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=32 (00000000 00000000 00000000 00100000)
+__iv__test_case:32
+State 2111 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5297 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=32 (00100000)
+State 2112 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5298 thread 0
+----------------------------------------------------
+  nxtcamdata[3l]=32 (00100000)
+State 2113 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5301 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=80 (00000000 00000000 00000000 01010000)
+__iv__test_case:80
+State 2115 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5302 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=80 (01010000)
+State 2116 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5303 thread 0
+----------------------------------------------------
+  nxtcamdata[4l]=80 (01010000)
+State 2117 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5306 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=30 (00000000 00000000 00000000 00011110)
+__iv__test_case:30
+State 2119 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5307 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=30 (00011110)
+State 2120 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5308 thread 0
+----------------------------------------------------
+  nxtcamdata[5l]=30 (00011110)
+State 2121 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5311 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=1 (00000000 00000000 00000000 00000001)
+__iv__test_case:1
+State 2123 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5312 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=1 (00000001)
+State 2124 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5313 thread 0
+----------------------------------------------------
+  nxtcamdata[6l]=1 (00000001)
+State 2125 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5316 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=184 (00000000 00000000 00000000 10111000)
+__iv__test_case:184
+State 2127 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5317 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=184 (10111000)
+State 2128 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5318 thread 0
+----------------------------------------------------
+  nxtcamdata[7l]=184 (10111000)
+State 2129 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5321 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 2131 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5322 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=0 (00000000)
+State 2132 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5323 thread 0
+----------------------------------------------------
+  nxtcamdata[8l]=0 (00000000)
+State 2133 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5326 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=18 (00000000 00000000 00000000 00010010)
+__iv__test_case:18
+State 2135 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5327 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=18 (00010010)
+State 2136 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5328 thread 0
+----------------------------------------------------
+  nxtcamdata[9l]=18 (00010010)
+State 2137 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5331 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=129 (00000000 00000000 00000000 10000001)
+__iv__test_case:129
+State 2139 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5332 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=129 (10000001)
+State 2140 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5333 thread 0
+----------------------------------------------------
+  nxtcamdata[10l]=129 (10000001)
+State 2141 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5336 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=1 (00000000 00000000 00000000 00000001)
+__iv__test_case:1
+State 2143 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5337 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=1 (00000001)
+State 2144 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5338 thread 0
+----------------------------------------------------
+  nxtcamdata[11l]=1 (00000001)
+State 2145 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5341 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=240 (00000000 00000000 00000000 11110000)
+__iv__test_case:240
+State 2147 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5342 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=240 (11110000)
+State 2148 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5343 thread 0
+----------------------------------------------------
+  nxtcamdata[12l]=240 (11110000)
+State 2149 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5346 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 2151 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5347 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=0 (00000000)
+State 2152 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5348 thread 0
+----------------------------------------------------
+  nxtcamdata[13l]=0 (00000000)
+State 2153 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5351 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=176 (00000000 00000000 00000000 10110000)
+__iv__test_case:176
+State 2155 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5352 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=176 (10110000)
+State 2156 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5353 thread 0
+----------------------------------------------------
+  nxtcamdata[14l]=176 (10110000)
+State 2157 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5356 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=64 (00000000 00000000 00000000 01000000)
+__iv__test_case:64
+State 2159 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5357 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=64 (01000000)
+State 2160 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5358 thread 0
+----------------------------------------------------
+  nxtcamdata[15l]=64 (01000000)
+State 2161 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5361 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=1 (00000000 00000000 00000000 00000001)
+__iv__test_case:1
+State 2163 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5362 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=1 (00000001)
+State 2164 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5363 thread 0
+----------------------------------------------------
+  nxtcamdata[16l]=1 (00000001)
+State 2165 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5366 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=192 (00000000 00000000 00000000 11000000)
+__iv__test_case:192
+State 2167 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5367 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=192 (11000000)
+State 2168 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5368 thread 0
+----------------------------------------------------
+  nxtcamdata[17l]=192 (11000000)
+State 2169 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5371 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=64 (00000000 00000000 00000000 01000000)
+__iv__test_case:64
+State 2171 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5372 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=64 (01000000)
+State 2172 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5373 thread 0
+----------------------------------------------------
+  nxtcamdata[18l]=64 (01000000)
+State 2173 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5376 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=160 (00000000 00000000 00000000 10100000)
+__iv__test_case:160
+State 2175 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5377 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=160 (10100000)
+State 2176 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5378 thread 0
+----------------------------------------------------
+  nxtcamdata[19l]=160 (10100000)
+State 2177 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5381 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=192 (00000000 00000000 00000000 11000000)
+__iv__test_case:192
+State 2179 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5382 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=192 (11000000)
+State 2180 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5383 thread 0
+----------------------------------------------------
+  nxtcamdata[20l]=192 (11000000)
+State 2181 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5386 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=1 (00000000 00000000 00000000 00000001)
+__iv__test_case:1
+State 2183 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5387 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=1 (00000001)
+State 2184 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5388 thread 0
+----------------------------------------------------
+  nxtcamdata[21l]=1 (00000001)
+State 2185 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5391 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=248 (00000000 00000000 00000000 11111000)
+__iv__test_case:248
+State 2187 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5392 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=248 (11111000)
+State 2188 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5393 thread 0
+----------------------------------------------------
+  nxtcamdata[22l]=248 (11111000)
+State 2189 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5396 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 2191 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5397 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=0 (00000000)
+State 2192 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5398 thread 0
+----------------------------------------------------
+  nxtcamdata[23l]=0 (00000000)
+State 2193 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5401 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=120 (00000000 00000000 00000000 01111000)
+__iv__test_case:120
+State 2195 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5402 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=120 (01111000)
+State 2196 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5403 thread 0
+----------------------------------------------------
+  nxtcamdata[24l]=120 (01111000)
+State 2197 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5406 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=32 (00000000 00000000 00000000 00100000)
+__iv__test_case:32
+State 2199 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5407 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=32 (00100000)
+State 2200 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5408 thread 0
+----------------------------------------------------
+  nxtcamdata[25l]=32 (00100000)
+State 2201 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5411 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 2203 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5412 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=0 (00000000)
+State 2204 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5413 thread 0
+----------------------------------------------------
+  nxtcamdata[26l]=0 (00000000)
+State 2205 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5416 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 2207 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5417 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=0 (00000000)
+State 2208 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5418 thread 0
+----------------------------------------------------
+  nxtcamdata[27l]=0 (00000000)
+State 2209 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5421 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=11 (00000000 00000000 00000000 00001011)
+__iv__test_case:11
+State 2211 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5422 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=11 (00001011)
+State 2212 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5423 thread 0
+----------------------------------------------------
+  nxtcamdata[28l]=11 (00001011)
+State 2213 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5426 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 2215 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5427 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=0 (00000000)
+State 2216 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5428 thread 0
+----------------------------------------------------
+  nxtcamdata[29l]=0 (00000000)
+State 2217 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5431 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=118 (00000000 00000000 00000000 01110110)
+__iv__test_case:118
+State 2219 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5432 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=118 (01110110)
+State 2220 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5433 thread 0
+----------------------------------------------------
+  nxtcamdata[30l]=118 (01110110)
+State 2221 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5436 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 2223 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5437 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=0 (00000000)
+State 2224 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5438 thread 0
+----------------------------------------------------
+  nxtcamdata[31l]=0 (00000000)
+State 2225 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5441 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=7 (00000000 00000000 00000000 00000111)
+__iv__test_case:7
+State 2227 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5442 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=7 (00000111)
+State 2228 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5443 thread 0
+----------------------------------------------------
+  nxtcamdata[32l]=7 (00000111)
+State 2229 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5446 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=192 (00000000 00000000 00000000 11000000)
+__iv__test_case:192
+State 2231 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5447 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=192 (11000000)
+State 2232 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5448 thread 0
+----------------------------------------------------
+  nxtcamdata[33l]=192 (11000000)
+State 2233 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5451 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=8 (00000000 00000000 00000000 00001000)
+__iv__test_case:8
+State 2235 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5452 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=8 (00001000)
+State 2236 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5453 thread 0
+----------------------------------------------------
+  nxtcamdata[34l]=8 (00001000)
+State 2237 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5456 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=191 (00000000 00000000 00000000 10111111)
+__iv__test_case:191
+State 2239 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5457 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=191 (10111111)
+State 2240 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5458 thread 0
+----------------------------------------------------
+  nxtcamdata[35l]=191 (10111111)
+State 2241 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5461 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=1 (00000000 00000000 00000000 00000001)
+__iv__test_case:1
+State 2243 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5462 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=1 (00000001)
+State 2244 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5463 thread 0
+----------------------------------------------------
+  nxtcamdata[36l]=1 (00000001)
+State 2245 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5466 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=0 (00000000 00000000 00000000 00000000)
+__iv__test_case:0
+State 2247 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5467 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=0 (00000000)
+State 2248 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5468 thread 0
+----------------------------------------------------
+  nxtcamdata[37l]=0 (00000000)
+State 2249 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5471 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=224 (00000000 00000000 00000000 11100000)
+__iv__test_case:224
+State 2251 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5472 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=224 (11100000)
+State 2252 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5473 thread 0
+----------------------------------------------------
+  nxtcamdata[38l]=224 (11100000)
+State 2253 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5476 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=32 (00000000 00000000 00000000 00100000)
+__iv__test_case:32
+State 2255 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5477 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=32 (00100000)
+State 2256 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5478 thread 0
+----------------------------------------------------
+  nxtcamdata[39l]=32 (00100000)
+State 2257 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5481 thread 0
+----------------------------------------------------
+  return_value_nondet_unsigned_char_0=224 (00000000 00000000 00000000 11100000)
+__iv__test_case:224
+State 2259 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5482 thread 0
+----------------------------------------------------
+  return_value___VERIFIER_nondet_unsigned_char_0=224 (11100000)
+State 2260 file results/obj-follow/p7/filter/target.c function i2c_start_transaction_5_2 line 5483 thread 0
+----------------------------------------------------
+  nxtcamdata[40l]=224 (11100000)
+State 2266 file results/obj-follow/p7/filter/target.c function getbiggestrect line 259 thread 0
+----------------------------------------------------
+  colorid=1 (00000000 00000000 00000000 00000001)
+State 2270 file results/obj-follow/p7/filter/target.c function getbiggestrect line 259 thread 0
+----------------------------------------------------
+  colorid=1 (00000000 00000000 00000000 00000001)
+State 2274 file results/obj-follow/p7/filter/target.c function getbiggestrect line 259 thread 0
+----------------------------------------------------
+  colorid=1 (00000000 00000000 00000000 00000001)
+State 2278 file results/obj-follow/p7/filter/target.c function getbiggestrect line 259 thread 0
+----------------------------------------------------
+  colorid=1 (00000000 00000000 00000000 00000001)
+State 2282 file results/obj-follow/p7/filter/target.c function getbiggestrect line 259 thread 0
+----------------------------------------------------
+  colorid=1 (00000000 00000000 00000000 00000001)
+State 2286 file results/obj-follow/p7/filter/target.c function getbiggestrect line 259 thread 0
+----------------------------------------------------
+  colorid=0 (00000000 00000000 00000000 00000000)
+State 2292 file results/obj-follow/p7/filter/target.c function getWidth line 282 thread 0
+----------------------------------------------------
+  xul=0 (00000000 00000000 00000000 00000000)
+State 2293 file results/obj-follow/p7/filter/target.c function getWidth line 284 thread 0
+----------------------------------------------------
+  xlr=0 (00000000 00000000 00000000 00000000)
+State 2296 file results/obj-follow/p7/filter/target.c function getArea line 275 thread 0
+----------------------------------------------------
+  return_value_getWidth=0 (00000000 00000000 00000000 00000000)
+State 2299 file results/obj-follow/p7/filter/target.c function getHeight line 289 thread 0
+----------------------------------------------------
+  yul=11 (00000000 00000000 00000000 00001011)
+State 2300 file results/obj-follow/p7/filter/target.c function getHeight line 291 thread 0
+----------------------------------------------------
+  ylr=118 (00000000 00000000 00000000 01110110)
+State 2303 file results/obj-follow/p7/filter/target.c function getArea line 277 thread 0
+----------------------------------------------------
+  return_value_getHeight=107 (00000000 00000000 00000000 01101011)
+State 2306 file results/obj-follow/p7/filter/target.c function getbiggestrect line 262 thread 0
+----------------------------------------------------
+  getbiggestrect__1__1__1__1__area=0 (00000000 00000000 00000000 00000000)
+State 2308 file results/obj-follow/p7/filter/target.c function getbiggestrect line 264 thread 0
+----------------------------------------------------
+  maxarea=0 (00000000 00000000 00000000 00000000)
+State 2311 file results/obj-follow/p7/filter/target.c function getbiggestrect line 259 thread 0
+----------------------------------------------------
+  colorid=0 (00000000 00000000 00000000 00000000)
+State 2317 file results/obj-follow/p7/filter/target.c function getWidth line 282 thread 0
+----------------------------------------------------
+  xul=7 (00000000 00000000 00000000 00000111)
+State 2318 file results/obj-follow/p7/filter/target.c function getWidth line 284 thread 0
+----------------------------------------------------
+  xlr=8 (00000000 00000000 00000000 00001000)
+State 2321 file results/obj-follow/p7/filter/target.c function getArea line 275 thread 0
+----------------------------------------------------
+  return_value_getWidth=1 (00000000 00000000 00000000 00000001)
+State 2324 file results/obj-follow/p7/filter/target.c function getHeight line 289 thread 0
+----------------------------------------------------
+  yul=192 (00000000 00000000 00000000 11000000)
+State 2325 file results/obj-follow/p7/filter/target.c function getHeight line 291 thread 0
+----------------------------------------------------
+  ylr=191 (00000000 00000000 00000000 10111111)
+State 2328 file results/obj-follow/p7/filter/target.c function getArea line 277 thread 0
+----------------------------------------------------
+  return_value_getHeight=1 (00000000 00000000 00000000 00000001)
+State 2331 file results/obj-follow/p7/filter/target.c function getbiggestrect line 262 thread 0
+----------------------------------------------------
+  getbiggestrect__1__1__1__1__area=1 (00000000 00000000 00000000 00000001)
+State 2333 file results/obj-follow/p7/filter/target.c function getbiggestrect line 264 thread 0
+----------------------------------------------------
+  maxarea=1 (00000000 00000000 00000000 00000001)
+State 2336 file results/obj-follow/p7/filter/target.c function getbiggestrect line 259 thread 0
+----------------------------------------------------
+  colorid=1 (00000000 00000000 00000000 00000001)
+State 2342 file results/obj-follow/p7/filter/target.c function Func_AcquisitionTask_34_7 line 5248 thread 0
+----------------------------------------------------
+  rectindex=6 (00000000 00000000 00000000 00000110)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 5249 function Func_AcquisitionTask_34_7
+  !(!(rectindex >= 0))
+State 2346 file results/obj-follow/p7/filter/target.c function Func_AcquisitionTask_34_7 line 5250 thread 0
+----------------------------------------------------
+  getArea__rectindex=6 (00000110)
+State 2349 file results/obj-follow/p7/filter/target.c function getArea_25_2 line 5490 thread 0
+----------------------------------------------------
+  getWidth__rectindex=6 (00000110)
+State 2350 file results/obj-follow/p7/filter/target.c function getWidth_16_2 line 5499 thread 0
+----------------------------------------------------
+  xul=7 (00000000 00000000 00000000 00000111)
+State 2351 file results/obj-follow/p7/filter/target.c function getWidth_16_2 line 5501 thread 0
+----------------------------------------------------
+  xlr=8 (00000000 00000000 00000000 00001000)
+State 2352 file results/obj-follow/p7/filter/target.c function getWidth_16_2 line 5502 thread 0
+----------------------------------------------------
+  __iv__return_expr_getWidth=1 (00000000 00000000 00000000 00000001)
+State 2354 file results/obj-follow/p7/filter/target.c function getArea_25_2 line 5491 thread 0
+----------------------------------------------------
+  return_value_getWidth=1 (00000000 00000000 00000000 00000001)
+State 2357 file results/obj-follow/p7/filter/target.c function getArea_25_2 line 5493 thread 0
+----------------------------------------------------
+  getHeight__rectindex=6 (00000110)
+State 2358 file results/obj-follow/p7/filter/target.c function getHeight_17_2 line 5506 thread 0
+----------------------------------------------------
+  yul=192 (00000000 00000000 00000000 11000000)
+State 2359 file results/obj-follow/p7/filter/target.c function getHeight_17_2 line 5508 thread 0
+----------------------------------------------------
+  ylr=191 (00000000 00000000 00000000 10111111)
+State 2360 file results/obj-follow/p7/filter/target.c function getHeight_17_2 line 5509 thread 0
+----------------------------------------------------
+  __iv__return_expr_getHeight=1 (00000000 00000000 00000000 00000001)
+State 2362 file results/obj-follow/p7/filter/target.c function getArea_25_2 line 5494 thread 0
+----------------------------------------------------
+  return_value_getHeight=1 (00000000 00000000 00000000 00000001)
+State 2363 file results/obj-follow/p7/filter/target.c function getArea_25_2 line 5495 thread 0
+----------------------------------------------------
+  __iv__return_expr_getArea=1 (00000000 00000000 00000000 00000001)
+State 2365 file results/obj-follow/p7/filter/target.c function Func_AcquisitionTask_34_7 line 5251 thread 0
+----------------------------------------------------
+  area=1 (00000000 00000000 00000000 00000001)
+State 2368 file results/obj-follow/p7/filter/target.c function Func_AcquisitionTask_34_7 line 5252 thread 0
+----------------------------------------------------
+  datum=1 (00000000 00000000 00000000 00000001)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 5518 function median_filter_26_2
+  !(datpoint - buffer >= 15l)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 5523 function median_filter_26_2
+  !(scan->point == datpoint)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 5527 function median_filter_26_2
+  !(scan->point == datpoint)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 5528 function median_filter_26_2
+  scan->value >= datum
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 5530 function median_filter_26_2
+  !(scan == &small)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 5533 function median_filter_26_2
+  !(scan->point == datpoint)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 5534 function median_filter_26_2
+  !(scan->value >= datum)
+State 2376 file results/obj-follow/p7/filter/target.c function median_filter_26_2 line 5539 thread 0
+----------------------------------------------------
+  __iv__return_expr_median_filter=128 (00000000 00000000 00000000 10000000)
+State 2378 file results/obj-follow/p7/filter/target.c function Func_AcquisitionTask_34_7 line 5253 thread 0
+----------------------------------------------------
+  area=128 (00000000 00000000 00000000 10000000)
+State 2381 file results/obj-follow/p7/filter/target.c function Func_AcquisitionTask_34_7 line 5254 thread 0
+----------------------------------------------------
+  val=128 (00000000 00000000 00000000 10000000)
+State 2382 file results/obj-follow/p7/filter/target.c function fisqrt_27_2 line 5545 thread 0
+----------------------------------------------------
+  t=128 (00000000 00000000 00000000 10000000)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 5546 function fisqrt_27_2
+  !(t == 0)
+State 2384 file results/obj-follow/p7/filter/target.c function fisqrt_27_2 line 5548 thread 0
+----------------------------------------------------
+  t=64 (00000000 00000000 00000000 01000000)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 5549 function fisqrt_27_2
+  !(t == 0)
+State 2386 file results/obj-follow/p7/filter/target.c function fisqrt_27_2 line 5551 thread 0
+----------------------------------------------------
+  t=32 (00000000 00000000 00000000 00100000)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 5552 function fisqrt_27_2
+  !(t == 0)
+State 2388 file results/obj-follow/p7/filter/target.c function fisqrt_27_2 line 5554 thread 0
+----------------------------------------------------
+  t=16 (00000000 00000000 00000000 00010000)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 5555 function fisqrt_27_2
+  !(t == 0)
+State 2390 file results/obj-follow/p7/filter/target.c function fisqrt_27_2 line 5557 thread 0
+----------------------------------------------------
+  t=8 (00000000 00000000 00000000 00001000)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 5558 function fisqrt_27_2
+  !(t == 0)
+State 2392 file results/obj-follow/p7/filter/target.c function fisqrt_27_2 line 5560 thread 0
+----------------------------------------------------
+  t=4 (00000000 00000000 00000000 00000100)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 5561 function fisqrt_27_2
+  !(t == 0)
+State 2394 file results/obj-follow/p7/filter/target.c function fisqrt_27_2 line 5563 thread 0
+----------------------------------------------------
+  t=2 (00000000 00000000 00000000 00000010)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 5564 function fisqrt_27_2
+  !(t == 0)
+State 2396 file results/obj-follow/p7/filter/target.c function fisqrt_27_2 line 5566 thread 0
+----------------------------------------------------
+  t=1 (00000000 00000000 00000000 00000001)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 5567 function fisqrt_27_2
+  !(t == 0)
+State 2398 file results/obj-follow/p7/filter/target.c function fisqrt_27_2 line 5569 thread 0
+----------------------------------------------------
+  t=0 (00000000 00000000 00000000 00000000)
+Assumption:
+  file results/obj-follow/p7/filter/target.c line 5570 function fisqrt_27_2
+  t == 0
+violated property: Node_22_477
+Violated property:
+  file results/obj-follow/p7/filter/target.c function check_property_38_65 line 5760 thread 0
+  assertion 0
+  0 != 0
+** 1 of 1 failed (2 iterations)
+VERIFICATION FAILED

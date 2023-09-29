@@ -1,0 +1,9 @@
+(define-fun fisqrt ( (__iv__input_0_ Int)) Int (ite (>= __iv__input_0_ (* 15 3)) (ite (>= (* 4 __iv__input_0_) 2048) (+ 5 (+ 15 2)) (ite (>= (* 5 __iv__input_0_) 2048) (+ 4 (+ 15 2)) (- 15 -1))) (ite (>= __iv__input_0_ 15) 5 (ite (= __iv__input_0_ (+ 5 2)) 2 0))))
+****************** statistics *******************
+size : 44
+time : 4.03 sec
+max_component_size : 3
+# components : 630
+time for composition : 3.91 sec
+time for component generation : 0.12 sec
+**************************************************

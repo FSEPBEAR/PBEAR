@@ -1,0 +1,206 @@
+enum API { API_ActivateTask=0, API_TerminateTask=1, API_ChainTask=2, API_Schedule=3, API_GetResource=4, API_ReleaseResource=5, API_SetEvent=6, API_WaitEvent=7, API_ClearEvent=8 };
+struct anonymous;
+enum anonymous_0 { ACTIVATE=0, PREEMPT=1, RELEASE=2 };
+struct anonymous_1;
+struct anonymous_2;
+struct anonymous_3;
+struct anonymous_4;
+struct anonymous_5;
+enum evt_state { Evt_Clear=0, Evt_Set=1, Evt_Wait=2 };
+struct pair;
+struct queue;
+typedef enum API API;
+typedef struct anonymous_1 Alarm;
+typedef struct anonymous_2 Event;
+typedef enum evt_state Evt_State;
+typedef struct queue Queue;
+typedef struct anonymous_5 Resource;
+typedef char S8;
+typedef signed int SINT;
+typedef unsigned char U8;
+typedef signed int data_t;
+typedef struct anonymous object_data_t;
+typedef enum anonymous_0 push_type;
+typedef struct anonymous_3 task_dynamic_stat;
+typedef struct anonymous_4 task_static_config;
+void ALARM_handler(signed int aid);
+signed int ActivateTask(unsigned char reftask);
+signed int ActivateTask_Common(unsigned char reftask);
+signed int CancelAlarm(unsigned char alarmID);
+signed int CancelAlarm_Common(unsigned char alarmID);
+signed int ChainTask(unsigned char reftask);
+signed int ChainTask_Common(unsigned char reftask);
+signed int ClearEvent(unsigned char eventid);
+signed int ClearEvent_Common(unsigned char eventid);
+void Func_AcquisitionTask();
+void Func_ControlTask();
+signed int GetResource(unsigned char resid);
+signed int GetResource_Common(unsigned char resid);
+signed int ReleaseResource(unsigned char resid);
+signed int ReleaseResource_Common(unsigned char resid);
+signed int Schedule();
+signed int Schedule_Common();
+signed int SetEvent(unsigned char reftask, unsigned char eventid);
+signed int SetEvent_Common(unsigned char reftask, unsigned char eventid);
+signed int SetRelAlarm(unsigned char alarmID, signed int increment, signed int cycle);
+signed int SetRelAlarm_Common(unsigned char alarmID, signed int increment, signed int cycle);
+void ShutDownOS();
+void StartOS(unsigned char app_mode);
+signed int TerminateTask();
+signed int TerminateTask_Common();
+signed int WaitEvent(unsigned char eventid);
+signed int WaitEvent_Common(unsigned char eventid);
+void app();
+void check_property();
+signed int directionPIDController(signed int d);
+void display_goto_xy(signed int display_goto_xy__x, signed int y);
+void display_int(signed int val, unsigned int places);
+void display_string( char *str);
+void display_update(void);
+void ecrobot_device_initialize();
+void ecrobot_device_terminate();
+signed int fisqrt(signed int val);
+signed int getArea(U8 getArea__rectindex);
+object_data_t getData();
+signed int getHeight(U8 getHeight__rectindex);
+signed int getWidth(U8 getWidth__rectindex);
+signed int getX(U8 getX__rectindex);
+signed int getY(U8 getY__rectindex);
+void get_task_from_readyQ();
+signed int getbiggestrect(U8 pcolorid, signed int pminarea);
+U8 * getdata();
+void handleISR();
+signed int i2c_busy(signed int port);
+void i2c_disable(signed int port);
+void i2c_enable(signed int port);
+signed int i2c_start_transaction(signed int port, unsigned int address, signed int internal_address, signed int n_internal_address_bytes, unsigned char *i2c_start_transaction__data, unsigned int nbytes, signed int write);
+void init_nxtcam(U8 port_id);
+void initialize();
+static inline signed int is_active_alarm_exists();
+static inline signed int is_active_obj_exists();
+static inline signed int is_alloc(unsigned char res);
+data_t median_filter(data_t datum);
+void nxt_avr_set_input_power(unsigned char a, signed int b);
+void nxt_motor_set_speed(unsigned int n, signed int speed_percent, signed int brake);
+signed int postjob();
+void push_task_into_readyQ(unsigned char t, unsigned char p, signed int pc, push_type pushkind);
+signed int request(U8 port_id);
+signed int reschedule(API reschedule__api, unsigned char tid);
+SINT send_nxtcam_command(U8 port_id, U8 command);
+signed int speedPIDController(signed int d);
+void startup_process();
+void term_nxtcam(U8 port_id);
+void update_prop_automata();
+void user_1ms_isr_type2(void);
+struct anonymous
+{
+  signed int position;
+  signed int size;
+};
+struct anonymous_1
+{
+  unsigned int cycle;
+  unsigned int next_alarm_tick;
+  API api;
+  unsigned char param1;
+  unsigned char param2;
+};
+struct anonymous_2
+{
+  unsigned char owner;
+  Evt_State task_alloc[4l];
+};
+struct anonymous_3
+{
+  unsigned char act_cnt;
+  unsigned char dyn_prio;
+};
+struct anonymous_4
+{
+  unsigned char prio;
+  unsigned char preemptable;
+  unsigned char autostart;
+  unsigned char extended;
+  unsigned char event_owned;
+  unsigned char resource_owned;
+  unsigned char max_act_cnt;
+};
+struct anonymous_5
+{
+  unsigned int c_prio;
+  unsigned char alloc;
+};
+struct pair
+{
+  struct pair *point;
+  data_t value;
+};
+struct queue
+{
+  unsigned char tid;
+  push_type type;
+};
+unsigned char Ceiling_Prio[3l];
+Event Event_Table[3l];
+ signed int OFF=0;
+ signed int ON=1;
+Resource Resource_Table[3l];
+signed int acq_size;
+signed int activation_time[4l];
+Alarm alarm_info[4l];
+signed int alarm_state[4l];
+API api;
+signed int area;
+struct pair big;
+struct pair small={ .point=((struct pair *)NULL), .value=0 };
+struct pair big={ .point=&small, .value=0 };
+struct pair buffer[15l]={ { .point=((struct pair *)NULL), .value=0 }, 
+    { .point=((struct pair *)NULL), .value=0 }, 
+    { .point=((struct pair *)NULL), .value=0 }, 
+    { .point=((struct pair *)NULL), .value=0 }, 
+    { .point=((struct pair *)NULL), .value=0 }, 
+    { .point=((struct pair *)NULL), .value=0 }, 
+    { .point=((struct pair *)NULL), .value=0 }, 
+    { .point=((struct pair *)NULL), .value=0 }, 
+    { .point=((struct pair *)NULL), .value=0 }, 
+    { .point=((struct pair *)NULL), .value=0 }, 
+    { .point=((struct pair *)NULL), .value=0 }, 
+    { .point=((struct pair *)NULL), .value=0 }, 
+    { .point=((struct pair *)NULL), .value=0 }, 
+    { .point=((struct pair *)NULL), .value=0 }, 
+    { .point=((struct pair *)NULL), .value=0 } };
+signed int ctl_size;
+signed int current_pc[4l];
+unsigned char current_prio=0;
+unsigned char current_tid=0;
+object_data_t data;
+struct pair *datpoint;
+struct pair *datpoint=buffer;
+signed int direction_adjustment;
+unsigned char e_code=0;
+signed int front[4l];
+static signed int ftbl[33l]={ 0, 1, 1, 2, 2, 4, 5, 8, 11, 16, 22, 32, 45, 64, 90, 128, 181, 256, 362, 512, 724, 1024, 1448, 2048, 2896, 4096, 5792, 8192, 11585, 16384, 23170, 32768, 46340 };
+static signed int ftbl2[32l]={ 32768, 33276, 33776, 34269, 34755, 35235, 35708, 36174, 36635, 37090, 37540, 37984, 38423, 38858, 39287, 39712, 40132, 40548, 40960, 41367, 41771, 42170, 42566, 42959, 43347, 43733, 44115, 44493, 44869, 45241, 45611, 45977 };
+unsigned char idx;
+unsigned char k;
+signed int leftMotorValue;
+unsigned char max_prio=0;
+signed int new_speed;
+static U8 nxtcambuffer[8l];
+static U8 nxtcamdata[41l];
+object_data_t objData={ .position=0, .size=0 };
+signed int os_on;
+signed int position;
+Queue readyQ[4l][4l];
+signed int rear[4l];
+signed int rectindex;
+signed int rightMotorValue;
+signed int size[4l];
+signed int speed_deviation;
+signed int state=0;
+task_dynamic_stat task_dyn_info[4l];
+unsigned char task_state[4l];
+task_static_config task_static_info[4l];
+S8 tracking_enabled=(S8)-1;
+signed int wholesize;
+signed int x;

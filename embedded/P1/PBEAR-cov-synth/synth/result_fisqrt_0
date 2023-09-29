@@ -1,0 +1,9 @@
+(define-fun fisqrt ( (__iv__input_0_ Int)) Int (- 6 (- (- -1 7) (ite (>= 38423 (* 128 __iv__input_0_)) 2 (ite (>= (* 7 __iv__input_0_) 2896) 6 5)))))
+****************** statistics *******************
+size : 21
+time : 153.05 sec
+max_component_size : 3
+# components : 816
+time for composition : 152.94 sec
+time for component generation : 0.11 sec
+**************************************************
