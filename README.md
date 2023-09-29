@@ -13,15 +13,15 @@ Also, there are details of FSs:
 ### PBEAR, PBEAR-base, and PBEAR-cov:
 * filter/: the details of (concrete) symbolic alarm filtering process.
 * synth/: the details of PBE-based FS refinement.
-* target.c: abstracted program.
+* target.c: the abstracted program.
 * cbmc_result.txt: the result of CBMC with target.c.
-* result.txt: overall result of each task.
+* result.txt: the overall result of each property falsification.
 
 ### CPAchecker:
 * predicateAnalysis.txt: the results of CPAchecker using the predicate abstraction option.
 * svcomp22.txt: the results of CPAchecker using the svcomp22 option.
 * We tried to use the same options used in SV-COMP 2022 when running with SV-COMP benchmarks.
-* In three embedded software, we used the options 
+* For three embedded software, we used -predicateAnalysis -stats -timelimit '259200s' -heap '80G' -preprocess.
 
 
 
