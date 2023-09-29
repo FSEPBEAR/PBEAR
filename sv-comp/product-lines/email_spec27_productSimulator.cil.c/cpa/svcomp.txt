@@ -1,0 +1,1114 @@
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Language C detected and set for analysis (CPAMain.detectFrontendLanguageIfNecessary, INFO)
+
+Using the following resource limits: CPU-time limit of 900s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 2.1 / svcomp22 (OpenJDK 64-Bit Server VM 14.0.2) started (CPAchecker.run, INFO)
+
+Parsing CFA from file(s) "data/sv-benchmarks/c/product-lines/email_spec27_productSimulator.cil.c" (CPAchecker.parse, INFO)
+
+line 365: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 411: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 438: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 463: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 558: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 603: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 632: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 680: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 727: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 772: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 850: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 919: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1053: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1136: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1183: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1230: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1275: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1338: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1445: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1499: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1571: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1618: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1985: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2006: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2043: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2080: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2119: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2158: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2195: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2232: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2269: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2306: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2343: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2731: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2763: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2772: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2781: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2806: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3410: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3430: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3448: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3457: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3472: Dead code detected: return (retValue_acc); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 202: Function pointer *__cil_tmp10 with type int (*)(int, int) is called, but no possible target functions were found. (CFunctionPointerResolver.getTargets, WARNING)
+
+Using heuristics to select analysis (CoreComponentsFactory.createAlgorithm, INFO)
+
+The following configuration options were specified but are not used:
+ cpa.callstack.unsupportedFunctions
+ termination.violation.witness
+ cpa.predicate.memoryAllocationsAlwaysSucceed
+ cpa.arg.compressWitness
+ cpa.callstack.skipFunctionPointerRecursion
+ cpa.composite.aggregateBasicBlocks
+ counterexample.export.graphml
+ counterexample.export.compressWitness
+ cpa.arg.proofWitness 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Performing heuristic ... (SelectionAlgorithm.chooseConfig, INFO)
+
+Using the following resource limits: CPU-time limit of 900s (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:ResourceLimitChecker.fromConfiguration, INFO)
+
+Using Restarting Algorithm (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:CoreComponentsFactory.createAlgorithm, INFO)
+
+Loading analysis 1 from file experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--01-symbolicExecution.properties ... (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:RestartAlgorithm.run, INFO)
+
+Mismatch of configuration options when loading from 'experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--01-symbolicExecution.properties': 'cpa.composite.aggregateBasicBlocks' has two values 'false' and 'true'. Using 'true'. (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:NestingAlgorithm.checkConfigs, INFO)
+
+Mismatch of configuration options when loading from 'experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--01-symbolicExecution.properties': 'limits.time.cpu' has two values '900s' and '140s'. Using '140s'. (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:NestingAlgorithm.checkConfigs, INFO)
+
+Mismatch of configuration options when loading from 'experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--01-symbolicExecution.properties': 'limits.time.cpu::required' has two values '900' and '140s'. Using '140s'. (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:NestingAlgorithm.checkConfigs, INFO)
+
+Using the following resource limits: CPU-time limit of 140s (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--01-symbolicExecution.properties:ResourceLimitChecker.fromConfiguration, INFO)
+
+Starting analysis 1 ... (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:RestartAlgorithm.run, INFO)
+
+Warning: Analysis 1 stopped. (The CPU-time limit of 140s has elapsed.) (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:ShutdownNotifier.shutdownIfNecessary, WARNING)
+
+Statistics for algorithm 1 of 6
+===============================
+Total time for algorithm 1:   125.063s
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables per state:                     129.47 (sum: 34280097, count: 264776, min: 0, max: 175)
+Number of global variables per state:              101.00 (sum: 26742174, count: 264776, min: 0, max: 101)
+Number of assumptions:                               229864
+Number of deterministic assumptions:                      0
+Level of Determinism:                              0%
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                  264775
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                2.196s
+Total time for path thresholds:                        0.000s
+
+SymbolicValueAnalysisPrecisionAdjustment statistics
+---------------------------------------------------
+Symbolic values before refinement:                  5714043 (count: 264775, min: 0, max: 36, avg: 21.58)
+Symbolic values after refinement:                   5714043 (count: 264775, min: 0, max: 36, avg: 21.58)
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.518s
+Replaced symbolic expressions: 0
+
+ConstraintsCPA statistics
+-------------------------
+
+Time for solving constraints:                         22.036s
+  Time for independent computation:                    0.518s
+  Time for SMT check:                                  3.637s
+  Time for resolving definites:                        3.978s
+
+Cache lookups:                                       131632
+Direct cache hits:                                   115080
+Direct cache lookup time:                              0.063s
+Subset cache hits:                                        0
+Subset cache lookup time:                              0.032s
+Superset cache hits:                                      0
+Superset cache lookup time:                            0.010s
+
+Number of removed outdated constraints:              594888 (count: 82501, min: 0, max: 19, avg: 7.21)
+Time for outdated constraint removal:                  2.554s
+
+Constraints after refinement in state:              5808145 (count: 264775, min: 0, max: 36, avg: 21.94)
+Constraints before refinement in state:             5808145 (count: 264775, min: 0, max: 36, avg: 21.94)
+Time for constraints adjustment:                       0.926s
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.236s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 316904, count: 316904, min: 1, max: 1) [1 x 316904]
+Number of states with assumption transitions:      0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            254985
+Max size of waitlist:            9791
+Average size of waitlist:        5315
+Number of computed successors:   264775
+Max successors for one state:    2
+Number of times merged:          0
+Number of times stopped:         0
+Number of times breaked:         0
+
+Total time for CPA algorithm:       124.914s (Max:   124.914s)
+  Time for choose from waitlist:      0.133s
+  Time for precision adjustment:      5.958s
+  Time for transfer relation:        28.300s
+  Time for stop operator:            89.994s
+  Time for adding to reached set:     0.249s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            254985
+Max size of waitlist:            9791
+Average size of waitlist:        5315
+Number of computed successors:   264775
+Max successors for one state:    2
+Number of times merged:          0
+Number of times stopped:         0
+Number of times breaked:         0
+
+Total time for CPA algorithm:       124.914s (Max:   124.914s)
+  Time for choose from waitlist:      0.133s
+  Time for precision adjustment:      5.958s
+  Time for transfer relation:        28.300s
+  Time for stop operator:            89.994s
+  Time for adding to reached set:     0.249s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+RestartAlgorithm switches to the next configuration... (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:RestartAlgorithm.run, INFO)
+
+Loading analysis 2 from file experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--02-valueAnalysis-itp.properties ... (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:RestartAlgorithm.run, INFO)
+
+Mismatch of configuration options when loading from 'experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--02-valueAnalysis-itp.properties': 'cpa.composite.aggregateBasicBlocks' has two values 'false' and 'true'. Using 'true'. (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:NestingAlgorithm.checkConfigs, INFO)
+
+Mismatch of configuration options when loading from 'experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--02-valueAnalysis-itp.properties': 'limits.time.cpu' has two values '900s' and '60s'. Using '60s'. (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:NestingAlgorithm.checkConfigs, INFO)
+
+Mismatch of configuration options when loading from 'experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--02-valueAnalysis-itp.properties': 'limits.time.cpu::required' has two values '900' and '60s'. Using '60s'. (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:NestingAlgorithm.checkConfigs, INFO)
+
+Using the following resource limits: CPU-time limit of 60s (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--02-valueAnalysis-itp.properties:ResourceLimitChecker.fromConfiguration, INFO)
+
+Starting analysis 2 ... (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:RestartAlgorithm.run, INFO)
+
+Warning: Analysis 2 stopped. (The CPU-time limit of 60s has elapsed.) (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:ShutdownNotifier.shutdownIfNecessary, WARNING)
+
+Statistics for algorithm 2 of 6
+===============================
+Total time for algorithm 2:    38.701s
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables per state:                     24.32 (sum: 3564603, count: 146598, min: 0, max: 32)
+Number of global variables per state:              18.82 (sum: 2758449, count: 146598, min: 0, max: 20)
+Number of assumptions:                               469430
+Number of deterministic assumptions:                      0
+Level of Determinism:                              0%
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                 1365891
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                3.653s
+Total time for path thresholds:                        0.000s
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.770s
+  Time for transition matches:                         0.456s
+  Time for transition assertions:                      0.000s
+  Time for transition actions:                         0.000s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 1602073, count: 1602073, min: 1, max: 1) [1 x 1602073]
+Number of states with assumption transitions:      0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            1193323
+Max size of waitlist:            5527
+Average size of waitlist:        1402
+Number of computed successors:   1365892
+Max successors for one state:    2
+Number of times merged:          0
+Number of times stopped:         155037
+Number of times breaked:         30
+
+Total time for CPA algorithm:        29.239s (Max:    10.984s)
+  Time for choose from waitlist:      5.449s
+  Time for precision adjustment:      4.712s
+  Time for transfer relation:         6.608s
+  Time for stop operator:             1.730s
+  Time for adding to reached set:     7.790s
+
+ValueAnalysisRefiner statistics
+-------------------------------
+Number of refinements:                                   30
+Number of targets found:                                 30 (count: 30, min: 1, max: 1, avg: 1.00)
+Time for completing refinement:                        9.348s
+Number of root relocations:                               0
+Number of similar, repeated refinements:                  0
+Number of unique precision increments:             30
+
+PathExtractor statistics
+------------------------
+Total number of targets found:            0
+
+ValueAnalysisPathInterpolator statistics
+----------------------------------------
+  Time for interpolation:                              2.529s
+  Number of interpolations:                              30
+  Number of interpolation queries:                     5666 (count: 6694, min: 0, max: 101, avg: 0.85)
+  Size of interpolant:                             0.66 (sum: 4397, count: 6694, min: 0, max: 1)
+  Number of sliced prefixes:                            271 (count: 30, min: 6, max: 16, avg: 9.03)
+  Extracting infeasible sliced prefixes:               0.478s
+  Selecting infeasible sliced prefixes:                0.013s
+
+CEGAR algorithm statistics
+--------------------------
+Number of CEGAR refinements:          30
+Number of successful refinements:     30
+Number of failed refinements:         0
+Max. size of reached set before ref.: 399364
+Max. size of reached set after ref.:  1
+Avg. size of reached set before ref.: 35476.23
+Avg. size of reached set after ref.:  1.00
+
+Total time for CEGAR algorithm:      38.670s
+Time for refinements:                 9.430s
+Average time for refinement:          0.314s
+Max time for refinement:              2.632s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            1193323
+Max size of waitlist:            5527
+Average size of waitlist:        1402
+Number of computed successors:   1365892
+Max successors for one state:    2
+Number of times merged:          0
+Number of times stopped:         155037
+Number of times breaked:         30
+
+Total time for CPA algorithm:        29.239s (Max:    10.984s)
+  Time for choose from waitlist:      5.449s
+  Time for precision adjustment:      4.712s
+  Time for transfer relation:         6.608s
+  Time for stop operator:             1.730s
+  Time for adding to reached set:     7.790s
+
+ValueAnalysisRefiner statistics
+-------------------------------
+Number of refinements:                                   30
+Number of targets found:                                 30 (count: 30, min: 1, max: 1, avg: 1.00)
+Time for completing refinement:                        9.348s
+Number of root relocations:                               0
+Number of similar, repeated refinements:                  0
+Number of unique precision increments:             30
+
+PathExtractor statistics
+------------------------
+Total number of targets found:            0
+
+ValueAnalysisPathInterpolator statistics
+----------------------------------------
+  Time for interpolation:                              2.529s
+  Number of interpolations:                              30
+  Number of interpolation queries:                     5666 (count: 6694, min: 0, max: 101, avg: 0.85)
+  Size of interpolant:                             0.66 (sum: 4397, count: 6694, min: 0, max: 1)
+  Number of sliced prefixes:                            271 (count: 30, min: 6, max: 16, avg: 9.03)
+  Extracting infeasible sliced prefixes:               0.478s
+  Selecting infeasible sliced prefixes:                0.013s
+
+CEGAR algorithm statistics
+--------------------------
+Number of CEGAR refinements:          30
+Number of successful refinements:     30
+Number of failed refinements:         0
+Max. size of reached set before ref.: 399364
+Max. size of reached set after ref.:  1
+Avg. size of reached set before ref.: 35476.23
+Avg. size of reached set after ref.:  1.00
+
+Total time for CEGAR algorithm:      38.670s
+Time for refinements:                 9.430s
+Average time for refinement:          0.314s
+Max time for refinement:              2.632s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+RestartAlgorithm switches to the next configuration... (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:RestartAlgorithm.run, INFO)
+
+Loading analysis 3 from file experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--03-predicateAnalysis.properties ... (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:RestartAlgorithm.run, INFO)
+
+Mismatch of configuration options when loading from 'experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--03-predicateAnalysis.properties': 'cpa.composite.aggregateBasicBlocks' has two values 'false' and 'true'. Using 'true'. (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:NestingAlgorithm.checkConfigs, INFO)
+
+Mismatch of configuration options when loading from 'experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--03-predicateAnalysis.properties': 'limits.time.cpu' has two values '900s' and '200s'. Using '200s'. (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:NestingAlgorithm.checkConfigs, INFO)
+
+Mismatch of configuration options when loading from 'experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--03-predicateAnalysis.properties': 'limits.time.cpu::required' has two values '900' and '200s'. Using '200s'. (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:NestingAlgorithm.checkConfigs, INFO)
+
+Mismatch of configuration options when loading from 'experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--03-predicateAnalysis.properties': 'specification' has two values 'specification/sv-comp-reachability.spc' and 'specification/default.spc'. Using 'specification/default.spc'. (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:NestingAlgorithm.checkConfigs, INFO)
+
+Using the following resource limits: CPU-time limit of 200s (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--03-predicateAnalysis.properties:ResourceLimitChecker.fromConfiguration, INFO)
+
+Using predicate analysis with MathSAT5 version 5.6.6 (218275631c24) (Apr 23 2021 08:35:29, gmp 6.1.2, gcc 7.5.0, 64-bit, reentrant) and JFactory 1.21. (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--03-predicateAnalysis.properties:PredicateCPA:PredicateCPA.<init>, INFO)
+
+Using refinement for predicate analysis with PredicateAbstractionRefinementStrategy strategy. (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--03-predicateAnalysis.properties:PredicateCPA:PredicateCPARefiner.<init>, INFO)
+
+Starting analysis 3 ... (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:RestartAlgorithm.run, INFO)
+
+Warning: Analysis 3 stopped. (The CPU-time limit of 200s has elapsed.) (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:ShutdownNotifier.shutdownIfNecessary, WARNING)
+
+Statistics for algorithm 3 of 6
+===============================
+Total time for algorithm 3:   176.942s
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            448 (0% of all post computations)
+  Times abstraction was reused:    0
+  Because of function entry/exit:  0 (0%)
+  Because of loop head:            15 (3%)
+  Because of join nodes:           0 (0%)
+  Because of threshold:            0 (0%)
+  Because of target state:         433 (97%)
+  Times precision was empty:       6 (1%)
+  Times precision was {false}:     431 (96%)
+  Times result was cached:         0 (0%)
+  Times cartesian abs was used:    0 (0%)
+  Times boolean abs was used:      11 (2%)
+  Times result was 'false':        429 (96%)
+Number of strengthen sat checks:   0
+Number of coverage checks:         52604
+  BDD entailment checks:           58
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       1701
+Avg ABE block size:                                601.01 (sum: 269253, count: 448, min: 72, max: 1701)
+Number of predicates discovered:          17
+Number of abstraction locations:          2
+Max number of predicates per location:    15
+Avg number of predicates per location:    8
+Total predicates per abstraction:         564
+Max number of predicates per abstraction: 15
+Avg number of predicates per abstraction: 1.28
+Number of irrelevant predicates:          431 (76%)
+Number of preds handled by boolean abs:   133 (24%)
+  Total number of models for allsat:      1202
+  Max number of models for allsat:        320
+  Avg number of models for allsat:        109.27
+
+Time for post operator:                                1.943s
+  Time for path formula creation:                      1.858s
+Time for strengthen operator:                          0.149s
+Time for prec operator:                              171.578s
+  Time for abstraction:                171.480s (Max:     2.321s, Count: 448)
+    Boolean abstraction:                 9.012s
+    Solving time:                      127.931s (Max:     1.228s)
+    Model enumeration time:              8.280s
+    Time for BDD construction:           0.042s (Max:     0.001s)
+Time for merge operator:                               0.752s
+Time for coverage checks:                              0.003s
+  Time for BDD entailment checks:                      0.003s
+Total time for SMT solver (w/o itp):   136.211s
+
+Number of path formula cache hits:   45363 (20%)
+
+Inside post operator:                  
+  Inside path formula creation:        
+    Time for path formula computation:     1.661s
+
+Total number of created targets for pointer analysis: 0
+
+
+Number of BDD nodes:                               5799
+Size of BDD node table:                            524309
+Size of BDD cache:                                 52433
+Size of BDD node cleanup queue:                    0.14 (sum: 396, count: 2880, min: 0, max: 335)
+Time for BDD node cleanup:                             0.002s
+Time for BDD garbage collection:                       0.000s (in 0 runs)
+
+KeyValue statistics
+-------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.132s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 226520, count: 226520, min: 1, max: 1) [1 x 226520]
+Number of states with assumption transitions:      0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            163277
+Max size of waitlist:            23
+Average size of waitlist:        16
+ReversePostorderSortedWaitlist:                    0.00 (sum: 0, count: 70793, min: 0, max: 0)
+CallstackSortedWaitlist:                           28438.75 (sum: 113755, count: 4, min: 1265, max: 92484)
+Number of computed successors:   190032
+Max successors for one state:    2
+Number of times merged:          26273
+Number of times stopped:         26277
+Number of times breaked:         3
+
+Total time for CPA algorithm:       176.314s (Max:   161.903s)
+  Time for choose from waitlist:      0.068s
+  Time for precision adjustment:    171.670s
+  Time for transfer relation:         3.191s
+  Time for merge operator:            0.915s
+  Time for stop operator:             0.097s
+  Time for adding to reached set:     0.209s
+
+Static Predicate Refiner statistics
+-----------------------------------
+Number of predicates found statically:                    1 (count: 1, min: 1, max: 1, avg: 1.00)
+
+Total time for static refinement:                      0.164s
+  Time for path feasibility check:                     0.146s
+  Time for predicate extraction from CFA:              0.007s
+  Time for ARG update:                                 0.003s
+
+PredicateCPARefiner statistics
+------------------------------
+Number of predicate refinements:                   2
+Avg. length of target path (in blocks):            2.00 (sum: 4, count: 2, min: 2, max: 2)
+Number of infeasible sliced prefixes:                     0 (count: 0, min: 0, max: 0, avg: 0.00)
+
+Time for refinement:                                   0.391s
+  Counterexample analysis:                             0.453s (Max:     0.169s, Calls: 3)
+    Refinement sat check:                              0.265s
+    Interpolant computation:                           0.004s
+  Path-formulas extraction:                            0.000s
+  Error path post-processing:                          0.000s
+
+Predicate-Abstraction Refiner statistics
+----------------------------------------
+  Predicate creation:                                  0.002s
+  Precision update:                                    0.034s
+  ARG update:                                          0.035s
+
+Length of refined path (in blocks):                2.00 (sum: 4, count: 2, min: 2, max: 2)
+Number of affected states:                                2 (count: 2, min: 1, max: 1, avg: 1.00)
+Length (states) of path with itp 'true':                  0 (count: 2, min: 0, max: 0, avg: 0.00)
+Length (states) of path with itp non-trivial itp:         2 (count: 2, min: 1, max: 1, avg: 1.00)
+Length (states) of path with itp 'false':                 0 (count: 2, min: 0, max: 0, avg: 0.00)
+Different non-trivial interpolants along paths:           0 (count: 2, min: 0, max: 0, avg: 0.00)
+Equal non-trivial interpolants along paths:               0 (count: 2, min: 0, max: 0, avg: 0.00)
+Number of refs with location-based cutoff:                0
+
+CEGAR algorithm statistics
+--------------------------
+Number of CEGAR refinements:          3
+Number of successful refinements:     3
+Number of failed refinements:         0
+Max. size of reached set before ref.: 26149
+Max. size of reached set after ref.:  287
+Avg. size of reached set before ref.: 9943.00
+Avg. size of reached set after ref.:  191.67
+
+Total time for CEGAR algorithm:     176.872s
+Time for refinements:                 0.558s
+Average time for refinement:          0.186s
+Max time for refinement:              0.206s
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            163277
+Max size of waitlist:            23
+Average size of waitlist:        16
+ReversePostorderSortedWaitlist:                    0.00 (sum: 0, count: 70793, min: 0, max: 0)
+CallstackSortedWaitlist:                           28438.75 (sum: 113755, count: 4, min: 1265, max: 92484)
+Number of computed successors:   190032
+Max successors for one state:    2
+Number of times merged:          26273
+Number of times stopped:         26277
+Number of times breaked:         3
+
+Total time for CPA algorithm:       176.314s (Max:   161.903s)
+  Time for choose from waitlist:      0.068s
+  Time for precision adjustment:    171.670s
+  Time for transfer relation:         3.191s
+  Time for merge operator:            0.915s
+  Time for stop operator:             0.097s
+  Time for adding to reached set:     0.209s
+
+Static Predicate Refiner statistics
+-----------------------------------
+Number of predicates found statically:                    1 (count: 1, min: 1, max: 1, avg: 1.00)
+
+Total time for static refinement:                      0.164s
+  Time for path feasibility check:                     0.146s
+  Time for predicate extraction from CFA:              0.007s
+  Time for ARG update:                                 0.003s
+
+PredicateCPARefiner statistics
+------------------------------
+Number of predicate refinements:                   2
+Avg. length of target path (in blocks):            2.00 (sum: 4, count: 2, min: 2, max: 2)
+Number of infeasible sliced prefixes:                     0 (count: 0, min: 0, max: 0, avg: 0.00)
+
+Time for refinement:                                   0.391s
+  Counterexample analysis:                             0.453s (Max:     0.169s, Calls: 3)
+    Refinement sat check:                              0.265s
+    Interpolant computation:                           0.004s
+  Path-formulas extraction:                            0.000s
+  Error path post-processing:                          0.000s
+
+Predicate-Abstraction Refiner statistics
+----------------------------------------
+  Predicate creation:                                  0.002s
+  Precision update:                                    0.034s
+  ARG update:                                          0.035s
+
+Length of refined path (in blocks):                2.00 (sum: 4, count: 2, min: 2, max: 2)
+Number of affected states:                                2 (count: 2, min: 1, max: 1, avg: 1.00)
+Length (states) of path with itp 'true':                  0 (count: 2, min: 0, max: 0, avg: 0.00)
+Length (states) of path with itp non-trivial itp:         2 (count: 2, min: 1, max: 1, avg: 1.00)
+Length (states) of path with itp 'false':                 0 (count: 2, min: 0, max: 0, avg: 0.00)
+Different non-trivial interpolants along paths:           0 (count: 2, min: 0, max: 0, avg: 0.00)
+Equal non-trivial interpolants along paths:               0 (count: 2, min: 0, max: 0, avg: 0.00)
+Number of refs with location-based cutoff:                0
+
+CEGAR algorithm statistics
+--------------------------
+Number of CEGAR refinements:          3
+Number of successful refinements:     3
+Number of failed refinements:         0
+Max. size of reached set before ref.: 26149
+Max. size of reached set after ref.:  287
+Avg. size of reached set before ref.: 9943.00
+Avg. size of reached set after ref.:  191.67
+
+Total time for CEGAR algorithm:     176.872s
+Time for refinements:                 0.558s
+Average time for refinement:          0.186s
+Max time for refinement:              0.206s
+
+RestartAlgorithm switches to the next configuration... (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:RestartAlgorithm.run, INFO)
+
+Loading analysis 4 from file experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties ... (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:RestartAlgorithm.run, INFO)
+
+Mismatch of configuration options when loading from 'experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties': 'limits.time.cpu::required' has two values '900' and ''. Using ''. (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:NestingAlgorithm.checkConfigs, INFO)
+
+Using the following resource limits: CPU-time limit of 900s (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:ResourceLimitChecker.fromConfiguration, INFO)
+
+Mismatch of configuration options when loading from 'experiments/cpa/CPAchecker-2.1-unix/config/components/kInduction/kInduction.properties': 'cpa.arg.proofWitness' has two values 'witness.graphml' and ''. Using ''. (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:NestingAlgorithm.checkConfigs, INFO)
+
+Using the following resource limits: CPU-time limit of 900s (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:Parallel analysis 1:ResourceLimitChecker.fromConfiguration, INFO)
+
+Using predicate analysis with MathSAT5 version 5.6.6 (218275631c24) (Apr 23 2021 08:35:29, gmp 6.1.2, gcc 7.5.0, 64-bit, reentrant). (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:Parallel analysis 1:PredicateCPA:PredicateCPA.<init>, INFO)
+
+Using predicate analysis with MathSAT5 version 5.6.6 (218275631c24) (Apr 23 2021 08:35:29, gmp 6.1.2, gcc 7.5.0, 64-bit, reentrant). (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:Parallel analysis 1:InductionStepCase:PredicateCPA:PredicateCPA.<init>, INFO)
+
+Using the following resource limits: CPU-time limit of 900s (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:Parallel analysis 2:ResourceLimitChecker.fromConfiguration, INFO)
+
+Starting analysis 4 ... (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:RestartAlgorithm.run, INFO)
+
+Creating formula for program (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:Parallel analysis 1:AbstractBMCAlgorithm.run, INFO)
+
+Starting satisfiability check... (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Running algorithm to create induction hypothesis (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:Parallel analysis 1:KInductionProver.check, INFO)
+
+Starting induction check... (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:Parallel analysis 1:KInductionProver.check, INFO)
+
+Adjusting maxLoopIterations to 2 (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:Parallel analysis 1:LoopBoundCPA:LoopBoundPrecisionAdjustment.nextState, INFO)
+
+Creating formula for program (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:Parallel analysis 1:AbstractBMCAlgorithm.run, INFO)
+
+Starting satisfiability check... (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Running algorithm to create induction hypothesis (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:Parallel analysis 1:KInductionProver.check, INFO)
+
+Starting induction check... (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:Parallel analysis 1:KInductionProver.check, INFO)
+
+Adjusting maxLoopIterations to 3 (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:Parallel analysis 1:LoopBoundCPA:LoopBoundPrecisionAdjustment.nextState, INFO)
+
+Creating formula for program (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:Parallel analysis 1:AbstractBMCAlgorithm.run, INFO)
+
+Starting satisfiability check... (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Error found, creating error path (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:Parallel analysis 1:BMCAlgorithm.analyzeCounterexample0, INFO)
+
+experiments/cpa/CPAchecker-2.1-unix/config/components/kInduction/kInduction.properties finished successfully. (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:ParallelAlgorithm.handleFutureResults, INFO)
+
+Analysis was terminated (Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties:Analysis experiments/cpa/CPAchecker-2.1-unix/config/components/svcomp22--04-kInduction.properties:Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Stopping analysis ... (CPAchecker.runAlgorithm, INFO)
+
+
+Selection Algorithm statistics
+------------------------------
+Size of preliminary analysis reached set:      0
+Used algorithm property:                       experiments/cpa/CPAchecker-2.1-unix/config/components/configselection-restart-symbolicExecution-valueAnalysis-predicateAnalysis-fallbacks.properties
+Program containing only relevant bools:        0
+Relevant boolean vars / relevant vars ratio:   0.0495
+Requires alias handling:                       0
+Requires loop handling:                        1
+Requires composite-type handling:              0
+Requires array handling:                       0
+Requires float handling:                       0
+Requires recursion handling:                   0
+Relevant addressed vars / relevant vars ratio: 0.0000
+Program containing external functions:         true
+Number of all righthand side functions:        111
+
+
+Restart Algorithm statistics
+----------------------------
+Number of algorithms provided:    6
+Number of algorithms used:        4
+Total time for algorithm 4:    60.501s
+
+Parallel Algorithm statistics
+-----------------------------
+Number of algorithms used:        2
+Successful analysis: experiments/cpa/CPAchecker-2.1-unix/config/components/kInduction/kInduction.properties
+
+
+Statistics for: experiments/cpa/CPAchecker-2.1-unix/config/components/kInduction/kInduction.properties
+============================================================================================================================
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            384 (0% of all post computations)
+  Times abstraction was reused:    0
+  Because of function entry/exit:  0 (0%)
+  Because of loop head:            0 (0%)
+  Because of join nodes:           0 (0%)
+  Because of threshold:            0 (0%)
+  Because of target state:         384 (100%)
+  Times precision was empty:       384 (100%)
+  Times precision was {false}:     0 (0%)
+  Times result was cached:         0 (0%)
+  Times cartesian abs was used:    0 (0%)
+  Times boolean abs was used:      0 (0%)
+  Times result was 'false':        0 (0%)
+Number of strengthen sat checks:   0
+Number of coverage checks:         21552
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       1991
+Avg ABE block size:                                1273.48 (sum: 489016, count: 384, min: 509, max: 1991)
+Number of predicates discovered:          0
+
+Time for post operator:                                1.017s
+  Time for path formula creation:                      1.006s
+Time for strengthen operator:                          0.146s
+Time for prec operator:                                0.089s
+  Time for abstraction:                  0.003s (Max:     0.001s, Count: 384)
+    Solving time:                        0.000s (Max:     0.000s)
+    Model enumeration time:              0.000s
+    Time for BDD construction:           0.000s (Max:     0.000s)
+Time for merge operator:                               0.505s
+Time for coverage checks:                              0.000s
+Total time for SMT solver (w/o itp):     0.000s
+
+Total number of created targets for pointer analysis: 0
+
+
+
+KeyValue statistics
+-------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           3
+Maximum loop iteration reached:                    4
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables per state:                     87.27 (sum: 9382738, count: 107513, min: 0, max: 171)
+Number of global variables per state:              70.63 (sum: 7593667, count: 107513, min: 0, max: 101)
+Number of assumptions:                                38860
+Number of deterministic assumptions:                      0
+Level of Determinism:                              0%
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                  118482
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.678s
+Total time for path thresholds:                        0.000s
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.076s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 118482, count: 118866, min: 0, max: 1) [0 x 384, 1 x 118482]
+Number of states with assumption transitions:      0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            107709
+Max size of waitlist:            16
+Average size of waitlist:        9
+LoopstackSortedWaitlist:                           0.01 (sum: 400, count: 68384, min: 0, max: 136)
+ReversePostorderSortedWaitlist:                    0.00 (sum: 0, count: 68400, min: 0, max: 0)
+LoopIterationSortedWaitlist:                       0.01 (sum: 384, count: 68384, min: 0, max: 132)
+CallstackSortedWaitlist:                           19938.00 (sum: 59814, count: 3, min: 551, max: 39325)
+Number of computed successors:   118482
+Max successors for one state:    2
+Number of times merged:          10776
+Number of times stopped:         10776
+Number of times breaked:         0
+
+Total time for CPA algorithm:         6.251s (Max:     2.986s)
+  Time for choose from waitlist:      0.095s
+  Time for precision adjustment:      1.451s
+  Time for transfer relation:         3.026s
+  Time for merge operator:            1.040s
+  Time for stop operator:             0.181s
+  Time for adding to reached set:     0.287s
+
+BMC algorithm statistics
+------------------------
+Time for BMC formula creation:           6.279s
+Time for final sat check:                4.728s
+Time for error path creation:            1.801s
+Time for bounding assertions check:      0.327s
+Time for induction formula creation:    24.186s
+Time for induction check:               12.178s
+
+
+Statistics for: experiments/cpa/CPAchecker-2.1-unix/config/components/invariantGeneration-no-out.properties
+=================================================================================================================================
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.182s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 269018, count: 269018, min: 1, max: 1) [1 x 269018]
+Number of states with assumption transitions:      0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            245484
+Max size of waitlist:            3118
+Average size of waitlist:        1712
+ReversePostorderSortedWaitlist:                    33577.00 (sum: 33577, count: 1, min: 33577, max: 33577)
+Number of computed successors:   269018
+Max successors for one state:    2
+Number of times merged:          27713
+Number of times stopped:         28760
+Number of times breaked:         0
+
+Total time for CPA algorithm:        57.871s (Max:    57.871s)
+  Time for choose from waitlist:      0.107s
+  Time for precision adjustment:      0.243s
+  Time for transfer relation:        30.064s
+  Time for merge operator:           23.745s
+  Time for stop operator:             2.888s
+  Time for adding to reached set:     0.403s
+
+
+Other statistics
+================
+
+Parallel Algorithm statistics
+-----------------------------
+Number of algorithms used:        2
+Successful analysis: experiments/cpa/CPAchecker-2.1-unix/config/components/kInduction/kInduction.properties
+
+
+Statistics for: experiments/cpa/CPAchecker-2.1-unix/config/components/kInduction/kInduction.properties
+============================================================================================================================
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            384 (0% of all post computations)
+  Times abstraction was reused:    0
+  Because of function entry/exit:  0 (0%)
+  Because of loop head:            0 (0%)
+  Because of join nodes:           0 (0%)
+  Because of threshold:            0 (0%)
+  Because of target state:         384 (100%)
+  Times precision was empty:       384 (100%)
+  Times precision was {false}:     0 (0%)
+  Times result was cached:         0 (0%)
+  Times cartesian abs was used:    0 (0%)
+  Times boolean abs was used:      0 (0%)
+  Times result was 'false':        0 (0%)
+Number of strengthen sat checks:   0
+Number of coverage checks:         21552
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       1991
+Avg ABE block size:                                1273.48 (sum: 489016, count: 384, min: 509, max: 1991)
+Number of predicates discovered:          0
+
+Time for post operator:                                1.017s
+  Time for path formula creation:                      1.006s
+Time for strengthen operator:                          0.146s
+Time for prec operator:                                0.089s
+  Time for abstraction:                  0.003s (Max:     0.001s, Count: 384)
+    Solving time:                        0.000s (Max:     0.000s)
+    Model enumeration time:              0.000s
+    Time for BDD construction:           0.000s (Max:     0.000s)
+Time for merge operator:                               0.505s
+Time for coverage checks:                              0.000s
+Total time for SMT solver (w/o itp):     0.000s
+
+Total number of created targets for pointer analysis: 0
+
+
+
+KeyValue statistics
+-------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           3
+Maximum loop iteration reached:                    4
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables per state:                     87.27 (sum: 9382738, count: 107513, min: 0, max: 171)
+Number of global variables per state:              70.63 (sum: 7593667, count: 107513, min: 0, max: 101)
+Number of assumptions:                                38860
+Number of deterministic assumptions:                      0
+Level of Determinism:                              0%
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                  118482
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.678s
+Total time for path thresholds:                        0.000s
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.076s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 118482, count: 118866, min: 0, max: 1) [0 x 384, 1 x 118482]
+Number of states with assumption transitions:      0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            107709
+Max size of waitlist:            16
+Average size of waitlist:        9
+LoopstackSortedWaitlist:                           0.01 (sum: 400, count: 68384, min: 0, max: 136)
+ReversePostorderSortedWaitlist:                    0.00 (sum: 0, count: 68400, min: 0, max: 0)
+LoopIterationSortedWaitlist:                       0.01 (sum: 384, count: 68384, min: 0, max: 132)
+CallstackSortedWaitlist:                           19938.00 (sum: 59814, count: 3, min: 551, max: 39325)
+Number of computed successors:   118482
+Max successors for one state:    2
+Number of times merged:          10776
+Number of times stopped:         10776
+Number of times breaked:         0
+
+Total time for CPA algorithm:         6.251s (Max:     2.986s)
+  Time for choose from waitlist:      0.095s
+  Time for precision adjustment:      1.451s
+  Time for transfer relation:         3.026s
+  Time for merge operator:            1.040s
+  Time for stop operator:             0.181s
+  Time for adding to reached set:     0.287s
+
+BMC algorithm statistics
+------------------------
+Time for BMC formula creation:           6.279s
+Time for final sat check:                4.728s
+Time for error path creation:            1.801s
+Time for bounding assertions check:      0.327s
+Time for induction formula creation:    24.186s
+Time for induction check:               12.178s
+
+
+Statistics for: experiments/cpa/CPAchecker-2.1-unix/config/components/invariantGeneration-no-out.properties
+=================================================================================================================================
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.182s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     1.00 (sum: 269018, count: 269018, min: 1, max: 1) [1 x 269018]
+Number of states with assumption transitions:      0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            245484
+Max size of waitlist:            3118
+Average size of waitlist:        1712
+ReversePostorderSortedWaitlist:                    33577.00 (sum: 33577, count: 1, min: 33577, max: 33577)
+Number of computed successors:   269018
+Max successors for one state:    2
+Number of times merged:          27713
+Number of times stopped:         28760
+Number of times breaked:         0
+
+Total time for CPA algorithm:        57.871s (Max:    57.871s)
+  Time for choose from waitlist:      0.107s
+  Time for precision adjustment:      0.243s
+  Time for transfer relation:        30.064s
+  Time for merge operator:           23.745s
+  Time for stop operator:             2.888s
+  Time for adding to reached set:     0.403s
+
+
+Other statistics
+================
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:                       2251
+Number of CFA edges (per node):                        2781 (count: 2251, min: 0, max: 8, avg: 1.24)
+Number of relevant variables:                      586
+Number of functions:                               133
+Number of loops (and loop nodes):                         4 (sum: 186, min: 15, max: 136, avg: 46.50)
+Size of reached set:             107513
+  Number of reached locations:   1512 (67%)
+    Avg states per location:     71
+    Max states per location:     872 (at node N1569)
+  Number of reached functions:   107 (80%)
+  Number of target states:       192
+
+Time for analysis setup:          0.877s
+  Time for loading CPAs:          0.106s
+  Time for loading parser:        0.106s
+  Time for CFA construction:      0.649s
+    Time for parsing file(s):     0.228s
+    Time for AST to CFA:          0.243s
+    Time for CFA sanity check:    0.000s
+    Time for post-processing:     0.140s
+      Time for function pointers resolving:            0.004s
+        Function calls via function pointers:             1 (count: 1, min: 1, max: 1, avg: 1.00)
+        Instrumented function pointer calls:              0 (count: 1, min: 0, max: 0, avg: 0.00)
+        Function calls with function pointer arguments:        0 (count: 1, min: 0, max: 0, avg: 0.00)
+        Instrumented function pointer arguments:          0 (count: 1, min: 0, max: 0, avg: 0.00)
+      Time for classifying variables:                  0.091s
+        Time for collecting variables:                 0.050s
+        Time for solving dependencies:                 0.001s
+        Time for building hierarchy:                   0.000s
+        Time for building classification:              0.040s
+        Time for exporting data:                       0.000s
+Time for Analysis:              402.218s
+CPU time for analysis:          639.430s
+Time for analyzing result:        0.071s
+Total time for CPAchecker:      403.096s
+Total CPU time for CPAchecker:  643.890s
+Time for statistics:              0.595s
+
+Time for Garbage Collector:       5.331s (in 134 runs)
+Garbage Collector(s) used:    G1 Old Generation, G1 Young Generation
+
+Verification result: FALSE. Property violation (unreach-call: reach_error(); called in line 419) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+peak memory usage: 5588.92 MB

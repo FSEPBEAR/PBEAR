@@ -1,0 +1,16 @@
+combinations/gcd_1+newton_1_6.i
+combinations/gcd_3+newton_1_4.i
+combinations/gcd_3+newton_3_7.i
+product-lines/email_spec4_productSimulator.cil.c
+product-lines/email_spec7_productSimulator.cil.c
+product-lines/email_spec27_productSimulator.cil.c
+recursive/Fibonacci04.c
+recursive/Fibonacci05.c
+ntdrivers-simplified/floppy_simpl3.cil-1.c
+ntdrivers-simplified/floppy_simpl4.cil-1.c
+seq-mthreaded/pals_floodmax.5.1.ufo.UNBOUNDED.pals.c
+seq-mthreaded/pals_floodmax.5.4.ufo.BOUNDED-10.pals.c
+seq-mthreaded/pals_floodmax.5.4.ufo.UNBOUNDED.pals.c
+systemc/token_ring.01.cil-2.c
+systemc/token_ring.05.cil-2.c
+systemc/token_ring.14.cil.c
