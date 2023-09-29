@@ -1,0 +1,293 @@
+#include <assert.h>
+#include <stdlib.h>
+#ifndef TRUE
+#define TRUE 1
+#endif
+#ifndef FALSE
+#define FALSE 0
+#endif
+signed int FlAcpiConfigureFloppy(signed int DisketteExtension, signed int FdcInfo);
+signed int FlCheckFormatParameters(signed int DisketteExtension, signed int FormatParameters);
+signed int FlFdcDeviceIo(signed int DeviceObject, signed int Ioctl, signed int Data);
+signed int FlQueueIrpToThread(signed int Irp, signed int DisketteExtension);
+signed int FloppyCreateClose(signed int DeviceObject, signed int Irp);
+signed int FloppyDeviceControl(signed int DeviceObject, signed int Irp);
+signed int FloppyPnp(signed int DeviceObject, signed int Irp);
+signed int FloppyPnpComplete(signed int DeviceObject, signed int Irp, signed int Context);
+void FloppyProcessQueuedRequests(signed int DisketteExtension);
+signed int FloppyQueueRequest(signed int DisketteExtension, signed int Irp);
+signed int FloppyStartDevice(signed int DeviceObject, signed int Irp);
+signed int IoBuildDeviceIoControlRequest(signed int IoControlCode, signed int DeviceObject, signed int InputBuffer, signed int InputBufferLength, signed int OutputBuffer, signed int OutputBufferLength, signed int InternalDeviceIoControl, signed int Event, signed int IoStatusBlock);
+signed int IoDeleteSymbolicLink(signed int SymbolicLinkName);
+signed int IoQueryDeviceDescription(signed int BusType, signed int BusNumber, signed int ControllerType, signed int ControllerNumber, signed int PeripheralType, signed int PeripheralNumber, signed int CalloutRoutine, signed int Context);
+signed int IoRegisterDeviceInterface(signed int PhysicalDeviceObject, signed int InterfaceClassGuid, signed int ReferenceString, signed int SymbolicLinkName);
+signed int IoSetDeviceInterfaceState(signed int SymbolicLinkName, signed int Enable);
+signed int IofCallDriver(signed int DeviceObject, signed int Irp);
+void IofCompleteRequest(signed int Irp, signed int PriorityBoost);
+signed int KeSetEvent(signed int Event, signed int Increment, signed int Wait);
+signed int KeWaitForSingleObject(signed int Object, signed int WaitReason, signed int WaitMode, signed int Alertable, signed int Timeout);
+signed int ObReferenceObjectByHandle(signed int Handle, signed int DesiredAccess, signed int ObjectType, signed int AccessMode, signed int Object, signed int HandleInformation);
+signed int PsCreateSystemThread(signed int ThreadHandle, signed int DesiredAccess, signed int ObjectAttributes, signed int ProcessHandle, signed int ClientId, signed int StartRoutine, signed int StartContext);
+signed int ZwClose(signed int Handle);
+void _BLAST_init(void);
+void errorFn(void);
+void reach_error();
+void stubMoreProcessingRequired(void);
+void stub_driver_init(void);
+signed int DC;
+signed int DiskController;
+signed int Executive;
+signed int FlConfigCallBack;
+signed int FloppyDiskPeripheral;
+signed int FloppyThread;
+signed int IPC;
+signed int KernelMode;
+signed int MOUNTDEV_MOUNTED_DEVICE_GUID;
+signed int MPR1;
+signed int MPR3;
+signed int MaximumInterfaceType;
+signed int NP;
+signed int PagingMutex=0;
+signed int PagingReferenceCount=0;
+signed int SKIP1;
+signed int SKIP2;
+signed int Suspended;
+signed int UNLOADED;
+signed int compRegistered;
+signed int customIrp;
+signed int lowerDriverReturn;
+signed int myStatus;
+signed int pended;
+signed int s;
+signed int setEventCalled;
+extern signed int __VERIFIER_nondet_signed_int();
+signed int PsCreateSystemThread(signed int ThreadHandle, signed int DesiredAccess, signed int ObjectAttributes, signed int ProcessHandle, signed int ClientId, signed int StartRoutine, signed int StartContext) {
+	signed int tmp_ndt_14;
+	tmp_ndt_14 = __VERIFIER_nondet_signed_int();
+	__CPROVER_printf("__iv__test_case:%d", tmp_ndt_14);
+	if (!((tmp_ndt_14 == 0))) goto Node_16_2320;
+	goto Node_16_2322;
+	Node_16_2320:;
+	goto Node_16_2325;
+	Node_16_2322:;
+	return 0;
+	Node_16_2325:;
+	return -1073741823;
+}
+void _BLAST_init_3_1();
+void stub_driver_init_4_1();
+void FloppyPnp_12_1(signed int DeviceObject, signed int Irp);
+void FlQueueIrpToThread_118_1(signed int Irp, signed int DisketteExtension);
+void IofCallDriver_121_1(signed int DeviceObject, signed int Irp);
+void IofCompleteRequest_122_1(signed int Irp, signed int PriorityBoost);
+void errorFn_175_1();
+void reach_error_173_1();
+extern signed int __VERIFIER_nondet_signed_int();
+int __iv__return_expr_main;
+signed int __iv__return_expr_FloppyDeviceControl;
+signed int __iv__return_expr_IoBuildDeviceIoControlRequest;
+signed int __iv__return_expr_FlFdcDeviceIo;
+signed int __iv__return_expr_FloppyStartDevice;
+signed int __iv__return_expr_FloppyPnp;
+signed int __iv__return_expr_FloppyQueueRequest;
+signed int __iv__return_expr_FlCheckFormatParameters;
+signed int __iv__return_expr_KeSetEvent;
+signed int __iv__return_expr_FlQueueIrpToThread;
+signed int __iv__return_expr_FloppyCreateClose;
+signed int __iv__return_expr_ObReferenceObjectByHandle;
+signed int __iv__return_expr_KeWaitForSingleObject;
+signed int __iv__return_expr_IofCallDriver;
+signed int __iv__return_expr_IoSetDeviceInterfaceState;
+signed int __iv__return_expr_PsCreateSystemThread;
+signed int __iv__return_expr_IoRegisterDeviceInterface;
+signed int __iv__return_expr_IoQueryDeviceDescription;
+signed int __iv__return_expr_IoDeleteSymbolicLink;
+signed int __iv__return_expr_FloppyPnpComplete;
+signed int __iv__return_expr_ZwClose;
+signed int __iv__return_expr_FlAcpiConfigureFloppy;
+int main(){
+	signed int status;
+	signed int irp;
+	irp = 0; 
+	signed int pirp;
+	signed int pirp__IoStatus__Status;
+	signed int irp_choice;
+	irp_choice = 8; 
+	signed int devobj;
+	devobj = 0; 
+	FloppyThread = 0; 
+	KernelMode = 0; 
+	Suspended = 0; 
+	Executive = 0; 
+	DiskController = 0; 
+	FloppyDiskPeripheral = 0; 
+	FlConfigCallBack = 0; 
+	MaximumInterfaceType = 0; 
+	MOUNTDEV_MOUNTED_DEVICE_GUID = 0; 
+	myStatus = 0; 
+	s = 0; 
+	UNLOADED = 0; 
+	NP = 0; 
+	DC = 0; 
+	SKIP1 = 0; 
+	SKIP2 = 0; 
+	MPR1 = 0; 
+	MPR3 = 0; 
+	IPC = 0; 
+	pended = 0; 
+	compRegistered = 0; 
+	lowerDriverReturn = 0; 
+	setEventCalled = 0; 
+	customIrp = 0; 
+	status = 0; 
+	pirp = 0; 
+	_BLAST_init_3_1();
+	s = 1; 
+	customIrp = 0; 
+	setEventCalled = 0; 
+	lowerDriverReturn = 0; 
+	compRegistered = 0; 
+	pended = 0; 
+	pirp__IoStatus__Status = 0; 
+	myStatus = 0; 
+	stub_driver_init_4_1();
+	signed int tmp_ndt_1;
+	tmp_ndt_1 = 4; 
+	signed int tmp_ndt_2;
+	tmp_ndt_2 = 65; 
+	signed int tmp_ndt_3;
+	tmp_ndt_3 = 268435458; 
+	signed int tmp_ndt_4;
+	tmp_ndt_4 = 3; 
+	FloppyPnp_12_1(devobj, pirp);
+}
+void _BLAST_init_3_1(){
+	UNLOADED = 0; 
+	NP = 1; 
+	DC = 2; 
+	SKIP1 = 3; 
+	SKIP2 = 4; 
+	MPR1 = 5; 
+	MPR3 = 6; 
+	IPC = 7; 
+	s = 0; 
+	pended = 0; 
+	compRegistered = 0; 
+	lowerDriverReturn = 0; 
+	setEventCalled = 0; 
+	customIrp = 0; 
+}
+void stub_driver_init_4_1(){
+	s = 1; 
+	pended = 0; 
+	compRegistered = 0; 
+	lowerDriverReturn = 0; 
+	setEventCalled = 0; 
+	customIrp = 0; 
+}
+void FloppyPnp_12_1(signed int DeviceObject, signed int Irp){
+	signed int DeviceObject__DeviceExtension;
+	DeviceObject__DeviceExtension = 0; 
+	signed int Irp__Tail__Overlay__CurrentStackLocation;
+	Irp__Tail__Overlay__CurrentStackLocation = 873594880; 
+	signed int Irp__IoStatus__Information;
+	signed int Irp__IoStatus__Status;
+	signed int Irp__CurrentLocation;
+	Irp__CurrentLocation = 9584639; 
+	signed int disketteExtension__IsRemoved;
+	disketteExtension__IsRemoved = 0; 
+	signed int disketteExtension__IsStarted;
+	disketteExtension__IsStarted = 16777216; 
+	signed int disketteExtension__TargetObject;
+	disketteExtension__TargetObject = 0; 
+	signed int disketteExtension__HoldNewRequests;
+	signed int disketteExtension__FloppyThread;
+	disketteExtension__FloppyThread = 8; 
+	signed int disketteExtension__InterfaceString__Buffer;
+	disketteExtension__InterfaceString__Buffer = 16; 
+	signed int disketteExtension__InterfaceString;
+	disketteExtension__InterfaceString = 0; 
+	signed int disketteExtension__ArcName__Length;
+	disketteExtension__ArcName__Length = 1048576; 
+	signed int disketteExtension__ArcName;
+	disketteExtension__ArcName = 0; 
+	signed int irpSp__MinorFunction;
+	irpSp__MinorFunction = 1; 
+	signed int IoGetConfigurationInformation__FloppyCount;
+	IoGetConfigurationInformation__FloppyCount = 408952836; 
+	signed int irpSp;
+	signed int disketteExtension;
+	signed int ntStatus;
+	signed int doneEvent;
+	doneEvent = 0; 
+	signed int irpSp___0;
+	signed int nextIrpSp;
+	signed int nextIrpSp__Control;
+	signed int irpSp___1;
+	signed int irpSp__Context;
+	signed int irpSp__Control;
+	signed long int __cil_tmp29;
+	signed long int __cil_tmp30;
+	ntStatus = 0; 
+	PagingReferenceCount = 1; 
+	disketteExtension = 0; 
+	irpSp = 873594880; 
+	disketteExtension__HoldNewRequests = 1; 
+	FlQueueIrpToThread_118_1(Irp, disketteExtension);
+	ntStatus = __iv__return_expr_FlQueueIrpToThread;
+	__cil_tmp29 = (signed long int)(ntStatus);
+	__CPROVER_assume((!((__cil_tmp29 == 259l))));
+	ntStatus = -1073741823; 
+	IofCallDriver_121_1(disketteExtension__TargetObject, Irp);
+	Irp__IoStatus__Status = 259; 
+	myStatus = -1073741823; 
+	Irp__IoStatus__Information = 0; 
+	IofCompleteRequest_122_1(Irp, 0);
+}
+void FlQueueIrpToThread_118_1(signed int Irp, signed int DisketteExtension){
+	signed int status;
+	signed int threadHandle;
+	threadHandle = 0; 
+	signed int DisketteExtension__PoweringDown;
+	DisketteExtension__PoweringDown = 17; 
+	signed int DisketteExtension__ThreadReferenceCount;
+	DisketteExtension__ThreadReferenceCount = -1; 
+	signed int DisketteExtension__FloppyThread;
+	DisketteExtension__FloppyThread = 0; 
+	signed int Irp__IoStatus__Status;
+	signed int Irp__IoStatus__Information;
+	signed int ObjAttributes;
+	ObjAttributes = 0; 
+	DisketteExtension__ThreadReferenceCount = 0; 
+	DisketteExtension__ThreadReferenceCount = 1; 
+	PagingReferenceCount = 2; 
+	__CPROVER_printf("__iv__stub_call:__iv__start"); status = PsCreateSystemThread(threadHandle, 0, ObjAttributes, 0, 0, FloppyThread, DisketteExtension); __CPROVER_printf("__iv__stub_call:__iv__end");
+	__CPROVER_assume(!(!((status < 0))));
+	DisketteExtension__ThreadReferenceCount = -1; 
+	PagingReferenceCount = 1; 
+	__iv__return_expr_FlQueueIrpToThread = status;
+}
+void IofCallDriver_121_1(signed int DeviceObject, signed int Irp){
+	signed int returnVal2;
+	signed int compRetStatus1;
+	signed int lcontext;
+	lcontext = 0; 
+	unsigned long int __cil_tmp7;
+	signed int tmp_ndt_10;
+	tmp_ndt_10 = 67108864; 
+	signed int tmp_ndt_11;
+	tmp_ndt_11 = 65537; 
+	returnVal2 = 259; 
+	s = 7; 
+	lowerDriverReturn = 259; 
+	__iv__return_expr_IofCallDriver = 259; 
+}
+void IofCompleteRequest_122_1(signed int Irp, signed int PriorityBoost){
+	errorFn_175_1();
+}
+void errorFn_175_1(){
+	reach_error_173_1();
+}
+void reach_error_173_1(){
+	__CPROVER_printf("violated property: Node_25_2470"); assert(0);
+}

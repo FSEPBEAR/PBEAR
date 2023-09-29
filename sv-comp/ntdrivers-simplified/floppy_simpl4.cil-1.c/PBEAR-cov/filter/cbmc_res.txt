@@ -1,0 +1,568 @@
+Parsing results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c
+Converting
+Type-checking target
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Running with 8 object bits, 56 offset bits (default)
+Starting Bounded Model Checking
+Runtime Symex: 0.00434743s
+size of program expression: 412 steps
+simple slicing removed 9 assignments
+Generated 1 VCC(s), 1 remaining after simplification
+Runtime Postprocess Equation: 2.2222e-05s
+Passing problem to propositional reduction
+converting SSA
+Runtime Convert SSA: 0.000881879s
+Running propositional reduction
+Post-processing
+Runtime Post-process: 2.1219e-05s
+Solving with MiniSAT 2.2.1 with simplifier
+1884 variables, 136 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.00022044s
+Runtime decision procedure: 0.00113318s
+Building error trace
+** Results:
+results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function reach_error_173_1
+[reach_error_173_1.assertion.1] line 292 assertion 0: FAILURE
+Trace for reach_error_173_1.assertion.1:
+State 72 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 109 thread 0
+----------------------------------------------------
+  status=0 (00000000 00000000 00000000 00000000)
+State 73 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 110 thread 0
+----------------------------------------------------
+  irp=0 (00000000 00000000 00000000 00000000)
+State 74 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 111 thread 0
+----------------------------------------------------
+  irp=0 (00000000 00000000 00000000 00000000)
+State 75 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 112 thread 0
+----------------------------------------------------
+  pirp=0 (00000000 00000000 00000000 00000000)
+State 76 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 113 thread 0
+----------------------------------------------------
+  pirp__IoStatus__Status=0 (00000000 00000000 00000000 00000000)
+State 77 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 114 thread 0
+----------------------------------------------------
+  irp_choice=0 (00000000 00000000 00000000 00000000)
+State 78 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 115 thread 0
+----------------------------------------------------
+  irp_choice=8 (00000000 00000000 00000000 00001000)
+State 79 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 116 thread 0
+----------------------------------------------------
+  devobj=0 (00000000 00000000 00000000 00000000)
+State 80 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 117 thread 0
+----------------------------------------------------
+  devobj=0 (00000000 00000000 00000000 00000000)
+State 81 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 118 thread 0
+----------------------------------------------------
+  FloppyThread=0 (00000000 00000000 00000000 00000000)
+State 82 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 119 thread 0
+----------------------------------------------------
+  KernelMode=0 (00000000 00000000 00000000 00000000)
+State 83 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 120 thread 0
+----------------------------------------------------
+  Suspended=0 (00000000 00000000 00000000 00000000)
+State 84 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 121 thread 0
+----------------------------------------------------
+  Executive=0 (00000000 00000000 00000000 00000000)
+State 85 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 122 thread 0
+----------------------------------------------------
+  DiskController=0 (00000000 00000000 00000000 00000000)
+State 86 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 123 thread 0
+----------------------------------------------------
+  FloppyDiskPeripheral=0 (00000000 00000000 00000000 00000000)
+State 87 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 124 thread 0
+----------------------------------------------------
+  FlConfigCallBack=0 (00000000 00000000 00000000 00000000)
+State 88 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 125 thread 0
+----------------------------------------------------
+  MaximumInterfaceType=0 (00000000 00000000 00000000 00000000)
+State 89 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 126 thread 0
+----------------------------------------------------
+  MOUNTDEV_MOUNTED_DEVICE_GUID=0 (00000000 00000000 00000000 00000000)
+State 90 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 127 thread 0
+----------------------------------------------------
+  myStatus=0 (00000000 00000000 00000000 00000000)
+State 91 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 128 thread 0
+----------------------------------------------------
+  s=0 (00000000 00000000 00000000 00000000)
+State 92 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 129 thread 0
+----------------------------------------------------
+  UNLOADED=0 (00000000 00000000 00000000 00000000)
+State 93 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 130 thread 0
+----------------------------------------------------
+  NP=0 (00000000 00000000 00000000 00000000)
+State 94 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 131 thread 0
+----------------------------------------------------
+  DC=0 (00000000 00000000 00000000 00000000)
+State 95 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 132 thread 0
+----------------------------------------------------
+  SKIP1=0 (00000000 00000000 00000000 00000000)
+State 96 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 133 thread 0
+----------------------------------------------------
+  SKIP2=0 (00000000 00000000 00000000 00000000)
+State 97 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 134 thread 0
+----------------------------------------------------
+  MPR1=0 (00000000 00000000 00000000 00000000)
+State 98 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 135 thread 0
+----------------------------------------------------
+  MPR3=0 (00000000 00000000 00000000 00000000)
+State 99 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 136 thread 0
+----------------------------------------------------
+  IPC=0 (00000000 00000000 00000000 00000000)
+State 100 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 137 thread 0
+----------------------------------------------------
+  pended=0 (00000000 00000000 00000000 00000000)
+State 101 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 138 thread 0
+----------------------------------------------------
+  compRegistered=0 (00000000 00000000 00000000 00000000)
+State 102 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 139 thread 0
+----------------------------------------------------
+  lowerDriverReturn=0 (00000000 00000000 00000000 00000000)
+State 103 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 140 thread 0
+----------------------------------------------------
+  setEventCalled=0 (00000000 00000000 00000000 00000000)
+State 104 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 141 thread 0
+----------------------------------------------------
+  customIrp=0 (00000000 00000000 00000000 00000000)
+State 105 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 142 thread 0
+----------------------------------------------------
+  status=0 (00000000 00000000 00000000 00000000)
+State 106 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 143 thread 0
+----------------------------------------------------
+  pirp=0 (00000000 00000000 00000000 00000000)
+State 109 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function _BLAST_init_3_1 line 165 thread 0
+----------------------------------------------------
+  UNLOADED=0 (00000000 00000000 00000000 00000000)
+State 110 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function _BLAST_init_3_1 line 166 thread 0
+----------------------------------------------------
+  NP=1 (00000000 00000000 00000000 00000001)
+State 111 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function _BLAST_init_3_1 line 167 thread 0
+----------------------------------------------------
+  DC=2 (00000000 00000000 00000000 00000010)
+State 112 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function _BLAST_init_3_1 line 168 thread 0
+----------------------------------------------------
+  SKIP1=3 (00000000 00000000 00000000 00000011)
+State 113 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function _BLAST_init_3_1 line 169 thread 0
+----------------------------------------------------
+  SKIP2=4 (00000000 00000000 00000000 00000100)
+State 114 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function _BLAST_init_3_1 line 170 thread 0
+----------------------------------------------------
+  MPR1=5 (00000000 00000000 00000000 00000101)
+State 115 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function _BLAST_init_3_1 line 171 thread 0
+----------------------------------------------------
+  MPR3=6 (00000000 00000000 00000000 00000110)
+State 116 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function _BLAST_init_3_1 line 172 thread 0
+----------------------------------------------------
+  IPC=7 (00000000 00000000 00000000 00000111)
+State 117 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function _BLAST_init_3_1 line 173 thread 0
+----------------------------------------------------
+  s=0 (00000000 00000000 00000000 00000000)
+State 118 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function _BLAST_init_3_1 line 174 thread 0
+----------------------------------------------------
+  pended=0 (00000000 00000000 00000000 00000000)
+State 119 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function _BLAST_init_3_1 line 175 thread 0
+----------------------------------------------------
+  compRegistered=0 (00000000 00000000 00000000 00000000)
+State 120 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function _BLAST_init_3_1 line 176 thread 0
+----------------------------------------------------
+  lowerDriverReturn=0 (00000000 00000000 00000000 00000000)
+State 121 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function _BLAST_init_3_1 line 177 thread 0
+----------------------------------------------------
+  setEventCalled=0 (00000000 00000000 00000000 00000000)
+State 122 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function _BLAST_init_3_1 line 178 thread 0
+----------------------------------------------------
+  customIrp=0 (00000000 00000000 00000000 00000000)
+State 124 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 145 thread 0
+----------------------------------------------------
+  s=1 (00000000 00000000 00000000 00000001)
+State 125 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 146 thread 0
+----------------------------------------------------
+  customIrp=0 (00000000 00000000 00000000 00000000)
+State 126 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 147 thread 0
+----------------------------------------------------
+  setEventCalled=0 (00000000 00000000 00000000 00000000)
+State 127 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 148 thread 0
+----------------------------------------------------
+  lowerDriverReturn=0 (00000000 00000000 00000000 00000000)
+State 128 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 149 thread 0
+----------------------------------------------------
+  compRegistered=0 (00000000 00000000 00000000 00000000)
+State 129 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 150 thread 0
+----------------------------------------------------
+  pended=0 (00000000 00000000 00000000 00000000)
+State 130 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 151 thread 0
+----------------------------------------------------
+  pirp__IoStatus__Status=0 (00000000 00000000 00000000 00000000)
+State 131 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 152 thread 0
+----------------------------------------------------
+  myStatus=0 (00000000 00000000 00000000 00000000)
+State 134 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function stub_driver_init_4_1 line 181 thread 0
+----------------------------------------------------
+  s=1 (00000000 00000000 00000000 00000001)
+State 135 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function stub_driver_init_4_1 line 182 thread 0
+----------------------------------------------------
+  pended=0 (00000000 00000000 00000000 00000000)
+State 136 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function stub_driver_init_4_1 line 183 thread 0
+----------------------------------------------------
+  compRegistered=0 (00000000 00000000 00000000 00000000)
+State 137 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function stub_driver_init_4_1 line 184 thread 0
+----------------------------------------------------
+  lowerDriverReturn=0 (00000000 00000000 00000000 00000000)
+State 138 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function stub_driver_init_4_1 line 185 thread 0
+----------------------------------------------------
+  setEventCalled=0 (00000000 00000000 00000000 00000000)
+State 139 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function stub_driver_init_4_1 line 186 thread 0
+----------------------------------------------------
+  customIrp=0 (00000000 00000000 00000000 00000000)
+State 141 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 154 thread 0
+----------------------------------------------------
+  tmp_ndt_1=0 (00000000 00000000 00000000 00000000)
+State 142 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 155 thread 0
+----------------------------------------------------
+  tmp_ndt_1=4 (00000000 00000000 00000000 00000100)
+State 143 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 156 thread 0
+----------------------------------------------------
+  tmp_ndt_2=0 (00000000 00000000 00000000 00000000)
+State 144 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 157 thread 0
+----------------------------------------------------
+  tmp_ndt_2=65 (00000000 00000000 00000000 01000001)
+State 145 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 158 thread 0
+----------------------------------------------------
+  tmp_ndt_3=0 (00000000 00000000 00000000 00000000)
+State 146 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 159 thread 0
+----------------------------------------------------
+  tmp_ndt_3=268435458 (00010000 00000000 00000000 00000010)
+State 147 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 160 thread 0
+----------------------------------------------------
+  tmp_ndt_4=0 (00000000 00000000 00000000 00000000)
+State 148 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 161 thread 0
+----------------------------------------------------
+  tmp_ndt_4=3 (00000000 00000000 00000000 00000011)
+State 151 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 162 thread 0
+----------------------------------------------------
+  DeviceObject=0 (00000000 00000000 00000000 00000000)
+State 152 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function main line 162 thread 0
+----------------------------------------------------
+  Irp=0 (00000000 00000000 00000000 00000000)
+State 153 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 189 thread 0
+----------------------------------------------------
+  DeviceObject__DeviceExtension=0 (00000000 00000000 00000000 00000000)
+State 154 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 190 thread 0
+----------------------------------------------------
+  DeviceObject__DeviceExtension=0 (00000000 00000000 00000000 00000000)
+State 155 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 191 thread 0
+----------------------------------------------------
+  Irp__Tail__Overlay__CurrentStackLocation=0 (00000000 00000000 00000000 00000000)
+State 156 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 192 thread 0
+----------------------------------------------------
+  Irp__Tail__Overlay__CurrentStackLocation=873594880 (00110100 00010010 00000000 00000000)
+State 157 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 193 thread 0
+----------------------------------------------------
+  Irp__IoStatus__Information=0 (00000000 00000000 00000000 00000000)
+State 158 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 194 thread 0
+----------------------------------------------------
+  Irp__IoStatus__Status=0 (00000000 00000000 00000000 00000000)
+State 159 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 195 thread 0
+----------------------------------------------------
+  Irp__CurrentLocation=0 (00000000 00000000 00000000 00000000)
+State 160 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 196 thread 0
+----------------------------------------------------
+  Irp__CurrentLocation=9584639 (00000000 10010010 00111111 11111111)
+State 161 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 197 thread 0
+----------------------------------------------------
+  disketteExtension__IsRemoved=0 (00000000 00000000 00000000 00000000)
+State 162 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 198 thread 0
+----------------------------------------------------
+  disketteExtension__IsRemoved=0 (00000000 00000000 00000000 00000000)
+State 163 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 199 thread 0
+----------------------------------------------------
+  disketteExtension__IsStarted=0 (00000000 00000000 00000000 00000000)
+State 164 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 200 thread 0
+----------------------------------------------------
+  disketteExtension__IsStarted=16777216 (00000001 00000000 00000000 00000000)
+State 165 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 201 thread 0
+----------------------------------------------------
+  disketteExtension__TargetObject=0 (00000000 00000000 00000000 00000000)
+State 166 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 202 thread 0
+----------------------------------------------------
+  disketteExtension__TargetObject=0 (00000000 00000000 00000000 00000000)
+State 167 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 203 thread 0
+----------------------------------------------------
+  disketteExtension__HoldNewRequests=0 (00000000 00000000 00000000 00000000)
+State 168 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 204 thread 0
+----------------------------------------------------
+  disketteExtension__FloppyThread=0 (00000000 00000000 00000000 00000000)
+State 169 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 205 thread 0
+----------------------------------------------------
+  disketteExtension__FloppyThread=8 (00000000 00000000 00000000 00001000)
+State 170 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 206 thread 0
+----------------------------------------------------
+  disketteExtension__InterfaceString__Buffer=0 (00000000 00000000 00000000 00000000)
+State 171 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 207 thread 0
+----------------------------------------------------
+  disketteExtension__InterfaceString__Buffer=16 (00000000 00000000 00000000 00010000)
+State 172 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 208 thread 0
+----------------------------------------------------
+  disketteExtension__InterfaceString=0 (00000000 00000000 00000000 00000000)
+State 173 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 209 thread 0
+----------------------------------------------------
+  disketteExtension__InterfaceString=0 (00000000 00000000 00000000 00000000)
+State 174 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 210 thread 0
+----------------------------------------------------
+  disketteExtension__ArcName__Length=0 (00000000 00000000 00000000 00000000)
+State 175 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 211 thread 0
+----------------------------------------------------
+  disketteExtension__ArcName__Length=1048576 (00000000 00010000 00000000 00000000)
+State 176 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 212 thread 0
+----------------------------------------------------
+  disketteExtension__ArcName=0 (00000000 00000000 00000000 00000000)
+State 177 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 213 thread 0
+----------------------------------------------------
+  disketteExtension__ArcName=0 (00000000 00000000 00000000 00000000)
+State 178 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 214 thread 0
+----------------------------------------------------
+  irpSp__MinorFunction=0 (00000000 00000000 00000000 00000000)
+State 179 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 215 thread 0
+----------------------------------------------------
+  irpSp__MinorFunction=1 (00000000 00000000 00000000 00000001)
+State 180 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 216 thread 0
+----------------------------------------------------
+  IoGetConfigurationInformation__FloppyCount=0 (00000000 00000000 00000000 00000000)
+State 181 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 217 thread 0
+----------------------------------------------------
+  IoGetConfigurationInformation__FloppyCount=408952836 (00011000 01100000 00100000 00000100)
+State 182 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 218 thread 0
+----------------------------------------------------
+  irpSp=0 (00000000 00000000 00000000 00000000)
+State 183 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 219 thread 0
+----------------------------------------------------
+  disketteExtension=0 (00000000 00000000 00000000 00000000)
+State 184 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 220 thread 0
+----------------------------------------------------
+  ntStatus=0 (00000000 00000000 00000000 00000000)
+State 185 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 221 thread 0
+----------------------------------------------------
+  doneEvent=0 (00000000 00000000 00000000 00000000)
+State 186 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 222 thread 0
+----------------------------------------------------
+  doneEvent=0 (00000000 00000000 00000000 00000000)
+State 187 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 223 thread 0
+----------------------------------------------------
+  irpSp___0=0 (00000000 00000000 00000000 00000000)
+State 188 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 224 thread 0
+----------------------------------------------------
+  nextIrpSp=0 (00000000 00000000 00000000 00000000)
+State 189 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 225 thread 0
+----------------------------------------------------
+  nextIrpSp__Control=0 (00000000 00000000 00000000 00000000)
+State 190 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 226 thread 0
+----------------------------------------------------
+  irpSp___1=0 (00000000 00000000 00000000 00000000)
+State 191 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 227 thread 0
+----------------------------------------------------
+  irpSp__Context=0 (00000000 00000000 00000000 00000000)
+State 192 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 228 thread 0
+----------------------------------------------------
+  irpSp__Control=0 (00000000 00000000 00000000 00000000)
+State 193 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 229 thread 0
+----------------------------------------------------
+  __cil_tmp29=0l (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 194 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 230 thread 0
+----------------------------------------------------
+  __cil_tmp30=0l (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 195 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 231 thread 0
+----------------------------------------------------
+  ntStatus=0 (00000000 00000000 00000000 00000000)
+State 196 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 232 thread 0
+----------------------------------------------------
+  PagingReferenceCount=1 (00000000 00000000 00000000 00000001)
+State 197 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 233 thread 0
+----------------------------------------------------
+  disketteExtension=0 (00000000 00000000 00000000 00000000)
+State 198 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 234 thread 0
+----------------------------------------------------
+  irpSp=873594880 (00110100 00010010 00000000 00000000)
+State 199 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 235 thread 0
+----------------------------------------------------
+  disketteExtension__HoldNewRequests=1 (00000000 00000000 00000000 00000001)
+State 202 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 236 thread 0
+----------------------------------------------------
+  Irp=0 (00000000 00000000 00000000 00000000)
+State 203 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 236 thread 0
+----------------------------------------------------
+  DisketteExtension=0 (00000000 00000000 00000000 00000000)
+State 204 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 248 thread 0
+----------------------------------------------------
+  status=0 (00000000 00000000 00000000 00000000)
+State 205 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 249 thread 0
+----------------------------------------------------
+  threadHandle=0 (00000000 00000000 00000000 00000000)
+State 206 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 250 thread 0
+----------------------------------------------------
+  threadHandle=0 (00000000 00000000 00000000 00000000)
+State 207 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 251 thread 0
+----------------------------------------------------
+  DisketteExtension__PoweringDown=0 (00000000 00000000 00000000 00000000)
+State 208 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 252 thread 0
+----------------------------------------------------
+  DisketteExtension__PoweringDown=17 (00000000 00000000 00000000 00010001)
+State 209 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 253 thread 0
+----------------------------------------------------
+  DisketteExtension__ThreadReferenceCount=0 (00000000 00000000 00000000 00000000)
+State 210 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 254 thread 0
+----------------------------------------------------
+  DisketteExtension__ThreadReferenceCount=-1 (11111111 11111111 11111111 11111111)
+State 211 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 255 thread 0
+----------------------------------------------------
+  DisketteExtension__FloppyThread=0 (00000000 00000000 00000000 00000000)
+State 212 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 256 thread 0
+----------------------------------------------------
+  DisketteExtension__FloppyThread=0 (00000000 00000000 00000000 00000000)
+State 213 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 257 thread 0
+----------------------------------------------------
+  Irp__IoStatus__Status=0 (00000000 00000000 00000000 00000000)
+State 214 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 258 thread 0
+----------------------------------------------------
+  Irp__IoStatus__Information=0 (00000000 00000000 00000000 00000000)
+State 215 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 259 thread 0
+----------------------------------------------------
+  ObjAttributes=0 (00000000 00000000 00000000 00000000)
+State 216 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 260 thread 0
+----------------------------------------------------
+  ObjAttributes=0 (00000000 00000000 00000000 00000000)
+State 217 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 261 thread 0
+----------------------------------------------------
+  DisketteExtension__ThreadReferenceCount=0 (00000000 00000000 00000000 00000000)
+State 218 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 262 thread 0
+----------------------------------------------------
+  DisketteExtension__ThreadReferenceCount=1 (00000000 00000000 00000000 00000001)
+State 219 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 263 thread 0
+----------------------------------------------------
+  PagingReferenceCount=2 (00000000 00000000 00000000 00000010)
+__iv__stub_call:__iv__start
+State 223 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 264 thread 0
+----------------------------------------------------
+  ThreadHandle=0 (00000000 00000000 00000000 00000000)
+State 224 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 264 thread 0
+----------------------------------------------------
+  DesiredAccess=0 (00000000 00000000 00000000 00000000)
+State 225 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 264 thread 0
+----------------------------------------------------
+  ObjectAttributes=0 (00000000 00000000 00000000 00000000)
+State 226 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 264 thread 0
+----------------------------------------------------
+  ProcessHandle=0 (00000000 00000000 00000000 00000000)
+State 227 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 264 thread 0
+----------------------------------------------------
+  ClientId=0 (00000000 00000000 00000000 00000000)
+State 228 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 264 thread 0
+----------------------------------------------------
+  StartRoutine=0 (00000000 00000000 00000000 00000000)
+State 229 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 264 thread 0
+----------------------------------------------------
+  StartContext=0 (00000000 00000000 00000000 00000000)
+State 230 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function PsCreateSystemThread line 65 thread 0
+----------------------------------------------------
+  tmp_ndt_14=0 (00000000 00000000 00000000 00000000)
+State 231 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function PsCreateSystemThread line 66 thread 0
+----------------------------------------------------
+  tmp_ndt_14=128 (00000000 00000000 00000000 10000000)
+__iv__test_case:128
+State 237 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 264 thread 0
+----------------------------------------------------
+  status=-1073741823 (11000000 00000000 00000000 00000001)
+__iv__stub_call:__iv__end
+Assumption:
+  file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c line 265 function FlQueueIrpToThread_118_1
+  !(!(status < 0))
+State 240 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 266 thread 0
+----------------------------------------------------
+  DisketteExtension__ThreadReferenceCount=-1 (11111111 11111111 11111111 11111111)
+State 241 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 267 thread 0
+----------------------------------------------------
+  PagingReferenceCount=1 (00000000 00000000 00000000 00000001)
+State 242 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FlQueueIrpToThread_118_1 line 268 thread 0
+----------------------------------------------------
+  __iv__return_expr_FlQueueIrpToThread=-1073741823 (11000000 00000000 00000000 00000001)
+State 244 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 237 thread 0
+----------------------------------------------------
+  ntStatus=-1073741823 (11000000 00000000 00000000 00000001)
+State 245 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 238 thread 0
+----------------------------------------------------
+  __cil_tmp29=-1073741823l (11111111 11111111 11111111 11111111 11000000 00000000 00000000 00000001)
+Assumption:
+  file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c line 239 function FloppyPnp_12_1
+  !(__cil_tmp29 == 259l)
+State 247 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 240 thread 0
+----------------------------------------------------
+  ntStatus=-1073741823 (11000000 00000000 00000000 00000001)
+State 250 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 241 thread 0
+----------------------------------------------------
+  DeviceObject=0 (00000000 00000000 00000000 00000000)
+State 251 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 241 thread 0
+----------------------------------------------------
+  Irp=0 (00000000 00000000 00000000 00000000)
+State 252 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function IofCallDriver_121_1 line 271 thread 0
+----------------------------------------------------
+  returnVal2=0 (00000000 00000000 00000000 00000000)
+State 253 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function IofCallDriver_121_1 line 272 thread 0
+----------------------------------------------------
+  compRetStatus1=0 (00000000 00000000 00000000 00000000)
+State 254 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function IofCallDriver_121_1 line 273 thread 0
+----------------------------------------------------
+  lcontext=0 (00000000 00000000 00000000 00000000)
+State 255 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function IofCallDriver_121_1 line 274 thread 0
+----------------------------------------------------
+  lcontext=0 (00000000 00000000 00000000 00000000)
+State 256 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function IofCallDriver_121_1 line 275 thread 0
+----------------------------------------------------
+  __cil_tmp7=0ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+State 257 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function IofCallDriver_121_1 line 276 thread 0
+----------------------------------------------------
+  tmp_ndt_10=0 (00000000 00000000 00000000 00000000)
+State 258 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function IofCallDriver_121_1 line 277 thread 0
+----------------------------------------------------
+  tmp_ndt_10=67108864 (00000100 00000000 00000000 00000000)
+State 259 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function IofCallDriver_121_1 line 278 thread 0
+----------------------------------------------------
+  tmp_ndt_11=0 (00000000 00000000 00000000 00000000)
+State 260 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function IofCallDriver_121_1 line 279 thread 0
+----------------------------------------------------
+  tmp_ndt_11=65537 (00000000 00000001 00000000 00000001)
+State 261 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function IofCallDriver_121_1 line 280 thread 0
+----------------------------------------------------
+  returnVal2=259 (00000000 00000000 00000001 00000011)
+State 262 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function IofCallDriver_121_1 line 281 thread 0
+----------------------------------------------------
+  s=7 (00000000 00000000 00000000 00000111)
+State 263 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function IofCallDriver_121_1 line 282 thread 0
+----------------------------------------------------
+  lowerDriverReturn=259 (00000000 00000000 00000001 00000011)
+State 264 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function IofCallDriver_121_1 line 283 thread 0
+----------------------------------------------------
+  __iv__return_expr_IofCallDriver=259 (00000000 00000000 00000001 00000011)
+State 266 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 242 thread 0
+----------------------------------------------------
+  Irp__IoStatus__Status=259 (00000000 00000000 00000001 00000011)
+State 267 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 243 thread 0
+----------------------------------------------------
+  myStatus=-1073741823 (11000000 00000000 00000000 00000001)
+State 268 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 244 thread 0
+----------------------------------------------------
+  Irp__IoStatus__Information=0 (00000000 00000000 00000000 00000000)
+State 271 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 245 thread 0
+----------------------------------------------------
+  Irp=0 (00000000 00000000 00000000 00000000)
+State 272 file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function FloppyPnp_12_1 line 245 thread 0
+----------------------------------------------------
+  PriorityBoost=0 (00000000 00000000 00000000 00000000)
+violated property: Node_25_2470
+Violated property:
+  file results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc/filter/target.c function reach_error_173_1 line 292 thread 0
+  assertion 0
+  0 != 0
+** 1 of 1 failed (2 iterations)
+VERIFICATION FAILED

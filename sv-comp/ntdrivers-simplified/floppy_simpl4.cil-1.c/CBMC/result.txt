@@ -1,0 +1,10 @@
+--src data/sv-benchmarks/c/ntdrivers-simplified/floppy_simpl4.cil-1.c --wd results/ntdrivers-simplified/floppy_simpl4.cil-1.c/origin --unwind 1000 --run-original --sv-comp-mode 
+code parsing time: 1.259 sec
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.239 sec
+
+the property is TRUE alarm.
+peak memory usage: 22.58 MB
+
+total CBMC running time: 0.239 sec

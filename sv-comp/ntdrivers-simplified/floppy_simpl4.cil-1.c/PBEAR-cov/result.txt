@@ -1,0 +1,123 @@
+--src data/sv-benchmarks/c/ntdrivers-simplified/floppy_simpl4.cil-1.c --wd results/ntdrivers-simplified/floppy_simpl4.cil-1.c/acc --unwind 1000 --synth-dir results/ntdrivers-simplified/acc/synth --synth-only-acc --synth-timeout 600 --synth-max-size 512 --synth-max-height 15 --sv-comp-mode 
+code parsing time: 1.148 sec
+
+select target function calls:
+IoQueryDeviceDescription(fdcInfo__BusType, fdcInfo__BusNumber, Dc, fdcInfo__ControllerNumber, Fp, fdcInfo__PeripheralNumber, FlConfigCallBack, disketteExtension) (call id 96) is independent call
+internal node ratio: 0.00% (0 of 2293)
+
+IoRegisterDeviceInterface(disketteExtension__UnderlyingPDO, MOUNTDEV_MOUNTED_DEVICE_GUID, 0, disketteExtension__InterfaceString) (call id 97) is independent call
+internal node ratio: 0.00% (0 of 2293)
+
+IoSetDeviceInterfaceState(disketteExtension__InterfaceString, 1) (call id 98) is independent call
+internal node ratio: 0.00% (0 of 2293)
+
+IoBuildDeviceIoControlRequest(Ioctl, DeviceObject, 0, 0, 0, 0, 1, doneEvent, ioStatus) (call id 70) is independent call
+internal node ratio: 0.00% (0 of 2293)
+
+IoSetDeviceInterfaceState(disketteExtension__InterfaceString, 0) (call id 134) is independent call
+internal node ratio: 0.00% (0 of 2293)
+
+PsCreateSystemThread(threadHandle, 0, ObjAttributes, 0, 0, FloppyThread, DisketteExtension) (call id 150) is independent call
+internal node ratio: 0.00% (0 of 2293)
+
+ObReferenceObjectByHandle(threadHandle, 1048576, 0, KernelMode, DisketteExtension__FloppyThread, 0) (call id 151) is independent call
+internal node ratio: 0.00% (0 of 2293)
+
+IoDeleteSymbolicLink(disketteExtension__ArcName) (call id 135) is independent call
+internal node ratio: 0.00% (0 of 2293)
+
+ZwClose(threadHandle) (call id 152) is independent call
+internal node ratio: 0.00% (0 of 2293)
+
+FlCheckFormatParameters(disketteExtension, Irp__AssociatedIrp__SystemBuffer) (call id 60) is independent call
+internal node ratio: 0.00% (0 of 2293)
+
+find the best target combination:
+predict complexity: (unwind 1000)
+criterion unwind: 1
+total cmplx: 268
+
+Sep 22, 2023 3:21:17 PM iv_checker.select.TargetFunctionSelector printRank
+INFO: 
+
+call IoQueryDeviceDescription(fdcInfo__BusType, fdcInfo__BusNumber, Dc, fdcInfo__ControllerNumber, Fp, fdcInfo__PeripheralNumber, FlConfigCallBack, disketteExtension) (call id 96)
+call IoRegisterDeviceInterface(disketteExtension__UnderlyingPDO, MOUNTDEV_MOUNTED_DEVICE_GUID, 0, disketteExtension__InterfaceString) (call id 97)
+call IoSetDeviceInterfaceState(disketteExtension__InterfaceString, 1) (call id 98)
+call IoBuildDeviceIoControlRequest(Ioctl, DeviceObject, 0, 0, 0, 0, 1, doneEvent, ioStatus) (call id 70)
+call IoSetDeviceInterfaceState(disketteExtension__InterfaceString, 0) (call id 134)
+call PsCreateSystemThread(threadHandle, 0, ObjAttributes, 0, 0, FloppyThread, DisketteExtension) (call id 150)
+call ObReferenceObjectByHandle(threadHandle, 1048576, 0, KernelMode, DisketteExtension__FloppyThread, 0) (call id 151)
+call IoDeleteSymbolicLink(disketteExtension__ArcName) (call id 135)
+call ZwClose(threadHandle) (call id 152)
+call FlCheckFormatParameters(disketteExtension, Irp__AssociatedIrp__SystemBuffer) (call id 60)
+Iteration 0:
+signed int __iv__IoQueryDeviceDescription_stub(signed int BusType, signed int BusNumber, signed int ControllerType, signed int ControllerNumber, signed int PeripheralType, signed int PeripheralNumber, signed int CalloutRoutine, signed int Context) {
+	signed int __iv__return_expr_IoQueryDeviceDescription = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(__iv__return_expr_IoQueryDeviceDescription == -1073741823 || __iv__return_expr_IoQueryDeviceDescription == 0);
+	return __iv__return_expr_IoQueryDeviceDescription;
+}
+
+signed int __iv__IoRegisterDeviceInterface_stub(signed int PhysicalDeviceObject, signed int InterfaceClassGuid, signed int ReferenceString, signed int SymbolicLinkName) {
+	signed int __iv__return_expr_IoRegisterDeviceInterface = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(__iv__return_expr_IoRegisterDeviceInterface == -1073741808 || __iv__return_expr_IoRegisterDeviceInterface == 0);
+	return __iv__return_expr_IoRegisterDeviceInterface;
+}
+
+signed int __iv__IoSetDeviceInterfaceState_stub(signed int SymbolicLinkName, signed int Enable) {
+	signed int __iv__return_expr_IoSetDeviceInterfaceState = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(__iv__return_expr_IoSetDeviceInterfaceState == -1073741823 || __iv__return_expr_IoSetDeviceInterfaceState == 0);
+	return __iv__return_expr_IoSetDeviceInterfaceState;
+}
+
+signed int __iv__IoBuildDeviceIoControlRequest_stub(signed int IoControlCode, signed int DeviceObject, signed int InputBuffer, signed int InputBufferLength, signed int OutputBuffer, signed int OutputBufferLength, signed int InternalDeviceIoControl, signed int Event, signed int IoStatusBlock) {
+	customIrp = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(customIrp == 1);
+	signed int __iv__return_expr_IoBuildDeviceIoControlRequest = __VERIFIER_nondet_signed_int();
+	return __iv__return_expr_IoBuildDeviceIoControlRequest;
+}
+
+signed int __iv__PsCreateSystemThread_stub(signed int ThreadHandle, signed int DesiredAccess, signed int ObjectAttributes, signed int ProcessHandle, signed int ClientId, signed int StartRoutine, signed int StartContext) {
+	signed int __iv__return_expr_PsCreateSystemThread = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(__iv__return_expr_PsCreateSystemThread == -1073741823 || __iv__return_expr_PsCreateSystemThread == 0);
+	return __iv__return_expr_PsCreateSystemThread;
+}
+
+signed int __iv__ObReferenceObjectByHandle_stub(signed int Handle, signed int DesiredAccess, signed int ObjectType, signed int AccessMode, signed int Object, signed int HandleInformation) {
+	signed int __iv__return_expr_ObReferenceObjectByHandle = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(__iv__return_expr_ObReferenceObjectByHandle == -1073741823 || __iv__return_expr_ObReferenceObjectByHandle == 0);
+	return __iv__return_expr_ObReferenceObjectByHandle;
+}
+
+signed int __iv__IoDeleteSymbolicLink_stub(signed int SymbolicLinkName) {
+	signed int __iv__return_expr_IoDeleteSymbolicLink = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(__iv__return_expr_IoDeleteSymbolicLink == -1073741823 || __iv__return_expr_IoDeleteSymbolicLink == 0);
+	return __iv__return_expr_IoDeleteSymbolicLink;
+}
+
+signed int __iv__ZwClose_stub(signed int Handle) {
+	signed int __iv__return_expr_ZwClose = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(__iv__return_expr_ZwClose == -1073741823 || __iv__return_expr_ZwClose == 0);
+	return __iv__return_expr_ZwClose;
+}
+
+signed int __iv__FlCheckFormatParameters_stub(signed int DisketteExtension, signed int FormatParameters) {
+	signed int __iv__return_expr_FlCheckFormatParameters = __VERIFIER_nondet_signed_int();
+	__CPROVER_assume(__iv__return_expr_FlCheckFormatParameters == 0 || __iv__return_expr_FlCheckFormatParameters == 1);
+	return __iv__return_expr_FlCheckFormatParameters;
+}
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.241 sec
+
+verification results: 
+property 'assert(FALSE);' is FALSE alarm.
+Counterexample-guided true alarm finding: 
+cbmc time (unwind: 10): 0.074 sec
+property 'assert(FALSE);' is TRUE alarm.
+true alarm finding time: 0.552 sec
+
+
+total CBMC running time: 0.241 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 27.67 MB
