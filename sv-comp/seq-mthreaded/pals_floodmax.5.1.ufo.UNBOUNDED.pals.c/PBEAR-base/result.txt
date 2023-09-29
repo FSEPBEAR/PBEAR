@@ -1,0 +1,130 @@
+--src data/sv-benchmarks/c/seq-mthreaded/pals_floodmax.5.1.ufo.UNBOUNDED.pals.c --wd results/seq-mthreaded/pals_floodmax.5.1.ufo.UNBOUNDED.pals.c/no_alarm --no-alarm-filtering --unwind 1000 --synth-dir results/seq-mthreaded/synth --synth-timeout 300 --synth-max-size 512 --synth-max-height 15 --sv-comp-mode 
+code parsing time: 2.5 sec
+
+select target function calls:
+init() (call id 55) influences 25 external nodes
+internal node ratio: 1.07% (30 of 2797)
+
+check() (call id 62) influences 41 external nodes
+internal node ratio: 10.94% (306 of 2797)
+
+find the best target combination:
+predict complexity: (unwind 1000)
+criterion unwind: 2
+init(): original cmplx: 460, stub cmplx: 0
+check(): original cmplx: 14, stub cmplx: 1
+total cmplx: 701
+
+Jul 26, 2023 4:06:45 PM iv_checker.select.TargetFunctionSelector printRank
+INFO: 
+1. init();  fitness: 5.887
+2. init(); check();  fitness: 5.333
+3. check();  fitness: 3.000
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.129 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 0.129 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 8.23 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if(st2==nl4) __iv__return_expr_check = nl4; else __iv__return_expr_check = 0; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+accuracy: 98.95%
+coverage: 100.00%
+# constraints: 10
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.138 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 0.267 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 8.23 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if(st2==nl4) __iv__return_expr_check = nl4; else __iv__return_expr_check = 0; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+accuracy: 98.95%
+coverage: 100.00%
+# constraints: 10
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.65 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is FALSE alarm.
+
+synthesize new stub refined by counterexamples (unit timeout: 300 sec)
+on each refinement:
+refinement time: 0.116 sec
+
+Iteration 1:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if(nl3==nl1) __iv__return_expr_check = 1; else if(1==st2) __iv__return_expr_check = nl4; else __iv__return_expr_check = 0; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 2
+# constraints: 11
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.702 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is TRUE alarm.
+
+total CBMC running time: 1.619 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.116 sec, # of refinements: 1
+peak memory usage: 59.66 MB

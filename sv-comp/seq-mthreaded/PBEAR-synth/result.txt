@@ -1,0 +1,46 @@
+--src data/sv-benchmarks/c/seq-mthreaded/pals_floodmax.5.1.ufo.UNBOUNDED.pals.c --wd results/seq-mthreaded/ --unwind 1000 --synth-mode --synth-timeout 300 --synth-max-size 256 --synth-max-height 10 
+code parsing time: 2.455 sec
+
+select target function calls:
+init() (call id 55) influences 25 external nodes
+internal node ratio: 1.07% (30 of 2797)
+
+check() (call id 62) influences 41 external nodes
+internal node ratio: 10.94% (306 of 2797)
+
+predict complexity: (unwind 1000)
+criterion unwind: 2
+init(): original cmplx: 460
+check(): original cmplx: 14
+total cmplx: 701
+
+loading I/O examples:
+each logs of functions:
+check: 9061, output range: 2
+init: 9042, output range: 1
+
+total number of I/O examples: 18103
+loading time: 31.63 sec
+
+synthesize stub:
+function check: 
+signed int __iv__return_expr_check;
+if(st2==nl4) __iv__return_expr_check = nl4; else __iv__return_expr_check = 0; 
+__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+return __iv__return_expr_check;
+complexity: 1
+accuracy: 98.95%
+coverage: 100.00%
+# constraints: 10
+
+function init: 
+signed int __iv__return_expr_init;
+__iv__return_expr_init = 0;
+__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+return __iv__return_expr_init;
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+synthesizing time: 3600.011 sec

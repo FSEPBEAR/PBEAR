@@ -1,0 +1,18 @@
+outputs: __iv__return_expr_check 
+logs: 
+{"Func":"check","Input":[{"Var":"st1","Val":5},{"Var":"st2","Val":0},{"Var":"st3","Val":0},{"Var":"st4","Val":0},{"Var":"st5","Val":0},{"Var":"nl1","Val":-8},{"Var":"nl2","Val":-7},{"Var":"nl3","Val":0},{"Var":"r1","Val":0},{"Var":"nl4","Val":6},{"Var":"nl5","Val":-1}],"Output":[{"Var":"__iv__return_expr_check","Val":0}],"InitOutput":[],}
+logs end
+SyGuS code:
+__iv__return_expr_check:0
+SyGuS end
+assumes:
+__iv__return_expr_check:__iv__return_expr_check == 0 || __iv__return_expr_check == 1
+assumes end:
+signed int __iv__return_expr_check;
+__iv__return_expr_check = 0;
+__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+return __iv__return_expr_check;
+complexity: 0
+accuracy: 99.66%
+coverage: 50.00%
+max_comp_size: 1

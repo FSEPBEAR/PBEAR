@@ -1,0 +1,30 @@
+Parsing results/seq-mthreaded/pals_floodmax.5.1.ufo.UNBOUNDED.pals.c/acc/filter/target.c
+Converting
+Type-checking target
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Running with 8 object bits, 56 offset bits (default)
+Starting Bounded Model Checking
+Runtime Symex: 0.0160695s
+size of program expression: 1183 steps
+simple slicing removed 5 assignments
+Generated 1 VCC(s), 1 remaining after simplification
+Runtime Postprocess Equation: 5.6359e-05s
+Passing problem to propositional reduction
+converting SSA
+Runtime Convert SSA: 0.00525181s
+Running propositional reduction
+Post-processing
+Runtime Post-process: 1.2798e-05s
+Solving with MiniSAT 2.2.1 with simplifier
+5335 variables, 11106 clauses
+SAT checker inconsistent: instance is UNSATISFIABLE
+Runtime Solver: 2.3615e-05s
+Runtime decision procedure: 0.00532127s
+** Results:
+results/seq-mthreaded/pals_floodmax.5.1.ufo.UNBOUNDED.pals.c/acc/filter/target.c function main
+[main.assertion.1] line 374 assertion (_Bool)(c1): SUCCESS
+** 0 of 1 failed (1 iterations)
+VERIFICATION SUCCESSFUL

@@ -1,0 +1,27 @@
+outputs: __iv__return_expr_check 
+logs: 
+{"Func":"check","Input":[{"Var":"st1","Val":19},{"Var":"st2","Val":5},{"Var":"st3","Val":-2},{"Var":"st4","Val":68},{"Var":"st5","Val":-84},{"Var":"nl1","Val":-19},{"Var":"nl2","Val":-19},{"Var":"nl3","Val":-122},{"Var":"r1","Val":110},{"Var":"nl4","Val":-74},{"Var":"nl5","Val":2}],"Output":[{"Var":"__iv__return_expr_check","Val":0}],"InitOutput":[],}
+{"Func":"check","Input":[{"Var":"st1","Val":0},{"Var":"st2","Val":0},{"Var":"st3","Val":0},{"Var":"st4","Val":0},{"Var":"st5","Val":0},{"Var":"nl1","Val":2},{"Var":"nl2","Val":-7},{"Var":"nl3","Val":0},{"Var":"r1","Val":1},{"Var":"nl4","Val":1},{"Var":"nl5","Val":-7}],"Output":[{"Var":"__iv__return_expr_check","Val":0}],"InitOutput":[],}
+{"Func":"check","Input":[{"Var":"st1","Val":0},{"Var":"st2","Val":-6},{"Var":"st3","Val":0},{"Var":"st4","Val":0},{"Var":"st5","Val":0},{"Var":"nl1","Val":6},{"Var":"nl2","Val":0},{"Var":"nl3","Val":-2},{"Var":"r1","Val":1},{"Var":"nl4","Val":-7},{"Var":"nl5","Val":0}],"Output":[{"Var":"__iv__return_expr_check","Val":0}],"InitOutput":[],}
+{"Func":"check","Input":[{"Var":"st1","Val":0},{"Var":"st2","Val":0},{"Var":"st3","Val":3},{"Var":"st4","Val":0},{"Var":"st5","Val":0},{"Var":"nl1","Val":-1},{"Var":"nl2","Val":0},{"Var":"nl3","Val":1},{"Var":"r1","Val":3},{"Var":"nl4","Val":1},{"Var":"nl5","Val":3}],"Output":[{"Var":"__iv__return_expr_check","Val":0}],"InitOutput":[],}
+{"Func":"check","Input":[{"Var":"st1","Val":1},{"Var":"st2","Val":0},{"Var":"st3","Val":1},{"Var":"st4","Val":0},{"Var":"st5","Val":5},{"Var":"nl1","Val":-2},{"Var":"nl2","Val":1},{"Var":"nl3","Val":0},{"Var":"r1","Val":1},{"Var":"nl4","Val":0},{"Var":"nl5","Val":1}],"Output":[{"Var":"__iv__return_expr_check","Val":0}],"InitOutput":[],}
+{"Func":"check","Input":[{"Var":"st1","Val":0},{"Var":"st2","Val":0},{"Var":"st3","Val":0},{"Var":"st4","Val":0},{"Var":"st5","Val":0},{"Var":"nl1","Val":-8},{"Var":"nl2","Val":1},{"Var":"nl3","Val":0},{"Var":"r1","Val":0},{"Var":"nl4","Val":0},{"Var":"nl5","Val":1}],"Output":[{"Var":"__iv__return_expr_check","Val":0}],"InitOutput":[],}
+{"Func":"check","Input":[{"Var":"st1","Val":0},{"Var":"st2","Val":1},{"Var":"st3","Val":0},{"Var":"st4","Val":0},{"Var":"st5","Val":-1},{"Var":"nl1","Val":-1},{"Var":"nl2","Val":0},{"Var":"nl3","Val":0},{"Var":"r1","Val":0},{"Var":"nl4","Val":1},{"Var":"nl5","Val":0}],"Output":[{"Var":"__iv__return_expr_check","Val":1}],"InitOutput":[],}
+{"Func":"check","Input":[{"Var":"st1","Val":-67},{"Var":"st2","Val":7},{"Var":"st3","Val":3},{"Var":"st4","Val":45},{"Var":"st5","Val":-1},{"Var":"nl1","Val":-1},{"Var":"nl2","Val":-67},{"Var":"nl3","Val":4},{"Var":"r1","Val":0},{"Var":"nl4","Val":-124},{"Var":"nl5","Val":-5}],"Output":[{"Var":"__iv__return_expr_check","Val":0}],"InitOutput":[],}
+{"Func":"check","Input":[{"Var":"st1","Val":0},{"Var":"st2","Val":0},{"Var":"st3","Val":0},{"Var":"st4","Val":0},{"Var":"st5","Val":0},{"Var":"nl1","Val":-1},{"Var":"nl2","Val":0},{"Var":"nl3","Val":0},{"Var":"r1","Val":7},{"Var":"nl4","Val":1},{"Var":"nl5","Val":0}],"Output":[{"Var":"__iv__return_expr_check","Val":0}],"InitOutput":[],}
+{"Func":"check","Input":[{"Var":"st1","Val":0},{"Var":"st2","Val":0},{"Var":"st3","Val":0},{"Var":"st4","Val":0},{"Var":"st5","Val":-1},{"Var":"nl1","Val":-1},{"Var":"nl2","Val":0},{"Var":"nl3","Val":0},{"Var":"r1","Val":0},{"Var":"nl4","Val":1},{"Var":"nl5","Val":0}],"Output":[{"Var":"__iv__return_expr_check","Val":0}],"InitOutput":[],}
+logs end
+SyGuS code:
+__iv__return_expr_check:ite = __iv__input_7_ __iv__input_3_ ) __iv__input_3_ 0 )
+SyGuS end
+assumes:
+__iv__return_expr_check:__iv__return_expr_check == 0 || __iv__return_expr_check == 1
+assumes end:
+signed int __iv__return_expr_check;
+if(st2==nl4) __iv__return_expr_check = nl4; else __iv__return_expr_check = 0; 
+__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+return __iv__return_expr_check;
+complexity: 1
+accuracy: 98.95%
+coverage: 100.00%
+max_comp_size: 1

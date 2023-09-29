@@ -1,0 +1,3694 @@
+--src data/sv-benchmarks/c/seq-mthreaded/pals_floodmax.5.1.ufo.UNBOUNDED.pals.c --wd results/seq-mthreaded/pals_floodmax.5.1.ufo.UNBOUNDED.pals.c/acc --unwind 1000 --synth-dir results/seq-mthreaded/acc/synth --synth-only-acc --synth-timeout 600 --synth-max-size 512 --synth-max-height 15 --sv-comp-mode 
+code parsing time: 2.577 sec
+
+select target function calls:
+init() (call id 55) influences 25 external nodes
+internal node ratio: 1.07% (30 of 2797)
+
+check() (call id 62) influences 41 external nodes
+internal node ratio: 10.94% (306 of 2797)
+
+find the best target combination:
+predict complexity: (unwind 1000)
+criterion unwind: 2
+init(): original cmplx: 460, stub cmplx: 0
+check(): original cmplx: 14, stub cmplx: 0
+total cmplx: 701
+
+Sep 22, 2023 3:21:28 PM iv_checker.select.TargetFunctionSelector printRank
+INFO: 
+1. init();  fitness: 2.878
+2. init(); check();  fitness: 2.333
+3. check();  fitness: 0.000
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.157 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 0.157 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 7.13 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	__iv__return_expr_check = 0;
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 0
+accuracy: 99.66%
+coverage: 50.00%
+# constraints: 1
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.142 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 0.299 sec
+total true alarm finding time: 0.0 sec
+total refinement time: 0.0 sec, # of refinements: 0
+peak memory usage: 7.24 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	__iv__return_expr_check = 0;
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 0
+accuracy: 99.66%
+coverage: 50.00%
+# constraints: 1
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.701 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is FALSE alarm.
+Counterexample-guided true alarm finding: 
+cbmc time (unwind: 10): 0.107 sec
+property 'assert((_Bool)(c1));' is FALSE alarm.
+true alarm finding time: 0.552 sec
+
+
+synthesize new stub refined by counterexamples (unit timeout: 600 sec)
+on each refinement:
+refinement time: 0.464 sec
+
+Iteration 1:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 10, timeout: 86400 sec)
+cbmc running time: 0.634 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 1.634 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 61.56 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 20, timeout: 86400 sec)
+cbmc running time: 0.144 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 1.778 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 61.56 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 20, timeout: 86400 sec)
+cbmc running time: 0.14 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 1.918 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 61.56 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 20, timeout: 86400 sec)
+cbmc running time: 0.935 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 2.853 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 86.11 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 30, timeout: 86400 sec)
+cbmc running time: 0.137 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 2.99 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 86.11 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 30, timeout: 86400 sec)
+cbmc running time: 0.136 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 3.126 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 86.11 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 30, timeout: 86400 sec)
+cbmc running time: 1.251 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 4.377 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 117.18 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 40, timeout: 86400 sec)
+cbmc running time: 0.138 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 4.515 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 117.18 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 40, timeout: 86400 sec)
+cbmc running time: 0.143 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 4.658 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 117.18 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 40, timeout: 86400 sec)
+cbmc running time: 1.6 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 6.258 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 145.88 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 50, timeout: 86400 sec)
+cbmc running time: 0.136 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 6.394 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 145.88 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 50, timeout: 86400 sec)
+cbmc running time: 0.151 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 6.545 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 145.88 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 50, timeout: 86400 sec)
+cbmc running time: 1.931 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 8.476 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 181.59 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 60, timeout: 86400 sec)
+cbmc running time: 0.142 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 8.618 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 181.59 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 60, timeout: 86400 sec)
+cbmc running time: 0.145 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 8.763 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 181.59 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 60, timeout: 86400 sec)
+cbmc running time: 2.28 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 11.043 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 208.89 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 70, timeout: 86400 sec)
+cbmc running time: 0.144 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 11.187 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 208.89 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 70, timeout: 86400 sec)
+cbmc running time: 0.139 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 11.326 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 208.89 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 70, timeout: 86400 sec)
+cbmc running time: 2.554 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 13.88 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 251.73 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 80, timeout: 86400 sec)
+cbmc running time: 0.135 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 14.015 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 251.73 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 80, timeout: 86400 sec)
+cbmc running time: 0.14 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 14.155 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 251.73 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 80, timeout: 86400 sec)
+cbmc running time: 2.978 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 17.133 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 272.30 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 90, timeout: 86400 sec)
+cbmc running time: 0.147 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 17.28 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 272.30 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 90, timeout: 86400 sec)
+cbmc running time: 0.138 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 17.418 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 272.30 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 90, timeout: 86400 sec)
+cbmc running time: 3.371 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 20.789 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 301.68 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 100, timeout: 86400 sec)
+cbmc running time: 0.136 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 20.925 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 301.68 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 100, timeout: 86400 sec)
+cbmc running time: 0.141 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 21.066 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 301.68 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 100, timeout: 86400 sec)
+cbmc running time: 3.649 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 24.715 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 353.87 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 110, timeout: 86400 sec)
+cbmc running time: 0.148 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 24.863 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 353.87 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 110, timeout: 86400 sec)
+cbmc running time: 0.148 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 25.011 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 353.87 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 110, timeout: 86400 sec)
+cbmc running time: 4.069 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 29.08 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 366.70 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 120, timeout: 86400 sec)
+cbmc running time: 0.143 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 29.223 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 366.70 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 120, timeout: 86400 sec)
+cbmc running time: 0.142 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 29.365 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 366.70 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 120, timeout: 86400 sec)
+cbmc running time: 4.502 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 33.867 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 406.83 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 130, timeout: 86400 sec)
+cbmc running time: 0.14 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 34.007 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 406.83 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 130, timeout: 86400 sec)
+cbmc running time: 0.141 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 34.148 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 406.83 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 130, timeout: 86400 sec)
+cbmc running time: 4.808 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 38.956 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 447.55 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 140, timeout: 86400 sec)
+cbmc running time: 0.13 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 39.086 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 447.55 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 140, timeout: 86400 sec)
+cbmc running time: 0.154 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 39.24 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 447.55 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 140, timeout: 86400 sec)
+cbmc running time: 5.414 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 44.654 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 477.30 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 150, timeout: 86400 sec)
+cbmc running time: 0.145 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 44.799 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 477.30 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 150, timeout: 86400 sec)
+cbmc running time: 0.13 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 44.929 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 477.30 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 150, timeout: 86400 sec)
+cbmc running time: 5.839 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 50.768 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 516.71 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 160, timeout: 86400 sec)
+cbmc running time: 0.146 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 50.914 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 516.71 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 160, timeout: 86400 sec)
+cbmc running time: 0.14 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 51.054 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 516.71 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 160, timeout: 86400 sec)
+cbmc running time: 6.348 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 57.402 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 551.57 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 170, timeout: 86400 sec)
+cbmc running time: 0.143 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 57.545 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 551.57 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 170, timeout: 86400 sec)
+cbmc running time: 0.13 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 57.675 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 551.57 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 170, timeout: 86400 sec)
+cbmc running time: 6.847 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 64.522 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 581.84 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 180, timeout: 86400 sec)
+cbmc running time: 0.143 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 64.665 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 581.84 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 180, timeout: 86400 sec)
+cbmc running time: 0.157 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 64.822 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 581.84 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 180, timeout: 86400 sec)
+cbmc running time: 7.424 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 72.246 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 612.27 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 190, timeout: 86400 sec)
+cbmc running time: 0.146 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 72.392 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 612.27 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 190, timeout: 86400 sec)
+cbmc running time: 0.141 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 72.533 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 612.27 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 190, timeout: 86400 sec)
+cbmc running time: 7.984 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 80.517 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 641.48 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 200, timeout: 86400 sec)
+cbmc running time: 0.132 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 80.649 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 641.48 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 200, timeout: 86400 sec)
+cbmc running time: 0.141 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 80.79 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 641.48 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 200, timeout: 86400 sec)
+cbmc running time: 8.548 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 89.338 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 673.40 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 210, timeout: 86400 sec)
+cbmc running time: 0.129 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 89.467 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 673.40 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 210, timeout: 86400 sec)
+cbmc running time: 0.146 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 89.613 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 673.40 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 210, timeout: 86400 sec)
+cbmc running time: 9.334 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 98.947 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 702.89 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 220, timeout: 86400 sec)
+cbmc running time: 0.142 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 99.089 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 702.89 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 220, timeout: 86400 sec)
+cbmc running time: 0.146 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 99.235 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 702.89 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 220, timeout: 86400 sec)
+cbmc running time: 10.101 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 109.336 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 731.69 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 230, timeout: 86400 sec)
+cbmc running time: 0.14 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 109.476 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 731.69 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 230, timeout: 86400 sec)
+cbmc running time: 0.139 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 109.615 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 731.69 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 230, timeout: 86400 sec)
+cbmc running time: 11.012 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 120.627 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 775.84 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 240, timeout: 86400 sec)
+cbmc running time: 0.14 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 120.767 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 775.84 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 240, timeout: 86400 sec)
+cbmc running time: 0.139 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 120.906 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 775.84 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 240, timeout: 86400 sec)
+cbmc running time: 11.913 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 132.819 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 813.11 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 250, timeout: 86400 sec)
+cbmc running time: 0.144 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 132.963 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 813.11 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 250, timeout: 86400 sec)
+cbmc running time: 0.132 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 133.095 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 813.11 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 250, timeout: 86400 sec)
+cbmc running time: 13.124 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 146.219 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 843.21 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 260, timeout: 86400 sec)
+cbmc running time: 0.144 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 146.363 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 843.21 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 260, timeout: 86400 sec)
+cbmc running time: 0.155 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 146.518 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 843.21 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 260, timeout: 86400 sec)
+cbmc running time: 14.443 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 160.961 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 873.04 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 270, timeout: 86400 sec)
+cbmc running time: 0.132 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 161.093 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 873.04 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 270, timeout: 86400 sec)
+cbmc running time: 0.138 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 161.231 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 873.04 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 270, timeout: 86400 sec)
+cbmc running time: 15.659 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 176.89 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 901.40 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 280, timeout: 86400 sec)
+cbmc running time: 0.15 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 177.04 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 901.40 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 280, timeout: 86400 sec)
+cbmc running time: 0.145 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 177.185 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 901.40 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 280, timeout: 86400 sec)
+cbmc running time: 17.219 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 194.404 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 933.13 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 290, timeout: 86400 sec)
+cbmc running time: 0.146 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 194.55 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 933.13 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 290, timeout: 86400 sec)
+cbmc running time: 0.145 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 194.695 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 933.13 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 290, timeout: 86400 sec)
+cbmc running time: 18.875 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 213.57 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 968.12 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 300, timeout: 86400 sec)
+cbmc running time: 0.141 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 213.711 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 968.12 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 300, timeout: 86400 sec)
+cbmc running time: 0.147 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 213.858 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 968.12 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 300, timeout: 86400 sec)
+cbmc running time: 20.909 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 234.767 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 996.07 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 310, timeout: 86400 sec)
+cbmc running time: 0.143 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 234.91 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 996.07 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 310, timeout: 86400 sec)
+cbmc running time: 0.147 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 235.057 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 996.07 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 310, timeout: 86400 sec)
+cbmc running time: 22.754 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 257.811 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1025.85 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 320, timeout: 86400 sec)
+cbmc running time: 0.133 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 257.944 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1025.85 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 320, timeout: 86400 sec)
+cbmc running time: 0.131 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 258.075 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1025.85 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 320, timeout: 86400 sec)
+cbmc running time: 25.148 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 283.223 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1054.86 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 330, timeout: 86400 sec)
+cbmc running time: 0.144 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 283.367 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1054.86 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 330, timeout: 86400 sec)
+cbmc running time: 0.131 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 283.498 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1054.86 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 330, timeout: 86400 sec)
+cbmc running time: 27.892 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 311.39 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1083.51 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 340, timeout: 86400 sec)
+cbmc running time: 0.14 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 311.53 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1083.51 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 340, timeout: 86400 sec)
+cbmc running time: 0.145 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 311.675 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1083.51 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 340, timeout: 86400 sec)
+cbmc running time: 30.923 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 342.598 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1141.94 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 350, timeout: 86400 sec)
+cbmc running time: 0.143 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 342.741 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1141.94 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 350, timeout: 86400 sec)
+cbmc running time: 0.144 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 342.885 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1141.94 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 350, timeout: 86400 sec)
+cbmc running time: 33.341 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 376.226 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1171.28 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 360, timeout: 86400 sec)
+cbmc running time: 0.141 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 376.367 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1171.28 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 360, timeout: 86400 sec)
+cbmc running time: 0.136 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 376.503 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1171.28 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 360, timeout: 86400 sec)
+cbmc running time: 36.235 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 412.738 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1196.69 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 370, timeout: 86400 sec)
+cbmc running time: 0.137 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 412.875 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1196.69 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 370, timeout: 86400 sec)
+cbmc running time: 0.137 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 413.012 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1196.69 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 370, timeout: 86400 sec)
+cbmc running time: 41.546 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 454.558 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1238.02 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 380, timeout: 86400 sec)
+cbmc running time: 0.147 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 454.705 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1238.02 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 380, timeout: 86400 sec)
+cbmc running time: 0.174 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 454.879 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1238.02 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 380, timeout: 86400 sec)
+cbmc running time: 44.371 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 499.25 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1270.11 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 390, timeout: 86400 sec)
+cbmc running time: 0.146 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 499.396 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1270.11 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 390, timeout: 86400 sec)
+cbmc running time: 0.131 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 499.527 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1270.11 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 390, timeout: 86400 sec)
+cbmc running time: 50.13 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 549.657 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1301.54 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 400, timeout: 86400 sec)
+cbmc running time: 0.132 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 549.789 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1301.54 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 400, timeout: 86400 sec)
+cbmc running time: 0.139 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 549.928 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1301.54 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 400, timeout: 86400 sec)
+cbmc running time: 54.915 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 604.843 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1328.34 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 410, timeout: 86400 sec)
+cbmc running time: 0.14 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 604.983 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1328.34 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 410, timeout: 86400 sec)
+cbmc running time: 0.145 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 605.128 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1328.34 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 410, timeout: 86400 sec)
+cbmc running time: 59.764 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 664.892 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1355.18 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 420, timeout: 86400 sec)
+cbmc running time: 0.135 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 665.027 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1355.18 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 420, timeout: 86400 sec)
+cbmc running time: 0.149 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 665.176 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1355.18 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 420, timeout: 86400 sec)
+cbmc running time: 65.116 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 730.292 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1385.30 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 430, timeout: 86400 sec)
+cbmc running time: 0.141 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 730.433 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1385.30 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 430, timeout: 86400 sec)
+cbmc running time: 0.143 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 730.576 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1385.30 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 430, timeout: 86400 sec)
+cbmc running time: 72.463 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 803.039 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1415.17 MB
+
+call init() (call id 55)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+run cbmc: (unwind: 440, timeout: 86400 sec)
+cbmc running time: 0.132 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 803.171 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1415.17 MB
+
+call init() (call id 55)
+call check() (call id 62)
+Iteration 0:
+signed int __iv__init_stub() {
+	signed int __iv__return_expr_init;
+	__iv__return_expr_init = 0;
+	__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+	return __iv__return_expr_init;
+}
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+# constraints: 1
+
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 440, timeout: 86400 sec)
+cbmc running time: 0.14 sec
+
+verification results: 
+property 'assert(FALSE);' is not violated.
+property 'assert((_Bool)(c1));' is not violated.
+
+total CBMC running time: 803.311 sec
+total true alarm finding time: 0.552 sec
+total refinement time: 0.465 sec, # of refinements: 1
+peak memory usage: 1415.17 MB
+
+call check() (call id 62)
+Iteration 0:
+signed int __iv__check_stub() {
+	signed int __iv__return_expr_check;
+	if((-1)>=nl1) __iv__return_expr_check = 0; else __iv__return_expr_check = 1; 
+	__CPROVER_assume(__iv__return_expr_check == 0 || __iv__return_expr_check == 1);
+	return __iv__return_expr_check;
+}
+complexity: 1
+# constraints: 2
+
+run cbmc: (unwind: 440, timeout: 86400 sec)

@@ -1,0 +1,18 @@
+outputs: __iv__return_expr_init 
+logs: 
+{"Func":"init","Input":[{"Var":"id1","Val":3},{"Var":"id2","Val":-10},{"Var":"id3","Val":4},{"Var":"id4","Val":3},{"Var":"id5","Val":0},{"Var":"max1","Val":-6},{"Var":"max2","Val":-2},{"Var":"max3","Val":7},{"Var":"max4","Val":-2},{"Var":"max5","Val":2},{"Var":"mode1","Val":0},{"Var":"mode2","Val":1},{"Var":"mode3","Val":0},{"Var":"mode4","Val":0},{"Var":"mode5","Val":1},{"Var":"nl1","Val":1},{"Var":"nl2","Val":-1},{"Var":"nl3","Val":-10},{"Var":"r1","Val":0},{"Var":"nl4","Val":1},{"Var":"r2","Val":205},{"Var":"nl5","Val":0},{"Var":"r3","Val":4},{"Var":"r4","Val":2},{"Var":"r5","Val":15},{"Var":"st1","Val":3},{"Var":"st2","Val":2},{"Var":"st3","Val":27},{"Var":"st4","Val":-3},{"Var":"st5","Val":0}],"Output":[{"Var":"__iv__return_expr_init","Val":0}],"InitOutput":[],}
+logs end
+SyGuS code:
+__iv__return_expr_init:0
+SyGuS end
+assumes:
+__iv__return_expr_init:__iv__return_expr_init == 0 || __iv__return_expr_init == 1
+assumes end:
+signed int __iv__return_expr_init;
+__iv__return_expr_init = 0;
+__CPROVER_assume(__iv__return_expr_init == 0 || __iv__return_expr_init == 1);
+return __iv__return_expr_init;
+complexity: 0
+accuracy: 100.00%
+coverage: 100.00%
+max_comp_size: 1

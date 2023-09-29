@@ -1,0 +1,9 @@
+(define-fun check ( (__iv__input_0_ Int) (__iv__input_1_ Int) (__iv__input_2_ Int) (__iv__input_3_ Int) (__iv__input_4_ Int) (__iv__input_5_ Int) (__iv__input_6_ Int) (__iv__input_7_ Int) (__iv__input_8_ Int) (__iv__input_9_ Int) (__iv__input_10_ Int)) Int (ite (>= -1 __iv__input_1_) 0 (ite (= -1 __iv__input_9_) __iv__input_7_ (ite (>= __iv__input_2_ 1) 0 (ite (= 3 __iv__input_8_) 0 (ite (= 2 __iv__input_5_) __iv__input_10_ (ite (>= __iv__input_8_ 4) __iv__input_10_ (ite (= 3 __iv__input_5_) __iv__input_2_ (ite (= 2 __iv__input_6_) __iv__input_3_ __iv__input_2_)))))))))
+****************** statistics *******************
+size : 41
+time : 0.09 sec
+max_component_size : 1
+# components : 36
+time for composition : 0.09 sec
+time for component generation : 0.00 sec
+**************************************************
